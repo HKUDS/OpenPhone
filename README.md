@@ -312,6 +312,13 @@ OpenPhone builds upon excellent open-source projects. We sincerely thank their a
 
 This project is released under the [MIT License](./LICENSE).
 
+<div align="center">
+
+**If this project helps you, please give us a Star🌟**
+
+**🤖 Empower AI Phone with Agents!**
+
+</div>
 
 <br>
 
