@@ -48,7 +48,8 @@
 
 **Our Solution**: Open-PhoneAgent introduces the first **Open-Source, 3B-parameter Agentic Foundation Model** designed specifically for on-device smartphone interaction. This compact vision-language model runs entirely locally — meaning **No Privacy Concerns**, **No Cloud Dependence**, and **Zero API Costs**.
 
-**Why 3B Parameters?** We believe the future of mobile AI lies not only in making models larger, but in making them smarter and more efficient for real-world constraints. Our 3B model is:
+**Why 3B Parameters?** <br>
+We believe the future of mobile AI lies not only in making models larger, but in making them smarter and more efficient for real-world constraints. Our 3B model is:
 - ⚡ **Edge-Optimized**: Efficient enough for commodity GPUs and next-generation mobile NPUs
 - 🔒 **Privacy-First**: All computation stays on your device
 - 💰 **Cost-Free**: No cloud inference and no ongoing API fees
@@ -58,7 +59,7 @@
 
 ## 💡 Research Highlights
 
-## 🔍 OpenPhone‑3B: On‑Device Agentic Model
+## 🔍 OpenPhone‑3B: Lightweight Agentic Model
 Considering the compute limitations of today’s edge devices, models with **≤3B parameters** strike a practical balance between capability and deployability. Based on this insight, we introduce **OpenPhone‑3B**, a lightweight yet powerful on‑device agent model.
 
 - **Model Size & Architecture**: A ~3B‑parameter vision‑language model designed for efficient on‑device reasoning and action generation, optimized for performance under tight compute budgets.
