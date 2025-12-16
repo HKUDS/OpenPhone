@@ -88,7 +88,7 @@
     - [Why 3B is the sweet spot for on-device GUI agents](#why-3b-is-the-sweet-spot-for-on-device-gui-agents)
     - [Model release \& resources](#model-release--resources)
   - [📖 Table of Contents](#-table-of-contents)
-  - [🌟 Key Features of LightAgent](#-key-features-of-lightagent)
+  - [🌟 Key Features of Open-PhoneAgent](#-key-features-of-open-phoneagent)
     - [🤖 Lightweight Agentic Foundation Models](#-lightweight-agentic-foundation-models)
     - [☁️ Device-Cloud Collaboration Framework](#️-device-cloud-collaboration-framework)
     - [🎯 Comprehensive Mobile Agent Evaluation Playground](#-comprehensive-mobile-agent-evaluation-playground)
@@ -115,7 +115,7 @@
 
 ---
 
-## 🌟 Key Features of LightAgent
+## 🌟 Key Features of Open-PhoneAgent
 
 ### 🤖 Lightweight Agentic Foundation Models
 • **Compact Architecture**: Specialized **3B-scale** Vision-Language Models optimized for mobile GUI tasks with minimal computational footprint.<br>
