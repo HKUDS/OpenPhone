@@ -48,12 +48,12 @@
 
 **Our Solution**: OpenPhone introduces the first **Open-Source, 3B-parameter Agentic Foundation Model** designed specifically for on-device smartphone interaction. This compact vision-language model runs entirely locally — meaning **No Privacy Concerns**, **No Cloud Dependence**, and **Zero API Costs**.
 
-**🤔 Why 3B Parameters?** <br>
+## 🤔 Why 3B Parameters?
 We believe the future of mobile AI lies not only in making models larger, but in making them smarter and more efficient for real-world constraints. Our 3B model is:
-- ⚡ **Edge-Optimized**: Efficient enough for commodity GPUs and next-generation mobile NPUs
-- 🔒 **Privacy-First**: All computation stays on your device
-- 💰 **Cost-Free**: No cloud inference and no ongoing API fees
-- 🎯 **High-Performance**: Achieves performance comparable to 7B–9B models through advanced training techniques
+- ⚡ **Edge-Optimized**: Efficient enough for commodity GPUs and next-generation mobile NPUs.
+- 🔒 **Privacy-First**: All computation stays on your device.
+- 💰 **Cost-Free**: No cloud inference and no ongoing API fees.
+- 🎯 **High-Performance**: Achieves performance comparable to 7B–9B models through advanced training.
 
 ---
 
