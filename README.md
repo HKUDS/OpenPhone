@@ -62,18 +62,18 @@ We believe the future of mobile AI lies not only in making models larger, but in
 ### 🔍 OpenPhone‑3B: Lightweight Agentic Model
 Considering the compute limitations of today’s edge devices, models with **≤3B parameters** strike a practical balance between capability and deployability. Based on this insight, we introduce **OpenPhone‑3B**, a lightweight yet powerful on‑device agent model.
 
-- **Model Size & Architecture**: A ~3B‑parameter vision‑language model designed for efficient on‑device reasoning and action generation, optimized for performance under tight compute budgets.
-- **On-Device First**: Built to serve as the primary agent running locally, with latency and memory usage compatible with single 3090‑class GPUs and upcoming mobile NPUs—avoiding the need for continuous cloud access.
-- **GUI‑Aware Action Capabilities**: Trained to interpret visual inputs, follow instructions, and generate structured actions across mobile tasks, enabling practical end‑to‑end agent behaviors on real mobile devices.
-- **Open‑Source Release**: We provide full model weights, configuration files, and an inference stack to support deployment, fine‑tuning, and further development by the community.
-- **Practical Sweet Spot**: Under current hardware conditions, the 3B scale provides a **Highly Realistic Sweet Spot**—much stronger than tiny models, yet still deployable on edge devices where 7B–9B models are often too large or too slow.
+- **Model Size & Architecture**: Vision-language model engineered for efficient on-device reasoning under tight mobile compute constraints.
+- **Edge-Native Design**: Primary local agent compatible with consumer GPUs and mobile NPUs, eliminating continuous cloud dependency.
+- **GUI‑Aware Action Capabilities**: Trained for visual interpretation, instruction following, and structured action generation across real mobile tasks.
+- **Open‑Source Release**: Full model weights, configurations, and inference stack enabling community deployment and development.
+- **Practical Sweet Spot**: 3B scale delivers optimal balance—significantly stronger than tiny models while remaining deployable where larger models fail.
 
 ### Why 3B is the Sweet Spot for Phone Agents
-- **Hardware Constraints**: 3B parameters fit comfortably within the memory limits of high-end consumer GPUs (8-12GB) and align with the computational budgets of emerging mobile NPUs.
-- **Latency Matters**: GUI interactions demand sub-second response times. Our benchmarks show 3B models achieve 3-5x faster inference than 7B alternatives while maintaining competitive accuracy.
-- **Battery Efficiency**: Smaller models mean longer device usage - critical for mobile deployment where power consumption directly impacts user experience
-- **Privacy-aware Architecture**: 3B enables the phone tasks to run entirely on-device, preserving user privacy and eliminating network dependencies.
-- **Cost-Effective Operation**: By handling most tasks locally, OpenPhone eliminates expensive cloud model APIs and per-request charges.
+- **Hardware Fit**: 3B parameters align perfectly with consumer GPU memory (8-12GB) and emerging mobile NPU computational budgets.
+- **Speed Advantage**: 3B models deliver 3-5x faster inference than 7B alternatives while maintaining competitive accuracy for sub-second GUI responses.
+- **Power Efficiency**: Smaller footprint extends battery life - essential for mobile deployment where power consumption affects user experience.
+- **Privacy-First**: Enables phone tasks to run entirely on-device, preserving user privacy while eliminating network dependencies.
+- **Cost Savings**: Local processing eliminates expensive cloud APIs and per-request charges for sustainable operation.
 
 ---
 
