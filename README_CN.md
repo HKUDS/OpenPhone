@@ -46,9 +46,9 @@
   <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 16px; padding: 28px; margin: 24px 0; box-shadow: 0 8px 32px rgba(245,87,108,0.2);">
     <h2 style="color: white; margin: 0 0 8px 0; font-size: 24px; font-weight: bold;">
       <span style="background: white; color: #f5576c; padding: 3px 14px; border-radius: 20px; font-size: 24px; font-weight: bold;">🔥 重大更新：</span>
-      &nbsp;PhoneCLI — GUI × CLI 混合手机智能体
+      &nbsp;PhoneCLI — 从 App 界面到移动智能体的可调用命令
     </h2>
-    <p style="color: rgba(255,255,255,0.7); margin: 0 0 6px 0; font-size: 14px;">🆕 2026 年 7 月</p>
+    <p style="color: rgba(255,255,255,0.7); margin: 0 0 6px 0; font-size: 14px;">🆕 2026 年 9 月</p>
     <div align="center">
       <img src="./figures/phone_cli.png" width="80%" alt="PhoneCLI Core Flow" />
     </div>
@@ -56,7 +56,7 @@
       <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=500&lines=CLI+that+knows,+GUI+that+sees." alt="CLI that knows, GUI that sees." style="margin: 0 0 8px 0;" />
     </div>
     <p style="color: rgba(255,255,255,0.95); margin: 0 0 16px 0; font-size: 15px; line-height: 1.7;">
-      <strong style="color: white;">PhoneCLI</strong> 将 CLI 宏的可靠性与 GUI 智能体的灵活性相结合。与其让 VLM 为每次点击买单——又慢、又贵、又容易出错——我们<strong style="color: white;">为每个 app 预构建导航图（app map）</strong>。常规操作变成确定性宏回放，VLM 只在真正需要时才介入。这与 CLI 工具在处理可重复任务时比 GUI 更高效的原理一致——现在这个思路被应用到了你的手机上。
+      移动端 GUI 智能体依赖「感知–行动」循环运行：每一步都要截图、调用视觉语言模型（VLM）、再发出一个动作。它慢、贵、脆弱——而其中绝大部分工作其实是导航，且日常导航是静态的、有序的、被反复执行的。<strong style="color: white;">PhoneCLI 把 app 的 GUI 导航编译成可调用命令</strong>，既不需要 app 内部 API，也不需要运行时插桩，更不需要训练模型。离线阶段，PhoneCLI 从外部探索目标 app，把它的屏幕、可交互元素与跳转关系提炼成一张<strong style="color: white;">带语义标注的导航图（app map）</strong>；每个屏幕都对应一条确定性命令——抵达它的回放序列。在线阶段，智能体先选择一条命令、执行前先做校验，然后<strong style="color: white;">以亚秒级速度确定性执行，VLM 开销为零</strong>；开放式交互、以及编译路径的任何一次失败，都会回退到内置的 VLM 解释器——也就是纯 VLM 智能体本身，因此<strong style="color: white;">编译只会有帮助</strong>。
     </p>
     <ul style="color: rgba(255,255,255,0.95); margin: 0 0 20px 0; font-size: 14px; line-height: 1.8; padding-left: 20px;">
       <li>🗺️ <strong>App Map</strong> — BFS 爬取每个 app 的每个屏幕、元素和导航路径，生成为结构化 YAML 图</li>
@@ -64,11 +64,14 @@
       <li>🧠 <strong>智能降级</strong> — 当任务无法匹配任何宏时，自动降级为 VLM 推理模式</li>
       <li>📦 <strong>8 个预构建 Map</strong> — 微博、foodpanda、Calendar、京东、大众点评、小红书、Music、系统设置，开箱即用</li>
       <li>🔗 <strong>跨 App 调度器</strong> — 跨 app 任务自动分解为单 app 子任务</li>
+      <li>🧪 <strong>AndroidLab 评估</strong> — 同一套思路在官方 AndroidLab 基准（9 个 app / 138 个任务）上完成评测：每个 app 都编译了 app map，并配有纯 VLM 基线做同条件对比</li>
     </ul>
     <p style="margin: 0;">
-      <a href="./phonecli/README_CN.md" style="background: white; color: #f5576c; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px;">📖 完整中文文档 →</a>
+      <a href="./phonecli/README_CN.md" style="background: white; color: #f5576c; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px;">📖 完整 iOS 真机文档 →</a>
       &nbsp;&nbsp;
-      <a href="#-phonecli-gui-x-cli-混合智能体" style="background: rgba(255,255,255,0.15); color: white; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; border: 1px solid rgba(255,255,255,0.35);">详细阅读 ↓</a>
+      <a href="./phonecli_android/README_CN.md" style="background: white; color: #f5576c; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px;">🧪 AndroidLab 评估文档 →</a>
+      &nbsp;&nbsp;
+      <a href="#-phonecli-从-app-界面到移动智能体的可调用命令" style="background: rgba(255,255,255,0.15); color: white; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; border: 1px solid rgba(255,255,255,0.35);">详细阅读 ↓</a>
     </p>
   </div>
 </div>
@@ -87,7 +90,7 @@
     - [📱 AndroidLab 基准测试环境配置](#-androidlab-基准测试环境配置)
     - [🚀 模型部署与推理](#-模型部署与推理)
     - [⚙️ 测试前配置](#️-测试前配置)
-  - [🖥️ PhoneCLI：GUI × CLI 混合智能体](#-phonecli-gui-x-cli-混合智能体)
+  - [🖥️ PhoneCLI：从 App 界面到移动智能体的可调用命令](#-phonecli-从-app-界面到移动智能体的可调用命令)
     - [核心理念](#核心理念)
     - [工作原理](#工作原理)
     - [为什么重要](#为什么重要)
@@ -214,7 +217,7 @@
 
 ---
 
-## 🖥 phonecli: GUI x CLI 混合智能体
+## 🖥 PhoneCLI: 从 App 界面到移动智能体的可调用命令
 
 ### 核心理念
 
@@ -265,8 +268,11 @@ python phonecli/run.py --interactive
 工具包自带了 **8 个 app 的预构建 map**（微博、foodpanda、Calendar、京东、大众点评、
 小红书、Music、系统设置），每个覆盖 20–50 个屏幕和数百个元素。
 
-➜ **[完整 phonecli 中文文档](./phonecli/README_CN.md)** — 环境配置、app map
-构建、CLI 参考、常见问题排查。
+➜ **[完整 iOS 真机文档](./phonecli/README_CN.md)** — 环境配置、WebDriverAgent、
+app map 构建、CLI 参考、常见问题排查。
+
+➜ **[AndroidLab 评估文档](./phonecli_android/README_CN.md)** — 官方 AndroidLab 基准
+（9 个 app / 138 个任务）、编译好的 app map、宏智能体与纯 VLM 基线、判分流程。
 
 ---
 
