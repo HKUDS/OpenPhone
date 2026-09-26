@@ -199,12 +199,22 @@ class AutoTest():
             time.sleep(15)
 
     def run_serial(self, tasks):
+        if not tasks:
+            # Nothing to run: bail out before cloning the AVD, which would
+            # otherwise happen for zero tasks (e.g. every task already run).
+            print_with_color("No tasks to run; skipping emulator startup.", "yellow")
+            return
+
         if self.config.docker:
             instance = Docker_Instance(self.config)
         else:
             instance = Instance(self.config)
         for task in tasks:
             self.run_task(task, instance)
+
+        # Report what the agent's LLM calls consumed during this run.
+        from phonecli.token_usage import token_usage
+        token_usage.print_report()
 
     def run_task(self, task_dict, instance):
         task_id = task_dict['task_id']

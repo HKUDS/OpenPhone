@@ -23,7 +23,20 @@ def get_code_snippet_cot(text):
         r'<CALLED_FUNCTION>(.*?)</CALLED_FUNCTION>',
         r'CALLED_FUNCTION:\s*(.*?)(?=\n|$)',
         r'Action:\s*(.*?)(?=\n|$)',
-        r'Function:\s*(.*?)(?=\n|$)'
+        r'Function:\s*(.*?)(?=\n|$)',
+        # --- Appended (additive) patterns for newer agent output formats ---
+        # These are matched only when none of the patterns above matched, so
+        # pre-existing parsing behaviour is unchanged.
+        r'```\s*(do\([^)]+\))\s*```',
+        r'```\s*(tap\([^)]+\))\s*```',
+        r'```\s*(swipe\([^)]+\))\s*```',
+        r'```\s*(text\([^)]+\))\s*```',
+        r'```\s*(long_press\([^)]+\))\s*```',
+        r'```\s*(finish\([^)]*\))\s*```',
+        r'```\s*(back\(\))\s*```',
+        r'```\s*(home\(\))\s*```',
+        r'```\s*(wait\([^)]*\))\s*```',
+        r'```\s*(macro\([^)]+\))\s*```'
     ]
     
     for i, pattern in enumerate(patterns):
@@ -42,7 +55,14 @@ def get_code_snippet_cot(text):
         r'(finish\([^)]*\))',
         r'(wait\([^)]*\))',
         r'(back\(\))',
-        r'(home\(\))'
+        r'(home\(\))',
+        # --- Appended (additive) bare-function patterns ---
+        # Anchored to the whole response: a bare call only counts when the
+        # model replied with nothing but that call. Without the anchors, prose
+        # such as "we do(x) later" would be executed as an action and raise a
+        # NameError instead of yielding None (which callers handle gracefully).
+        r'^\s*(do\([^)]+\))\s*$',
+        r'^\s*(macro\([^)]+\))\s*$'
     ]
     
     for pattern in function_patterns:
@@ -53,6 +73,12 @@ def get_code_snippet_cot(text):
             return result
     
     return None
+
+
+# `evaluation/evaluation.py` calls `get_code_snippet(...)` while only
+# `get_code_snippet_cot` was defined; alias it so those call sites resolve.
+get_code_snippet = get_code_snippet_cot
+
 
 def handle_backoff(details):
     print(f"Retry {details['tries']} for Exception: {details['exception']}")

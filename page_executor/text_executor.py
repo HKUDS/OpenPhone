@@ -55,6 +55,13 @@ class TextOnlyExecutor:
         self.controller.on("page", self.__capture_new_page__)
         self.current_return = None'''
 
+        # Guard added because `get_code_snippet` returns None when the model
+        # response contains no parseable action; previously this raised
+        # AttributeError on `code_snippet.strip()`.
+        if code_snippet is None:
+            print("[TextExecutor] No valid code snippet")
+            return self.current_return
+
         local_context = self.__get_class_methods__()
         local_context.update(**{'self': self})
         print(code_snippet.strip())

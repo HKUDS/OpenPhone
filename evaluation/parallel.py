@@ -30,3 +30,8 @@ def parallel_worker(class_, config, parallel, tasks):
 
             future = executor.submit(auto_class.run_task, task, instance)
             future.add_done_callback(lambda fut, di=instance: task_done_callback(fut, di, free_dockers))
+
+    # Parallel runs never go through AutoTest.run_serial, so report here too.
+    # Threads share the process-wide token_usage singleton.
+    from phonecli.token_usage import token_usage
+    token_usage.print_report()

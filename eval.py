@@ -1,16 +1,30 @@
 import os
 import argparse
-import yaml
 
 from agent import get_agent
+from config_env import load_config
 from evaluation.auto_test import *
 from evaluation.parallel import parallel_worker
 from generate_result import find_all_task_files
 from evaluation.configs import AppConfig, TaskConfig
 
 if __name__ == '__main__':
-    task_yamls = os.listdir('../evaluation/config')
-    task_yamls = ["../evaluation/config/" + i for i in task_yamls if i.endswith(".yaml")]
+    # Default task-config list. Prefer ./evaluation/config (running from the
+    # repository root); fall back to ../evaluation/config for the historical
+    # working directory. Never raise before argparse: an eagerly-evaluated
+    # default used to crash `python eval.py` outright.
+    task_config_dir = None
+    for _candidate in ("./evaluation/config", "../evaluation/config"):
+        if os.path.isdir(_candidate):
+            task_config_dir = _candidate
+            break
+    if task_config_dir is None:
+        print("Warning: no 'evaluation/config' directory found; "
+              "pass --task_config explicitly to select tasks.")
+        task_yamls = []
+    else:
+        task_yamls = [os.path.join(task_config_dir, i)
+                      for i in os.listdir(task_config_dir) if i.endswith(".yaml")]
 
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument("-n", "--name", default="test", type=str)
@@ -22,8 +36,9 @@ if __name__ == '__main__':
     arg_parser.add_argument("-p", "--parallel", default=1, type=int)
 
     args = arg_parser.parse_args()
-    with open(args.config, "r") as file:
-        yaml_data = yaml.safe_load(file)
+    # load_config expands ${ENV_VAR} placeholders (e.g. ${OPENROUTER_API_KEY});
+    # configs without placeholders load exactly as before.
+    yaml_data = load_config(args.config)
 
     agent_config = yaml_data["agent"]
     task_config = yaml_data["task"]
@@ -35,9 +50,20 @@ if __name__ == '__main__':
     single_config = single_config.add_config(eval_config)
     if "True" == agent_config.get("relative_bbox"):
         single_config.is_relative_bbox = True
+
+    # Resolve the task list before building the agent: a bad --task_config should
+    # report itself instead of surfacing as a missing-API-key error first.
+    task_files = find_all_task_files(args.task_config)
+    if not task_files:
+        # Fail here rather than constructing an Instance: that would clone an
+        # AVD (and, in the app-map harness, boot an emulator) for zero tasks.
+        raise SystemExit(
+            "No task config files found. Pass --task_config with a path to a task "
+            "config file or directory, e.g. --task_config evaluation/config/setting.yaml"
+        )
+
     agent = get_agent(agent_config["name"], **agent_config["args"])
 
-    task_files = find_all_task_files(args.task_config)
     if os.path.exists(os.path.join(single_config.save_dir, args.name)):
         already_run = os.listdir(os.path.join(single_config.save_dir, args.name))
         already_run = [i.split("_")[0] + "_" + i.split("_")[1] for i in already_run]

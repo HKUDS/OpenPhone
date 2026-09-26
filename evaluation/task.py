@@ -105,6 +105,10 @@ class Evaluation_Task(Generic[T_INPUT, T_OUTPUT, T_TARGET]):
 
         self.print_metric()
 
+        # Token accounting for this judging/aggregation pass.
+        from phonecli.token_usage import token_usage
+        token_usage.print_report()
+
     def _evaluate_single_task(self, task) -> None:
         try:
             assert task.get('task_id') in self.metrics, f"No valid function mapped for {task.get('task_id')}"

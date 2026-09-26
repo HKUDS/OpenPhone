@@ -200,6 +200,28 @@ class JSONRecorder:
         with jsonlines.open(self.trace_file_path, 'a') as f:
             f.write(self.contents[-1])
 
+    def update_after(self, exe_res, rsp=""):
+        """Record the parsed action and accumulate conversation history.
+
+        Added because `evaluation/evaluation.py` calls `record.update_after(...)`
+        while only `update_execution` / `update_after_cot` were defined.
+        """
+        if len(self.contents) == 0:
+            return
+        self.contents[-1]['parsed_action'] = exe_res
+        self.contents[-1]['current_response'] = rsp
+        # Accumulate conversation history (official AndroidLab design).
+        # Uses a placeholder to mark user input without storing full XML/screenshot.
+        self.history.append({"role": "user", "content": "** XML **"})
+        if isinstance(exe_res, dict) and exe_res.get("action") == "Call_API":
+            call_instruction = exe_res.get("kwargs", {}).get("instruction", "")
+            call_response = exe_res.get("kwargs", {}).get("response", "")
+            rsp = rsp + f"\n\nQuery:{call_instruction}\nResponse:{call_response}"
+        self.history.append({"role": "assistant", "content": rsp})
+        with jsonlines.open(self.trace_file_path, 'a') as f:
+            f.write(self.contents[-1])
+        self.dectect_auto_stop()
+
     def update_after_cot(self, exe_res, rep, ui_text, action, cloud_status=False, control_status=False):
         if len(self.contents) == 0:
             return

@@ -79,7 +79,29 @@ class OpenAIAgent(Agent):
         print("-------------------------------")
         print(r.choices[0].message.content)
         print('-------------------------------')
- 
+
+        # Token accounting (additive; failures are ignored so that behaviour
+        # without `phonecli.token_usage` is unchanged).
+        try:
+            from phonecli.token_usage import token_usage
+            usage = r.usage
+            prompt = getattr(usage, 'prompt_tokens', 0) or 0
+            completion = getattr(usage, 'completion_tokens', 0) or 0
+            has_image = any(
+                isinstance(msg.get("content"), list)
+                for msg in messages
+                if isinstance(msg, dict)
+            )
+            token_usage.add(
+                prompt_tokens=prompt,
+                completion_tokens=completion,
+                cache_read_tokens=getattr(usage, 'cache_read_input_tokens', 0) or 0,
+                cache_write_tokens=getattr(usage, 'cache_creation_input_tokens', 0) or 0,
+                label="agent_vlm" if has_image else "agent_text",
+            )
+        except Exception:
+            pass
+
         return r.choices[0].message.content
 
     def prompt_to_message(self, prompt, images):
