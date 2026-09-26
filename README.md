@@ -47,9 +47,9 @@
   <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 16px; padding: 28px; margin: 24px 0; box-shadow: 0 8px 32px rgba(245,87,108,0.2);">
     <h2 style="color: white; margin: 0 0 8px 0; font-size: 24px; font-weight: bold;">
       <span style="background: white; color: #f5576c; padding: 3px 14px; border-radius: 20px; font-size: 24px; font-weight: bold;">🔥 Major Update:</span>
-      &nbsp;PhoneCLI — GUI × CLI Hybrid Phone Agent
+      &nbsp;PhoneCLI — From App Interfaces To Callable Commands For Mobile Agents
     </h2>
-    <p style="color: rgba(255,255,255,0.7); margin: 0 0 6px 0; font-size: 14px;">🆕 July 2026</p>
+    <p style="color: rgba(255,255,255,0.7); margin: 0 0 6px 0; font-size: 14px;">🆕 September 2026</p>
     <div align="center">
       <img src="./figures/phone_cli.png" width="80%" alt="PhoneCLI Core Flow" />
     </div>
@@ -57,7 +57,7 @@
       <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=500&lines=CLI+that+knows,+GUI+that+sees." alt="CLI that knows, GUI that sees." style="margin: 0 0 8px 0;" />
     </div>
     <p style="color: rgba(255,255,255,0.95); margin: 0 0 16px 0; font-size: 15px; line-height: 1.7;">
-      <strong style="color: white;">PhoneCLI</strong> combines the reliability of CLI macros with the flexibility of GUI agents. Instead of calling a VLM for every tap — slow, expensive, and error-prone — we <strong style="color: white;">pre-build a navigation graph (app map) for each app</strong>. Routine operations become deterministic macro replays; the VLM only steps in when genuinely needed. Same intuition as why CLI tools beat GUI for repeatable tasks — now applied to your phone.
+      Mobile GUI agents operate through a perception–action loop: at each step they screenshot the device, invoke a vision–language model (VLM), and emit an action. It is slow, costly, and brittle — yet most of what an agent does is navigation, and everyday navigation is static, ordered, and endlessly repeated. <strong style="color: white;">PhoneCLI compiles an app's GUI navigation into callable commands</strong>, with no app-internal API, no runtime instrumentation, and no model training. Offline, PhoneCLI explores a target app from the outside and distills its screens, interactive elements, and navigation edges into a <strong style="color: white;">semantically annotated map</strong>; every screen yields one deterministic command — the replay sequence that reaches it. Online, the agent selects a command, verifies it before execution, and then executes it deterministically in <strong style="color: white;">sub-second time at zero VLM cost</strong>; open-ended interaction, and every failure of the compiled path, falls back to the embedded VLM interpreter — exactly the pure VLM agent — so <strong style="color: white;">compilation can only help</strong>.
     </p>
     <ul style="color: rgba(255,255,255,0.95); margin: 0 0 20px 0; font-size: 14px; line-height: 1.8; padding-left: 20px;">
       <li>🗺️ <strong>App Maps</strong> — BFS crawls each app, recording every screen, element, and navigation path into a structured YAML graph</li>
@@ -65,11 +65,14 @@
       <li>🧠 <strong>Smart Fallback</strong> — When a task doesn't match any macro, the agent gracefully degrades to VLM reasoning</li>
       <li>📦 <strong>8 Pre-Built Maps</strong> — 微博, foodpanda, Calendar, 京东, Dianping, 小红书, Music, Settings — ready to use</li>
       <li>🔗 <strong>Cross-App Planner</strong> — Multi-app tasks automatically decomposed into single-app subtasks</li>
+      <li>🧪 <strong>AndroidLab Evaluation</strong> — the same idea benchmarked on the official AndroidLab suite (9 apps / 138 tasks), with a compiled app map for every app and a pure-VLM baseline for a like-for-like comparison</li>
     </ul>
     <p style="margin: 0;">
-      <a href="./phonecli/README.md" style="background: white; color: #f5576c; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px;">📖 Full Documentation →</a>
+      <a href="./phonecli/README.md" style="background: white; color: #f5576c; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px;">📖 Full iOS Real-Device Documentation →</a>
       &nbsp;&nbsp;
-      <a href="#-phonecli-gui--cli-hybrid-agent" style="background: rgba(255,255,255,0.15); color: white; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; border: 1px solid rgba(255,255,255,0.35);">Read More ↓</a>
+      <a href="./phonecli_android/README.md" style="background: white; color: #f5576c; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px;">🧪 AndroidLab Evaluation Docs →</a>
+      &nbsp;&nbsp;
+      <a href="#-phonecli-from-app-interfaces-to-callable-commands-for-mobile-agents" style="background: rgba(255,255,255,0.15); color: white; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; border: 1px solid rgba(255,255,255,0.35);">Read More ↓</a>
     </p>
   </div>
 </div>
@@ -87,7 +90,7 @@
     - [📱 AndroidLab Benchmark Setup](#-androidlab-benchmark-setup)
     - [🚀 Model Deployment \& Inference](#-model-deployment--inference)
     - [⚙️ Pre-Testing Configuration](#️-pre-testing-configuration)
-  - [🖥️ PhoneCLI: GUI × CLI Hybrid Agent](#-phonecli-gui--cli-hybrid-agent)
+  - [🖥️ PhoneCLI: From App Interfaces To Callable Commands For Mobile Agents](#-phonecli-from-app-interfaces-to-callable-commands-for-mobile-agents)
     - [The Core Idea](#the-core-idea)
     - [How It Works](#how-it-works)
     - [Why This Matters](#why-this-matters)
@@ -205,7 +208,7 @@ Installation: Follow the official AndroidLab documentation [AndroidLab](https://
 
 ---
 
-## 🖥 phonecli: GUI × CLI Hybrid Agent
+## 🖥 PhoneCLI: From App Interfaces To Callable Commands For Mobile Agents
 
 ### The Core Idea
 
@@ -275,8 +278,12 @@ The package ships with **pre-built maps for 8 apps** (微博, foodpanda,
 Calendar, 京东, Dianping, 小红书, Music, Settings), each covering 20–50 screens
 and hundreds of elements.
 
-➜ **[Full phonecli documentation](./phonecli/README.md)** — setup, app map
-building, CLI reference, troubleshooting.
+➜ **[Full iOS real-device documentation](./phonecli/README.md)** — setup, WebDriverAgent,
+app map building, CLI reference, troubleshooting.
+
+➜ **[AndroidLab evaluation documentation](./phonecli_android/README.md)** — the official
+AndroidLab benchmark (9 apps / 138 tasks), compiled app maps, the macro agent and its
+pure-VLM baseline, and judging.
 
 ---
 
