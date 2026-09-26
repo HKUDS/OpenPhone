@@ -1,0 +1,5555 @@
+app: Bluecoins
+package: com.rammigsoftware.bluecoins
+screen_w: 1440
+screen_h: 3120
+screens:
+- id: screen_0
+  description: Main financial dashboard showing summaries and a weekly calendar, overlaid
+    with an open bottom sheet for selecting phone storage.
+  elements:
+  - text: 7 days average
+    center:
+    - 0.1906
+    - 0.4075
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 7-day average
+    - 7天平均
+    - weekly average
+    - 7日平均
+    semantic_type: label
+  - text: 30 days average
+    center:
+    - 0.1993
+    - 0.4255
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 30-day average
+    - monthly average
+    - 30天平均
+    - 30日平均
+    semantic_type: label
+  - text: Expense
+    center:
+    - 0.5674
+    - 0.3894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 支出
+    - expenses
+    - outflow
+    - 花费
+    semantic_type: label
+  - text: Daily Summary
+    center:
+    - 0.2365
+    - 0.2183
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 每日总结
+    - daily overview
+    - 日结
+    - daily report
+    semantic_type: label
+  - text: EXPENSE
+    center:
+    - 0.4465
+    - 0.9853
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 支出
+    - expenses
+    - outflow
+    - 花费
+    semantic_type: label
+  - text: Budget Summary
+    center:
+    - 0.2566
+    - 0.7926
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 预算总结
+    - budget overview
+    - 预算汇总
+    - budget report
+    semantic_type: label
+  - text: Main
+    center:
+    - 0.1677
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 主页
+    - home
+    - 主界面
+    - main screen
+    semantic_type: tab
+  - text: Transactions
+    center:
+    - 0.416
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 交易
+    - 交易记录
+    - records
+    - 流水
+    semantic_type: tab
+  - text: Reminders
+    center:
+    - 0.6771
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 提醒
+    - 提醒事项
+    - alerts
+    - notifications
+    semantic_type: tab
+  - text: Balance Sheet
+    center:
+    - 0.9191
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 资产负债表
+    - balance
+    - net worth
+    - 净值
+    semantic_type: label
+  - text: Sun
+    center:
+    - 0.1462
+    - 0.8897
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 星期日
+    - Sunday
+    - 周日
+    - 星期天
+    semantic_type: label
+  - text: Mon
+    center:
+    - 0.2635
+    - 0.8897
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 星期一
+    - Monday
+    - 周一
+    - 礼拜一
+    semantic_type: label
+  - text: Tue
+    center:
+    - 0.3812
+    - 0.8897
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 星期二
+    - Tuesday
+    - 周二
+    - 礼拜二
+    semantic_type: label
+  - text: Wed
+    center:
+    - 0.4993
+    - 0.8897
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 星期三
+    - Wednesday
+    - 周三
+    - 礼拜三
+    semantic_type: label
+  - text: Thu
+    center:
+    - 0.6174
+    - 0.8897
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 星期四
+    - Thursday
+    - 周四
+    - 礼拜四
+    semantic_type: label
+  - text: Fri
+    center:
+    - 0.7354
+    - 0.8897
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 星期五
+    - Friday
+    - 周五
+    - 礼拜五
+    semantic_type: label
+  - text: Sat
+    center:
+    - 0.8535
+    - 0.8897
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 星期六
+    - Saturday
+    - 周六
+    - 礼拜六
+    semantic_type: label
+  - text: Close sheet
+    center:
+    - 0.5
+    - 0.3609
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_1
+    aliases:
+    - 关闭表单
+    - close
+    - 关闭
+    - dismiss sheet
+    semantic_type: button
+  - text: Cancel
+    center:
+    - 0.574
+    - 0.9282
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_2
+    aliases:
+    - 取消
+    - abort
+    - dismiss
+    - 返回
+    semantic_type: button
+  - text: Phone Storage
+    center:
+    - 0.799
+    - 0.9282
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_2
+    aliases:
+    - 手机存储
+    - local storage
+    - 设备存储
+    - internal storage
+    semantic_type: menu_item
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Future Projection
+    center:
+    - 0.4406
+    - 0.6724
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Forecast
+    - Projection
+    - 未来预测
+    - 预测
+    semantic_type: menu_item
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.7173
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Type
+    - 交易类型
+    - 类型
+    semantic_type: label
+  - text: Expense
+    center:
+    - 0.3785
+    - 0.7577
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Expenses
+    - 支出
+    - 花费
+    - 开支
+    semantic_type: tab
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.8026
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Period
+    - 日期范围
+    - 时间范围
+    semantic_type: label
+  - text: Last 30 Days
+    center:
+    - 0.3785
+    - 0.8429
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Past 30 Days
+    - 近30天
+    - 过去30天
+    semantic_type: menu_item
+  - text: Daily Summary
+    center:
+    - 0.2816
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Daily Report
+    - 每日汇总
+    - 每日总结
+    semantic_type: menu_item
+  - text: Chart
+    center:
+    - 0.1601
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Graph
+    - 图表
+    - 图形
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.5
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - List
+    - 表格
+    - 列表
+    semantic_type: tab
+  - text: Daily Statistics
+    center:
+    - 0.8396
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Daily Stats
+    - 每日统计
+    - 日统计
+    semantic_type: menu_item
+  description: A financial analytics screen that allows users to filter future projections
+    by transaction type and date range, displaying daily summaries via charts and
+    tables.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 交易类型
+    - Txn Type
+    - Type
+    semantic_type: label
+  - text: Expense
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 支出
+    - Expenses
+    - Outflow
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 日期范围
+    - Time Range
+    - Period
+    semantic_type: label
+  - text: This Month
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 本月
+    - Current Month
+    - 当月
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 图表类型
+    - Graph Type
+    - Chart style
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 按类别
+    - Category
+    - 分类
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 预算摘要
+    - Budget overview
+    - 预算总结
+    semantic_type: menu_item
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 图表
+    - Graph
+    - 图形
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 表格
+    - List
+    - 列表
+    semantic_type: tab
+  description: Budget summary report page with filters for transaction type, date
+    range, and chart type, displaying a category chart and data table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: 7 days average
+    center:
+    - 0.1906
+    - 0.4075
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: 30 days average
+    center:
+    - 0.1993
+    - 0.4255
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: Expense
+    center:
+    - 0.5674
+    - 0.3894
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: Daily Summary
+    center:
+    - 0.2365
+    - 0.2183
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: EXPENSE
+    center:
+    - 0.4465
+    - 0.9853
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Budget Summary
+    center:
+    - 0.2566
+    - 0.7926
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Main
+    center:
+    - 0.1677
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Transactions
+    center:
+    - 0.416
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: Reminders
+    center:
+    - 0.6771
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: Balance Sheet
+    center:
+    - 0.9191
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  description: Dashboard screen displaying financial summaries and budget averages,
+    along with a navigation menu for transactions, reminders, and balance sheet.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Main
+    center:
+    - 0.1677
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Home
+    - Dashboard
+    - 主页
+    - 首页
+    semantic_type: tab
+  - text: Transactions
+    center:
+    - 0.416
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Ledger
+    - Records
+    - 交易
+    - 账单
+    semantic_type: tab
+  - text: Reminders
+    center:
+    - 0.6771
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Alerts
+    - Notifications
+    - 提醒
+    - 备忘
+    semantic_type: menu_item
+  - text: Balance Sheet
+    center:
+    - 0.9191
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Net Worth
+    - Financial Position
+    - 资产负债表
+    - 净资产
+    semantic_type: tab
+  description: Main navigation menu providing access to the Transactions, Reminders,
+    and Balance Sheet sections.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Close sheet
+    center:
+    - 0.5
+    - 0.3609
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - dismiss
+    - close
+    - 关闭
+    - dismiss sheet
+    semantic_type: button
+  - text: Cannot locate default folder
+    center:
+    - 0.3507
+    - 0.7532
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - folder not found
+    - default folder missing
+    - 无法定位默认文件夹
+    - folder error
+    semantic_type: label
+  - text: Cancel
+    center:
+    - 0.574
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 取消
+    - abort
+    - dismiss
+    - back
+    semantic_type: button
+  - text: Phone Storage
+    center:
+    - 0.799
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - internal storage
+    - device storage
+    - 手机存储
+    - 本地存储
+    semantic_type: label
+  description: A bottom sheet displaying an error that the default folder cannot be
+    located, with options to cancel or choose phone storage.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Timeline
+    center:
+    - 0.1736
+    - 0.2189
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+  - text: ASSETS
+    center:
+    - 0.1691
+    - 0.3032
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+  - text: Bank
+    center:
+    - 0.1594
+    - 0.3683
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+  - text: Checking
+    center:
+    - 0.1969
+    - 0.4356
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+  - text: Savings
+    center:
+    - 0.184
+    - 0.4939
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+  - text: Cash
+    center:
+    - 0.159
+    - 0.5679
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+  - text: Wallet
+    center:
+    - 0.1698
+    - 0.6353
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+  - text: LIABILITIES
+    center:
+    - 0.2045
+    - 0.7026
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+  - text: Credit Card
+    center:
+    - 0.2191
+    - 0.7676
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+  - text: Mortgages
+    center:
+    - 0.2135
+    - 0.9
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+  - text: House Mortgage
+    center:
+    - 0.2656
+    - 0.9673
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+  - text: Transactions
+    center:
+    - 0.034
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: Reminders
+    center:
+    - 0.2292
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+  - text: Balance Sheet
+    center:
+    - 0.5003
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Budget
+    center:
+    - 0.759
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+  - text: Net Earnings
+    center:
+    - 0.9535
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+  description: Main navigation menu listing account categories, specific accounts,
+    and financial management sections such as transactions and budgets.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: All
+    center:
+    - 0.1111
+    - 0.8205
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 全部
+    - all transactions
+    - all records
+    semantic_type: tab
+  - text: Expense
+    center:
+    - 0.1622
+    - 0.8744
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 支出
+    - expenses
+    - outflow
+    semantic_type: tab
+  - text: Income
+    center:
+    - 0.1538
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - 收入
+    - inflow
+    - earnings
+    semantic_type: tab
+  description: Transaction type filter screen allowing users to select between All,
+    Expense, and Income records.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Last 30 Days
+    center:
+    - 0.2014
+    - 0.5647
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Past 30 days
+    - 1 month
+    - 近30天
+    semantic_type: menu_item
+  - text: Last 3 Months
+    center:
+    - 0.2142
+    - 0.6186
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - Past 3 months
+    - Quarter
+    - 近3个月
+    semantic_type: menu_item
+  - text: Last 6 Months
+    center:
+    - 0.2142
+    - 0.6724
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - Past 6 months
+    - Half year
+    - 近6个月
+    semantic_type: menu_item
+  - text: Last 9 Months
+    center:
+    - 0.2142
+    - 0.7263
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Past 9 months
+    - 近9个月
+    semantic_type: menu_item
+  - text: Last 12 Months
+    center:
+    - 0.2253
+    - 0.7801
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - Past 12 months
+    - 1 year
+    - 近一年
+    - 近12个月
+    semantic_type: menu_item
+  description: Time range selection menu allowing users to filter financial data by
+    the last 30 days, 3 months, 6 months, 9 months, or 12 months.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_9
+  elements:
+  - text: Income
+    center:
+    - 0.1924
+    - 0.133
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 收入
+    - earnings
+    - income category
+    semantic_type: tab
+  - text: Expense
+    center:
+    - 0.4997
+    - 0.133
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 支出
+    - spending
+    - expenses
+    semantic_type: tab
+  - text: Net Earnings
+    center:
+    - 0.8073
+    - 0.133
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 净收入
+    - net income
+    - net profit
+    - 净利润
+    semantic_type: label
+  - text: Daily Summary
+    center:
+    - 0.2816
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 每日摘要
+    - daily overview
+    - 日总结
+    semantic_type: tab
+  - text: Chart
+    center:
+    - 0.1601
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - 图表
+    - graph
+    - charts
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.5
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 表格
+    - list view
+    - 列表
+    semantic_type: tab
+  - text: Daily Statistics
+    center:
+    - 0.8396
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 每日统计
+    - daily stats
+    - 日统计
+    semantic_type: label
+  description: A financial reporting screen displaying daily income, expenses, and
+    net earnings through summary metrics, charts, and data tables.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Time Range
+    - Period
+    - 日期范围
+    - 时间范围
+    semantic_type: setting
+  - text: Last 7 Days
+    center:
+    - 0.4708
+    - 0.1853
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - Past 7 Days
+    - Recent Week
+    - 最近7天
+    - 过去7天
+    semantic_type: menu_item
+  - text: Category
+    center:
+    - 0.1076
+    - 0.2391
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Categories
+    - Transaction Category
+    - 分类
+    - 类别
+    semantic_type: setting
+  - text: All Categories
+    center:
+    - 0.4076
+    - 0.2795
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - Every Category
+    - All
+    - 所有分类
+    - 全部分类
+    semantic_type: menu_item
+  - text: Account
+    center:
+    - 0.1017
+    - 0.3333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Accounts
+    - Wallet
+    - 账户
+    - 账本
+    semantic_type: setting
+  - text: All Accounts
+    center:
+    - 0.4076
+    - 0.3737
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - Every Account
+    - All
+    - 所有账户
+    - 全部账户
+    semantic_type: menu_item
+  - text: Labels
+    center:
+    - 0.0885
+    - 0.4276
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Tags
+    - Label
+    - 标签
+    - 标记
+    semantic_type: setting
+  - text: (No Filter)
+    center:
+    - 0.4076
+    - 0.4679
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - No Filters
+    - Clear Filter
+    - 无筛选
+    - 不过滤
+    semantic_type: menu_item
+  - text: Status
+    center:
+    - 0.0878
+    - 0.5218
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Transaction Status
+    - State
+    - 状态
+    - 交易状态
+    semantic_type: setting
+  - text: Total
+    center:
+    - 0.0771
+    - 0.6519
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Sum
+    - Total Amount
+    - 总计
+    - 总额
+    semantic_type: label
+  - text: Number of days
+    center:
+    - 0.1583
+    - 0.6968
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Days
+    - Day Count
+    - 天数
+    - 日数
+    semantic_type: label
+  - text: Daily average
+    center:
+    - 0.1399
+    - 0.7417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Average per Day
+    - Avg Daily
+    - 日均
+    - 每日平均
+    semantic_type: label
+  - text: Daily Summary
+    center:
+    - 0.2816
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Day Summary
+    - Daily Report
+    - 每日汇总
+    - 日结
+    semantic_type: menu_item
+  - text: Chart
+    center:
+    - 0.1601
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - Graph
+    - Charts
+    - 图表
+    - 曲线图
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.5
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - List
+    - Grid
+    - 表格
+    - 列表
+    semantic_type: tab
+  - text: Daily Statistics
+    center:
+    - 0.8396
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - Daily Stats
+    - Day Statistics
+    - 每日统计
+    - 日统计
+    semantic_type: menu_item
+  description: Daily summary and statistics screen with filters for date, category,
+    account, and labels, displaying aggregated totals, charts, and tables.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Expense
+    center:
+    - 0.1622
+    - 0.6971
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 支出
+    - 花费
+    - 开销
+    - outflow
+    semantic_type: tab
+  - text: Income
+    center:
+    - 0.1538
+    - 0.751
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 收入
+    - 进账
+    - 收益
+    - inflow
+    semantic_type: tab
+  description: Transaction type selection screen allowing the user to choose between
+    adding a new expense or income.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_12
+  elements:
+  - text: Last 30 Days
+    center:
+    - 0.2014
+    - 0.1359
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - Past 30 days
+    - 30 days
+    - 最近30天
+    semantic_type: menu_item
+  - text: Last 28 Days
+    center:
+    - 0.2014
+    - 0.1897
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - Past 28 days
+    - 28 days
+    - 最近28天
+    semantic_type: menu_item
+  - text: Last 14 Days
+    center:
+    - 0.2014
+    - 0.2436
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - Past 14 days
+    - 14 days
+    - 最近14天
+    semantic_type: menu_item
+  - text: Last 7 Days
+    center:
+    - 0.1903
+    - 0.2974
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Past 7 days
+    - 7 days
+    - 最近7天
+    semantic_type: menu_item
+  - text: Today
+    center:
+    - 0.141
+    - 0.3513
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Current day
+    - 今日
+    - 今天
+    semantic_type: menu_item
+  - text: This Week
+    center:
+    - 0.1792
+    - 0.4051
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - Current week
+    - 本周
+    - 这周
+    semantic_type: menu_item
+  - text: This Bi-month
+    center:
+    - 0.2118
+    - 0.459
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - Current bi-month
+    - 双月
+    - 近两月
+    semantic_type: menu_item
+  - text: This Month
+    center:
+    - 0.1878
+    - 0.5128
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - Current month
+    - 本月
+    - 这个月
+    semantic_type: menu_item
+  - text: This Quarter
+    center:
+    - 0.1979
+    - 0.5667
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - Current quarter
+    - 本季度
+    - 这季度
+    semantic_type: menu_item
+  - text: This Year
+    center:
+    - 0.1705
+    - 0.6205
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - Current year
+    - 本年
+    - 今年
+    - YTD
+    semantic_type: menu_item
+  - text: Custom Dates
+    center:
+    - 0.2128
+    - 0.6744
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - Custom range
+    - 自定义日期
+    - Date range
+    - 自定义范围
+    semantic_type: menu_item
+  description: Date range selection menu providing preset time periods such as Today,
+    This Week, This Month, and Custom Dates to filter financial data.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: By Category
+    center:
+    - 0.1948
+    - 0.7061
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - 按类别
+    - Category
+    - Group by Category
+    semantic_type: menu_item
+  - text: By Category Group
+    center:
+    - 0.2528
+    - 0.7599
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_49
+    aliases:
+    - 按类别组
+    - Category Group
+    - Group by Category Group
+    semantic_type: menu_item
+  description: Filter menu allowing users to group financial data by individual category
+    or by category group.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_14
+  elements:
+  - text: EXPENSE
+    center:
+    - 0.4431
+    - 0.1641
+    fixed: false
+    found_at_scroll: 0
+  - text: Car
+    center:
+    - 0.451
+    - 0.2314
+    fixed: false
+    found_at_scroll: 0
+  - text: Fuel
+    center:
+    - 0.4858
+    - 0.2853
+    fixed: false
+    found_at_scroll: 0
+  - text: Maintenance
+    center:
+    - 0.4858
+    - 0.3391
+    fixed: false
+    found_at_scroll: 0
+  - text: Entertainment
+    center:
+    - 0.451
+    - 0.4064
+    fixed: false
+    found_at_scroll: 0
+  - text: Dining Out
+    center:
+    - 0.4858
+    - 0.4603
+    fixed: false
+    found_at_scroll: 0
+  - text: Movies
+    center:
+    - 0.4858
+    - 0.5141
+    fixed: false
+    found_at_scroll: 0
+  - text: Shopping
+    center:
+    - 0.4858
+    - 0.5679
+    fixed: false
+    found_at_scroll: 0
+  - text: Household
+    center:
+    - 0.451
+    - 0.6353
+    fixed: false
+    found_at_scroll: 0
+  - text: Clothing
+    center:
+    - 0.4858
+    - 0.6891
+    fixed: false
+    found_at_scroll: 0
+  - text: Grocery
+    center:
+    - 0.4858
+    - 0.7429
+    fixed: false
+    found_at_scroll: 0
+  - text: Medicines
+    center:
+    - 0.4858
+    - 0.7968
+    fixed: false
+    found_at_scroll: 0
+  - text: School
+    center:
+    - 0.4858
+    - 0.8506
+    fixed: false
+    found_at_scroll: 0
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+  description: Expense category breakdown screen listing various spending categories
+    with options to view the budget summary as a chart or table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Main
+    center:
+    - 0.0146
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Home
+    - Dashboard
+    - 主页
+    - 首页
+    semantic_type: tab
+  - text: Transactions
+    center:
+    - 0.2389
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Records
+    - Ledger
+    - 交易
+    - 账单
+    semantic_type: tab
+  - text: Reminders
+    center:
+    - 0.5
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Alerts
+    - Recurring
+    - 提醒
+    - 账单提醒
+    semantic_type: menu_item
+  - text: Balance Sheet
+    center:
+    - 0.7712
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Net Worth
+    - 资产负债表
+    - 净资产
+    semantic_type: menu_item
+  - text: Budget
+    center:
+    - 0.9872
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Budgets
+    - 预算
+    - 预算管理
+    semantic_type: menu_item
+  description: Main navigation menu with tabs for Main, Transactions, Reminders, Balance
+    Sheet, and Budget
+  scrollable: false
+  scroll_direction: ''
+- id: screen_16
+  elements:
+  - text: Assets
+    center:
+    - 0.2406
+    - 0.1764
+    fixed: false
+    found_at_scroll: 0
+  - text: Bank
+    center:
+    - 0.2406
+    - 0.2213
+    fixed: false
+    found_at_scroll: 0
+  - text: Checking
+    center:
+    - 0.2698
+    - 0.2662
+    fixed: false
+    found_at_scroll: 0
+  - text: Savings
+    center:
+    - 0.2698
+    - 0.3111
+    fixed: false
+    found_at_scroll: 0
+  - text: Cash
+    center:
+    - 0.2406
+    - 0.3559
+    fixed: false
+    found_at_scroll: 0
+  - text: Wallet
+    center:
+    - 0.2698
+    - 0.4008
+    fixed: false
+    found_at_scroll: 0
+  - text: Liabilities
+    center:
+    - 0.2406
+    - 0.4457
+    fixed: false
+    found_at_scroll: 0
+  - text: Credit Card
+    center:
+    - 0.2406
+    - 0.4905
+    fixed: false
+    found_at_scroll: 0
+  - text: Mortgages
+    center:
+    - 0.2406
+    - 0.5803
+    fixed: false
+    found_at_scroll: 0
+  - text: Net Worth
+    center:
+    - 0.2406
+    - 0.67
+    fixed: false
+    found_at_scroll: 0
+  - text: Accounts Balances Over Time
+    center:
+    - 0.4278
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+  description: Financial overview screen displaying net worth, a breakdown of asset
+    and liability accounts, and a chart of account balances over time.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Table
+    center:
+    - 0.2451
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - data grid
+    - tabular view
+    - list view
+    semantic_type: tab
+  - text: Chart
+    center:
+    - 0.7545
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - graph
+    - diagram
+    - visual
+    semantic_type: tab
+  description: Financial reports screen featuring a visual chart and a detailed data
+    table for analyzing transactions or budget performance.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Edit
+    center:
+    - 0.891
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 编辑
+    - 修改
+    - edit transaction
+    - modify
+    semantic_type: button
+  - text: Bank
+    center:
+    - 0.1847
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 银行
+    - 银行账户
+    - bank account
+    - checking
+    semantic_type: menu_item
+  - text: Table
+    center:
+    - 0.2451
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - 列表视图
+    - table view
+    - list view
+    semantic_type: button
+  - text: Chart
+    center:
+    - 0.7545
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - 图形视图
+    - chart view
+    - graph
+    semantic_type: button
+  description: Bank account detail screen featuring a summary chart, transaction table,
+    and an edit button.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Edit
+    center:
+    - 0.6806
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 编辑
+    - 修改
+    - modify
+    semantic_type: button
+  - text: Reconcile
+    center:
+    - 0.8559
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 对账
+    - 核对
+    - reconciliation
+    semantic_type: button
+  - text: Table
+    center:
+    - 0.2451
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - 列表
+    - grid
+    semantic_type: tab
+  - text: Chart
+    center:
+    - 0.7545
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - 图形
+    - graph
+    semantic_type: tab
+  description: Transaction reconciliation screen displaying a financial chart and
+    data table, with options to edit entries and reconcile accounts.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Edit
+    center:
+    - 0.6806
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 编辑
+    - 修改
+    - modify
+    - edit transaction
+    semantic_type: button
+  - text: Reconcile
+    center:
+    - 0.8559
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 对账
+    - 核对
+    - reconciliation
+    - bank reconcile
+    semantic_type: button
+  - text: Table
+    center:
+    - 0.2451
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - 列表视图
+    - table view
+    - list view
+    semantic_type: tab
+  - text: Chart
+    center:
+    - 0.7545
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - 图形
+    - graph
+    - chart view
+    semantic_type: tab
+  description: Account detail screen displaying financial data in table and chart
+    formats, with options to edit or reconcile.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Edit
+    center:
+    - 0.6806
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 编辑
+    - 修改
+    - modify
+    semantic_type: button
+  - text: Reconcile
+    center:
+    - 0.8559
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 对账
+    - 核对
+    - balance
+    semantic_type: button
+  - text: Table
+    center:
+    - 0.2451
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - 列表
+    - grid
+    semantic_type: tab
+  - text: Chart
+    center:
+    - 0.7545
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - 图形
+    - graph
+    semantic_type: tab
+  description: Account or transaction management screen displaying data in table and
+    chart formats, with options to edit entries or reconcile balances.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Liabilities
+    center:
+    - 0.2281
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Debts
+    - Loans
+    - 负债
+    - 债务
+    semantic_type: menu_item
+  - text: Table
+    center:
+    - 0.2451
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List
+    - Grid
+    - 表格
+    - 数据表
+    semantic_type: button
+  - text: Chart
+    center:
+    - 0.7545
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Graph
+    - 图表
+    - 图形
+    - 统计图
+    semantic_type: button
+  description: Liabilities overview screen featuring a visual breakdown chart and
+    a detailed table of debt accounts.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Edit
+    center:
+    - 0.891
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Modify
+    - Update
+    - 编辑
+    - Pencil
+    semantic_type: button
+  - text: Table
+    center:
+    - 0.2451
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Grid
+    - List
+    - 表格
+    - Data view
+    semantic_type: tab
+  - text: Chart
+    center:
+    - 0.7545
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Graph
+    - Plot
+    - 图表
+    - Visual
+    semantic_type: tab
+  description: Financial report screen displaying a summary chart, a detailed data
+    table, and an edit option to modify entries.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: Edit
+    center:
+    - 0.891
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 编辑
+    - 修改
+    - edit action
+    - modify
+    semantic_type: button
+  - text: Table
+    center:
+    - 0.2451
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - 列表
+    - table view
+    - list view
+    semantic_type: tab
+  - text: Chart
+    center:
+    - 0.7545
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - 图形
+    - chart view
+    - graph
+    semantic_type: tab
+  description: Financial report screen displaying a data chart, a detailed transaction
+    table, and an edit button to modify the entries.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Edit
+    center:
+    - 0.6806
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+  - text: Reconcile
+    center:
+    - 0.8559
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+  - text: Table
+    center:
+    - 0.2451
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+  - text: Chart
+    center:
+    - 0.7545
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+  description: Reconciliation and reporting screen allowing users to edit transactions,
+    reconcile accounts, and toggle between table and chart views.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Timeline
+    center:
+    - 0.1736
+    - 0.2099
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - timeline view
+    - transaction timeline
+    - 时间线
+    semantic_type: tab
+  - text: EXPENSE
+    center:
+    - 0.4431
+    - 0.283
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - expenses
+    - 支出
+    - expense category
+    semantic_type: label
+  - text: Car
+    center:
+    - 0.451
+    - 0.3503
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 汽车
+    - vehicle
+    - car expenses
+    semantic_type: menu_item
+  - text: Fuel
+    center:
+    - 0.4858
+    - 0.4042
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 汽油
+    - gas
+    - 加油
+    - fuel expenses
+    semantic_type: menu_item
+  - text: Maintenance
+    center:
+    - 0.4858
+    - 0.458
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 维修
+    - maintenance expenses
+    - 汽车维护
+    semantic_type: menu_item
+  - text: Entertainment
+    center:
+    - 0.451
+    - 0.5253
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 娱乐
+    - entertainment expenses
+    semantic_type: menu_item
+  - text: Dining Out
+    center:
+    - 0.4858
+    - 0.5792
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 外出就餐
+    - eating out
+    - restaurant
+    semantic_type: menu_item
+  - text: Movies
+    center:
+    - 0.4858
+    - 0.633
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 电影
+    - cinema
+    - movie expenses
+    semantic_type: menu_item
+  - text: Shopping
+    center:
+    - 0.4858
+    - 0.6869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 购物
+    - shopping expenses
+    semantic_type: menu_item
+  - text: Household
+    center:
+    - 0.451
+    - 0.7542
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 家庭
+    - household expenses
+    - 家居
+    semantic_type: menu_item
+  - text: Clothing
+    center:
+    - 0.4858
+    - 0.808
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 服装
+    - clothes
+    - apparel
+    semantic_type: menu_item
+  - text: Grocery
+    center:
+    - 0.4858
+    - 0.8619
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 杂货
+    - groceries
+    - 食品杂货
+    semantic_type: menu_item
+  - text: Medicines
+    center:
+    - 0.4806
+    - 0.9157
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 药品
+    - medicine
+    - medical expenses
+    semantic_type: menu_item
+  - text: School
+    center:
+    - 0.4858
+    - 0.9696
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 学校
+    - education
+    - school expenses
+    - 教育
+    semantic_type: menu_item
+  - text: Reminders
+    center:
+    - 0.0271
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 提醒
+    - reminders list
+    - 提醒事项
+    semantic_type: menu_item
+  - text: Balance Sheet
+    center:
+    - 0.242
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 资产负债表
+    - balance sheet report
+    semantic_type: menu_item
+  - text: Budget
+    center:
+    - 0.5007
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 预算
+    - budget report
+    - budgeting
+    semantic_type: menu_item
+  - text: Net Earnings
+    center:
+    - 0.7476
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 净收入
+    - net income
+    - earnings
+    semantic_type: label
+  - text: Items Summary
+    center:
+    - 0.9622
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 项目汇总
+    - items summary report
+    - summary
+    semantic_type: menu_item
+  description: Navigation menu displaying financial reports, account summaries, and
+    a categorized list of expenses.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_27
+  elements:
+  - text: Timeline
+    center:
+    - 0.1736
+    - 0.2189
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 时间线
+    - timeline view
+    - transaction timeline
+    semantic_type: tab
+  - text: This Month
+    center:
+    - 0.7958
+    - 0.2191
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 本月
+    - current month
+    - this month's data
+    semantic_type: tab
+  - text: EXPENSE
+    center:
+    - 0.1462
+    - 0.3212
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支出
+    - expenses
+    - 开支
+    semantic_type: label
+  - text: Car
+    center:
+    - 0.1059
+    - 0.3862
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 汽车
+    - 车辆
+    - automobile
+    semantic_type: menu_item
+  - text: Fuel
+    center:
+    - 0.1708
+    - 0.4535
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 燃油
+    - 汽油
+    - gas
+    - gasoline
+    semantic_type: menu_item
+  - text: Maintenance
+    center:
+    - 0.2507
+    - 0.5119
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 维护
+    - 维修
+    - 保养
+    - repair
+    semantic_type: menu_item
+  - text: Entertainment
+    center:
+    - 0.2069
+    - 0.5859
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 娱乐
+    - entertainment expenses
+    semantic_type: menu_item
+  - text: Dining Out
+    center:
+    - 0.2281
+    - 0.6532
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 外出就餐
+    - 餐饮
+    - restaurants
+    - eating out
+    semantic_type: menu_item
+  - text: Movies
+    center:
+    - 0.1983
+    - 0.7115
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 电影
+    - cinema
+    - films
+    semantic_type: menu_item
+  - text: Shopping
+    center:
+    - 0.2177
+    - 0.7699
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 购物
+    - shopping expenses
+    semantic_type: menu_item
+  - text: Household
+    center:
+    - 0.1733
+    - 0.8439
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 家庭
+    - 家居
+    - home
+    semantic_type: menu_item
+  - text: Clothing
+    center:
+    - 0.2083
+    - 0.9112
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 服装
+    - 衣物
+    - apparel
+    semantic_type: menu_item
+  - text: Grocery
+    center:
+    - 0.2035
+    - 0.9696
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 杂货
+    - 日用品
+    - groceries
+    - 超市
+    semantic_type: menu_item
+  - text: Balance Sheet
+    center:
+    - 0.0524
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 资产负债表
+    - balance sheet report
+    semantic_type: menu_item
+  - text: Budget
+    center:
+    - 0.2535
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 预算
+    - budgeting
+    semantic_type: menu_item
+  - text: Net Earnings
+    center:
+    - 0.5003
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 净收入
+    - net income
+    - earnings
+    semantic_type: label
+  - text: Items Summary
+    center:
+    - 0.7993
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 项目摘要
+    - items summary report
+    - summary
+    semantic_type: menu_item
+  description: Financial reporting dashboard showing a monthly timeline and expense
+    category breakdown, along with links to balance sheet, budget, and net earnings
+    summaries.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Future Projection
+    center:
+    - 0.4406
+    - 0.6724
+    fixed: false
+    found_at_scroll: 0
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.7173
+    fixed: false
+    found_at_scroll: 0
+  - text: All
+    center:
+    - 0.3785
+    - 0.7577
+    fixed: false
+    found_at_scroll: 0
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.8026
+    fixed: false
+    found_at_scroll: 0
+  - text: Last 30 Days
+    center:
+    - 0.3785
+    - 0.8429
+    fixed: false
+    found_at_scroll: 0
+  - text: Daily Summary
+    center:
+    - 0.2816
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+  - text: Chart
+    center:
+    - 0.1601
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+  - text: Table
+    center:
+    - 0.5
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+  - text: Daily Statistics
+    center:
+    - 0.8396
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+  description: Future projection screen with transaction type and date range filters
+    to view daily summary charts, tables, and statistics.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Future Projection
+    center:
+    - 0.4406
+    - 0.6724
+    fixed: false
+    found_at_scroll: 0
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.7173
+    fixed: false
+    found_at_scroll: 0
+  - text: Income
+    center:
+    - 0.3785
+    - 0.7577
+    fixed: false
+    found_at_scroll: 0
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.8026
+    fixed: false
+    found_at_scroll: 0
+  - text: Last 30 Days
+    center:
+    - 0.3785
+    - 0.8429
+    fixed: false
+    found_at_scroll: 0
+  - text: Daily Summary
+    center:
+    - 0.2816
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+  - text: Chart
+    center:
+    - 0.1601
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+  - text: Table
+    center:
+    - 0.5
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+  - text: Daily Statistics
+    center:
+    - 0.8396
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+  description: Future projection report screen allowing users to filter income by
+    date range and view daily summaries via a chart and statistics table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Future Projection
+    center:
+    - 0.4406
+    - 0.6724
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Forecast
+    - Projection
+    - 未来预测
+    - 财务预测
+    semantic_type: menu_item
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.7173
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Type
+    - 交易类型
+    - Txn Type
+    - 交易类别
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.3785
+    - 0.7577
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Revenue
+    - Earnings
+    - 收入
+    - 进账
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.8026
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Time Period
+    - Date Filter
+    - 日期范围
+    - 时间范围
+    semantic_type: label
+  - text: Last 3 Months
+    center:
+    - 0.3785
+    - 0.8429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Past 3 Months
+    - Recent 3 Months
+    - 近三个月
+    - 过去三个月
+    semantic_type: menu_item
+  - text: Daily Summary
+    center:
+    - 0.2816
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Daily Overview
+    - Day Summary
+    - 每日汇总
+    - 每日总结
+    semantic_type: menu_item
+  - text: Chart
+    center:
+    - 0.1601
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Graph
+    - Visual
+    - 图表
+    - 图形
+    semantic_type: menu_item
+  - text: Table
+    center:
+    - 0.5
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List
+    - Grid
+    - 表格
+    - 列表
+    semantic_type: menu_item
+  - text: Daily Statistics
+    center:
+    - 0.8396
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Daily Stats
+    - Day Statistics
+    - 每日统计
+    - 日统计
+    semantic_type: menu_item
+  description: Future projection analytics screen allowing users to filter income
+    by transaction type and date range, displaying the data in a daily summary chart
+    and statistics table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_31
+  elements:
+  - text: Future Projection
+    center:
+    - 0.4406
+    - 0.6724
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - projection
+    - forecast
+    - 未来预测
+    - future forecast
+    semantic_type: label
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.7173
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - transaction kind
+    - txn type
+    - 交易类型
+    - type
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.3785
+    - 0.7577
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - revenue
+    - earnings
+    - 收入
+    - inflow
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.8026
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - time range
+    - period
+    - 日期范围
+    - date period
+    semantic_type: label
+  - text: Last 6 Months
+    center:
+    - 0.3785
+    - 0.8429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - past 6 months
+    - 6 months
+    - 最近6个月
+    - last half year
+    semantic_type: menu_item
+  - text: Daily Summary
+    center:
+    - 0.2816
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - day summary
+    - daily overview
+    - 每日汇总
+    - daily report
+    semantic_type: menu_item
+  - text: Chart
+    center:
+    - 0.1601
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - graph
+    - 图表
+    - visualization
+    - chart view
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.5
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list
+    - 表格
+    - spreadsheet
+    - table view
+    semantic_type: tab
+  - text: Daily Statistics
+    center:
+    - 0.8396
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - day stats
+    - daily stats
+    - 每日统计
+    - daily figures
+    semantic_type: menu_item
+  description: Future projection analytics screen with transaction and date filters,
+    a daily summary chart, and a statistics table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Future Projection
+    center:
+    - 0.4406
+    - 0.6724
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Forecast
+    - Projection
+    - 未来预测
+    - 预测
+    semantic_type: menu_item
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.7173
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Type
+    - Txn Type
+    - 交易类型
+    - 类型
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.3785
+    - 0.7577
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Revenue
+    - Earnings
+    - 收入
+    - 进账
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.8026
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Period
+    - Time Range
+    - 日期范围
+    - 时间段
+    semantic_type: label
+  - text: Daily Summary
+    center:
+    - 0.2816
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Daily Report
+    - Day Summary
+    - 每日汇总
+    - 日结
+    semantic_type: menu_item
+  - text: Chart
+    center:
+    - 0.1601
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Graph
+    - Plot
+    - 图表
+    - 图形
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.5
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List
+    - Grid
+    - 表格
+    - 列表
+    semantic_type: tab
+  - text: Daily Statistics
+    center:
+    - 0.8396
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Daily Stats
+    - Day Stats
+    - 每日统计
+    - 日统计
+    semantic_type: menu_item
+  description: Future projection screen for income with transaction type and date
+    range filters, featuring a daily summary chart and statistics table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_33
+  elements:
+  - text: Future Projection
+    center:
+    - 0.4406
+    - 0.6724
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - forecast
+    - projection
+    - future forecast
+    semantic_type: menu_item
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.7173
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - type
+    - txn type
+    - transaction filter
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.3785
+    - 0.7577
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - revenue
+    - earnings
+    - inflow
+    - 收入
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.8026
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - time period
+    - date filter
+    - period
+    semantic_type: label
+  - text: Last 12 Months
+    center:
+    - 0.3785
+    - 0.8429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - past year
+    - L12M
+    - trailing 12 months
+    semantic_type: menu_item
+  - text: Daily Summary
+    center:
+    - 0.2816
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - daily report
+    - daily overview
+    - 每日汇总
+    semantic_type: menu_item
+  - text: Chart
+    center:
+    - 0.1601
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - graph
+    - visual
+    - 图表
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.5
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list
+    - grid
+    - 表格
+    semantic_type: tab
+  - text: Daily Statistics
+    center:
+    - 0.8396
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - daily stats
+    - daily metrics
+    - 每日统计
+    semantic_type: menu_item
+  description: Future projection screen displaying income trends over the last 12
+    months with transaction and date filters, a chart, a table, and daily statistics.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Last 7 Days
+    center:
+    - 0.1903
+    - 0.2481
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Past 7 days
+    - 7 days
+    - 近7天
+    - 一周内
+    semantic_type: menu_item
+  - text: Last 14 Days
+    center:
+    - 0.2014
+    - 0.3019
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Past 14 days
+    - 14 days
+    - 近14天
+    - 两周内
+    semantic_type: menu_item
+  - text: Last 30 Days
+    center:
+    - 0.2014
+    - 0.3558
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Past 30 days
+    - Past month
+    - 近30天
+    - 一个月内
+    semantic_type: menu_item
+  - text: Last 3 Months
+    center:
+    - 0.2142
+    - 0.4096
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Past 3 months
+    - Quarter
+    - 近3个月
+    - 三个月内
+    semantic_type: menu_item
+  - text: Custom Dates
+    center:
+    - 0.2128
+    - 0.4635
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Custom range
+    - Date range
+    - 自定义日期
+    - 自定义范围
+    semantic_type: menu_item
+  description: Date range selection menu with options for the last 7, 14, and 30 days,
+    last 3 months, and custom dates.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_35
+  elements:
+  - text: All Categories
+    center:
+    - 0.2118
+    - 0.3423
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 所有分类
+    - 全部分类
+    - categories
+    semantic_type: menu_item
+  - text: Expense
+    center:
+    - 0.1278
+    - 0.3827
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支出
+    - 花费
+    - expenses
+    semantic_type: menu_item
+  - text: Car
+    center:
+    - 0.0927
+    - 0.4096
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 汽车
+    - 车辆
+    - auto
+    semantic_type: menu_item
+  - text: Fuel
+    center:
+    - 0.125
+    - 0.45
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 燃料
+    - 油费
+    - gas
+    - petrol
+    semantic_type: menu_item
+  - text: Maintenance
+    center:
+    - 0.2017
+    - 0.5038
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 维修
+    - 保养
+    - repairs
+    semantic_type: menu_item
+  - text: Entertainment
+    center:
+    - 0.1681
+    - 0.5442
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 娱乐
+    - 休闲娱乐
+    semantic_type: menu_item
+  - text: Dining Out
+    center:
+    - 0.1802
+    - 0.5846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 外出就餐
+    - 餐饮
+    - eating out
+    semantic_type: menu_item
+  - text: Movies
+    center:
+    - 0.1517
+    - 0.6385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 电影
+    - cinema
+    - films
+    semantic_type: menu_item
+  - text: Shopping
+    center:
+    - 0.1708
+    - 0.6923
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 购物
+    - 买东西
+    semantic_type: menu_item
+  - text: Household
+    center:
+    - 0.1441
+    - 0.7327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 家庭
+    - 家居
+    - home
+    semantic_type: menu_item
+  - text: Clothing
+    center:
+    - 0.1618
+    - 0.7731
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 服装
+    - 衣服
+    - apparel
+    semantic_type: menu_item
+  - text: Grocery
+    center:
+    - 0.1569
+    - 0.8269
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 杂货
+    - 日用品
+    - groceries
+    semantic_type: menu_item
+  - text: Medicines
+    center:
+    - 0.1788
+    - 0.8808
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 药品
+    - 医药
+    - pharmacy
+    semantic_type: menu_item
+  description: Category selection screen displaying a list of expense categories such
+    as Car, Fuel, and Entertainment for filtering or assigning transactions.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_36
+  elements:
+  - text: All Accounts
+    center:
+    - 0.1993
+    - 0.4365
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 全部账户
+    - 所有账户
+    - Accounts
+    semantic_type: menu_item
+  - text: Assets
+    center:
+    - 0.117
+    - 0.4769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 资产
+    - 总资产
+    - Assets category
+    semantic_type: menu_item
+  - text: Bank
+    center:
+    - 0.1031
+    - 0.5038
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 银行
+    - 银行账户
+    - Bank account
+    semantic_type: menu_item
+  - text: Checking
+    center:
+    - 0.1698
+    - 0.5442
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 支票账户
+    - 活期账户
+    - Checking account
+    semantic_type: menu_item
+  - text: Savings
+    center:
+    - 0.1576
+    - 0.5981
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 储蓄
+    - 储蓄账户
+    - Savings account
+    semantic_type: menu_item
+  - text: Cash
+    center:
+    - 0.1038
+    - 0.6385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 现金
+    - 手头现金
+    - Cash on hand
+    semantic_type: menu_item
+  - text: Wallet
+    center:
+    - 0.1427
+    - 0.6788
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 钱包
+    - 电子钱包
+    - E-wallet
+    semantic_type: menu_item
+  - text: Liabilities
+    center:
+    - 0.1372
+    - 0.7192
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 负债
+    - 总负债
+    - Liabilities category
+    semantic_type: menu_item
+  - text: Credit Card
+    center:
+    - 0.1476
+    - 0.7462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 信用卡
+    - 贷记卡
+    - Credit cards
+    semantic_type: menu_item
+  - text: Mortgages
+    center:
+    - 0.1451
+    - 0.8269
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 抵押贷款
+    - 房贷
+    - Mortgage loans
+    semantic_type: menu_item
+  - text: House Mortgage
+    center:
+    - 0.2361
+    - 0.8673
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 房屋抵押贷款
+    - 住房贷款
+    - Home mortgage
+    semantic_type: menu_item
+  description: Account management screen displaying a categorized list of all user
+    accounts grouped under Assets and Liabilities.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_37
+  elements:
+  - text: (No Filter)
+    center:
+    - 0.1771
+    - 0.5308
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - clear filter
+    - all
+    - 无过滤
+    - 取消过滤
+    semantic_type: menu_item
+  - text: (No Labels)
+    center:
+    - 0.1896
+    - 0.5846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hide labels
+    - without labels
+    - 无标签
+    - 隐藏标签
+    semantic_type: menu_item
+  - text: (With Labels)
+    center:
+    - 0.2045
+    - 0.6385
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - show labels
+    - with labels
+    - 有标签
+    - 显示标签
+    semantic_type: menu_item
+  - text: Birthday
+    center:
+    - 0.1615
+    - 0.6923
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 生日
+    - birthday event
+    - bday
+    semantic_type: menu_item
+  - text: Business
+    center:
+    - 0.1681
+    - 0.7462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 商业
+    - 工作
+    - business expense
+    semantic_type: menu_item
+  - text: Movies
+    center:
+    - 0.1517
+    - 0.8
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 电影
+    - entertainment
+    - cinema
+    semantic_type: menu_item
+  - text: Personal
+    center:
+    - 0.166
+    - 0.8538
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 个人
+    - personal expense
+    semantic_type: menu_item
+  - text: Vacation
+    center:
+    - 0.1653
+    - 0.9034
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 度假
+    - travel
+    - holiday
+    semantic_type: menu_item
+  description: Categories or labels list screen with filter options and entries such
+    as Birthday, Business, and Personal.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_38
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Txn Type
+    - 交易类型
+    - Type
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收入
+    - Inflow
+    - Revenue
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日期范围
+    - Time Period
+    - Date Filter
+    semantic_type: label
+  - text: This Month
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 本月
+    - Current Month
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表类型
+    - Graph Type
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按类别
+    - Group by Category
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 预算摘要
+    - Budget Overview
+    semantic_type: label
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - Graph
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - List
+    semantic_type: tab
+  description: Budget summary report screen with filters for transaction type, date
+    range, and chart type, displaying financial data through a chart and a table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_39
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - transaction kind
+    - type of transaction
+    - 交易类型
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收入
+    - earnings
+    - revenue
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - date period
+    - time range
+    - 日期范围
+    - 时间范围
+    semantic_type: label
+  - text: Last 30 Days
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - past 30 days
+    - recent 30 days
+    - 最近30天
+    - 近30天
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - chart kind
+    - graph type
+    - 图表类型
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - per category
+    - grouped by category
+    - 按类别
+    - 分类
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - budget overview
+    - budget report
+    - 预算摘要
+    - 预算汇总
+    semantic_type: label
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - graph
+    - 图表
+    - visualization
+    semantic_type: menu_item
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - list view
+    - 表格
+    - data table
+    semantic_type: menu_item
+  description: Income reporting screen with filters for date range and chart type,
+    displaying a budget summary, visual chart, and detailed data table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_40
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Txn Type
+    - Transaction Category
+    - Type
+    - 交易类型
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Revenue
+    - Earnings
+    - Inflow
+    - 收入
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Time Period
+    - Date Filter
+    - Period
+    - 日期范围
+    semantic_type: label
+  - text: Last 28 Days
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Past 28 Days
+    - Previous 28 Days
+    - Last 4 Weeks
+    - 过去28天
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Graph Type
+    - Visualization
+    - Chart Style
+    - 图表类型
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Category View
+    - Group by Category
+    - Categorized
+    - 按类别
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Budget Overview
+    - Budget Report
+    - Budget Status
+    - 预算摘要
+    semantic_type: label
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Graph
+    - Visual
+    - Plot
+    - 图表
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List
+    - Data Table
+    - Grid
+    - 表格
+    semantic_type: tab
+  description: Reports screen displaying a budget summary with filters for transaction
+    type, date range, and chart type, followed by a visual chart and data table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_41
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 交易类型
+    - Txn Type
+    - Type
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收入
+    - Inflow
+    - Earnings
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日期范围
+    - Time Period
+    - Date Filter
+    semantic_type: label
+  - text: Last 14 Days
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 过去14天
+    - Past 14 Days
+    - 14 Days
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表类型
+    - Graph Type
+    - Chart Style
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按类别
+    - Category
+    - Group by Category
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 预算摘要
+    - Budget Overview
+    - Budget Report
+    semantic_type: label
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - Graph
+    - Visual
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - Grid
+    - List
+    semantic_type: tab
+  description: A financial reporting screen showing an income budget summary for the
+    last 14 days, featuring filter controls, a category-based chart, and a detailed
+    data table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_42
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 交易类型
+    - Txn Type
+    - Type
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收入
+    - Inflow
+    - Earnings
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日期范围
+    - Time Period
+    - Period
+    semantic_type: label
+  - text: Last 7 Days
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 过去7天
+    - Past 7 Days
+    - 7 Days
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表类型
+    - Graph Type
+    - Chart Style
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按类别
+    - Category
+    - Group by Category
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 预算摘要
+    - Budget Overview
+    - Budget Report
+    semantic_type: label
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - Graph
+    - Visual
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - List
+    - Grid
+    semantic_type: tab
+  description: A financial reporting screen with filters for transaction type, date
+    range, and chart type, displaying an income budget summary with a categorized
+    chart and data table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_43
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - txn type
+    - 交易类型
+    - transaction kind
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收入
+    - inflow
+    - earnings
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日期范围
+    - time period
+    - date filter
+    semantic_type: label
+  - text: Today
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 今日
+    - current day
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表类型
+    - graph type
+    - visualization
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按类别
+    - group by category
+    - category breakdown
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 预算摘要
+    - budget overview
+    - budget report
+    semantic_type: label
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - graph
+    - visual view
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - list view
+    - data table
+    semantic_type: tab
+  description: Budget summary report screen with filters for transaction type, date
+    range, and chart type, displaying income data by category in a chart and table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_44
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Txn Type
+    - Type
+    - 交易类型
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Earnings
+    - Revenue
+    - 收入
+    - Inflow
+    semantic_type: label
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Time Period
+    - Period
+    - 日期范围
+    - Date Filter
+    semantic_type: label
+  - text: This Week
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Current Week
+    - 本周
+    - 7 Days
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Graph Type
+    - 图表类型
+    - Chart Style
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Category
+    - 按类别
+    - Group by Category
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Budget Overview
+    - 预算摘要
+    - Budget Report
+    semantic_type: menu_item
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Graph
+    - 图表
+    - Visual
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List
+    - 表格
+    - Data Table
+    semantic_type: tab
+  description: Reports screen displaying an income budget summary with filters for
+    transaction type, date range, and chart type, followed by a visual chart and data
+    table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_45
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Txn Type
+    - Type
+    - 交易类型
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收入
+    - Inflow
+    - Earnings
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Period
+    - Time Range
+    - 日期范围
+    semantic_type: label
+  - text: This Bi-month
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Current Bi-month
+    - 近两月
+    - 双月
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Graph Type
+    - 图表类型
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Category
+    - 按类别
+    - 分类
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Budget Overview
+    - 预算摘要
+    semantic_type: label
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Graph
+    - 图表
+    - 图形
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List
+    - 表格
+    - 列表
+    semantic_type: tab
+  description: A financial report screen displaying a budget summary with filters
+    for transaction type, date range, and chart type, alongside a visual chart and
+    data table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_46
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 交易类型
+    - Txn Type
+    - Type
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收入
+    - Inflow
+    - Earnings
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日期范围
+    - Time Period
+    - Date Filter
+    semantic_type: label
+  - text: This Quarter
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 本季度
+    - Current Quarter
+    - QTD
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表类型
+    - Graph Type
+    - Chart Style
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按类别
+    - Category
+    - Group by Category
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 预算摘要
+    - Budget Overview
+    - Budget Report
+    semantic_type: menu_item
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - Graph
+    - Visual
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - List
+    - Data Table
+    semantic_type: tab
+  description: Budget summary report screen featuring filters for transaction type,
+    date range, and chart type, along with a visual chart and data table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_47
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Txn Type
+    - 交易类型
+    - Type
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收入
+    - Inflow
+    - Revenue
+    semantic_type: label
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日期范围
+    - Time Period
+    - Period
+    semantic_type: label
+  - text: This Year
+    center:
+    - 0.4708
+    - 0.7285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 今年
+    - Current Year
+    - YTD
+    semantic_type: label
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表类型
+    - Graph Type
+    - Visualization
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按类别
+    - Category
+    - Group by Category
+    semantic_type: label
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 预算摘要
+    - Budget Overview
+    - Summary
+    semantic_type: label
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - Graph
+    - Charts
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - List
+    - Data Table
+    semantic_type: tab
+  description: Budget summary report screen with filters for transaction type, date
+    range, and chart type, displaying a visual chart and a detailed data table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_48
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5311
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 交易类型
+    - Txn Type
+    - Type
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.5715
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收入
+    - Inflow
+    - Earnings
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6253
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日期范围
+    - Time Range
+    - Period
+    semantic_type: label
+  - text: Custom Dates
+    center:
+    - 0.4708
+    - 0.6657
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自定义日期
+    - Custom Range
+    - Specific Dates
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表类型
+    - Graph Type
+    - Visualization
+    semantic_type: label
+  - text: By Category
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按类别
+    - Category
+    - Group by Category
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 预算摘要
+    - Budget Overview
+    - Budget Report
+    semantic_type: label
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - Graph
+    - Visual
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - List
+    - Data Table
+    semantic_type: tab
+  description: Income reporting screen featuring date and chart type filters, a budget
+    summary, a category-based chart, and a detailed transaction table.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_49
+  elements:
+  - text: Transaction Type
+    center:
+    - 0.1684
+    - 0.5311
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 交易类型
+    - Txn Type
+    - Type
+    semantic_type: label
+  - text: Income
+    center:
+    - 0.4708
+    - 0.5715
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收入
+    - Inflow
+    - Earnings
+    semantic_type: menu_item
+  - text: Date Range
+    center:
+    - 0.1253
+    - 0.6253
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日期范围
+    - Time Period
+    - Date Filter
+    semantic_type: label
+  - text: Custom Dates
+    center:
+    - 0.4708
+    - 0.6657
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自定义日期
+    - Custom Range
+    - Specific Dates
+    semantic_type: menu_item
+  - text: Chart Type
+    center:
+    - 0.1208
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表类型
+    - Graph Type
+    - Chart Style
+    semantic_type: label
+  - text: By Category Group
+    center:
+    - 0.4708
+    - 0.8228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按类别组
+    - Category Group
+    - Grouped by Category
+    semantic_type: menu_item
+  - text: Budget Summary
+    center:
+    - 0.3038
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 预算摘要
+    - Budget Overview
+    - Budget Report
+    semantic_type: label
+  - text: Chart
+    center:
+    - 0.2448
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图表
+    - Graph
+    - Visual
+    semantic_type: tab
+  - text: Table
+    center:
+    - 0.7549
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 表格
+    - Data Table
+    - Grid
+    semantic_type: tab
+  description: Budget summary report screen with filters for transaction type, date
+    range, and chart type, displaying a visual chart and a detailed data table.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 241
+    y: 452
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 599
+    y: 452
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 975
+    y: 452
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 545
+    y: 2364
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 545
+    y: 2630
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 2952
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 1209
+    y: 2952
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 1979
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2567
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 1087
+    y: 2952
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 241
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 975
+    y: 452
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 250
+    y: 683
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 244
+    y: 946
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 229
+    y: 1149
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 284
+    y: 1359
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 265
+    y: 1541
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 244
+    y: 1982
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 294
+    y: 2192
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 316
+    y: 2395
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 308
+    y: 2808
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 382
+    y: 3018
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 1093
+    y: 452
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 1324
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 1373
+    y: 452
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 545
+    y: 2364
+    wait: 1.5
+  - action: tap
+    x: 160
+    y: 2560
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 545
+    y: 2364
+    wait: 1.5
+  - action: tap
+    x: 222
+    y: 2896
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 545
+    y: 2630
+    wait: 1.5
+  - action: tap
+    x: 308
+    y: 1930
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 545
+    y: 2630
+    wait: 1.5
+  - action: tap
+    x: 308
+    y: 2098
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 545
+    y: 2630
+    wait: 1.5
+  - action: tap
+    x: 308
+    y: 2266
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 545
+    y: 2630
+    wait: 1.5
+  - action: tap
+    x: 324
+    y: 2434
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 1209
+    y: 2952
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 578
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 1209
+    y: 2952
+    wait: 1.5
+  - action: tap
+    x: 587
+    y: 872
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 1209
+    y: 2952
+    wait: 1.5
+  - action: tap
+    x: 587
+    y: 1166
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 274
+    y: 1272
+    wait: 1.5
+  - action: tap
+    x: 1209
+    y: 2952
+    wait: 1.5
+  - action: tap
+    x: 587
+    y: 1460
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 1979
+    wait: 1.5
+  - action: tap
+    x: 222
+    y: 2343
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  - action: tap
+    x: 290
+    y: 424
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  - action: tap
+    x: 290
+    y: 592
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  - action: tap
+    x: 290
+    y: 760
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  - action: tap
+    x: 274
+    y: 928
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  - action: tap
+    x: 203
+    y: 1096
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  - action: tap
+    x: 258
+    y: 1264
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  - action: tap
+    x: 305
+    y: 1432
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  - action: tap
+    x: 285
+    y: 1768
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  - action: tap
+    x: 246
+    y: 1936
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2273
+    wait: 1.5
+  - action: tap
+    x: 306
+    y: 2104
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: com.rammigsoftware.bluecoins
+    wait: 0.5
+  - action: launch
+    package: com.rammigsoftware.bluecoins
+    wait: 3.0
+  - action: tap
+    x: 643
+    y: 3074
+    wait: 1.5
+  - action: tap
+    x: 678
+    y: 2567
+    wait: 1.5
+  - action: tap
+    x: 364
+    y: 2371
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Add a new expense or income transaction
+- View daily financial summaries and statistics
+- Track and review budget summaries by category
+- Check net worth and balance sheet
+- View future financial projections
+- Reconcile bank accounts and edit transactions
+- Filter financial data by date range and transaction type
+- Generate and view financial reports and charts
+known_limitations:
+- Initial launch may be interrupted by a bottom sheet prompting for phone storage
+  or folder selection if the default folder is missing
+- Navigation is spread across multiple distinct menu screens, requiring users to navigate
+  through several layers to find specific sections
+- Accessing detailed reports requires interacting with multiple nested filter menus
+  and bottom sheets for date ranges, transaction types, and categories

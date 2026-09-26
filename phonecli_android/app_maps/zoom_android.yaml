@@ -1,0 +1,6667 @@
+app: Zoom
+package: us.zoom.videomeetings
+screen_w: 1440
+screen_h: 3120
+screens:
+- id: screen_0
+  description: Welcome and login screen allowing users to join a meeting, sign up,
+    or sign in to their account.
+  elements:
+  - text: icon
+    center:
+    - 0.9174
+    - 0.3276
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 图标
+    - logo
+    - app icon
+    semantic_type: other
+  - text: My Position
+    center:
+    - 0.9174
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 我的位置
+    - location
+    - current location
+    semantic_type: label
+  - text: Settings
+    center:
+    - 0.0972
+    - 0.0899
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_3
+    aliases:
+    - 设置
+    - preferences
+    - options
+    semantic_type: setting
+  - text: Welcome
+    center:
+    - 0.4997
+    - 0.6643
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - 欢迎
+    - welcome screen
+    - greeting
+    semantic_type: label
+  - text: Get started with your account
+    center:
+    - 0.4997
+    - 0.6971
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_1
+    aliases:
+    - 开始使用您的账户
+    - get started
+    - account setup
+    semantic_type: label
+  - text: Join a meeting
+    center:
+    - 0.5
+    - 0.7667
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 加入会议
+    - join
+    - enter meeting
+    semantic_type: button
+  - text: Sign up
+    center:
+    - 0.5
+    - 0.834
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_4
+    aliases:
+    - 注册
+    - register
+    - create account
+    semantic_type: button
+  - text: Sign in
+    center:
+    - 0.5
+    - 0.9013
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_5
+    aliases:
+    - 登录
+    - log in
+    - login
+    semantic_type: button
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Settings
+    center:
+    - 0.0972
+    - 0.0899
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+  - text: Welcome
+    center:
+    - 0.4997
+    - 0.6643
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: Get started with your account
+    center:
+    - 0.4997
+    - 0.6971
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+  - text: Join a meeting
+    center:
+    - 0.5
+    - 0.7667
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+  - text: Sign up
+    center:
+    - 0.5
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: Sign in
+    center:
+    - 0.5
+    - 0.9013
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+  description: Initial welcome screen providing options to join a meeting, sign up,
+    or sign in, along with a settings button.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_2
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Join
+    center:
+    - 0.4997
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 加入
+    - join meeting
+    - enter meeting
+    semantic_type: button
+  - text: Meeting
+    center:
+    - 0.2792
+    - 0.1314
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 会议
+    - meetings
+    - meeting tab
+    semantic_type: tab
+  - text: Event
+    center:
+    - 0.7208
+    - 0.1314
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 事件
+    - events
+    - event tab
+    - 日程
+    semantic_type: tab
+  - text: Meeting ID
+    center:
+    - 0.5
+    - 0.2032
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 会议ID
+    - meeting number
+    - 会议号
+    semantic_type: input
+  - text: Join with a personal link name
+    center:
+    - 0.5
+    - 0.2615
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 使用个人链接名加入
+    - join with personal link
+    semantic_type: label
+  - text: If you received an invitation link, tap on the link to join the meeting
+    center:
+    - 0.4986
+    - 0.4907
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 收到邀请链接请点击加入
+    - invitation link instruction
+    semantic_type: label
+  - text: Join options
+    center:
+    - 0.5
+    - 0.5554
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 加入选项
+    - join settings
+    - meeting options
+    semantic_type: button
+  - text: Don't connect to audio
+    center:
+    - 0.4177
+    - 0.5968
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 不连接音频
+    - do not connect audio
+    - no audio
+    semantic_type: toggle
+  - text: Off, switch
+    center:
+    - 0.8983
+    - 0.5966
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 关闭
+    - 'off'
+    - switch off
+    semantic_type: toggle
+  - text: Turn off my video
+    center:
+    - 0.4177
+    - 0.6425
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 关闭我的视频
+    - disable video
+    - video off
+    semantic_type: toggle
+  description: Join meeting screen where users can enter a meeting ID or personal
+    link and configure audio and video settings before joining.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 设置
+    - preferences
+    - app settings
+    semantic_type: tab
+  - text: Meetings
+    center:
+    - 0.4611
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 会议
+    - meetings list
+    - scheduled meetings
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.4611
+    - 0.2051
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 音频
+    - audio settings
+    - sound settings
+    semantic_type: setting
+  - text: General
+    center:
+    - 0.4611
+    - 0.2603
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 常规
+    - general settings
+    - basic settings
+    semantic_type: setting
+  - text: Video &amp; effects
+    center:
+    - 0.4611
+    - 0.3154
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+  - text: Accessibility
+    center:
+    - 0.4611
+    - 0.3705
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 辅助功能
+    - accessibility settings
+    - a11y
+    semantic_type: setting
+  - text: Activation code login
+    center:
+    - 0.4611
+    - 0.4256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 激活码登录
+    - sign in with activation code
+    - activation code
+    semantic_type: link
+  - text: Version
+    center:
+    - 0.3267
+    - 0.5019
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 版本
+    - app version
+    - version info
+    semantic_type: label
+  - text: 6.5.5 (31672)
+    center:
+    - 0.749
+    - 0.5019
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 版本号
+    - build number
+    - app version number
+    semantic_type: label
+  - text: Tell others about Zoom
+    center:
+    - 0.4611
+    - 0.5571
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 分享给他人
+    - share Zoom
+    - tell friends about Zoom
+    semantic_type: link
+  - text: Network test
+    center:
+    - 0.4611
+    - 0.6122
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 网络测试
+    - test network
+    - network diagnostics
+    semantic_type: link
+  - text: Privacy Policy
+    center:
+    - 0.4611
+    - 0.6673
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - 隐私政策
+    - privacy
+    - privacy statement
+    semantic_type: link
+  - text: Terms of Service
+    center:
+    - 0.4611
+    - 0.7224
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - 服务条款
+    - terms
+    - terms and conditions
+    semantic_type: link
+  - text: Community standards
+    center:
+    - 0.4611
+    - 0.7776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 社区标准
+    - community guidelines
+    - community rules
+    semantic_type: link
+  - text: Open source software
+    center:
+    - 0.2774
+    - 0.8391
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 开源软件
+    - open source licenses
+    - OSS
+    semantic_type: link
+  - text: Copyright ©2012-2025 Zoom Communications, Inc. All rights reserved.
+    center:
+    - 0.5
+    - 0.9087
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 版权信息
+    - copyright notice
+    - all rights reserved
+    semantic_type: label
+  description: Main settings screen featuring configuration categories like Meetings,
+    Audio, and General, along with app information and legal links.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 返回
+    - Go back
+    - Return
+    semantic_type: button
+  - text: Sign up
+    center:
+    - 0.5
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 注册
+    - Register
+    - Create account
+    semantic_type: button
+  - text: Verify your age
+    center:
+    - 0.1441
+    - 0.1324
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 年龄验证
+    - Age verification
+    - Confirm age
+    semantic_type: label
+  - text: Birth year
+    center:
+    - 0.5
+    - 0.1885
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 出生年份
+    - Year of birth
+    - DOB
+    semantic_type: label
+  - text: Please confirm your birth year. This data will not be stored
+    center:
+    - 0.4469
+    - 0.2401
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 确认出生年份
+    - Age confirmation
+    - Privacy notice
+    semantic_type: label
+  - text: Continue
+    center:
+    - 0.5
+    - 0.3038
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 继续
+    - Next
+    - Proceed
+    semantic_type: button
+  description: Age verification screen during sign-up where the user enters their
+    birth year to proceed.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 返回
+    - Go back
+    - Previous
+    semantic_type: button
+  - text: Sign in
+    center:
+    - 0.4781
+    - 0.0707
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 登录
+    - Login
+    - Log in
+    semantic_type: button
+  - text: Zoom domains menu
+    center:
+    - 0.5628
+    - 0.0707
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Zoom域名菜单
+    - Domains
+    - Domain selector
+    semantic_type: menu_item
+  - text: Enter your account
+    center:
+    - 0.2184
+    - 0.1159
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 输入您的帐户
+    - Enter account
+    - Account entry
+    semantic_type: label
+  - text: Email or phone number
+    center:
+    - 0.5
+    - 0.1609
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 电子邮件或电话号码
+    - Email
+    - Phone
+    - Username
+    semantic_type: input
+  - text: Next
+    center:
+    - 0.5
+    - 0.2417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 下一步
+    - Continue
+    - Proceed
+    semantic_type: button
+  - text: Other sign in methods
+    center:
+    - 0.1941
+    - 0.3054
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 其他登录方式
+    - More sign in options
+    - Alternative login
+    semantic_type: label
+  - text: Continue with Google, button
+    center:
+    - 0.5
+    - 0.3782
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 使用 Google 继续
+    - Google login
+    - Sign in with Google
+    semantic_type: button
+  - text: Continue with Google
+    center:
+    - 0.5292
+    - 0.378
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - 使用 Google 继续
+    - Google login
+    - Sign in with Google
+    semantic_type: button
+  - text: Continue with Apple, button
+    center:
+    - 0.5
+    - 0.441
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - 使用 Apple 继续
+    - Apple login
+    - Sign in with Apple
+    semantic_type: button
+  - text: Continue with Apple
+    center:
+    - 0.5292
+    - 0.4409
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - 使用 Apple 继续
+    - Apple login
+    - Sign in with Apple
+    semantic_type: button
+  - text: Continue with Facebook, button
+    center:
+    - 0.5
+    - 0.5038
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - 使用 Facebook 继续
+    - Facebook login
+    - Sign in with Facebook
+    semantic_type: button
+  - text: Continue with Facebook
+    center:
+    - 0.5292
+    - 0.5037
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - 使用 Facebook 继续
+    - Facebook login
+    - Sign in with Facebook
+    semantic_type: button
+  - text: Continue with Microsoft, button
+    center:
+    - 0.5
+    - 0.5667
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - 使用 Microsoft 继续
+    - Microsoft login
+    - Sign in with Microsoft
+    semantic_type: button
+  - text: Continue with Microsoft
+    center:
+    - 0.5292
+    - 0.5665
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - 使用 Microsoft 继续
+    - Microsoft login
+    - Sign in with Microsoft
+    semantic_type: button
+  - text: Continue with SSO, button
+    center:
+    - 0.5
+    - 0.6295
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - 使用 SSO 继续
+    - Single Sign-On
+    - SSO login
+    semantic_type: button
+  - text: Continue with SSO
+    center:
+    - 0.5292
+    - 0.6293
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - 使用 SSO 继续
+    - Single Sign-On
+    - SSO login
+    semantic_type: button
+  description: Zoom sign-in screen where users can enter their email or phone number,
+    or use alternative login methods such as Google, Apple, Facebook, Microsoft, or
+    SSO.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    - back button
+    semantic_type: button
+  - text: Join
+    center:
+    - 0.4997
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 加入
+    - join meeting
+    - enter meeting
+    - 加入会议
+    semantic_type: button
+  - text: Meeting
+    center:
+    - 0.2792
+    - 0.1314
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 会议
+    - meetings
+    - 会议列表
+    - meeting tab
+    semantic_type: tab
+  - text: Event
+    center:
+    - 0.7208
+    - 0.1314
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 活动
+    - events
+    - event tab
+    - 活动列表
+    semantic_type: tab
+  description: Navigation screen with a back button and tabs for Join, Meeting, and
+    Event sections.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_7
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Join
+    center:
+    - 0.4997
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 加入
+    - join meeting
+    - enter
+    semantic_type: button
+  - text: Meeting
+    center:
+    - 0.2792
+    - 0.1314
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 会议
+    - meetings
+    - meeting tab
+    semantic_type: tab
+  - text: Event
+    center:
+    - 0.7208
+    - 0.1314
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 事件
+    - events
+    - event tab
+    semantic_type: tab
+  - text: Join with meeting ID
+    center:
+    - 0.5
+    - 0.2615
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 使用会议 ID 加入
+    - meeting ID input
+    - enter meeting ID
+    semantic_type: input
+  - text: If you received an invitation link, tap on the link to join the meeting
+    center:
+    - 0.4986
+    - 0.4907
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 邀请链接提示
+    - invitation link instruction
+    - tap link to join
+    semantic_type: label
+  - text: Join options
+    center:
+    - 0.5
+    - 0.5554
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 加入选项
+    - join settings
+    - meeting options
+    semantic_type: button
+  - text: Don't connect to audio
+    center:
+    - 0.4177
+    - 0.5915
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 不连接音频
+    - do not connect audio
+    - skip audio
+    semantic_type: toggle
+  description: Join meeting screen where users can enter a meeting ID, use an invitation
+    link, and configure audio options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 返回
+    - go back
+    - previous
+    semantic_type: button
+  - text: Meetings
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 会议
+    - meetings tab
+    - my meetings
+    semantic_type: tab
+  - text: WHEN JOINING MEETINGS
+    center:
+    - 0.5
+    - 0.1367
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 加入会议时
+    - joining settings
+    - join options
+    semantic_type: label
+  - text: Turn off my video
+    center:
+    - 0.4372
+    - 0.1862
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 关闭我的视频
+    - disable video
+    - video off
+    semantic_type: setting
+  - text: Off, switch
+    center:
+    - 0.8594
+    - 0.1873
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 关闭
+    - toggle off
+    - switch off
+    semantic_type: toggle
+  - text: Mute my microphone
+    center:
+    - 0.4372
+    - 0.2503
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 静音我的麦克风
+    - mute mic
+    - microphone muted
+    semantic_type: setting
+  - text: Auto-connect to audio
+    center:
+    - 0.2847
+    - 0.3144
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 自动连接音频
+    - auto connect audio
+    - connect audio automatically
+    semantic_type: setting
+  - text: Wi-Fi or cellular data
+    center:
+    - 0.6681
+    - 0.3144
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - WiFi或蜂窝数据
+    - wifi or mobile data
+    - internet connection
+    semantic_type: setting
+  - text: Button
+    center:
+    - 0.9028
+    - 0.3144
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 按钮
+    - btn
+    - action button
+    semantic_type: button
+  - text: Show video preview
+    center:
+    - 0.4372
+    - 0.3785
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 显示视频预览
+    - video preview
+    - preview video
+    semantic_type: setting
+  - text: On, switch
+    center:
+    - 0.8594
+    - 0.3796
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 开启
+    - toggle on
+    - switch on
+    semantic_type: toggle
+  - text: Mute and unmute sound
+    center:
+    - 0.4177
+    - 0.4324
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 静音和取消静音
+    - mute/unmute
+    - toggle sound
+    semantic_type: setting
+  - text: Audible only to you
+    center:
+    - 0.4177
+    - 0.4814
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 仅您能听到
+    - only you can hear
+    - private audio cue
+    semantic_type: label
+  - text: IN MEETING EXPERIENCE
+    center:
+    - 0.5
+    - 0.5364
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 会议中体验
+    - in-meeting settings
+    - meeting experience
+    semantic_type: label
+  - text: Show my connected time
+    center:
+    - 0.4372
+    - 0.5859
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 显示我的连接时间
+    - display connected time
+    - show time
+    semantic_type: setting
+  - text: Show name when participants join
+    center:
+    - 0.4372
+    - 0.65
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 参与者加入时显示姓名
+    - show join name
+    - display participant name
+    semantic_type: setting
+  - text: Show non-video participants
+    center:
+    - 0.4372
+    - 0.7141
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 显示无视频参与者
+    - show participants without video
+    - non-video attendees
+    semantic_type: setting
+  - text: IN MEETING CONTROLS
+    center:
+    - 0.5
+    - 0.7816
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 会议中控制
+    - meeting controls
+    - in-meeting controls
+    semantic_type: label
+  - text: Always show meeting controls
+    center:
+    - 0.4372
+    - 0.8311
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 始终显示会议控制
+    - show controls always
+    - keep controls visible
+    semantic_type: setting
+  - text: Always show closed captions
+    center:
+    - 0.4372
+    - 0.8952
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 始终显示隐藏式字幕
+    - show captions always
+    - auto show captions
+    semantic_type: setting
+  - text: Enable safe driving mode
+    center:
+    - 0.4177
+    - 0.949
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 启用安全驾驶模式
+    - safe driving
+    - driving mode
+    semantic_type: setting
+  description: Meetings settings page with toggles to configure default video, audio,
+    and in-meeting control preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Return
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Audio
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Sound
+    - Audio settings
+    - 音频
+    semantic_type: setting
+  - text: MICROPHONE MODES
+    center:
+    - 0.5
+    - 0.1375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Mic modes
+    - Microphone settings
+    - 麦克风模式
+    semantic_type: label
+  - text: Noise removal (default)
+    center:
+    - 0.2812
+    - 0.1708
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Noise suppression
+    - 降噪
+    - Auto noise cancellation
+    semantic_type: menu_item
+  - text: Recommended for most users. This setting will automatically adjust noise
+      suppression.
+    center:
+    - 0.4465
+    - 0.2173
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Noise removal description
+    - 降噪说明
+    semantic_type: label
+  - text: Selected
+    center:
+    - 0.8882
+    - 0.1984
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Checked
+    - Active
+    - 已选择
+    semantic_type: label
+  - text: Original sound for musicians
+    center:
+    - 0.326
+    - 0.2651
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - Original sound
+    - Raw audio
+    - 原声
+    semantic_type: menu_item
+  description: Audio settings page with options to select microphone modes such as
+    noise removal or original sound for musicians.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 返回
+    - Return
+    - Go back
+    semantic_type: button
+  - text: General
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 常规
+    - 通用
+    - General settings
+    semantic_type: setting
+  - text: DATA
+    center:
+    - 0.5
+    - 0.1367
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 数据
+    - Data usage
+    - Data settings
+    semantic_type: setting
+  - text: Manage storage
+    center:
+    - 0.4611
+    - 0.1804
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 管理存储空间
+    - Storage management
+    - Manage space
+    semantic_type: menu_item
+  - text: Button
+    center:
+    - 0.9028
+    - 0.1804
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 按钮
+    - Action button
+    - Click
+    semantic_type: button
+  - text: ADVANCED
+    center:
+    - 0.5
+    - 0.2421
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 高级
+    - Advanced settings
+    - 高级设置
+    semantic_type: setting
+  - text: Diagnostic data viewer
+    center:
+    - 0.425
+    - 0.2872
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - 诊断数据查看器
+    - View diagnostic data
+    - Diagnostic viewer
+    semantic_type: menu_item
+  - text: Off, switch
+    center:
+    - 0.874
+    - 0.287
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 关闭，开关
+    - Toggle off
+    - Switch off
+    semantic_type: toggle
+  - text: Enabling this feature uses up to 20 MB of storage.
+    center:
+    - 0.5
+    - 0.333
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 启用此功能最多使用 20 MB 存储空间
+    - Storage warning
+    - Data usage info
+    semantic_type: label
+  description: General settings page in Zoom allowing users to manage data storage
+    and toggle advanced diagnostic data collection.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Video &amp; effects
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 视频与效果
+    - video settings
+    - camera effects
+    semantic_type: setting
+  - text: VIDEO
+    center:
+    - 0.5
+    - 0.1367
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 视频
+    - camera
+    - video settings
+    semantic_type: label
+  - text: Aspect ratio
+    center:
+    - 0.3507
+    - 0.1862
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - 宽高比
+    - 画面比例
+    - screen ratio
+    semantic_type: setting
+  - text: Original ratio
+    center:
+    - 0.734
+    - 0.1862
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - 原始比例
+    - original aspect ratio
+    - 默认比例
+    semantic_type: menu_item
+  - text: Button
+    center:
+    - 0.9028
+    - 0.1862
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - 按钮
+    - action button
+    - 控件
+    semantic_type: button
+  - text: Mirror my video
+    center:
+    - 0.4372
+    - 0.2503
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - 镜像我的视频
+    - mirror video
+    - 视频镜像
+    semantic_type: setting
+  - text: On, switch
+    center:
+    - 0.8594
+    - 0.2514
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 开启
+    - switch
+    - toggle
+    - 开关
+    semantic_type: toggle
+  - text: Advanced
+    center:
+    - 0.4806
+    - 0.3144
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 高级
+    - advanced settings
+    - 高级设置
+    semantic_type: menu_item
+  description: Video settings screen where users can adjust aspect ratio, toggle video
+    mirroring, and access advanced video options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    - back button
+    semantic_type: button
+  - text: Accessibility
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 辅助功能
+    - accessibility settings
+    - 无障碍
+    semantic_type: setting
+  - text: SCREEN
+    center:
+    - 0.5
+    - 0.1554
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 屏幕
+    - screen settings
+    - 屏幕设置
+    semantic_type: label
+  - text: Dim screen share video
+    center:
+    - 0.4177
+    - 0.1955
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - 调暗屏幕共享视频
+    - dim shared video
+    - 降低屏幕共享亮度
+    semantic_type: setting
+  - text: Off, switch
+    center:
+    - 0.8594
+    - 0.1954
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 关闭
+    - switch
+    - 开关
+    - toggle
+    semantic_type: toggle
+  - text: Automatically dim video when flashing images or visual patterns (such as
+      stripes) are detected.
+    center:
+    - 0.5
+    - 0.2487
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 自动调暗视频
+    - automatically dim video
+    - 自动降低视频亮度
+    semantic_type: label
+  description: Accessibility settings page where users can toggle the 'Dim screen
+    share video' option to automatically dim flashing images during screen shares.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    - back button
+    semantic_type: button
+  - text: More
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 更多
+    - more options
+    - additional
+    - more menu
+    semantic_type: tab
+  - text: SELECT ACTIVATION METHOD
+    center:
+    - 0.5
+    - 0.1375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 选择激活方式
+    - activation method
+    - choose activation
+    - 选择激活方法
+    semantic_type: label
+  - text: Enter code
+    center:
+    - 0.5122
+    - 0.1788
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - 输入代码
+    - enter activation code
+    - 输入激活码
+    - type code
+    semantic_type: button
+  - text: Scan QR code
+    center:
+    - 0.5122
+    - 0.2314
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - 扫描二维码
+    - scan barcode
+    - 扫码
+    - scan QR
+    semantic_type: button
+  description: Device activation screen allowing users to choose between entering
+    a code or scanning a QR code.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_14
+  elements:
+  - text: Update available
+    center:
+    - 0.5
+    - 0.4175
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - update ready
+    - new update
+    - 有更新
+    - 版本更新
+    semantic_type: label
+  - text: A new version of Zoom Workplace is available! See what's new in this version.
+    center:
+    - 0.5
+    - 0.4716
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - new version available
+    - Zoom Workplace update
+    - Zoom新版本
+    - 查看更新内容
+    semantic_type: label
+  - text: Current version
+    center:
+    - 0.2899
+    - 0.5131
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - version
+    - 当前版本
+    - 版本号
+    - current ver
+    semantic_type: label
+  - text: Now available
+    center:
+    - 0.7191
+    - 0.5131
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - available now
+    - 现已可用
+    - 已发布
+    - ready
+    semantic_type: label
+  - text: Cancel
+    center:
+    - 0.3052
+    - 0.6139
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 取消
+    - dismiss
+    - abort
+    - 取消操作
+    semantic_type: button
+  - text: Continue
+    center:
+    - 0.6948
+    - 0.6139
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - 继续
+    - proceed
+    - next
+    - 下一步
+    - 确认
+    semantic_type: button
+  description: Update dialog prompting the user to install a new version of Zoom Workplace,
+    showing current and available versions with cancel and continue options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_15
+  elements:
+  - text: Copy
+    center:
+    - 0.3833
+    - 0.633
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 复制
+    - Copy link
+    - Copy text
+    semantic_type: button
+  - text: Nearby
+    center:
+    - 0.6167
+    - 0.633
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 附近
+    - Nearby devices
+    - Nearby meetings
+    semantic_type: menu_item
+  - text: Collections
+    center:
+    - 0.125
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - 收藏
+    - Saved
+    - Favorites
+    semantic_type: menu_item
+  - text: Drive
+    center:
+    - 0.375
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 云盘
+    - Zoom Drive
+    - Cloud storage
+    semantic_type: tab
+  - text: Messages
+    center:
+    - 0.625
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - 消息
+    - Chat
+    - 聊天
+    semantic_type: tab
+  - text: Bluetooth
+    center:
+    - 0.875
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - 蓝牙
+    - BT
+    - Bluetooth settings
+    semantic_type: setting
+  - text: Apps list
+    center:
+    - 0.5
+    - 0.9832
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 应用列表
+    - Apps
+    - Applications
+    semantic_type: menu_item
+  description: Sharing options screen displaying targets such as Nearby, Collections,
+    Drive, Messages, Bluetooth, and a list of available apps.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: Search in mail
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - search
+    - search mail
+    - search emails
+    - 搜索邮件
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - menu
+    - hamburger menu
+    - navigation menu
+    - 打开导航菜单
+    semantic_type: button
+  - text: Signed in as user@example.com&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+  - text: Primary
+    center:
+    - 0.0927
+    - 0.1377
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - primary tab
+    - primary inbox
+    - 主要
+    - 主收件箱
+    semantic_type: tab
+  - text: Compose
+    center:
+    - 0.7785
+    - 0.8699
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - new mail
+    - write email
+    - new message
+    - 写邮件
+    - 撰写
+    semantic_type: button
+  - text: Mail
+    center:
+    - 0.2955
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - email
+    - inbox
+    - 邮件
+    - 邮箱
+    semantic_type: tab
+  - text: Meet
+    center:
+    - 0.7045
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - meetings
+    - video meeting
+    - 会议
+    - 视频会议
+    semantic_type: tab
+  description: Main email inbox screen featuring a search bar, user profile, primary
+    inbox tab, compose button, and bottom navigation for Mail and Meet.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Return
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Privacy Policy
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Privacy
+    - 隐私政策
+    - Privacy statement
+    semantic_type: link
+  description: Privacy Policy page displaying the legal terms and conditions with
+    a back navigation button.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    - previous
+    semantic_type: button
+  - text: Terms of Service
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - 服务条款
+    - ToS
+    - terms
+    - user agreement
+    - 使用条款
+    semantic_type: link
+  description: Terms of Service page displaying the legal agreement for the app, with
+    a back button to return to the previous screen.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Return
+    - Previous
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Community standards
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - Community Guidelines
+    - 社区准则
+    - 社区标准
+    - Guidelines
+    semantic_type: link
+  description: Community standards page displaying the guidelines and rules for user
+    behavior.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 返回
+    - go back
+    - back button
+    - navigate back
+    semantic_type: button
+  - text: Open source software
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - 开源软件
+    - open source licenses
+    - OSS
+    semantic_type: link
+  - text: Just a moment...
+    center:
+    - 0.5
+    - 0.4338
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - 请稍等
+    - please wait
+    - loading
+    semantic_type: label
+  - text: www.zoom.com
+    center:
+    - 0.3889
+    - 0.2728
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - Zoom官网
+    - Zoom URL
+    - zoom.com
+    semantic_type: label
+  - text: Performing security verification
+    center:
+    - 0.5017
+    - 0.3266
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - 安全验证中
+    - security check
+    - verifying security
+    semantic_type: label
+  - text: Checking your Browser…
+    center:
+    - 0.4035
+    - 0.5056
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - 检查浏览器中
+    - browser check
+    - verifying browser
+    semantic_type: label
+  - text: Verify you are human
+    center:
+    - 0.0885
+    - 0.505
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - 验证您是人类
+    - I am human
+    - captcha
+    - human verification
+    semantic_type: button
+  - text: Cloudflare
+    center:
+    - 0.6587
+    - 0.4994
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - Cloudflare安全
+    - CF
+    - cloudflare protection
+    semantic_type: label
+  - text: Privacy
+    center:
+    - 0.6524
+    - 0.5218
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - 隐私
+    - privacy policy
+    - data privacy
+    semantic_type: link
+  - text: Help
+    center:
+    - 0.7267
+    - 0.5218
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - 帮助
+    - support
+    - help center
+    semantic_type: link
+  - text: Performance and Security by
+    center:
+    - 0.3656
+    - 0.7389
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - 性能与安全由...提供
+    - powered by
+    - secured by
+    semantic_type: label
+  description: Cloudflare security verification screen prompting the user to verify
+    they are human before accessing the Zoom website.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_21
+  elements:
+  - text: Zoom domains
+    center:
+    - 0.2392
+    - 0.6571
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Zoom domain settings
+    - Zoom server domain
+    - Zoom域名
+    semantic_type: setting
+  - text: .zoom.us
+    center:
+    - 0.4708
+    - 0.7212
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - zoom.us domain
+    - default zoom domain
+    - zoom.us
+    semantic_type: menu_item
+  - text: Default
+    center:
+    - 0.4708
+    - 0.7455
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 默认
+    - default setting
+    - default option
+    semantic_type: label
+  - text: .zoomgov.com
+    center:
+    - 0.5
+    - 0.7929
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - zoomgov domain
+    - government zoom domain
+    - zoomgov.com
+    semantic_type: menu_item
+  - text: Government users
+    center:
+    - 0.5
+    - 0.8173
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 政府用户
+    - government
+    - gov users
+    semantic_type: label
+  - text: .zoomgov.mil
+    center:
+    - 0.5
+    - 0.8647
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - zoomgov.mil domain
+    - military zoom domain
+    - defense zoom domain
+    semantic_type: menu_item
+  - text: Defense users
+    center:
+    - 0.5
+    - 0.8891
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 国防用户
+    - defense
+    - military users
+    semantic_type: label
+  - text: Close
+    center:
+    - 0.5
+    - 0.9429
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 关闭
+    - dismiss
+    - cancel
+    semantic_type: button
+  description: Zoom domain selection screen with a list of standard, government, and
+    defense environments and a close button.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_22
+  elements:
+  - text: Web View
+    center:
+    - 0.5
+    - 0.5096
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - 网页视图
+    - WebView
+    - web content
+    semantic_type: label
+  - text: Close tab
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - 关闭标签页
+    - 关闭选项卡
+    - close tab
+    semantic_type: button
+  - text: Connection is secure
+    center:
+    - 0.1507
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - 连接安全
+    - 安全连接
+    - secure connection
+    semantic_type: label
+  - text: Share
+    center:
+    - 0.8396
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - 分享
+    - 共享
+    - share content
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.949
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_49
+    aliases:
+    - 更多选项
+    - 更多
+    - more
+    semantic_type: button
+  - text: Chinese (Simplified)
+    center:
+    - 0.299
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 简体中文
+    - 中文
+    - Simplified Chinese
+    semantic_type: menu_item
+  - text: English
+    center:
+    - 0.5687
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 英文
+    - 英语
+    - ENG
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.9319
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭
+    - close
+    - dismiss
+    semantic_type: button
+  description: In-app web browser displaying a secure webpage with language selection
+    options and standard browser controls for sharing and closing.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: 登录 - Google 账号
+    center:
+    - 0.5
+    - 0.5415
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in - Google Account
+    - Google账号登录
+    - 登录Google
+    semantic_type: label
+  - text: 使用 Google 账号登录
+    center:
+    - 0.2868
+    - 0.1397
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in with Google
+    - Google登录
+    - 用Google账号登录
+    semantic_type: button
+  - text: 选择账号
+    center:
+    - 0.5017
+    - 0.2934
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Choose account
+    - 选择账户
+    - Select account
+    semantic_type: button
+  - text: 继续前往
+    center:
+    - 0.1372
+    - 0.3473
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Continue to
+    - 继续
+    - Proceed
+    semantic_type: button
+  - text: Zoom
+    center:
+    - 0.266
+    - 0.3473
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Zoom app
+    - Zoom应用
+    - Zoom会议
+    semantic_type: label
+  - text: 使用其他账号
+    center:
+    - 0.5017
+    - 0.5027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Use another account
+    - 使用其他账户
+    - Use different account
+    semantic_type: link
+  - text: 建议您在使用“Zoom”之前，先阅读此应用的
+    center:
+    - 0.3913
+    - 0.5902
+    fixed: false
+    found_at_scroll: 0
+  - text: 《隐私权政策》
+    center:
+    - 0.4774
+    - 0.6014
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy Policy
+    - 隐私政策
+    - Privacy
+    semantic_type: link
+  - text: 和
+    center:
+    - 0.1444
+    - 0.6127
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - and
+    - 与
+    semantic_type: label
+  - text: 《服务条款》
+    center:
+    - 0.2649
+    - 0.6127
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Terms of Service
+    - 服务条款
+    - Terms
+    semantic_type: link
+  - text: 。
+    center:
+    - 0.3865
+    - 0.6127
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - .
+    semantic_type: label
+  - text: 打开 Google 账号帮助中心（外部链接，在新窗口中打开）
+    center:
+    - 0.6111
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Open Google Account Help Center
+    - Google帮助中心
+    - Help Center
+    semantic_type: link
+  - text: 帮助
+    center:
+    - 0.6111
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help
+    - 帮助中心
+    - Support
+    semantic_type: link
+  - text: 《隐私权政策》（外部链接，在新窗口中打开）
+    center:
+    - 0.7628
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy Policy (external link)
+    - 隐私权政策
+    - Privacy Policy
+    semantic_type: link
+  - text: 隐私权
+    center:
+    - 0.7618
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy
+    - 隐私
+    - Privacy rights
+    semantic_type: label
+  - text: 《Google 服务条款》（外部链接，在新窗口中打开）
+    center:
+    - 0.9135
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Terms of Service (external link)
+    - Google服务条款
+    - Google Terms
+    semantic_type: link
+  - text: 条款
+    center:
+    - 0.9135
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Terms
+    - 条款与条件
+    - Terms and Conditions
+    semantic_type: label
+  - text: Close tab
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭标签页
+    - 关闭选项卡
+    - 关闭标签
+    semantic_type: button
+  - text: Connection is secure
+    center:
+    - 0.1507
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 连接是安全的
+    - 安全连接
+    - Secure connection
+    semantic_type: label
+  - text: Share
+    center:
+    - 0.8396
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分享
+    - 共享
+    - Share content
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.949
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - 更多
+    - More
+    semantic_type: button
+  - text: Chinese (Simplified)
+    center:
+    - 0.299
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 简体中文
+    - 中文
+    - Simplified Chinese
+    semantic_type: menu_item
+  - text: English
+    center:
+    - 0.5687
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 英文
+    - 英语
+    - EN
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.9319
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭
+    - Close button
+    - X
+    semantic_type: button
+  description: Google account selection screen for signing into Zoom, allowing users
+    to choose an existing account or add a new one, with links to Google's privacy
+    policy and terms of service.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: 登录 - Google 账号
+    center:
+    - 0.5
+    - 0.5415
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in - Google Account
+    - Google登录
+    - Google账号登录
+    semantic_type: label
+  - text: 使用 Google 账号登录
+    center:
+    - 0.2868
+    - 0.1397
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in with Google
+    - Google登录
+    - Google sign in
+    semantic_type: button
+  - text: 登录Zoom
+    center:
+    - 0.5017
+    - 0.2934
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in to Zoom
+    - Zoom登录
+    - Sign in Zoom
+    semantic_type: label
+  - text: Google 将允许Zoom访问这类与您有关的信息
+    center:
+    - 0.5017
+    - 0.4321
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google will allow Zoom to access this info
+    - Google信息授权
+    - Google data access
+    semantic_type: label
+  - text: 名称和个人资料照片
+    center:
+    - 0.5503
+    - 0.5178
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Name and profile photo
+    - 姓名和头像
+    - Name and photo
+    semantic_type: label
+  - text: 邮箱
+    center:
+    - 0.5503
+    - 0.5869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Email
+    - 电子邮件
+    - Email address
+    semantic_type: label
+  - text: 和
+    center:
+    - 0.5382
+    - 0.6468
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - and
+    - 与
+    semantic_type: label
+  - text: 您可随时前往您的
+    center:
+    - 0.1993
+    - 0.7051
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - You can go to your
+    - 您可以随时访问
+    semantic_type: label
+  - text: Google 账号设置（外部链接，在新窗口中打开）
+    center:
+    - 0.4385
+    - 0.7051
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Account settings
+    - Google账号设置
+    - Google account
+    semantic_type: link
+  - text: 进行更改。
+    center:
+    - 0.6233
+    - 0.7051
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - to make changes
+    - 修改设置
+    semantic_type: label
+  - text: 详细了解
+    center:
+    - 0.1264
+    - 0.741
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Learn more
+    - 了解更多
+    - Learn More
+    semantic_type: link
+  - text: 。
+    center:
+    - 0.6646
+    - 0.741
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - period
+    semantic_type: label
+  - text: 取消
+    center:
+    - 0.2733
+    - 0.8353
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - 取消登录
+    - Cancel sign in
+    semantic_type: button
+  - text: 继续
+    center:
+    - 0.7302
+    - 0.8353
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Continue
+    - 下一步
+    - Proceed
+    semantic_type: button
+  - text: 打开 Google 账号帮助中心（外部链接，在新窗口中打开）
+    center:
+    - 0.6111
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Open Google Account Help Center
+    - Google帮助中心
+    - Google Help
+    semantic_type: link
+  - text: 帮助
+    center:
+    - 0.6111
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help
+    - 帮助中心
+    - Support
+    semantic_type: link
+  - text: 《隐私权政策》（外部链接，在新窗口中打开）
+    center:
+    - 0.7628
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy Policy
+    - 隐私政策
+    - Privacy
+    semantic_type: link
+  - text: 隐私权
+    center:
+    - 0.7618
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy
+    - 隐私
+    - Privacy Policy
+    semantic_type: label
+  - text: 《Google 服务条款》（外部链接，在新窗口中打开）
+    center:
+    - 0.9135
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Terms of Service
+    - Google服务条款
+    - Terms
+    semantic_type: link
+  - text: 条款
+    center:
+    - 0.9135
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Terms
+    - 服务条款
+    - Terms of Service
+    semantic_type: label
+  - text: Close tab
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭标签页
+    - 关闭选项卡
+    - Close
+    semantic_type: button
+  - text: Connection is secure
+    center:
+    - 0.1507
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 连接安全
+    - 安全连接
+    - Secure connection
+    semantic_type: label
+  - text: accounts.google.com
+    center:
+    - 0.3354
+    - 0.0905
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google账号
+    - Google account URL
+    semantic_type: label
+  - text: Share
+    center:
+    - 0.8396
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分享
+    - 共享
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.949
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - 更多
+    - More
+    semantic_type: button
+  - text: Chinese (Simplified)
+    center:
+    - 0.299
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 中文（简体）
+    - 简体中文
+    - Chinese
+    semantic_type: menu_item
+  - text: English
+    center:
+    - 0.5687
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 英文
+    - 英语
+    - English language
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.9319
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭
+    - Close button
+    - 关闭页面
+    semantic_type: button
+  description: WebView displaying the Google OAuth consent screen for Zoom login,
+    showing requested account information and options to cancel or continue.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: 登录 - Google 账号
+    center:
+    - 0.5
+    - 0.5415
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in - Google Account
+    - Google登录
+    - 登录Google账号
+    semantic_type: label
+  - text: 使用 Google 账号登录
+    center:
+    - 0.2868
+    - 0.1397
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in with Google
+    - Google账号登录
+    - 使用Google登录
+    semantic_type: button
+  - text: 登录Zoom
+    center:
+    - 0.5017
+    - 0.2934
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in to Zoom
+    - Zoom登录
+    - 登录
+    semantic_type: label
+  - text: Google 将允许Zoom访问这类与您有关的信息
+    center:
+    - 0.5017
+    - 0.4321
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google will allow Zoom to access this info about you
+    - Google授权信息
+    - 信息访问说明
+    semantic_type: label
+  - text: 名称和个人资料照片
+    center:
+    - 0.5503
+    - 0.5178
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Name and profile photo
+    - 姓名和头像
+    - 基本信息
+    semantic_type: label
+  - text: 邮箱
+    center:
+    - 0.5503
+    - 0.5869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Email
+    - 电子邮件
+    - Email address
+    semantic_type: label
+  - text: 和
+    center:
+    - 0.5382
+    - 0.6468
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - and
+    - 与
+    semantic_type: label
+  - text: 您可随时前往您的
+    center:
+    - 0.1993
+    - 0.7051
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - You can go to your
+    - 您可以随时访问您的
+    semantic_type: label
+  - text: Google 账号设置（外部链接，在新窗口中打开）
+    center:
+    - 0.4385
+    - 0.7051
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Account settings
+    - Google账号设置
+    - 账号设置
+    semantic_type: link
+  - text: 进行更改。
+    center:
+    - 0.6233
+    - 0.7051
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - to make changes.
+    - 更改设置
+    semantic_type: label
+  - text: 详细了解
+    center:
+    - 0.1264
+    - 0.741
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Learn more
+    - 了解更多
+    - 详情
+    semantic_type: link
+  - text: 。
+    center:
+    - 0.6646
+    - 0.741
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - .
+    - 句号
+    semantic_type: label
+  - text: 取消
+    center:
+    - 0.2733
+    - 0.8353
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - 放弃
+    - 退出
+    semantic_type: button
+  - text: 继续
+    center:
+    - 0.7302
+    - 0.8353
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Continue
+    - 下一步
+    - 确认
+    semantic_type: button
+  - text: 打开 Google 账号帮助中心（外部链接，在新窗口中打开）
+    center:
+    - 0.6111
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Open Google Account Help Center
+    - Google帮助中心
+    - 打开帮助中心
+    semantic_type: link
+  - text: 帮助
+    center:
+    - 0.6111
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help
+    - 协助
+    - 帮助菜单
+    semantic_type: button
+  - text: 《隐私权政策》（外部链接，在新窗口中打开）
+    center:
+    - 0.7628
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy Policy
+    - 隐私政策
+    - 隐私权政策
+    semantic_type: link
+  - text: 隐私权
+    center:
+    - 0.7618
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy
+    - 隐私
+    semantic_type: label
+  - text: 《Google 服务条款》（外部链接，在新窗口中打开）
+    center:
+    - 0.9135
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Terms of Service
+    - 服务条款
+    - Google服务条款
+    semantic_type: link
+  - text: 条款
+    center:
+    - 0.9135
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Terms
+    - 条款与条件
+    semantic_type: label
+  - text: Close tab
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭标签页
+    - 关闭
+    - Close
+    semantic_type: button
+  - text: Connection is secure
+    center:
+    - 0.1507
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 连接是安全的
+    - 安全连接
+    - Secure connection
+    semantic_type: label
+  - text: accounts.google.com
+    center:
+    - 0.3354
+    - 0.0905
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google账号网址
+    - URL
+    - 网址
+    semantic_type: label
+  - text: Share
+    center:
+    - 0.8396
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分享
+    - 共享
+    - Share page
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.949
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - 更多
+    - More
+    semantic_type: button
+  description: Google OAuth consent screen embedded in a WebView asking the user to
+    grant Zoom access to their Google account information, with Cancel and Continue
+    options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_26
+  elements:
+  - text: 登录 - Google 账号
+    center:
+    - 0.5
+    - 0.5415
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in - Google Account
+    - Google login
+    - Google 登录
+    semantic_type: label
+  - text: 使用 Google 账号登录
+    center:
+    - 0.2868
+    - 0.1397
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in with Google
+    - Google Sign-In
+    - Google 登录
+    semantic_type: button
+  - text: 登录Zoom
+    center:
+    - 0.5017
+    - 0.2934
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sign in to Zoom
+    - Zoom login
+    - Zoom 登录
+    semantic_type: button
+  - text: Google 将允许Zoom访问这类与您有关的信息
+    center:
+    - 0.5017
+    - 0.4321
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google will allow Zoom to access this info
+    - Google 授权信息
+    - 权限说明
+    semantic_type: label
+  - text: 名称和个人资料照片
+    center:
+    - 0.5503
+    - 0.5178
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Name and profile photo
+    - 姓名和头像
+    - 基本信息
+    semantic_type: label
+  - text: 邮箱
+    center:
+    - 0.5503
+    - 0.5869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Email
+    - 电子邮件
+    - Email address
+    semantic_type: label
+  - text: 和
+    center:
+    - 0.5382
+    - 0.6468
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - and
+    - 与
+    semantic_type: label
+  - text: 您可随时前往您的
+    center:
+    - 0.1993
+    - 0.7051
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - You can go to your
+    - 您可以随时访问
+    semantic_type: label
+  - text: Google 账号设置（外部链接，在新窗口中打开）
+    center:
+    - 0.4385
+    - 0.7051
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Account settings
+    - Google 账号设置
+    - 账号设置
+    semantic_type: link
+  - text: 进行更改。
+    center:
+    - 0.6233
+    - 0.7051
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - to make changes.
+    - 进行修改
+    semantic_type: label
+  - text: 详细了解
+    center:
+    - 0.1264
+    - 0.741
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Learn more
+    - 了解更多
+    - 详情
+    semantic_type: link
+  - text: 。
+    center:
+    - 0.6646
+    - 0.741
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - .
+    - 句号
+    semantic_type: label
+  - text: 取消
+    center:
+    - 0.2733
+    - 0.8353
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cancel
+    - 放弃
+    - 返回
+    semantic_type: button
+  - text: 继续
+    center:
+    - 0.7302
+    - 0.8353
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Continue
+    - 下一步
+    - 确认
+    semantic_type: button
+  - text: 打开 Google 账号帮助中心（外部链接，在新窗口中打开）
+    center:
+    - 0.6111
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Open Google Account Help Center
+    - Google 帮助中心
+    - 帮助
+    semantic_type: link
+  - text: 帮助
+    center:
+    - 0.6111
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help
+    - 协助
+    - 支持
+    semantic_type: link
+  - text: 《隐私权政策》（外部链接，在新窗口中打开）
+    center:
+    - 0.7628
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy Policy
+    - 隐私政策
+    - 隐私权政策
+    semantic_type: link
+  - text: 隐私权
+    center:
+    - 0.7618
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy
+    - 隐私
+    - Privacy Policy
+    semantic_type: label
+  - text: 《Google 服务条款》（外部链接，在新窗口中打开）
+    center:
+    - 0.9135
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Terms of Service
+    - 服务条款
+    - Google 服务条款
+    semantic_type: link
+  - text: 条款
+    center:
+    - 0.9135
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Terms
+    - 条款与条件
+    - Terms of Service
+    semantic_type: label
+  - text: 全部
+    center:
+    - 0.074
+    - 0.0832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - All
+    - 全部结果
+    - All results
+    semantic_type: tab
+  - text: 图片
+    center:
+    - 0.2003
+    - 0.0832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Images
+    - 图像
+    - 图片搜索
+    semantic_type: tab
+  - text: 视频
+    center:
+    - 0.3267
+    - 0.0832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Videos
+    - 影片
+    - 视频搜索
+    semantic_type: tab
+  - text: 购物
+    center:
+    - 0.4531
+    - 0.0832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Shopping
+    - 商城
+    - 购物搜索
+    semantic_type: tab
+  - text: 短视频
+    center:
+    - 0.5965
+    - 0.0832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Short videos
+    - Shorts
+    - 短视频搜索
+    semantic_type: tab
+  - text: 新闻
+    center:
+    - 0.7399
+    - 0.0832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - News
+    - 资讯
+    - 新闻搜索
+    semantic_type: tab
+  - text: 网页
+    center:
+    - 0.8663
+    - 0.0832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Web
+    - 网页搜索
+    - Web search
+    semantic_type: tab
+  - text: 图书
+    center:
+    - 0.9642
+    - 0.0832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Books
+    - 书籍
+    - 图书搜索
+    semantic_type: tab
+  - text: 地图
+    center:
+    - 0.0
+    - 0.0
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Maps
+    - 地图搜索
+    - Map
+    semantic_type: tab
+  - text: 搜索结果
+    center:
+    - 0.0024
+    - 0.1213
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search results
+    - 查询结果
+    - Search
+    semantic_type: label
+  - text: 了解详情
+    center:
+    - 0.1469
+    - 0.3237
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Learn more
+    - 了解更多
+    - 详情
+    semantic_type: link
+  - text: 知道了
+    center:
+    - 0.3802
+    - 0.3237
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Got it
+    - OK
+    - 了解
+    semantic_type: button
+  - text: 网页搜索结果
+    center:
+    - 0.0024
+    - 0.3982
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Web search results
+    - 网页查询结果
+    - Web results
+    semantic_type: label
+  - text: 关于这条结果的详细信息
+    center:
+    - 0.9399
+    - 0.4112
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - About this result
+    - 关于此结果
+    - 结果详情
+    semantic_type: link
+  - text: 用户还搜索了
+    center:
+    - 0.4872
+    - 0.5862
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - People also search for
+    - 相关搜索
+    - Related searches
+    semantic_type: label
+  description: Google account authorization page for Zoom login, displaying shared
+    information and providing cancel and continue options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_27
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    - back button
+    semantic_type: button
+  - text: Auto-connect to audio
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自动连接音频
+    - auto connect audio
+    - automatically connect audio
+    semantic_type: toggle
+  - text: Off *
+    center:
+    - 0.4806
+    - 0.1276
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭
+    - disabled
+    - turned off
+    semantic_type: label
+  - text: Wi-Fi or cellular data
+    center:
+    - 0.4476
+    - 0.1801
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - WiFi或蜂窝数据
+    - wifi or mobile data
+    - wireless or cellular
+    semantic_type: label
+  - text: Selected
+    center:
+    - 0.916
+    - 0.1801
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 已选择
+    - chosen
+    - picked
+    semantic_type: label
+  - text: '*You will be automatically connected to audio when you call someone or
+      answer.'
+    center:
+    - 0.5
+    - 0.2436
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自动连接音频说明
+    - auto connect audio description
+    - audio auto-connect help text
+    semantic_type: label
+  description: Settings page for configuring automatic audio connection preferences
+    over Wi-Fi or cellular data.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_28
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    - back button
+    semantic_type: button
+  - text: Manage Storage
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 管理存储
+    - storage management
+    - manage storage settings
+    semantic_type: menu_item
+  - text: Cache
+    center:
+    - 0.1125
+    - 0.1397
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 缓存
+    - cached data
+    - cache data
+    semantic_type: label
+  - text: Clear
+    center:
+    - 0.8809
+    - 0.1421
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 清除
+    - clear cache
+    - clear data
+    - 清空
+    semantic_type: button
+  - text: Chat files
+    center:
+    - 0.1392
+    - 0.2936
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 聊天文件
+    - chat attachments
+    - chat documents
+    semantic_type: menu_item
+  - text: Images, videos and files shared in chat.
+    center:
+    - 0.3559
+    - 0.3522
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 聊天中共享的图片、视频和文件
+    - images videos and files in chat
+    - shared chat media
+    semantic_type: label
+  description: Storage management screen allowing users to view and clear cache and
+    chat files.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    - back button
+    semantic_type: button
+  - text: General
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 常规
+    - 通用
+    - general settings
+    semantic_type: setting
+  - text: DATA
+    center:
+    - 0.5
+    - 0.1367
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 数据
+    - data settings
+    - data usage
+    semantic_type: setting
+  - text: Manage storage
+    center:
+    - 0.4611
+    - 0.1804
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 管理存储
+    - storage management
+    - manage cache
+    semantic_type: menu_item
+  - text: Button
+    center:
+    - 0.9028
+    - 0.1804
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按钮
+    - action button
+    - btn
+    semantic_type: button
+  - text: ADVANCED
+    center:
+    - 0.5
+    - 0.2421
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 高级
+    - advanced settings
+    - 高级设置
+    semantic_type: setting
+  - text: Diagnostic data viewer
+    center:
+    - 0.425
+    - 0.2872
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 诊断数据查看器
+    - diagnostic viewer
+    - view diagnostic data
+    semantic_type: menu_item
+  - text: On, switch
+    center:
+    - 0.874
+    - 0.287
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 开启，开关
+    - toggle on
+    - switch on
+    - enabled
+    semantic_type: toggle
+  - text: Open diagnostic data viewer
+    center:
+    - 0.4611
+    - 0.341
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 打开诊断数据查看器
+    - view diagnostics
+    - open diagnostics
+    semantic_type: button
+  - text: Enabling this feature uses up to 20 MB of storage.
+    center:
+    - 0.5
+    - 0.3869
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 启用此功能最多使用 20 MB 存储空间
+    - storage warning
+    - data usage warning
+    semantic_type: label
+  description: Zoom General settings screen where users can manage storage and toggle
+    the advanced diagnostic data viewer.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    - back button
+    semantic_type: button
+  - text: Aspect ratio
+    center:
+    - 0.5
+    - 0.0708
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 宽高比
+    - 画面比例
+    - video ratio
+    - aspect ratio setting
+    semantic_type: label
+  - text: Scale to fit
+    center:
+    - 0.4806
+    - 0.1224
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 缩放以适配
+    - 适应屏幕
+    - fit to screen
+    - scale to fill
+    semantic_type: menu_item
+  - text: Original ratio
+    center:
+    - 0.4476
+    - 0.175
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 原始比例
+    - 原始宽高比
+    - original aspect ratio
+    - native ratio
+    semantic_type: menu_item
+  - text: Selected
+    center:
+    - 0.916
+    - 0.175
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 已选择
+    - 已选中
+    - chosen
+    - active
+    semantic_type: label
+  description: Aspect ratio settings screen allowing the user to choose between scaling
+    to fit or keeping the original video ratio.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_31
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: VIDEO
+    center:
+    - 0.5
+    - 0.1367
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频
+    - video tab
+    - camera
+    semantic_type: tab
+  - text: Aspect ratio
+    center:
+    - 0.3507
+    - 0.1862
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 画面比例
+    - video ratio
+    - aspect ratio setting
+    semantic_type: setting
+  - text: Original ratio
+    center:
+    - 0.734
+    - 0.1862
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 原始比例
+    - original aspect ratio
+    - default ratio
+    semantic_type: setting
+  - text: Button
+    center:
+    - 0.9028
+    - 0.1862
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按钮
+    - action button
+    - btn
+    semantic_type: button
+  - text: Mirror my video
+    center:
+    - 0.4372
+    - 0.2503
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 镜像视频
+    - mirror video
+    - flip video
+    - 视频镜像
+    semantic_type: toggle
+  - text: Off, switch
+    center:
+    - 0.8594
+    - 0.2514
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭
+    - switch off
+    - toggle off
+    semantic_type: toggle
+  - text: Advanced
+    center:
+    - 0.4806
+    - 0.3144
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 高级
+    - advanced settings
+    - more options
+    semantic_type: menu_item
+  description: Video settings page with options to adjust aspect ratio, toggle mirrored
+    video, and access advanced settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - Return
+    - Go back
+    semantic_type: button
+  - text: Advanced
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 高级
+    - Advanced settings
+    - 高级设置
+    semantic_type: setting
+  - text: Use hardware acceleration for receiving video
+    center:
+    - 0.4372
+    - 0.1588
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 使用硬件加速接收视频
+    - Hardware acceleration
+    - 硬件加速
+    semantic_type: setting
+  - text: On, switch
+    center:
+    - 0.8594
+    - 0.1588
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 开启，开关
+    - Toggle
+    - Switch
+    - 'On'
+    semantic_type: toggle
+  - text: Use hardware video decoder of the graphics card to save CPU usage for receiving
+      video
+    center:
+    - 0.5
+    - 0.2287
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 使用显卡的硬件视频解码器以节省接收视频的CPU使用率
+    - Hardware video decoder
+    - GPU decoder
+    semantic_type: label
+  description: Advanced settings screen featuring a toggle to enable hardware acceleration
+    for receiving video to save CPU usage.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_33
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - Go back
+    - Return
+    - Navigate back
+    semantic_type: button
+  - text: Accessibility
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 辅助功能
+    - 无障碍
+    - Accessibility settings
+    semantic_type: setting
+  - text: SCREEN
+    center:
+    - 0.5
+    - 0.1554
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 屏幕
+    - Display
+    - Screen settings
+    semantic_type: setting
+  - text: Dim screen share video
+    center:
+    - 0.4177
+    - 0.1955
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 调暗屏幕共享视频
+    - Dim shared video
+    - 降低共享亮度
+    semantic_type: setting
+  - text: On, switch
+    center:
+    - 0.8594
+    - 0.1954
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 开启
+    - 开关
+    - Toggle on
+    - 启用
+    semantic_type: toggle
+  - text: Automatically dim video when flashing images or visual patterns (such as
+      stripes) are detected.
+    center:
+    - 0.5
+    - 0.2487
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自动调暗视频
+    - Auto dim video
+    - 检测到闪烁图像时自动调暗
+    semantic_type: label
+  description: Accessibility settings page with a toggle to automatically dim screen
+    share video when flashing images or visual patterns are detected.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Convert device to common area device?
+    center:
+    - 0.5
+    - 0.416
+    fixed: false
+    found_at_scroll: 0
+  - text: Continue
+    center:
+    - 0.5
+    - 0.5662
+    fixed: false
+    found_at_scroll: 0
+  - text: Cancel
+    center:
+    - 0.5
+    - 0.6268
+    fixed: false
+    found_at_scroll: 0
+  description: Confirmation dialog prompting the user to convert their device to a
+    common area device with continue and cancel options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_35
+  elements:
+  - text: Allow Zoom to take pictures and record video?
+    center:
+    - 0.5
+    - 0.4175
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Camera permission prompt
+    - Camera access request
+    - 允许Zoom拍照和录制视频
+    semantic_type: label
+  - text: While using the app
+    center:
+    - 0.5
+    - 0.5061
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - While using
+    - Foreground only
+    - 使用时允许
+    - 使用应用时
+    semantic_type: button
+  - text: Only this time
+    center:
+    - 0.5
+    - 0.5734
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - One time only
+    - Just this once
+    - 仅这一次
+    - 仅此一次
+    semantic_type: button
+  - text: Don’t allow
+    center:
+    - 0.5
+    - 0.6407
+    fixed: false
+    found_at_scroll: 0
+  description: Android system permission dialog requesting camera access with options
+    to allow while using the app, allow only this time, or deny.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_36
+  elements:
+  - text: Add star
+    center:
+    - 0.9417
+    - 0.1516
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Star
+    - Favorite
+    - 标星
+    semantic_type: button
+  - text: to me
+    center:
+    - 0.2389
+    - 0.2513
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - To
+    - Recipient
+    - 收件人
+    semantic_type: label
+  - text: Reply
+    center:
+    - 0.8444
+    - 0.2301
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Respond
+    - 回复
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.2301
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - More
+    - Options
+    - 更多
+    semantic_type: button
+  - text: Reply all
+    center:
+    - 0.5337
+    - 0.8748
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Reply to all
+    - 回复全部
+    semantic_type: button
+  - text: Forward
+    center:
+    - 0.8479
+    - 0.8748
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Fwd
+    - 转发
+    semantic_type: button
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Archive
+    center:
+    - 0.5917
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Archive message
+    - 归档
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.7083
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Remove
+    - Trash
+    - 删除
+    semantic_type: button
+  - text: Mark unread
+    center:
+    - 0.825
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Mark as unread
+    - 标为未读
+    semantic_type: button
+  - text: Mail
+    center:
+    - 0.2955
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Email
+    - Inbox
+    - 邮件
+    semantic_type: tab
+  - text: Meet
+    center:
+    - 0.7045
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Meetings
+    - Meeting
+    - 会议
+    semantic_type: tab
+  description: Email viewing screen displaying a message with a toolbar to reply,
+    forward, archive, delete, and mark as unread.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_37
+  elements:
+  - text: Download Center - Zoom
+    center:
+    - 0.5
+    - 0.5415
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Download Center
+    - Zoom Downloads
+    - 下载中心
+    semantic_type: label
+  - text: Skip to main content
+    center:
+    - 0.0156
+    - 0.1162
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Skip to content
+    - 跳过主要内容
+    - Skip navigation
+    semantic_type: link
+  - text: Skip to Main Content
+    center:
+    - 0.0813
+    - 0.1599
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Skip to content
+    - 跳过主要内容
+    - Skip navigation
+    semantic_type: link
+  - text: Accessibility Overview
+    center:
+    - 0.1201
+    - 0.1375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Accessibility
+    - 无障碍概述
+    - Accessibility settings
+    semantic_type: link
+  - text: Toggle navigation
+    center:
+    - 0.9497
+    - 0.1381
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Hamburger menu
+    - 切换导航
+    - Open menu
+    semantic_type: button
+  - text: Join
+    center:
+    - 0.6743
+    - 0.137
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Join Meeting
+    - 加入
+    - Join a meeting
+    semantic_type: button
+  - text: Host
+    center:
+    - 0.8177
+    - 0.137
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Host Meeting
+    - 主持
+    - Start meeting
+    semantic_type: button
+  - text: Zoom Home Page
+    center:
+    - 0.1517
+    - 0.1375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Home
+    - Zoom主页
+    - Homepage
+    semantic_type: link
+  - text: Zoom Client for Meetings
+    center:
+    - 0.5007
+    - 0.229
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Zoom Client
+    - Zoom会议客户端
+    - Zoom app
+    semantic_type: link
+  - text: Download from Google Play
+    center:
+    - 0.5007
+    - 0.2833
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Play download
+    - 从Google Play下载
+    - Get it on Google Play
+    semantic_type: button
+  - text: Download from Zoom
+    center:
+    - 0.5007
+    - 0.3764
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Direct download
+    - 从Zoom下载
+    - Download APK
+    semantic_type: button
+  - text: Controller for Zoom Rooms
+    center:
+    - 0.5007
+    - 0.4489
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Zoom Rooms Controller
+    - Zoom Rooms控制器
+    - Room controller
+    semantic_type: link
+  - text: About
+    center:
+    - 0.5309
+    - 0.704
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - About Zoom
+    - 关于
+    - About us
+    semantic_type: link
+  - text: Zoom Blog
+    center:
+    - 0.1955
+    - 0.745
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Blog
+    - Zoom博客
+    - News
+    semantic_type: link
+  - text: Customers
+    center:
+    - 0.6184
+    - 0.745
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Customer stories
+    - 客户
+    - Case studies
+    semantic_type: link
+  - text: Our Team
+    center:
+    - 0.1847
+    - 0.7809
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Team
+    - 我们的团队
+    - Leadership
+    semantic_type: link
+  - text: Careers
+    center:
+    - 0.5941
+    - 0.7809
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Jobs
+    - 招聘
+    - Join our team
+    semantic_type: link
+  - text: Integrations
+    center:
+    - 0.2042
+    - 0.8168
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App marketplace
+    - 集成
+    - Apps
+    semantic_type: link
+  - text: Partners
+    center:
+    - 0.5979
+    - 0.8168
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Partner program
+    - 合作伙伴
+    - Alliances
+    semantic_type: link
+  - text: Investors
+    center:
+    - 0.1809
+    - 0.8527
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Investor relations
+    - 投资者
+    - Financials
+    semantic_type: link
+  - text: Press
+    center:
+    - 0.576
+    - 0.8527
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Press room
+    - 新闻
+    - Media
+    semantic_type: link
+  - text: Sustainability &amp; ESG
+    center:
+    - 0.2684
+    - 0.8886
+    fixed: false
+    found_at_scroll: 0
+  - text: Zoom Cares
+    center:
+    - 0.6281
+    - 0.8886
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Zoom Cares program
+    - Zoom关怀
+    - Social impact
+    semantic_type: link
+  - text: Media Kit
+    center:
+    - 0.1823
+    - 0.9245
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Press kit
+    - 媒体资料包
+    - Brand assets
+    semantic_type: link
+  - text: How to Videos
+    center:
+    - 0.6451
+    - 0.9245
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Tutorials
+    - 教程视频
+    - Help videos
+    semantic_type: link
+  - text: Developer Platform
+    center:
+    - 0.2611
+    - 0.9604
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Developers
+    - 开发者平台
+    - API
+    semantic_type: link
+  - text: Zoom Ventures
+    center:
+    - 0.6524
+    - 0.9604
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Ventures
+    - Zoom风投
+    - Investment fund
+    semantic_type: link
+  - text: Zoom Merchandise Store
+    center:
+    - 0.3097
+    - 0.9801
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Merch store
+    - Zoom周边商店
+    - Swag
+    semantic_type: link
+  - text: Download
+    center:
+    - 0.0
+    - 0.0
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Downloads
+    - 下载
+    - Get Zoom
+    semantic_type: button
+  - text: Open chat dialog
+    center:
+    - 0.8858
+    - 0.9205
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Chat
+    - 打开聊天
+    - Support chat
+    semantic_type: button
+  - text: Privacy
+    center:
+    - 0.5007
+    - 0.5413
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy policy
+    - 隐私
+    - Privacy center
+    semantic_type: link
+  - text: Privacy Statement
+    center:
+    - 0.4896
+    - 0.5667
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy policy
+    - 隐私声明
+    - Data privacy
+    semantic_type: link
+  - text: ACCEPT COOKIES
+    center:
+    - 0.5007
+    - 0.6412
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Accept
+    - 接受Cookie
+    - Allow cookies
+    semantic_type: button
+  - text: Cookies Settings
+    center:
+    - 0.5007
+    - 0.6995
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cookie preferences
+    - Cookie设置
+    - Manage cookies
+    semantic_type: button
+  - text: Close
+    center:
+    - 0.9076
+    - 0.3636
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - 关闭
+    - X
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Homepage
+    - 主页
+    - 首页
+    semantic_type: tab
+  - text: Connection is secure
+    center:
+    - 0.1653
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Secure connection
+    - 连接安全
+    - HTTPS
+    semantic_type: label
+  - text: zoom.us/support/download?os=android
+    center:
+    - 0.4125
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Android download link
+    - 安卓下载链接
+    - URL
+    semantic_type: link
+  - text: New tab
+    center:
+    - 0.7181
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add tab
+    - 新标签页
+    - Open new tab
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Tab switcher
+    - 切换或关闭标签页
+    - Manage tabs
+    semantic_type: button
+  - text: Update available. More options
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Update
+    - 有可用更新
+    - More options
+    semantic_type: button
+  description: Zoom Download Center page featuring navigation links to join or host
+    meetings, download options for clients and controllers, and a comprehensive footer
+    with company information.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_38
+  elements:
+  - text: Nearby Share
+    center:
+    - 0.5
+    - 0.5559
+    fixed: false
+    found_at_scroll: 0
+  - text: I'm using Zoom Workplace for video meeting and chat. Get the free app at
+      https://zoom.us/download.
+    center:
+    - 0.5632
+    - 0.6611
+    fixed: false
+    found_at_scroll: 0
+  - text: Need help sharing?
+    center:
+    - 0.4997
+    - 0.937
+    fixed: false
+    found_at_scroll: 0
+  description: Screen for sharing a Zoom meeting via Nearby Share, displaying the
+    default invitation text and a help link.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_39
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up arrow
+    semantic_type: button
+  - text: Compose
+    center:
+    - 0.2635
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - new message
+    - write
+    - 新建消息
+    - 撰写
+    semantic_type: button
+  - text: Attach file
+    center:
+    - 0.7083
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - attachment
+    - file
+    - 附件
+    - 添加文件
+    semantic_type: button
+  - text: Send
+    center:
+    - 0.825
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - submit
+    - 发送
+    - send message
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - options
+    - menu
+    - 更多选项
+    - 更多
+    semantic_type: button
+  - text: From
+    center:
+    - 0.1069
+    - 0.1494
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sender
+    - 发件人
+    - from field
+    semantic_type: label
+  - text: To
+    center:
+    - 0.0413
+    - 0.2128
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - recipient
+    - 收件人
+    - to field
+    semantic_type: label
+  - text: Add Cc/Bcc
+    center:
+    - 0.9319
+    - 0.2128
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - cc
+    - bcc
+    - carbon copy
+    - 添加抄送
+    - 抄送密送
+    semantic_type: link
+  - text: Subject
+    center:
+    - 0.5
+    - 0.2718
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - title
+    - 主题
+    - subject line
+    semantic_type: label
+  description: Email composition screen for drafting and sending messages, featuring
+    fields for recipients, subject, and options to attach files.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_40
+  elements:
+  - text: Save to Drive
+    center:
+    - 0.1674
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save to cloud
+    - 保存到云端
+    - Save file to drive
+    semantic_type: button
+  - text: Show dropdown menu
+    center:
+    - 0.9028
+    - 0.266
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dropdown
+    - 下拉菜单
+    - Open menu
+    - More options
+    semantic_type: button
+  - text: My Drive
+    center:
+    - 0.5
+    - 0.3583
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的云盘
+    - Personal Drive
+    - My Files
+    semantic_type: menu_item
+  - text: Cancel
+    center:
+    - 0.7278
+    - 0.9439
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 取消
+    - Dismiss
+    - Abort
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.9028
+    - 0.9439
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - Confirm
+    - Save file
+    semantic_type: button
+  description: Dialog for saving a file to a cloud drive with a folder selection dropdown
+    and confirm/cancel buttons.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_41
+  elements:
+  - text: Select conversation
+    center:
+    - 0.401
+    - 0.3769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Choose chat
+    - 选择会话
+    - 选择对话
+    semantic_type: button
+  - text: Once you start a new conversation, you’ll see it listed here
+    center:
+    - 0.5
+    - 0.5623
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Empty state text
+    - 暂无会话
+    - 空状态提示
+    semantic_type: label
+  - text: Cancel
+    center:
+    - 0.4729
+    - 0.6369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 取消
+    - Dismiss
+    - Abort
+    semantic_type: button
+  - text: New message
+    center:
+    - 0.7174
+    - 0.6369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Compose
+    - 新建消息
+    - Start chat
+    semantic_type: button
+  description: Empty state of the Chat screen displaying a message that no conversations
+    exist and a button to start a new message.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_42
+  elements:
+  - text: Copy
+    center:
+    - 0.3833
+    - 0.633
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 复制
+    - copy text
+    - duplicate
+    semantic_type: button
+  - text: Nearby
+    center:
+    - 0.6167
+    - 0.633
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 附近
+    - nearby devices
+    - nearby share
+    semantic_type: tab
+  - text: Messages
+    center:
+    - 0.125
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 消息
+    - chat
+    - messaging
+    semantic_type: tab
+  - text: Drive
+    center:
+    - 0.375
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 云盘
+    - cloud storage
+    - zoom drive
+    semantic_type: tab
+  - text: Collections
+    center:
+    - 0.625
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收藏
+    - 集合
+    - bookmarks
+    semantic_type: tab
+  - text: Gmail
+    center:
+    - 0.8747
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 谷歌邮箱
+    - google mail
+    - email
+    semantic_type: link
+  - text: Apps list
+    center:
+    - 0.5
+    - 0.9832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 应用列表
+    - app directory
+    - applications
+    semantic_type: menu_item
+  description: App selection list displaying options such as Nearby, Messages, Drive,
+    Collections, and Gmail for sharing or opening files.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_43
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Return
+    - Go back
+    - 返回
+    - Back button
+    semantic_type: button
+  - text: Network test
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Test network
+    - Check network
+    - 网络测试
+    - Connection test
+    semantic_type: button
+  description: Network test screen with a back button and an option to check internet
+    connection quality.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_44
+  elements:
+  - text: Back
+    center:
+    - 0.0778
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    - back button
+    semantic_type: button
+  - text: Open source software
+    center:
+    - 0.5486
+    - 0.0728
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 开源软件
+    - open source licenses
+    - OSS
+    - open source notices
+    semantic_type: menu_item
+  description: Open source software licenses page displaying legal acknowledgments
+    and third-party library details with a back navigation button.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_45
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Go back
+    - Up button
+    semantic_type: button
+  - text: Help &amp; feedback
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+  - text: Signed in to Google as
+    center:
+    - 0.5
+    - 0.1285
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Logged in as
+    - 已登录
+    - Account status
+    - Signed in
+    semantic_type: label
+  - text: Manage your Google Account
+    center:
+    - 0.4306
+    - 0.2603
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Manage account
+    - 管理账号
+    - Account settings
+    - Google account
+    semantic_type: link
+  - text: Add account to device
+    center:
+    - 0.3677
+    - 0.3244
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add account
+    - 添加账号
+    - Sign in
+    - Add user
+    semantic_type: menu_item
+  - text: Sign out
+    center:
+    - 0.2458
+    - 0.3885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Log out
+    - 退出登录
+    - Logout
+    - Sign off
+    semantic_type: menu_item
+  description: Account settings page for managing the linked Google account, with
+    options to view account details, add a new account, or sign out.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_46
+  elements:
+  - text: Sign in - Google Accounts
+    center:
+    - 0.5
+    - 0.5415
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google登录
+    - Sign in to Google
+    - Google Accounts Sign in
+    semantic_type: label
+  - text: Sign in with Google
+    center:
+    - 0.2733
+    - 0.1397
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google登录
+    - 使用Google账号登录
+    - Sign in
+    semantic_type: button
+  - text: Sign in
+    center:
+    - 0.5017
+    - 0.2934
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 登录
+    - Log in
+    - Sign In
+    semantic_type: button
+  - text: to continue to
+    center:
+    - 0.1847
+    - 0.3473
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 继续前往
+    - Continue to
+    semantic_type: label
+  - text: Zoom
+    center:
+    - 0.3618
+    - 0.3473
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Zoom应用
+    - Zoom Meetings
+    semantic_type: label
+  - text: Forgot email?
+    center:
+    - 0.1726
+    - 0.4893
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 忘记邮箱
+    - 找回邮箱
+    - Forgot email
+    semantic_type: link
+  - text: Before using this app, you can review Zoom’s
+    center:
+    - 0.4118
+    - 0.5611
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 使用此应用前，您可以查看Zoom的
+    - Review Zoom's policies
+    semantic_type: label
+  - text: Privacy Policy
+    center:
+    - 0.4726
+    - 0.5723
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私政策
+    - 隐私权政策
+    - Privacy
+    semantic_type: link
+  - text: and
+    center:
+    - 0.1955
+    - 0.5835
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 和
+    - 与
+    semantic_type: label
+  - text: Terms of Service
+    center:
+    - 0.3729
+    - 0.5835
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 服务条款
+    - 使用条款
+    - Terms
+    semantic_type: link
+  - text: Next
+    center:
+    - 0.8479
+    - 0.6631
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 下一步
+    - 继续
+    - Continue
+    semantic_type: button
+  - text: Create account
+    center:
+    - 0.1795
+    - 0.6631
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 创建账号
+    - 注册
+    - Create new account
+    semantic_type: button
+  - text: Open Google Account Help Center (external, opens in a new window)
+    center:
+    - 0.5771
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 打开Google帐户帮助中心
+    - 帮助中心
+    - Help Center
+    semantic_type: link
+  - text: Help
+    center:
+    - 0.5771
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - 支持
+    - Support
+    semantic_type: link
+  - text: Privacy Policy (external, opens in a new window)
+    center:
+    - 0.7351
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私政策
+    - 隐私权政策
+    - Privacy
+    semantic_type: link
+  - text: Privacy
+    center:
+    - 0.7351
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐私
+    - 隐私政策
+    - Privacy Policy
+    semantic_type: link
+  - text: Google Terms of Service (external, opens in a new window)
+    center:
+    - 0.9028
+    - 0.9739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google服务条款
+    - 服务条款
+    - Terms
+    semantic_type: link
+  - text: Terms
+    center:
+    - 0.9028
+    - 0.9829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 条款
+    - 服务条款
+    - Terms of Service
+    semantic_type: link
+  - text: Close tab
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭标签页
+    - 关闭
+    - Close
+    semantic_type: button
+  - text: Connection is secure
+    center:
+    - 0.1507
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 连接是安全的
+    - 安全连接
+    - Secure connection
+    semantic_type: label
+  - text: accounts.google.com
+    center:
+    - 0.3354
+    - 0.0896
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google账号
+    - 谷歌账号
+    - Google Accounts
+    semantic_type: label
+  - text: Share
+    center:
+    - 0.8396
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分享
+    - 共享
+    - Share page
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.949
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - 更多
+    - More
+    semantic_type: button
+  - text: Chinese (Simplified)
+    center:
+    - 0.299
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 中文(简体)
+    - 简体中文
+    - Chinese
+    semantic_type: label
+  - text: English
+    center:
+    - 0.5687
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 英文
+    - 英语
+    - English language
+    semantic_type: label
+  - text: Close
+    center:
+    - 0.9319
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭
+    - 退出
+    - Exit
+    semantic_type: button
+  description: Google Sign-In web page for authenticating with Zoom, featuring email
+    input, account recovery options, and browser navigation controls.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_47
+  elements:
+  - text: Connection is secure
+    center:
+    - 0.3566
+    - 0.1269
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 安全连接
+    - 连接安全
+    - secure connection
+    - SSL secure
+    semantic_type: label
+  - text: Cookies and site data
+    center:
+    - 0.3615
+    - 0.1821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cookie和网站数据
+    - cookie数据
+    - cookies & site data
+    - 网站数据
+    semantic_type: menu_item
+  description: Site security and privacy settings page showing connection status and
+    cookie data options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_48
+  elements:
+  - text: Copy
+    center:
+    - 0.3833
+    - 0.633
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 复制
+    - copy text
+    - duplicate
+    semantic_type: button
+  - text: Nearby
+    center:
+    - 0.6167
+    - 0.633
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 附近
+    - nearby devices
+    - nearby share
+    semantic_type: tab
+  - text: Messages
+    center:
+    - 0.125
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 消息
+    - chat
+    - messaging
+    semantic_type: tab
+  - text: Drive
+    center:
+    - 0.375
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 云盘
+    - cloud storage
+    - zoom drive
+    semantic_type: tab
+  - text: Collections
+    center:
+    - 0.625
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收藏
+    - 集合
+    - bookmarks
+    semantic_type: tab
+  - text: Gmail
+    center:
+    - 0.8747
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 谷歌邮箱
+    - google mail
+    - email
+    semantic_type: link
+  - text: Apps list
+    center:
+    - 0.5
+    - 0.9832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 应用列表
+    - app directory
+    - applications
+    semantic_type: menu_item
+  description: Share menu displaying a list of apps and services including Nearby,
+    Messages, Drive, Collections, and Gmail.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_49
+  elements:
+  - text: Go forward
+    center:
+    - 0.4208
+    - 0.0798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Forward
+    - Navigate forward
+    - 前进
+    - Next page
+    semantic_type: button
+  - text: Bookmark
+    center:
+    - 0.5458
+    - 0.0798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add bookmark
+    - Save bookmark
+    - 收藏
+    - 书签
+    semantic_type: button
+  - text: Download page
+    center:
+    - 0.6712
+    - 0.0798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save page
+    - Download
+    - 下载页面
+    - 保存网页
+    semantic_type: button
+  - text: View site information
+    center:
+    - 0.7969
+    - 0.0798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Site info
+    - Page info
+    - Security
+    - 查看网站信息
+    semantic_type: button
+  - text: Refresh
+    center:
+    - 0.9226
+    - 0.0798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Reload
+    - Reload page
+    - 刷新
+    - 重新加载
+    semantic_type: button
+  - text: Find in page
+    center:
+    - 0.6719
+    - 0.1337
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search in page
+    - Find
+    - 在网页中查找
+    - 页面内查找
+    semantic_type: button
+  - text: Add to Home screen
+    center:
+    - 0.6719
+    - 0.1875
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add to home
+    - Create shortcut
+    - 添加到主屏幕
+    - 添加至桌面
+    semantic_type: button
+  - text: Desktop site
+    center:
+    - 0.6038
+    - 0.2413
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Desktop version
+    - Request desktop site
+    - 桌面版网站
+    - 电脑版网页
+    semantic_type: toggle
+  - text: Translate…
+    center:
+    - 0.6719
+    - 0.2952
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Translate page
+    - Translation
+    - 翻译
+    - 网页翻译
+    semantic_type: button
+  - text: Open in Chrome
+    center:
+    - 0.6719
+    - 0.349
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Open in browser
+    - 在Chrome中打开
+    - 用Chrome打开
+    semantic_type: button
+  - text: Running in Chrome
+    center:
+    - 0.6719
+    - 0.403
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Runs in Chrome
+    - Custom Tab
+    - 在Chrome中运行
+    - Chrome自定义标签页
+    semantic_type: label
+  description: Web browser overflow menu displaying page actions such as bookmarking,
+    refreshing, translating, and opening in Chrome.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 1321
+    y: 1022
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 1321
+    y: 2441
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2602
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 1321
+    y: 2441
+    wait: 1.5
+  - action: tap
+    x: 1038
+    y: 410
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 1321
+    y: 2441
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 816
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 468
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 640
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 812
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 984
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1156
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1328
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 470
+    y: 1566
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1738
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1910
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 2082
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 2254
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 2426
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 400
+    y: 2618
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 688
+    y: 220
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1180
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 762
+    y: 1180
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1376
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1768
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 762
+    y: 1768
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 410
+    y: 981
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 812
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 563
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 812
+    wait: 1.5
+  - action: tap
+    x: 612
+    y: 896
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 984
+    wait: 1.5
+  - action: tap
+    x: 505
+    y: 581
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 984
+    wait: 1.5
+  - action: tap
+    x: 630
+    y: 781
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 984
+    wait: 1.5
+  - action: tap
+    x: 692
+    y: 981
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1156
+    wait: 1.5
+  - action: tap
+    x: 602
+    y: 610
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1328
+    wait: 1.5
+  - action: tap
+    x: 738
+    y: 558
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1328
+    wait: 1.5
+  - action: tap
+    x: 738
+    y: 722
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 470
+    y: 1566
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1302
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 470
+    y: 1566
+    wait: 1.5
+  - action: tap
+    x: 1000
+    y: 1916
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1738
+    wait: 1.5
+  - action: tap
+    x: 888
+    y: 1975
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1738
+    wait: 1.5
+  - action: tap
+    x: 180
+    y: 2908
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1738
+    wait: 1.5
+  - action: tap
+    x: 900
+    y: 2908
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1738
+    wait: 1.5
+  - action: tap
+    x: 1260
+    y: 2908
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1738
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 3068
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 664
+    y: 1910
+    wait: 1.5
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 140
+    y: 280
+    wait: 1.5
+  - action: tap
+    x: 400
+    y: 2618
+    wait: 1.5
+  - action: tap
+    x: 790
+    y: 227
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1180
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1590
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1180
+    wait: 1.5
+  - action: tap
+    x: 84
+    y: 242
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1180
+    wait: 1.5
+  - action: tap
+    x: 217
+    y: 242
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1180
+    wait: 1.5
+  - action: tap
+    x: 1209
+    y: 242
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: us.zoom.videomeetings
+    wait: 0.5
+  - action: launch
+    package: us.zoom.videomeetings
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2812
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1180
+    wait: 1.5
+  - action: tap
+    x: 1366
+    y: 242
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Join a meeting using a meeting ID or invitation link
+- Sign in or create a new Zoom account
+- Configure default audio and video settings for meetings
+- Manage app storage and clear cache files
+- Access and read emails in the Zoom Mail inbox
+- Adjust accessibility options such as dimming flashing images
+- Activate a device using a QR code or activation code
+- Update the Zoom Workplace application
+known_limitations:
+- Settings are spread across multiple categories like Meetings, Audio, Video, and
+  General, requiring deep navigation.
+- Authentication flows may redirect to external WebViews for OAuth or security verifications
+  like Cloudflare.
+- Joining a meeting involves an intermediate screen to configure audio and video preferences
+  before entering.

@@ -1,0 +1,7292 @@
+app: PiMusic
+package: com.Project100Pi.themusicplayer
+screen_w: 1440
+screen_h: 3120
+screens:
+- id: screen_0
+  description: Main music library screen displaying categories for Tracks, Playlists,
+    Folders, Albums, and Artists, along with search, sort, and PRO upgrade options.
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - hamburger menu
+    - menu icon
+    - nav drawer
+    - 侧边栏
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - library
+    - local music
+    - 我的音乐
+    - music library
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - buy premium
+    - remove ads
+    - get pro
+    - 升级专业版
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - sort by
+    - order
+    - arrange
+    - 排序
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - find
+    - search icon
+    - magnifier
+    - 搜索
+    semantic_type: button
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - songs
+    - audio files
+    - 歌曲
+    - music tracks
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - lists
+    - queues
+    - 播放列表
+    - play lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - directories
+    - files
+    - 文件夹
+    - folder view
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - records
+    - music albums
+    - 专辑
+    - album view
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - singers
+    - bands
+    - 艺术家
+    - artist view
+    semantic_type: tab
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Close navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - close menu
+    - close drawer
+    - 关闭导航
+    - 返回
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 我的音乐
+    - music library
+    - 本地音乐
+    semantic_type: tab
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 升级专业版
+    - buy pro
+    - 解锁高级版
+    - purchase premium
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 排序
+    - sort by
+    - 分类
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 搜索
+    - find
+    - 查找
+    - search music
+    semantic_type: input
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 歌曲
+    - tracks list
+    - 音频
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 播放列表
+    - playlists tab
+    - 歌单
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 文件夹
+    - folders tab
+    - 目录
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 专辑
+    - albums tab
+    - 唱片
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 艺术家
+    - artists tab
+    - 歌手
+    - 艺人
+    semantic_type: tab
+  - text: Pi Music Player
+    center:
+    - 0.4101
+    - 0.1304
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Pi音乐播放器
+    - Pi Player
+    - Pi Music
+    semantic_type: label
+  - text: Video Player
+    center:
+    - 0.3306
+    - 0.2441
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 视频播放器
+    - video
+    - 视频播放
+    semantic_type: menu_item
+  - text: Customizations
+    center:
+    - 0.3306
+    - 0.3412
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 自定义
+    - customization
+    - 个性化
+    semantic_type: setting
+  - text: Themes
+    center:
+    - 0.1993
+    - 0.3941
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 主题
+    - theme settings
+    - 皮肤
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.199
+    - 0.4457
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 设置
+    - settings menu
+    - 系统设置
+    semantic_type: menu_item
+  - text: Store
+    center:
+    - 0.176
+    - 0.4973
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 商店
+    - app store
+    - 应用商店
+    semantic_type: menu_item
+  - text: Features
+    center:
+    - 0.3306
+    - 0.5498
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 功能
+    - features list
+    - 特色功能
+    semantic_type: menu_item
+  - text: Equalizer
+    center:
+    - 0.2087
+    - 0.6027
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 均衡器
+    - eq
+    - 音效
+    semantic_type: menu_item
+  - text: Ringtone Cutter
+    center:
+    - 0.2628
+    - 0.6543
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 铃声剪辑
+    - ringtone maker
+    - 铃声制作
+    semantic_type: menu_item
+  - text: Smart Playlists
+    center:
+    - 0.251
+    - 0.7059
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 智能播放列表
+    - smart lists
+    - 智能歌单
+    semantic_type: menu_item
+  - text: AudioBook and Podcast
+    center:
+    - 0.3333
+    - 0.7575
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 有声书和播客
+    - audiobooks
+    - podcasts
+    - 有声读物
+    semantic_type: menu_item
+  - text: Sleep Timer
+    center:
+    - 0.2333
+    - 0.8091
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - 睡眠定时器
+    - sleep timer settings
+    - 定时关闭
+    semantic_type: menu_item
+  - text: Pi Power Share
+    center:
+    - 0.2597
+    - 0.8607
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Pi能量共享
+    - power share
+    - Pi分享
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.3306
+    - 0.9133
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 帮助
+    - help center
+    - 帮助中心
+    semantic_type: menu_item
+  - text: Send Feedback
+    center:
+    - 0.2649
+    - 0.9644
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 发送反馈
+    - feedback
+    - 意见反馈
+    semantic_type: menu_item
+  description: Navigation drawer providing access to music library categories, media
+    tools, customization options, and app settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - hamburger menu
+    - menu icon
+    - nav drawer
+    - 侧边栏
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - library
+    - local music
+    - 我的音乐
+    - music library
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - buy premium
+    - remove ads
+    - get pro
+    - 升级专业版
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - sort by
+    - order
+    - arrange
+    - 排序
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - find
+    - search icon
+    - magnifier
+    - 搜索
+    semantic_type: button
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - songs
+    - audio files
+    - 歌曲
+    - music tracks
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - lists
+    - queues
+    - 播放列表
+    - play lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - directories
+    - files
+    - 文件夹
+    - folder view
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - records
+    - music albums
+    - 专辑
+    - album view
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - singers
+    - bands
+    - 艺术家
+    - artist view
+    semantic_type: tab
+  description: Main music library screen where users can browse their collection by
+    Tracks, Playlists, Folders, Albums, and Artists, alongside search, sort, and PRO
+    upgrade options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Sort By
+    center:
+    - 0.7618
+    - 0.1314
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 排序
+    - 排序方式
+    - Sort
+    - Order by
+    semantic_type: button
+  - text: Title
+    center:
+    - 0.7229
+    - 0.1853
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 标题
+    - 歌曲名
+    - Name
+    - Track
+    semantic_type: menu_item
+  - text: Album
+    center:
+    - 0.7229
+    - 0.2391
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 专辑
+    - 唱片
+    - Albums
+    semantic_type: menu_item
+  - text: Artist
+    center:
+    - 0.7229
+    - 0.2929
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 艺术家
+    - 歌手
+    - 演唱者
+    - Artists
+    semantic_type: menu_item
+  - text: Duration
+    center:
+    - 0.7229
+    - 0.3468
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 时长
+    - 时间
+    - 长度
+    - Time
+    semantic_type: menu_item
+  - text: Ascending
+    center:
+    - 0.7229
+    - 0.4006
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 升序
+    - 从小到大
+    - A-Z
+    - Ascending order
+    semantic_type: menu_item
+  description: Sorting options menu allowing users to sort their music library by
+    Title, Album, Artist, or Duration in ascending order.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_4
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Back
+    - Up
+    - Go back
+    semantic_type: button
+  - text: Search Music Library...
+    center:
+    - 0.5625
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Search
+    - Search bar
+    - Find music
+    semantic_type: input
+  - text: Clear query
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - Clear
+    - Clear text
+    - Delete
+    semantic_type: button
+  - text: No results found.&#10;Try searching for your favourite music…
+    center:
+    - 0.4997
+    - 0.5409
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - No results
+    - Empty state
+    - No matches
+    semantic_type: label
+  description: Music library search page displaying an empty state message indicating
+    no results were found for the current query.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_5
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - hamburger menu
+    - menu
+    - 侧边栏
+    - 导航
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 我的音乐
+    - 本地音乐
+    - music library
+    semantic_type: tab
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升级专业版
+    - 购买Pro
+    - go pro
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - 排序
+    - sort by
+    - order
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 搜索
+    - find
+    - search music
+    semantic_type: button
+  - text: TRACKS
+    center:
+    - 0.034
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - 歌曲
+    - 音乐
+    - songs
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.1903
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 播放列表
+    - 歌单
+    - lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.4253
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 文件夹
+    - 目录
+    - directories
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.6448
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 专辑
+    - 唱片
+    - records
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.8562
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 艺术家
+    - 歌手
+    - singers
+    semantic_type: tab
+  - text: GENRES
+    center:
+    - 0.9806
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 流派
+    - 类型
+    - categories
+    semantic_type: tab
+  - text: Recently Added
+    center:
+    - 0.4
+    - 0.2631
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 最近添加
+    - 新增
+    - newly added
+    semantic_type: menu_item
+  - text: Most Played
+    center:
+    - 0.4
+    - 0.3247
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - 最多播放
+    - 播放最多
+    - top played
+    semantic_type: menu_item
+  - text: Recently Played
+    center:
+    - 0.4
+    - 0.3862
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - 最近播放
+    - 播放历史
+    - history
+    semantic_type: menu_item
+  - text: Pi Favourites
+    center:
+    - 0.4
+    - 0.4478
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - Pi收藏
+    - 我的收藏
+    - favorites
+    semantic_type: menu_item
+  - text: Favorite
+    center:
+    - 0.4
+    - 0.5093
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - 收藏
+    - 喜欢
+    - like
+    - heart
+    semantic_type: toggle
+  description: Main music library screen featuring a navigation drawer, search and
+    sort options, and categorized lists for tracks, albums, artists, and smart playlists.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: Upgrade to PRO
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: PLAYLISTS
+    center:
+    - 0.0674
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+  - text: FOLDERS
+    center:
+    - 0.2476
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+  - text: ALBUMS
+    center:
+    - 0.467
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+  - text: ARTISTS
+    center:
+    - 0.6785
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+  - text: GENRES
+    center:
+    - 0.8868
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+  - text: storage
+    center:
+    - 0.4493
+    - 0.3173
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+  description: Navigation drawer providing access to music library categories like
+    playlists, folders, albums, artists, and genres, along with search and PRO upgrade
+    options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - menu
+    - hamburger
+    - drawer
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - library
+    - my library
+    - local music
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - pro
+    - premium
+    - buy pro
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - sort by
+    - sorting
+    - order
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - find
+    - search bar
+    - query
+    semantic_type: input
+  - text: PLAYLISTS
+    center:
+    - 0.0674
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - playlist
+    - my playlists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.2476
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - folder
+    - directory
+    - files
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.467
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - album
+    - music albums
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.6785
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - artist
+    - musicians
+    semantic_type: tab
+  - text: GENRES
+    center:
+    - 0.8868
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - genre
+    - categories
+    semantic_type: tab
+  - text: Download
+    center:
+    - 0.517
+    - 0.3952
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - save
+    - download music
+    - export
+    semantic_type: button
+  description: Main music library screen displaying categories such as playlists,
+    folders, albums, artists, and genres, along with search, sort, and PRO upgrade
+    options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - hamburger menu
+    - menu button
+    - nav drawer
+    - drawer icon
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Local Music
+    - Music Library
+    - Songs
+    - Audio
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Premium
+    - Buy Pro
+    - Remove Ads
+    - Pro version
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - Sort by
+    - Order
+    - Sort options
+    - Sorting
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Find
+    - Search music
+    - Search songs
+    - Find music
+    semantic_type: button
+  - text: PLAYLISTS
+    center:
+    - 0.0674
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - Playlists
+    - My Playlists
+    - Lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.2476
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Folders
+    - Directory
+    - Files
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.467
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - Albums
+    - Album
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.6785
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Artists
+    - Artist
+    semantic_type: tab
+  - text: GENRES
+    center:
+    - 0.8868
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Genres
+    - Genre
+    semantic_type: tab
+  description: Main music library screen displaying categories such as playlists,
+    folders, albums, artists, and genres, along with search, sort, and upgrade options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Close navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - close menu
+    - close drawer
+    - 关闭导航
+    - 返回
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 我的音乐
+    - 本地音乐
+    - music library
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 升级专业版
+    - 购买Pro
+    - remove ads
+    - go pro
+    semantic_type: menu_item
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 排序
+    - sort by
+    - order
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 搜索
+    - find
+    - search music
+    semantic_type: button
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 歌曲
+    - 音乐
+    - songs
+    - audio files
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 播放列表
+    - 歌单
+    - lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 文件夹
+    - 目录
+    - directories
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 专辑
+    - 唱片
+    - albums list
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 艺术家
+    - 歌手
+    - singers
+    semantic_type: tab
+  - text: Pi Music Player
+    center:
+    - 0.4101
+    - 0.1304
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - Pi音乐播放器
+    - Pi Player
+    - app name
+    semantic_type: label
+  - text: Video Player
+    center:
+    - 0.3306
+    - 0.2441
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 视频播放器
+    - 视频
+    - video
+    semantic_type: menu_item
+  - text: Customizations
+    center:
+    - 0.3306
+    - 0.3412
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - 自定义
+    - 个性化
+    - themes
+    semantic_type: menu_item
+  - text: Features
+    center:
+    - 0.3306
+    - 0.395
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - 功能
+    - 特性
+    - functions
+    semantic_type: menu_item
+  - text: Equalizer
+    center:
+    - 0.2087
+    - 0.4479
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 均衡器
+    - EQ
+    - 音效
+    semantic_type: menu_item
+  - text: Ringtone Cutter
+    center:
+    - 0.2628
+    - 0.4995
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 铃声剪辑
+    - 铃声制作
+    - ringtone maker
+    semantic_type: menu_item
+  - text: Smart Playlists
+    center:
+    - 0.251
+    - 0.5511
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 智能播放列表
+    - 自动歌单
+    - smart lists
+    semantic_type: menu_item
+  - text: AudioBook and Podcast
+    center:
+    - 0.3333
+    - 0.6027
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 有声书和播客
+    - 有声读物
+    - audiobooks
+    semantic_type: menu_item
+  - text: Sleep Timer
+    center:
+    - 0.2333
+    - 0.6543
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - 睡眠定时器
+    - 定时关闭
+    - sleep timer
+    semantic_type: menu_item
+  - text: Pi Power Share
+    center:
+    - 0.2597
+    - 0.7059
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Pi能量共享
+    - 分享赚钱
+    - power share
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.3306
+    - 0.7585
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 帮助
+    - 支持
+    - support
+    semantic_type: menu_item
+  - text: Send Feedback
+    center:
+    - 0.2649
+    - 0.8114
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 发送反馈
+    - 意见反馈
+    - feedback
+    semantic_type: menu_item
+  - text: User Guide
+    center:
+    - 0.2267
+    - 0.863
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - 用户指南
+    - 使用手册
+    - guide
+    semantic_type: menu_item
+  - text: About
+    center:
+    - 0.3306
+    - 0.9155
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 关于
+    - 关于应用
+    - about app
+    semantic_type: menu_item
+  - text: Invite Friends
+    center:
+    - 0.2434
+    - 0.9655
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 邀请好友
+    - 分享应用
+    - invite
+    semantic_type: menu_item
+  description: Navigation drawer providing access to music library categories, app
+    tools, and settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Choose Background for Gloss Theme
+    center:
+    - 0.5
+    - 0.4827
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - Select Gloss Theme Background
+    - Gloss Theme Wallpaper
+    - Background for Gloss
+    semantic_type: menu_item
+  - text: Change theme
+    center:
+    - 0.5
+    - 0.5365
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Switch theme
+    - Theme settings
+    - Select theme
+    - 修改主题
+    semantic_type: menu_item
+  description: Theme customization screen where users can select a background for
+    the Gloss Theme and change the overall app theme.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.2639
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Preferences
+    - Options
+    - 设置
+    - 系统设置
+    semantic_type: menu_item
+  - text: GENERAL
+    center:
+    - 0.5097
+    - 0.1378
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - General Settings
+    - 常规
+    - 通用设置
+    semantic_type: setting
+  - text: Gloss Theme
+    center:
+    - 0.4389
+    - 0.188
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Glossy Theme
+    - 光泽主题
+    - 主题选择
+    semantic_type: menu_item
+  - text: Choose Background for Gloss Theme
+    center:
+    - 0.4389
+    - 0.2497
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - Gloss Background
+    - 选择背景
+    - 光泽主题背景
+    semantic_type: menu_item
+  - text: Album view type - LIST VIEW
+    center:
+    - 0.4389
+    - 0.3117
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - List View
+    - 专辑列表
+    - 列表视图
+    semantic_type: setting
+  - text: Customize Main Screen Sections
+    center:
+    - 0.4806
+    - 0.3909
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - Edit Home Screen
+    - 自定义主页
+    - 主屏幕设置
+    semantic_type: menu_item
+  - text: Hidden Folders
+    center:
+    - 0.4806
+    - 0.4697
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - Hide Folders
+    - 隐藏文件夹
+    - 忽略文件夹
+    semantic_type: menu_item
+  - text: Rescan Music Library
+    center:
+    - 0.4806
+    - 0.5486
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - Scan Music
+    - Refresh Library
+    - 重新扫描
+    - 刷新音乐库
+    semantic_type: button
+  - text: Help us in translating Pi Music Player!
+    center:
+    - 0.4806
+    - 0.6274
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_49
+    aliases:
+    - Translate
+    - Contribute
+    - 帮助翻译
+    - 翻译应用
+    semantic_type: link
+  - text: NOTIFICATIONS
+    center:
+    - 0.5097
+    - 0.7048
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Notification Settings
+    - 通知
+    - 通知设置
+    semantic_type: setting
+  - text: New Music Added Notifications
+    center:
+    - 0.4417
+    - 0.7532
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - New Music Alert
+    - 新音乐通知
+    - 新歌提醒
+    semantic_type: toggle
+  - text: Push Notifications
+    center:
+    - 0.4389
+    - 0.8308
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Push Alerts
+    - 推送通知
+    - 消息推送
+    semantic_type: toggle
+  - text: Android Media Style Notification
+    center:
+    - 0.4389
+    - 0.9096
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Media Style
+    - 媒体样式通知
+    - 安卓媒体通知
+    semantic_type: toggle
+  description: Settings page allowing users to customize general app preferences like
+    themes, views, and folders, and manage notification settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Go back
+    semantic_type: button
+  - text: Store
+    center:
+    - 0.2326
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Shop
+    - Market
+    - 商店
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - Three dots
+    semantic_type: button
+  - text: Pro Pack
+    center:
+    - 0.5
+    - 0.1389
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Premium
+    - Pro version
+    - 高级版
+    semantic_type: menu_item
+  - text: BACKGROUND PACKS FOR GLOSS THEME
+    center:
+    - 0.5
+    - 0.304
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Gloss Theme Backgrounds
+    - Gloss主题背景
+    semantic_type: label
+  - text: Amazing Amalgams Background Pack
+    center:
+    - 0.1847
+    - 0.3909
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Amazing Amalgams
+    - Amalgams Pack
+    semantic_type: menu_item
+  - text: Beautiful Blends Background Pack
+    center:
+    - 0.5153
+    - 0.3907
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Beautiful Blends
+    - Blends Pack
+    semantic_type: menu_item
+  - text: Flaring Fusions Background Pack
+    center:
+    - 0.8458
+    - 0.3907
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Flaring Fusions
+    - Fusions Pack
+    semantic_type: menu_item
+  - text: Get all Background Packs!
+    center:
+    - 0.5
+    - 0.5274
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Buy all
+    - Purchase all
+    - 获取全部背景包
+    semantic_type: button
+  - text: REMOVE ADS
+    center:
+    - 0.5
+    - 0.6239
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Remove advertisements
+    - No ads
+    - 去广告
+    semantic_type: button
+  description: In-app store page where users can purchase background theme packs and
+    remove ads.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Close navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Close menu
+    - 关闭菜单
+    - Close drawer
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的音乐
+    - Local Music
+    - 本地音乐
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升级专业版
+    - Upgrade
+    - Get PRO
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序
+    - Sort by
+    - 分类
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - Find
+    - 查找
+    semantic_type: input
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 歌曲
+    - Tracks
+    - 音频
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - Playlists
+    - 歌单
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - Folders
+    - 目录
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - Albums
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 艺术家
+    - Artists
+    - 歌手
+    semantic_type: tab
+  - text: Pi Music Player
+    center:
+    - 0.4101
+    - 0.1304
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi音乐播放器
+    - Pi Player
+    semantic_type: label
+  - text: Video Player
+    center:
+    - 0.3306
+    - 0.2441
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频播放器
+    - Video
+    - 视频
+    semantic_type: menu_item
+  - text: Customizations
+    center:
+    - 0.3306
+    - 0.3412
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自定义
+    - Customization
+    - 个性化
+    semantic_type: setting
+  - text: Themes
+    center:
+    - 0.1993
+    - 0.3941
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主题
+    - Theme
+    - 皮肤
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.199
+    - 0.4457
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - 选项
+    semantic_type: setting
+  - text: Store
+    center:
+    - 0.176
+    - 0.4973
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 商店
+    - 应用商店
+    - 商城
+    semantic_type: link
+  - text: Features
+    center:
+    - 0.3306
+    - 0.5498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 功能
+    - Features
+    - 特性
+    semantic_type: link
+  - text: Help
+    center:
+    - 0.3306
+    - 0.6037
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - Help center
+    - 帮助中心
+    semantic_type: link
+  - text: Send Feedback
+    center:
+    - 0.2649
+    - 0.6566
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - Feedback
+    - 意见反馈
+    semantic_type: link
+  - text: User Guide
+    center:
+    - 0.2267
+    - 0.7082
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 用户指南
+    - Guide
+    - 使用手册
+    semantic_type: link
+  - text: About
+    center:
+    - 0.3306
+    - 0.7607
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关于
+    - About us
+    - 关于我们
+    semantic_type: link
+  - text: Invite Friends
+    center:
+    - 0.2434
+    - 0.8136
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 邀请好友
+    - Invite
+    - 分享邀请
+    semantic_type: link
+  - text: Follow Us
+    center:
+    - 0.2135
+    - 0.8652
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关注我们
+    - Follow
+    - 关注
+    semantic_type: link
+  - text: Info
+    center:
+    - 0.1622
+    - 0.9168
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 信息
+    - Information
+    - 详情
+    semantic_type: label
+  - text: Rate this App
+    center:
+    - 0.2427
+    - 0.9655
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 给应用评分
+    - Rate
+    - 评价
+    semantic_type: link
+  description: Side navigation drawer providing access to music library categories,
+    app settings, tools, and support options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Equalizer
+    center:
+    - 0.2858
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - EQ
+    - Audio Equalizer
+    - 均衡器
+    semantic_type: setting
+  - text: Bass Boost
+    center:
+    - 0.5
+    - 0.1377
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bass
+    - 低音增强
+    - Bass enhancement
+    semantic_type: setting
+  - text: Virtualizer
+    center:
+    - 0.5
+    - 0.2107
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Virtual Surround
+    - 虚拟环绕
+    - Surround sound
+    semantic_type: setting
+  - text: 3D Reverb Effects
+    center:
+    - 0.5
+    - 0.2838
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 3D Reverb
+    - Reverb
+    - 3D混响
+    - 混响效果
+    semantic_type: setting
+  - text: (Recommended with Headset)
+    center:
+    - 0.2024
+    - 0.3058
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Headset recommended
+    - 推荐耳机使用
+    - Use with headphones
+    semantic_type: label
+  - text: None
+    center:
+    - 0.4417
+    - 0.3349
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 'Off'
+    - 无
+    - Disabled
+    - 关闭
+    semantic_type: menu_item
+  - text: Presets
+    center:
+    - 0.5
+    - 0.3771
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - EQ Presets
+    - 预设
+    - Audio presets
+    semantic_type: menu_item
+  - text: Normal
+    center:
+    - 0.4417
+    - 0.4147
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Default
+    - 标准
+    - Normal preset
+    semantic_type: menu_item
+  - text: 30Hz-120Hz
+    center:
+    - 0.1313
+    - 0.7154
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sub Bass
+    - 超低音
+    - 30 to 120 Hertz
+    semantic_type: label
+  - text: 120Hz-460Hz
+    center:
+    - 0.316
+    - 0.7154
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bass
+    - 低音
+    - 120 to 460 Hertz
+    semantic_type: label
+  - text: 460Hz-1kHz
+    center:
+    - 0.5007
+    - 0.7154
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Low Midrange
+    - 中低音
+    - 460 to 1000 Hertz
+    semantic_type: label
+  - text: 1kHz-7kHz
+    center:
+    - 0.6851
+    - 0.7154
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Midrange
+    - 中音
+    - 1000 to 7000 Hertz
+    semantic_type: label
+  - text: 7kHz-20kHz
+    center:
+    - 0.8691
+    - 0.7154
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Treble
+    - 高音
+    - 7000 to 20000 Hertz
+    semantic_type: label
+  - text: FLAT
+    center:
+    - 0.5
+    - 0.767
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Flat EQ
+    - 平直
+    - Flat preset
+    semantic_type: menu_item
+  description: Audio effects and equalizer settings page where users can adjust bass
+    boost, virtualizer, reverb, and frequency band presets.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Please select a track...
+    center:
+    - 0.4156
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Select track
+    - Choose song
+    - 请选择曲目
+    - 选择歌曲
+    semantic_type: label
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Search music
+    - 搜索
+    - 查找
+    semantic_type: button
+  - text: Always
+    center:
+    - 0.3597
+    - 0.1321
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Always on
+    - Always allow
+    - 始终
+    - 总是
+    semantic_type: menu_item
+  description: Track selection screen displaying an empty state prompt to choose a
+    song, along with search and navigation controls.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_16
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - 搜索
+    - Search music
+    - Query
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by
+    - 排序
+    - Order
+    - Filter
+    semantic_type: button
+  - text: Audiobooks
+    center:
+    - 0.25
+    - 0.1404
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Audio books
+    - 有声书
+    - Audiobook
+    semantic_type: tab
+  - text: Podcasts
+    center:
+    - 0.75
+    - 0.1404
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播客
+    - Podcast
+    - Audio podcasts
+    semantic_type: tab
+  - text: PODCASTS
+    center:
+    - 0.7497
+    - 0.1404
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Podcasts
+    - 播客
+    - Podcast
+    semantic_type: label
+  description: Podcasts and audiobooks browsing screen with search, sort options,
+    and category tabs.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Sleep Timer
+    center:
+    - 0.5
+    - 0.2785
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sleep timer
+    - Timer
+    - Auto off
+    - 睡眠定时
+    semantic_type: setting
+  - text: Hours
+    center:
+    - 0.2153
+    - 0.3232
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Hour
+    - Hrs
+    - 小时
+    semantic_type: label
+  - text: ':'
+    center:
+    - 0.358
+    - 0.3248
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - colon
+    - separator
+    - 分隔符
+    semantic_type: label
+  - text: Minutes
+    center:
+    - 0.5003
+    - 0.3232
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Minute
+    - Min
+    - 分钟
+    semantic_type: label
+  - text: Seconds
+    center:
+    - 0.7851
+    - 0.3232
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Second
+    - Sec
+    - 秒
+    semantic_type: label
+  - text: RESET
+    center:
+    - 0.284
+    - 0.4276
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Reset
+    - Clear
+    - 重置
+    semantic_type: button
+  - text: START
+    center:
+    - 0.716
+    - 0.4276
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Start
+    - Begin
+    - 开始
+    semantic_type: button
+  description: Sleep timer configuration screen allowing users to set a duration in
+    hours, minutes, and seconds, with options to start or reset the timer.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_18
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up button
+    semantic_type: button
+  - text: Pi Power Share
+    center:
+    - 0.3406
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - power share
+    - Pi分享
+    - share music
+    semantic_type: menu_item
+  - text: WHAT IS PI POWER SHARE?
+    center:
+    - 0.5
+    - 0.1389
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - about Pi Power Share
+    - 什么是Pi Power Share
+    - Pi Power Share介绍
+    semantic_type: label
+  - text: SEND
+    center:
+    - 0.5
+    - 0.2652
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送
+    - send tracks
+    - send music
+    semantic_type: button
+  - text: SELECT TRACKS TO SEND
+    center:
+    - 0.5
+    - 0.3221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 选择要发送的曲目
+    - choose tracks
+    - select songs
+    semantic_type: label
+  - text: RECEIVE
+    center:
+    - 0.5
+    - 0.4152
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 接收
+    - receive tracks
+    - receive music
+    semantic_type: button
+  - text: Enter Key
+    center:
+    - 0.5
+    - 0.4644
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 输入密钥
+    - key input
+    - enter code
+    semantic_type: input
+  - text: Learn more about how 'Pi Power Share' works!
+    center:
+    - 0.5
+    - 0.5897
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 了解更多
+    - learn more
+    - how it works
+    semantic_type: link
+  - text: Pi Power Share is powered by
+    center:
+    - 0.5
+    - 0.9304
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - powered by
+    - 技术支持
+    semantic_type: label
+  description: Pi Power Share feature screen allowing users to send selected tracks
+    or receive tracks via an access key, along with informational links about the
+    sharing process.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_19
+  elements:
+  - text: Send Feedback
+    center:
+    - 0.5
+    - 0.3726
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - feedback
+    - submit feedback
+    - give feedback
+    semantic_type: button
+  - text: Report Bugs/Issues
+    center:
+    - 0.5
+    - 0.4234
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - bug report
+    - report issue
+    - report bug
+    semantic_type: menu_item
+  - text: Feature Request
+    center:
+    - 0.5
+    - 0.4772
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - request feature
+    - feature suggestion
+    - suggest feature
+    semantic_type: menu_item
+  - text: Thank You
+    center:
+    - 0.5
+    - 0.5311
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - thanks
+    - thank you very much
+    semantic_type: label
+  - text: Other
+    center:
+    - 0.5
+    - 0.5849
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - miscellaneous
+    - other issues
+    - other feedback
+    semantic_type: menu_item
+  - text: CANCEL
+    center:
+    - 0.8128
+    - 0.6466
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - cancel
+    - dismiss
+    - abort
+    semantic_type: button
+  description: Feedback category selection screen allowing users to choose between
+    reporting bugs, requesting features, or sending other feedback, with a cancel
+    option.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_20
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hamburger menu
+    - menu icon
+    - nav drawer
+    - 侧边栏
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - library
+    - local music
+    - 我的音乐
+    - music library
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - buy premium
+    - remove ads
+    - get pro
+    - 升级专业版
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - arrange
+    - 排序
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - search icon
+    - magnifier
+    - 搜索
+    semantic_type: button
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - songs
+    - audio files
+    - 歌曲
+    - music tracks
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - lists
+    - queues
+    - 播放列表
+    - play lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - directories
+    - files
+    - 文件夹
+    - folder view
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - records
+    - music albums
+    - 专辑
+    - album view
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - singers
+    - bands
+    - 艺术家
+    - artist view
+    semantic_type: tab
+  description: Main music library screen displaying categories for tracks, playlists,
+    folders, albums, and artists, with options to search, sort, and upgrade to PRO.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hamburger menu
+    - menu icon
+    - nav drawer
+    - 侧边栏
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - library
+    - local music
+    - 我的音乐
+    - music library
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - buy premium
+    - remove ads
+    - get pro
+    - 升级专业版
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - arrange
+    - 排序
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - search icon
+    - magnifier
+    - 搜索
+    semantic_type: button
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - songs
+    - audio files
+    - 歌曲
+    - music tracks
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - lists
+    - queues
+    - 播放列表
+    - play lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - directories
+    - files
+    - 文件夹
+    - folder view
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - records
+    - music albums
+    - 专辑
+    - album view
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - singers
+    - bands
+    - 艺术家
+    - artist view
+    semantic_type: tab
+  description: Main music library screen with search, sort, and PRO upgrade options,
+    listing categories for tracks, playlists, folders, albums, and artists
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hamburger menu
+    - menu icon
+    - nav drawer
+    - 侧边栏
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - library
+    - local music
+    - 我的音乐
+    - music library
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - buy premium
+    - remove ads
+    - get pro
+    - 升级专业版
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sort by
+    - order
+    - arrange
+    - 排序
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - search icon
+    - magnifier
+    - 搜索
+    semantic_type: button
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - songs
+    - audio files
+    - 歌曲
+    - music tracks
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - lists
+    - queues
+    - 播放列表
+    - play lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - directories
+    - files
+    - 文件夹
+    - folder view
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - records
+    - music albums
+    - 专辑
+    - album view
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - singers
+    - bands
+    - 艺术家
+    - artist view
+    semantic_type: tab
+  description: Main music library screen featuring search and sort options, a PRO
+    upgrade banner, and categories for tracks, playlists, folders, albums, and artists.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    - Query
+    semantic_type: input
+  description: Search screen header with a back button and search input field.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_24
+  elements:
+  - text: Close navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close menu
+    - close drawer
+    - 关闭导航
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的音乐
+    - music library
+    - local music
+    semantic_type: tab
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升级专业版
+    - go pro
+    - premium upgrade
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序
+    - sort by
+    - order
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - search music
+    semantic_type: input
+  - text: TRACKS
+    center:
+    - 0.034
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 歌曲
+    - songs
+    - tracks tab
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.1903
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - playlists tab
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.4253
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - folders tab
+    - directory
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.6448
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - albums tab
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.8562
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 艺术家
+    - artists tab
+    - singers
+    semantic_type: tab
+  - text: GENRES
+    center:
+    - 0.9806
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 流派
+    - genres tab
+    - categories
+    semantic_type: tab
+  - text: Recently Added
+    center:
+    - 0.4
+    - 0.2631
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 最近添加
+    - recently added tab
+    - new songs
+    semantic_type: menu_item
+  - text: Most Played
+    center:
+    - 0.4
+    - 0.3247
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 最多播放
+    - most played tab
+    - top played
+    semantic_type: menu_item
+  - text: Recently Played
+    center:
+    - 0.4
+    - 0.3862
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 最近播放
+    - recently played tab
+    - history
+    semantic_type: menu_item
+  - text: Pi Favourites
+    center:
+    - 0.4
+    - 0.4478
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi 收藏
+    - favorites
+    - liked songs
+    semantic_type: menu_item
+  - text: Favorite
+    center:
+    - 0.4
+    - 0.5093
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收藏
+    - like
+    - add to favorites
+    - fav
+    semantic_type: toggle
+  - text: Pi Music Player
+    center:
+    - 0.4101
+    - 0.1304
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi 音乐播放器
+    - PiMusic
+    - app name
+    semantic_type: label
+  - text: Video Player
+    center:
+    - 0.3306
+    - 0.2441
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频播放器
+    - video
+    - player
+    semantic_type: menu_item
+  - text: Customizations
+    center:
+    - 0.3306
+    - 0.3412
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自定义
+    - customization
+    - personalize
+    semantic_type: setting
+  - text: Themes
+    center:
+    - 0.1993
+    - 0.3941
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主题
+    - theme settings
+    - skins
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.199
+    - 0.4457
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    semantic_type: setting
+  - text: Store
+    center:
+    - 0.176
+    - 0.4973
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 商店
+    - app store
+    - shop
+    semantic_type: link
+  - text: Features
+    center:
+    - 0.3306
+    - 0.5498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 功能
+    - features list
+    - capabilities
+    semantic_type: menu_item
+  - text: Equalizer
+    center:
+    - 0.2087
+    - 0.6027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 均衡器
+    - eq
+    - audio eq
+    semantic_type: setting
+  - text: Ringtone Cutter
+    center:
+    - 0.2628
+    - 0.6543
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 铃声剪辑
+    - ringtone maker
+    - audio cutter
+    semantic_type: menu_item
+  - text: Smart Playlists
+    center:
+    - 0.251
+    - 0.7059
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 智能播放列表
+    - auto playlists
+    - smart lists
+    semantic_type: menu_item
+  - text: AudioBook and Podcast
+    center:
+    - 0.3333
+    - 0.7575
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 有声书和播客
+    - audiobooks
+    - podcasts
+    semantic_type: menu_item
+  - text: Sleep Timer
+    center:
+    - 0.2333
+    - 0.8091
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 睡眠定时器
+    - sleep timer
+    - auto sleep
+    semantic_type: setting
+  - text: Pi Power Share
+    center:
+    - 0.2597
+    - 0.8607
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi 能量分享
+    - power share
+    - share app
+    semantic_type: link
+  - text: Help
+    center:
+    - 0.3306
+    - 0.9133
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - help center
+    - support
+    semantic_type: link
+  - text: Send Feedback
+    center:
+    - 0.2649
+    - 0.9644
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - feedback
+    - contact us
+    semantic_type: button
+  description: Side navigation drawer providing access to music library categories,
+    smart playlists, app settings, and additional audio tools.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Sort By
+    center:
+    - 0.7618
+    - 0.1314
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序
+    - 排序方式
+    - Sort order
+    - 排序依据
+    semantic_type: button
+  - text: Playlist Name
+    center:
+    - 0.7229
+    - 0.1853
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表名称
+    - 歌单名
+    - Playlist title
+    - 列表名
+    semantic_type: input
+  - text: Date Added
+    center:
+    - 0.7229
+    - 0.2391
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加日期
+    - 添加时间
+    - Date created
+    - 创建日期
+    semantic_type: menu_item
+  - text: Date Modified
+    center:
+    - 0.7229
+    - 0.2929
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 修改日期
+    - 修改时间
+    - Last modified
+    - 更新日期
+    semantic_type: menu_item
+  - text: Ascending
+    center:
+    - 0.7229
+    - 0.3468
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升序
+    - 升序排列
+    - 从小到大
+    - A-Z
+    semantic_type: menu_item
+  description: Sorting options menu allowing users to sort items by playlist name,
+    date added, or date modified in ascending order.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_26
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - hamburger
+    - drawer
+    - 侧边栏
+    - 导航菜单
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 本地音乐
+    - 音乐库
+    - Music Library
+    - Local Music
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升级专业版
+    - 购买Pro
+    - Remove Ads
+    - 解锁高级功能
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序
+    - Sort by
+    - 排列
+    - 筛选
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - Find
+    - 查找
+    - Search music
+    semantic_type: button
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 歌曲
+    - 音频
+    - Songs
+    - 音乐
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - 歌单
+    - Lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - 目录
+    - Directories
+    - Files
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - 唱片
+    - Records
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 艺术家
+    - 歌手
+    - Singers
+    - Creators
+    semantic_type: tab
+  - text: Favorite
+    center:
+    - 0.9955
+    - 0.5274
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收藏
+    - 喜欢
+    - Favorites
+    - Liked
+    semantic_type: toggle
+  description: Main music library screen displaying categories such as Tracks, Playlists,
+    Albums, and Artists, along with search, sort, and PRO upgrade options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_27
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hamburger icon
+    - menu
+    - side menu
+    - 导航菜单
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Local Music
+    - Music Library
+    - 我的音乐
+    - 本地音乐
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Go Premium
+    - Remove Ads
+    - 升级专业版
+    - 购买Pro
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by
+    - Order
+    - 排序方式
+    - 排序
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Search music
+    - 搜索
+    - 查找
+    semantic_type: input
+  - text: PLAYLISTS
+    center:
+    - 0.0674
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Playlists
+    - Lists
+    - 播放列表
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.2476
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Directories
+    - Files
+    - 文件夹
+    - 目录
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.467
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Album
+    - 专辑
+    - 唱片
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.6785
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Singers
+    - Bands
+    - 艺术家
+    - 歌手
+    semantic_type: tab
+  - text: GENRES
+    center:
+    - 0.8868
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Categories
+    - Styles
+    - 流派
+    - 音乐类型
+    semantic_type: tab
+  - text: No Local Music Found!
+    center:
+    - 0.5
+    - 0.6295
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - No music found
+    - Empty library
+    - 未找到本地音乐
+    - 没有本地音乐
+    semantic_type: label
+  description: Main music library screen displaying categories like playlists, albums,
+    and artists, along with search and sort options, currently showing an empty state
+    message indicating no local music is found.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    - 返回
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Query
+    - 搜索
+    - Search music
+    semantic_type: button
+  description: Search screen featuring a navigate up button and a search field to
+    find music, artists, or albums.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    - 返回
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Search music
+    - 搜索
+    - 查找
+    semantic_type: button
+  - text: Sorry..No songs to show!
+    center:
+    - 0.5
+    - 0.4865
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - No songs found
+    - Empty library
+    - 暂无歌曲
+    - 没有歌曲
+    semantic_type: label
+  description: Search results screen displaying an empty state message indicating
+    no songs were found.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_30
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Add Songs to Playlist
+    center:
+    - 0.6986
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add to playlist
+    - Add music
+    - Add tracks
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.8347
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by
+    - Order
+    - Arrange
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - Options
+    semantic_type: button
+  description: Screen for adding songs to a playlist, featuring a list of available
+    tracks with sorting and additional options in the app bar.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_31
+  elements:
+  - text: Close navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close menu
+    - close drawer
+    - 关闭导航
+    - hide menu
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的音乐
+    - local music
+    - music library
+    - 本地音乐
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升级专业版
+    - buy pro
+    - premium upgrade
+    - 解锁专业版
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - search music
+    - 查找
+    semantic_type: button
+  - text: PLAYLISTS
+    center:
+    - 0.0674
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - play lists
+    - 歌单
+    - my playlists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.2476
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - directory
+    - folders view
+    - 文件
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.467
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - albums list
+    - 唱片
+    - 音乐专辑
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.6785
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 艺术家
+    - 歌手
+    - artists list
+    - 音乐人
+    semantic_type: tab
+  - text: GENRES
+    center:
+    - 0.8868
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 流派
+    - 类型
+    - genres list
+    - 音乐类型
+    semantic_type: tab
+  - text: storage
+    center:
+    - 0.4493
+    - 0.3173
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 存储
+    - storage space
+    - 内存
+    - 存储空间
+    semantic_type: label
+  - text: Pi Music Player
+    center:
+    - 0.4101
+    - 0.1304
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi音乐播放器
+    - Pi Player
+    - Pi Music
+    - Pi播放器
+    semantic_type: label
+  - text: Video Player
+    center:
+    - 0.3306
+    - 0.2441
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频播放器
+    - video
+    - 视频
+    - Pi Video Player
+    semantic_type: menu_item
+  - text: Customizations
+    center:
+    - 0.3306
+    - 0.3412
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自定义
+    - customization
+    - 个性化
+    - 外观
+    semantic_type: setting
+  - text: Themes
+    center:
+    - 0.1993
+    - 0.3941
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主题
+    - theme
+    - 皮肤
+    - 外观主题
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.199
+    - 0.4457
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - 选项
+    - 系统设置
+    semantic_type: setting
+  - text: Store
+    center:
+    - 0.176
+    - 0.4973
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 商店
+    - app store
+    - 应用商店
+    - Pi Store
+    semantic_type: menu_item
+  - text: Features
+    center:
+    - 0.3306
+    - 0.5498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 功能
+    - feature list
+    - 特性
+    - 应用功能
+    semantic_type: menu_item
+  - text: Equalizer
+    center:
+    - 0.2087
+    - 0.6027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 均衡器
+    - EQ
+    - 音效
+    - 音频均衡器
+    semantic_type: menu_item
+  - text: Ringtone Cutter
+    center:
+    - 0.2628
+    - 0.6543
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 铃声剪辑
+    - ringtone maker
+    - 铃声制作
+    - 裁剪铃声
+    semantic_type: menu_item
+  - text: Smart Playlists
+    center:
+    - 0.251
+    - 0.7059
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 智能播放列表
+    - smart list
+    - 智能歌单
+    - 自动播放列表
+    semantic_type: menu_item
+  - text: AudioBook and Podcast
+    center:
+    - 0.3333
+    - 0.7575
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 有声书和播客
+    - audiobook
+    - podcast
+    - 有声读物
+    semantic_type: menu_item
+  - text: Sleep Timer
+    center:
+    - 0.2333
+    - 0.8091
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 睡眠定时器
+    - 定时关闭
+    - sleep timer
+    - 定时停止播放
+    semantic_type: menu_item
+  - text: Pi Power Share
+    center:
+    - 0.2597
+    - 0.8607
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi能量共享
+    - power share
+    - 分享
+    - Pi分享
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.3306
+    - 0.9133
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - help center
+    - 帮助中心
+    - 支持
+    semantic_type: menu_item
+  - text: Send Feedback
+    center:
+    - 0.2649
+    - 0.9644
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - feedback
+    - 意见反馈
+    - 提交反馈
+    semantic_type: menu_item
+  description: Side navigation drawer containing music library categories, app tools,
+    settings, and an option to upgrade to PRO.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Open navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - hamburger
+    - drawer
+    - nav menu
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - music library
+    - local music
+    - songs
+    - library
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - premium
+    - buy pro
+    - remove ads
+    - pro version
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - find
+    - search icon
+    - magnifying glass
+    - search action
+    semantic_type: button
+  - text: PLAYLISTS
+    center:
+    - 0.0674
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - playlist
+    - queues
+    - music lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.2476
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - directory
+    - files
+    - folder view
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.467
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - album
+    - records
+    - album view
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.6785
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - artist
+    - musicians
+    - artist view
+    semantic_type: tab
+  - text: GENRES
+    center:
+    - 0.8868
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - genre
+    - categories
+    - genre view
+    semantic_type: tab
+  description: Side navigation drawer providing access to music categories like playlists,
+    folders, albums, artists, and genres, along with search and upgrade options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_33
+  elements:
+  - text: Close navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close menu
+    - close drawer
+    - 关闭导航
+    - close side menu
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的音乐
+    - music library
+    - local music
+    - audio files
+    semantic_type: tab
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升级专业版
+    - go pro
+    - premium upgrade
+    - buy pro
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序
+    - sort by
+    - order by
+    - arrange
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - search music
+    - query
+    semantic_type: input
+  - text: PLAYLISTS
+    center:
+    - 0.0674
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - play lists
+    - my playlists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.2476
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - directory
+    - folders view
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.467
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - albums list
+    - music albums
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.6785
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 艺术家
+    - 歌手
+    - artists list
+    - musicians
+    semantic_type: tab
+  - text: GENRES
+    center:
+    - 0.8868
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 流派
+    - 类型
+    - genres list
+    - music genres
+    semantic_type: tab
+  - text: Download
+    center:
+    - 0.517
+    - 0.3952
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 下载
+    - download music
+    - save offline
+    semantic_type: button
+  - text: Pi Music Player
+    center:
+    - 0.4101
+    - 0.1304
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi音乐播放器
+    - Pi Player
+    - PiMusic
+    semantic_type: label
+  - text: Video Player
+    center:
+    - 0.3306
+    - 0.2441
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频播放器
+    - video
+    - play video
+    semantic_type: menu_item
+  - text: Customizations
+    center:
+    - 0.3306
+    - 0.3412
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自定义
+    - personalization
+    - customize
+    - appearance
+    semantic_type: setting
+  - text: Themes
+    center:
+    - 0.1993
+    - 0.3941
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主题
+    - theme settings
+    - skins
+    - color themes
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.199
+    - 0.4457
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    - app settings
+    semantic_type: setting
+  - text: Store
+    center:
+    - 0.176
+    - 0.4973
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 商店
+    - app store
+    - play store
+    - market
+    semantic_type: link
+  - text: Features
+    center:
+    - 0.3306
+    - 0.5498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 功能
+    - app features
+    - what's new
+    - highlights
+    semantic_type: link
+  - text: Equalizer
+    center:
+    - 0.2087
+    - 0.6027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 均衡器
+    - EQ
+    - audio equalizer
+    - sound settings
+    semantic_type: menu_item
+  - text: Ringtone Cutter
+    center:
+    - 0.2628
+    - 0.6543
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 铃声剪辑
+    - ringtone maker
+    - audio trimmer
+    - cut ringtone
+    semantic_type: menu_item
+  - text: Smart Playlists
+    center:
+    - 0.251
+    - 0.7059
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 智能播放列表
+    - auto playlists
+    - dynamic playlists
+    semantic_type: menu_item
+  - text: AudioBook and Podcast
+    center:
+    - 0.3333
+    - 0.7575
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 有声书和播客
+    - audiobooks
+    - podcasts
+    - spoken word
+    semantic_type: menu_item
+  - text: Sleep Timer
+    center:
+    - 0.2333
+    - 0.8091
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 睡眠定时器
+    - sleep timer
+    - auto sleep
+    - timer
+    semantic_type: setting
+  - text: Pi Power Share
+    center:
+    - 0.2597
+    - 0.8607
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi能量共享
+    - share app
+    - recommend to friends
+    semantic_type: link
+  - text: Help
+    center:
+    - 0.3306
+    - 0.9133
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - support
+    - faq
+    - help center
+    semantic_type: link
+  - text: Send Feedback
+    center:
+    - 0.2649
+    - 0.9644
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - feedback
+    - contact us
+    - report issue
+    semantic_type: link
+  description: Side navigation drawer providing access to music library categories,
+    app tools, settings, and premium upgrade options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Sort By
+    center:
+    - 0.7618
+    - 0.1314
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序
+    - 排序方式
+    - Sort order
+    semantic_type: button
+  - text: Album
+    center:
+    - 0.7229
+    - 0.1853
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - Albums
+    semantic_type: menu_item
+  - text: No. of Tracks
+    center:
+    - 0.7229
+    - 0.2391
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 曲目数
+    - 歌曲数量
+    - Track count
+    semantic_type: menu_item
+  - text: Ascending
+    center:
+    - 0.7229
+    - 0.2929
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升序
+    - Ascending order
+    semantic_type: menu_item
+  description: Sorting options menu allowing users to sort their music by album or
+    number of tracks in ascending order.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_35
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    - 返回
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort by
+    - Order
+    - Arrange
+    - 排序
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - Query
+    - Search music
+    - 搜索
+    semantic_type: button
+  description: Top app bar for a music list screen with options to navigate back,
+    sort items, and search.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_36
+  elements:
+  - text: Close navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close menu
+    - close drawer
+    - 关闭导航
+    - close sidebar
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的音乐
+    - music library
+    - local music
+    semantic_type: tab
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升级专业版
+    - go pro
+    - premium upgrade
+    - 购买专业版
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序
+    - sort by
+    - sort order
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - search music
+    - search bar
+    semantic_type: input
+  - text: PLAYLISTS
+    center:
+    - 0.0674
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - play lists
+    - my playlists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.2476
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - directory
+    - folders view
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.467
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - albums list
+    - music albums
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.6785
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 艺术家
+    - 歌手
+    - artists list
+    semantic_type: tab
+  - text: GENRES
+    center:
+    - 0.8868
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 流派
+    - 类型
+    - genres list
+    semantic_type: tab
+  - text: Pi Music Player
+    center:
+    - 0.4101
+    - 0.1304
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi音乐播放器
+    - Pi Player
+    - PiMusic
+    semantic_type: label
+  - text: Video Player
+    center:
+    - 0.3306
+    - 0.2441
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频播放器
+    - video
+    - play video
+    semantic_type: menu_item
+  - text: Customizations
+    center:
+    - 0.3306
+    - 0.3412
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自定义
+    - customization
+    - personalization
+    - 个性化
+    semantic_type: setting
+  - text: Themes
+    center:
+    - 0.1993
+    - 0.3941
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主题
+    - theme settings
+    - app themes
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.199
+    - 0.4457
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - options
+    - 系统设置
+    semantic_type: setting
+  - text: Store
+    center:
+    - 0.176
+    - 0.4973
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 商店
+    - app store
+    - premium store
+    - 应用商店
+    semantic_type: link
+  - text: Features
+    center:
+    - 0.3306
+    - 0.5498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 功能
+    - app features
+    - 功能介绍
+    semantic_type: menu_item
+  - text: Equalizer
+    center:
+    - 0.2087
+    - 0.6027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 均衡器
+    - EQ
+    - audio equalizer
+    - 音效
+    semantic_type: setting
+  - text: Ringtone Cutter
+    center:
+    - 0.2628
+    - 0.6543
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 铃声剪辑
+    - ringtone maker
+    - cut ringtone
+    - 铃声制作
+    semantic_type: menu_item
+  - text: Smart Playlists
+    center:
+    - 0.251
+    - 0.7059
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 智能播放列表
+    - smart lists
+    - auto playlists
+    semantic_type: menu_item
+  - text: AudioBook and Podcast
+    center:
+    - 0.3333
+    - 0.7575
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 有声书和播客
+    - audiobooks
+    - podcasts
+    - 有声读物
+    semantic_type: menu_item
+  - text: Sleep Timer
+    center:
+    - 0.2333
+    - 0.8091
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 睡眠定时器
+    - 定时关闭
+    - sleep timer settings
+    - 定时停止
+    semantic_type: setting
+  - text: Pi Power Share
+    center:
+    - 0.2597
+    - 0.8607
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi能量共享
+    - power share
+    - share pi
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.3306
+    - 0.9133
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - help center
+    - support
+    - 帮助中心
+    semantic_type: link
+  - text: Send Feedback
+    center:
+    - 0.2649
+    - 0.9644
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - feedback
+    - report issue
+    - 意见反馈
+    semantic_type: button
+  description: Navigation drawer containing links to music library views, audio tools,
+    and application settings
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_37
+  elements:
+  - text: Sort By
+    center:
+    - 0.7618
+    - 0.1314
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sort
+    - 排序
+    - Sort options
+    semantic_type: button
+  - text: Artist
+    center:
+    - 0.7229
+    - 0.1853
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Artists
+    - 歌手
+    - Singer
+    semantic_type: menu_item
+  - text: No. of Albums
+    center:
+    - 0.7229
+    - 0.2391
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Album count
+    - 专辑数量
+    - Number of Albums
+    semantic_type: menu_item
+  - text: No. of Tracks
+    center:
+    - 0.7229
+    - 0.2929
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Track count
+    - 歌曲数量
+    - Number of Tracks
+    semantic_type: menu_item
+  - text: Ascending
+    center:
+    - 0.7229
+    - 0.3468
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升序
+    - Ascending order
+    - A-Z
+    semantic_type: menu_item
+  description: Sorting menu allowing users to organize music items by artist, number
+    of albums, or number of tracks in ascending order.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_38
+  elements:
+  - text: Close navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close menu
+    - close drawer
+    - 关闭导航
+    - 返回
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的音乐
+    - 本地音乐
+    - music library
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升级专业版
+    - 购买Pro
+    - remove ads
+    - go pro
+    semantic_type: menu_item
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序
+    - sort by
+    - order
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - search music
+    semantic_type: button
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 歌曲
+    - 音乐
+    - songs
+    - audio files
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - 歌单
+    - lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - 目录
+    - directories
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - 唱片
+    - albums list
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 艺术家
+    - 歌手
+    - singers
+    semantic_type: tab
+  - text: Pi Music Player
+    center:
+    - 0.4101
+    - 0.1304
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi音乐播放器
+    - Pi Player
+    - app name
+    semantic_type: label
+  - text: Video Player
+    center:
+    - 0.3306
+    - 0.2441
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频播放器
+    - 视频
+    - video
+    semantic_type: menu_item
+  - text: Customizations
+    center:
+    - 0.3306
+    - 0.3412
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自定义
+    - 个性化
+    - themes
+    semantic_type: menu_item
+  - text: Features
+    center:
+    - 0.3306
+    - 0.395
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 功能
+    - 特性
+    - functions
+    semantic_type: menu_item
+  - text: Equalizer
+    center:
+    - 0.2087
+    - 0.4479
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 均衡器
+    - EQ
+    - 音效
+    semantic_type: menu_item
+  - text: Ringtone Cutter
+    center:
+    - 0.2628
+    - 0.4995
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 铃声剪辑
+    - 铃声制作
+    - ringtone maker
+    semantic_type: menu_item
+  - text: Smart Playlists
+    center:
+    - 0.251
+    - 0.5511
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 智能播放列表
+    - 自动歌单
+    - smart lists
+    semantic_type: menu_item
+  - text: AudioBook and Podcast
+    center:
+    - 0.3333
+    - 0.6027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 有声书和播客
+    - 有声读物
+    - audiobooks
+    semantic_type: menu_item
+  - text: Sleep Timer
+    center:
+    - 0.2333
+    - 0.6543
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 睡眠定时器
+    - 定时关闭
+    - sleep timer
+    semantic_type: menu_item
+  - text: Pi Power Share
+    center:
+    - 0.2597
+    - 0.7059
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi能量共享
+    - 分享赚钱
+    - power share
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.3306
+    - 0.7585
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - 支持
+    - support
+    semantic_type: menu_item
+  - text: Send Feedback
+    center:
+    - 0.2649
+    - 0.8114
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - 意见反馈
+    - feedback
+    semantic_type: menu_item
+  - text: User Guide
+    center:
+    - 0.2267
+    - 0.863
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 用户指南
+    - 使用手册
+    - guide
+    semantic_type: menu_item
+  - text: About
+    center:
+    - 0.3306
+    - 0.9155
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关于
+    - 关于应用
+    - about app
+    semantic_type: menu_item
+  - text: Invite Friends
+    center:
+    - 0.2434
+    - 0.9655
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 邀请好友
+    - 分享应用
+    - invite
+    semantic_type: menu_item
+  description: Navigation drawer providing access to music library categories, audio
+    tools, settings, and app information.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_39
+  elements:
+  - text: Close navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close menu
+    - close drawer
+    - 关闭导航
+    - close sidebar
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的音乐
+    - music library
+    - local music
+    semantic_type: tab
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升级专业版
+    - go pro
+    - premium upgrade
+    - 购买专业版
+    semantic_type: button
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序
+    - sort by
+    - sort order
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - search music
+    - search bar
+    semantic_type: input
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 歌曲
+    - tracks list
+    - songs
+    - 音频
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - playlists tab
+    - 歌单
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - folders tab
+    - 目录
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - albums tab
+    - 唱片
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 艺术家
+    - artists tab
+    - 歌手
+    semantic_type: tab
+  - text: Pi Music Player
+    center:
+    - 0.4101
+    - 0.1304
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi音乐播放器
+    - Pi Player
+    - app name
+    semantic_type: label
+  - text: Video Player
+    center:
+    - 0.3306
+    - 0.2441
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频播放器
+    - video
+    - 视频
+    semantic_type: menu_item
+  - text: Customizations
+    center:
+    - 0.3306
+    - 0.3412
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自定义
+    - customization
+    - 个性化
+    semantic_type: setting
+  - text: Themes
+    center:
+    - 0.1993
+    - 0.3941
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主题
+    - theme settings
+    - 外观
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.199
+    - 0.4457
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - preferences
+    - app settings
+    semantic_type: menu_item
+  - text: Store
+    center:
+    - 0.176
+    - 0.4973
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 商店
+    - app store
+    - 应用商店
+    semantic_type: menu_item
+  - text: Features
+    center:
+    - 0.3306
+    - 0.5498
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 功能
+    - app features
+    - 特性
+    semantic_type: menu_item
+  - text: Equalizer
+    center:
+    - 0.2087
+    - 0.6027
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 均衡器
+    - eq
+    - 音效
+    semantic_type: menu_item
+  - text: Ringtone Cutter
+    center:
+    - 0.2628
+    - 0.6543
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 铃声剪辑
+    - ringtone maker
+    - 铃声制作
+    semantic_type: menu_item
+  - text: Smart Playlists
+    center:
+    - 0.251
+    - 0.7059
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 智能播放列表
+    - smart lists
+    - 智能歌单
+    semantic_type: menu_item
+  - text: AudioBook and Podcast
+    center:
+    - 0.3333
+    - 0.7575
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 有声书和播客
+    - audiobooks
+    - podcasts
+    - 有声读物
+    semantic_type: menu_item
+  - text: Sleep Timer
+    center:
+    - 0.2333
+    - 0.8091
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 睡眠定时器
+    - sleep timer settings
+    - 定时关闭
+    semantic_type: menu_item
+  - text: Pi Power Share
+    center:
+    - 0.2597
+    - 0.8607
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi能量共享
+    - power share
+    - 分享
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.3306
+    - 0.9133
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - help center
+    - 帮助中心
+    semantic_type: menu_item
+  - text: Send Feedback
+    center:
+    - 0.2649
+    - 0.9644
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - feedback
+    - 意见反馈
+    semantic_type: menu_item
+  description: Side navigation drawer containing categorized menu options for the
+    music library, premium upgrades, app tools, settings, and help.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_40
+  elements:
+  - text: Close navigation drawer
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - close menu
+    - close drawer
+    - 关闭导航
+    - close sidebar
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2576
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的音乐
+    - music library
+    - local music
+    semantic_type: menu_item
+  - text: Upgrade to PRO
+    center:
+    - 0.6597
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 升级专业版
+    - go pro
+    - premium upgrade
+    - remove ads
+    semantic_type: menu_item
+  - text: Sort
+    center:
+    - 0.7958
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 排序
+    - sort by
+    - sort order
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.9319
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - search music
+    semantic_type: button
+  - text: TRACKS
+    center:
+    - 0.1122
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 曲目
+    - songs
+    - 歌曲
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3368
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - play lists
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.5719
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - directories
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7913
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - album
+    semantic_type: tab
+  - text: ARTISTS
+    center:
+    - 0.949
+    - 0.1965
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 艺术家
+    - 歌手
+    - singers
+    semantic_type: tab
+  - text: Pi Music Player
+    center:
+    - 0.4101
+    - 0.1304
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pi音乐播放器
+    - PiMusic
+    - app name
+    semantic_type: label
+  - text: Video Player
+    center:
+    - 0.3306
+    - 0.2441
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 视频播放器
+    - video
+    - 视频
+    semantic_type: menu_item
+  - text: Customizations
+    center:
+    - 0.3306
+    - 0.3412
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自定义
+    - customization
+    - themes
+    semantic_type: menu_item
+  - text: Features
+    center:
+    - 0.3306
+    - 0.395
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 功能
+    - features list
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.3306
+    - 0.4489
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - support
+    - help center
+    semantic_type: menu_item
+  - text: Send Feedback
+    center:
+    - 0.2649
+    - 0.5018
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - feedback
+    - report issue
+    semantic_type: menu_item
+  - text: User Guide
+    center:
+    - 0.2267
+    - 0.5534
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 用户指南
+    - guide
+    - manual
+    semantic_type: menu_item
+  - text: About
+    center:
+    - 0.3306
+    - 0.6059
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关于
+    - about app
+    semantic_type: menu_item
+  - text: Invite Friends
+    center:
+    - 0.2434
+    - 0.6588
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 邀请好友
+    - invite
+    - share app
+    semantic_type: menu_item
+  - text: Follow Us
+    center:
+    - 0.2135
+    - 0.7104
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关注我们
+    - follow
+    - social media
+    semantic_type: menu_item
+  - text: Info
+    center:
+    - 0.1622
+    - 0.762
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 信息
+    - information
+    - details
+    semantic_type: menu_item
+  - text: Rate this App
+    center:
+    - 0.2427
+    - 0.8136
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 评价应用
+    - rate app
+    - review
+    semantic_type: menu_item
+  description: Navigation drawer containing music library categories, app tools, settings,
+    and feedback options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_41
+  elements:
+  - text: Home
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 首页
+    - 主页
+    - home screen
+    - home page
+    semantic_type: tab
+  - text: Connection is secure
+    center:
+    - 0.1653
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 连接安全
+    - 安全连接
+    - secure connection
+    - connection secured
+    semantic_type: label
+  - text: New tab
+    center:
+    - 0.7181
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 新标签页
+    - 新建标签
+    - add tab
+    - new tab page
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 切换或关闭标签页
+    - 管理标签页
+    - tab manager
+    - switch tabs
+    semantic_type: button
+  description: Web browser toolbar showing secure connection status, home navigation,
+    and tab management controls.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_42
+  elements:
+  - text: Copy
+    center:
+    - 0.3833
+    - 0.633
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Duplicate
+    - Clipboard
+    - 复制
+    semantic_type: button
+  - text: Nearby
+    center:
+    - 0.6167
+    - 0.633
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Nearby Share
+    - Nearby devices
+    - 附近
+    semantic_type: menu_item
+  - text: Messages
+    center:
+    - 0.125
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - SMS
+    - Text
+    - 短信
+    semantic_type: menu_item
+  - text: Gmail
+    center:
+    - 0.3747
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Mail
+    - Email
+    - 邮件
+    semantic_type: menu_item
+  - text: Collections
+    center:
+    - 0.625
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Library
+    - Saved
+    - 收藏
+    semantic_type: menu_item
+  - text: Drive
+    center:
+    - 0.875
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Drive
+    - Cloud
+    - 云端硬盘
+    semantic_type: menu_item
+  - text: Apps list
+    center:
+    - 0.5
+    - 0.9832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - All apps
+    - More apps
+    - 应用列表
+    semantic_type: button
+  description: Android share sheet displaying sharing options like Nearby, Messages,
+    Gmail, Drive, and a list of available apps.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_43
+  elements:
+  - text: Please select a Theme...
+    center:
+    - 0.5
+    - 0.403
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Select theme
+    - Choose theme
+    - 选择主题
+    semantic_type: label
+  - text: Gloss Theme
+    center:
+    - 0.5
+    - 0.4538
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Gloss
+    - Glossy theme
+    - 光泽主题
+    semantic_type: menu_item
+  - text: Black Theme
+    center:
+    - 0.5
+    - 0.5077
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Black
+    - Black mode
+    - 黑色主题
+    semantic_type: menu_item
+  - text: Dark Theme
+    center:
+    - 0.5
+    - 0.5615
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dark
+    - Dark mode
+    - 深色主题
+    semantic_type: menu_item
+  - text: Light Theme
+    center:
+    - 0.5
+    - 0.6154
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Light
+    - Light mode
+    - 浅色主题
+    semantic_type: menu_item
+  description: Theme selection screen where the user can choose between Gloss, Black,
+    Dark, and Light visual themes.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_44
+  elements:
+  - text: Choose Background
+    center:
+    - 0.3872
+    - 0.0822
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Set Background
+    - 背景
+    - 选择背景
+    - Background
+    semantic_type: button
+  - text: My Music
+    center:
+    - 0.2472
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 我的音乐
+    - Music Library
+    - 本地音乐
+    - Local Music
+    semantic_type: tab
+  - text: TRACKS
+    center:
+    - 0.209
+    - 0.2228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 歌曲
+    - Songs
+    - Track
+    semantic_type: tab
+  - text: PLAYLISTS
+    center:
+    - 0.3434
+    - 0.2228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - 歌单
+    - Playlist
+    semantic_type: tab
+  - text: DISCOVER
+    center:
+    - 0.4903
+    - 0.2228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发现
+    - Explore
+    - 探索
+    semantic_type: tab
+  - text: FOLDERS
+    center:
+    - 0.6312
+    - 0.2228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 文件夹
+    - 目录
+    - Folder
+    semantic_type: tab
+  - text: ALBUMS
+    center:
+    - 0.7625
+    - 0.2228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - Album
+    - 唱片
+    semantic_type: tab
+  - text: Choose Picture
+    center:
+    - 0.1167
+    - 0.9404
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 选择图片
+    - Select Image
+    - Pick Photo
+    - 选择照片
+    semantic_type: button
+  description: Background customization screen allowing users to select a picture
+    from various music library categories like tracks, playlists, and albums.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_45
+  elements:
+  - text: Select an Album view...
+    center:
+    - 0.5
+    - 0.4569
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Choose album view
+    - 选择专辑视图
+    - Album view selection
+    semantic_type: label
+  - text: Grid View
+    center:
+    - 0.5
+    - 0.5077
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Grid
+    - 网格视图
+    - 网格布局
+    semantic_type: button
+  - text: List View
+    center:
+    - 0.5
+    - 0.5615
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - List
+    - 列表视图
+    - 列表布局
+    semantic_type: button
+  description: Album view selection screen allowing users to choose between grid and
+    list display layouts.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_46
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up
+    - Go back
+    semantic_type: button
+  - text: Customize Sections
+    center:
+    - 0.3889
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Edit Sections
+    - 自定义分区
+    - Manage sections
+    semantic_type: menu_item
+  - text: Tracks
+    center:
+    - 0.2545
+    - 0.1462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Songs
+    - 歌曲
+    - Audio files
+    semantic_type: tab
+  - text: Playlists
+    center:
+    - 0.2677
+    - 0.2202
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 播放列表
+    - Lists
+    - Song lists
+    semantic_type: tab
+  - text: Folders
+    center:
+    - 0.2632
+    - 0.2942
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Directories
+    - 文件夹
+    - File folders
+    semantic_type: tab
+  - text: Albums
+    center:
+    - 0.2632
+    - 0.3683
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 专辑
+    - Records
+    - Music albums
+    semantic_type: tab
+  - text: Artists
+    center:
+    - 0.2521
+    - 0.4423
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 歌手
+    - Singers
+    - Performers
+    semantic_type: tab
+  - text: Genres
+    center:
+    - 0.2615
+    - 0.5163
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 流派
+    - Categories
+    - Styles
+    semantic_type: tab
+  description: Library customization screen allowing users to manage visible categories
+    such as Tracks, Playlists, Folders, Albums, Artists, and Genres.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_47
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Hidden Folders
+    center:
+    - 0.3417
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 隐藏文件夹
+    - Hidden files
+    - Hidden directories
+    semantic_type: menu_item
+  - text: Sorry..Nothing to show!
+    center:
+    - 0.5
+    - 0.541
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Empty
+    - 暂无内容
+    - No items
+    semantic_type: label
+  - text: REMOVE FROM HIDDEN FOLDERS
+    center:
+    - 0.4903
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Unhide
+    - 取消隐藏
+    - Show folder
+    semantic_type: button
+  description: Hidden Folders management screen displaying an empty state message
+    indicating no folders are currently hidden.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_48
+  elements:
+  - text: Pi Music Player
+    center:
+    - 0.4993
+    - 0.4474
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - PiMusic
+    - Pi Music
+    - 音乐播放器
+    semantic_type: label
+  - text: Rescan Music Library
+    center:
+    - 0.4993
+    - 0.4982
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 重新扫描音乐库
+    - Scan Music
+    - 刷新音乐
+    - Rescan
+    semantic_type: button
+  - text: Do you want to rescan your music library?
+    center:
+    - 0.4997
+    - 0.5378
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 是否重新扫描音乐库？
+    - Rescan library?
+    - 确认扫描
+    semantic_type: label
+  - text: Cancel
+    center:
+    - 0.4128
+    - 0.5896
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 取消
+    - Dismiss
+    - 关闭
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.6146
+    - 0.5896
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 确定
+    - 确认
+    - Confirm
+    - 'Yes'
+    semantic_type: button
+  description: Confirmation dialog prompting the user to rescan the music library
+    with cancel and OK options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_49
+  elements:
+  - text: Pi Music Player
+    center:
+    - 0.4993
+    - 0.3372
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - PiMusic
+    - Pi Player
+    - 音乐播放器
+    semantic_type: label
+  - text: Translation Help
+    center:
+    - 0.4993
+    - 0.388
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help Translate
+    - Translate
+    - 翻译帮助
+    - Localization
+    semantic_type: menu_item
+  - text: OK
+    center:
+    - 0.4993
+    - 0.7002
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Confirm
+    - 确定
+    - Accept
+    - Got it
+    semantic_type: button
+  description: A dialog prompting the user to help translate the Pi Music Player app,
+    featuring an OK button to acknowledge.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 371
+    y: 242
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1146
+    y: 242
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1342
+    y: 242
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 485
+    y: 613
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 824
+    y: 613
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1140
+    y: 613
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1366
+    y: 613
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 1064
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 287
+    y: 1230
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 286
+    y: 1390
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 254
+    y: 1552
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 1716
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 300
+    y: 1880
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 378
+    y: 2042
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 480
+    y: 2364
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 336
+    y: 2524
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 374
+    y: 2686
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 382
+    y: 3009
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1146
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 1041
+    y: 746
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1146
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 1041
+    y: 914
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1146
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 1041
+    y: 1082
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1342
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 1342
+    y: 242
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 485
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 485
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 1146
+    y: 242
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 485
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 49
+    y: 613
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 485
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 1412
+    y: 613
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 485
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 576
+    y: 821
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 485
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 576
+    y: 1013
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 485
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 576
+    y: 1589
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 824
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 824
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 647
+    y: 990
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1140
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1140
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 1146
+    y: 242
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1140
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 744
+    y: 1233
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1366
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 1366
+    y: 613
+    wait: 1.5
+  - action: tap
+    x: 1146
+    y: 242
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 1064
+    wait: 1.5
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 1064
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 1064
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 1064
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 1232
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 1064
+    wait: 1.5
+  - action: tap
+    x: 326
+    y: 2692
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 476
+    y: 1064
+    wait: 1.5
+  - action: tap
+    x: 350
+    y: 3012
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 287
+    y: 1230
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1674
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 286
+    y: 1390
+    wait: 1.5
+  - action: tap
+    x: 632
+    y: 779
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 286
+    y: 1390
+    wait: 1.5
+  - action: tap
+    x: 632
+    y: 972
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 286
+    y: 1390
+    wait: 1.5
+  - action: tap
+    x: 692
+    y: 1220
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 286
+    y: 1390
+    wait: 1.5
+  - action: tap
+    x: 692
+    y: 1466
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 286
+    y: 1390
+    wait: 1.5
+  - action: tap
+    x: 692
+    y: 1712
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: com.Project100Pi.themusicplayer
+    wait: 0.5
+  - action: launch
+    package: com.Project100Pi.themusicplayer
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 242
+    wait: 1.5
+  - action: tap
+    x: 286
+    y: 1390
+    wait: 1.5
+  - action: tap
+    x: 692
+    y: 1958
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Browse the music library by tracks, albums, artists, playlists, or folders
+- Search for specific songs, artists, or albums
+- Sort the music library by title, album, artist, duration, or date added
+- Customize the app theme and select background options
+- Adjust audio effects like bass boost, virtualizer, and equalizer presets
+- Set a sleep timer to stop music playback after a specified duration
+- Share and receive music tracks using the Pi Power Share feature
+- Browse and search for podcasts and audiobooks
+- Purchase PRO upgrades, remove ads, or buy theme packs in the in-app store
+- Submit feedback, report bugs, or request new features
+known_limitations:
+- Main library screens frequently display banners prompting users to upgrade to PRO
+- App displays ads which can only be removed via the in-app store
+- Search and library screens show empty state messages if no local music is found
+  or no results match the query
+- Navigation drawer is densely packed with categories, tools, and settings, potentially
+  requiring scrolling
+- Certain theme customizations and background packs are locked behind paid in-app
+  purchases

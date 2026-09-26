@@ -1,0 +1,59 @@
+app: Maps.me
+package: com.mapswithme.maps.pro
+screen_w: 1440
+screen_h: 3120
+screens:
+- id: screen_0
+  description: A map overlay button featuring an icon and 'My Position' text to center
+    the view on the user's current location.
+  elements:
+  - text: icon
+    center:
+    - 0.9174
+    - 0.3276
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - image
+    - symbol
+    - glyph
+    - 图标
+    semantic_type: other
+  - text: My Position
+    center:
+    - 0.9174
+    - 0.7824
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Current Location
+    - Locate Me
+    - GPS
+    - 我的位置
+    semantic_type: button
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.mapswithme.maps.pro
+    wait: 0.5
+  - action: launch
+    package: com.mapswithme.maps.pro
+    wait: 3.0
+launch_behavior: always_home
+common_tasks:
+- Center map on current GPS location
+- Search for locations and points of interest
+- Get turn-by-turn navigation directions
+- Download offline maps for specific regions
+- Bookmark or save favorite locations
+- Toggle map layers like traffic or transit
+- Share a location with others
+- Plan a route with multiple stops
+known_limitations:
+- Offline maps must be manually downloaded and consume significant storage
+- Promotional banners can clutter the interface and obscure map elements
+- Search functionality is limited without pre-downloaded offline map data

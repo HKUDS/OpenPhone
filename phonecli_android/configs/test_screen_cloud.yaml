@@ -1,0 +1,27 @@
+# Screenshot + Cloud VLM agent configuration
+# Uses Mode 5's cloud prompt + history injection pattern with a single agent.
+# Unlike Mode 5 (ScreenshotTask), this has no starter/control/local split —
+# one VLM call per round with cloud-style prompt and history injection.
+
+agent:
+  name: OpenAIAgent
+  args:
+    api_key: "${OPENROUTER_API_KEY}"
+    api_base: "https://openrouter.ai/api/v1"
+    model_name: "qwen/qwen3.7-plus"
+    max_new_tokens: 512
+
+task:
+  class: ScreenshotCloudTask_AutoTest
+  args:
+    save_dir: "./logs/evaluation"
+    max_rounds: 25
+    request_interval: 3
+    mode: "in_app"
+
+eval:
+  avd_base: "${HOME}/.android/avd"
+  avd_name: Pixel_7_Pro_API_33
+  avd_log_dir: ./logs/avd
+  android_sdk_path: "${HOME}/Library/Android/sdk"
+  show_avd: false

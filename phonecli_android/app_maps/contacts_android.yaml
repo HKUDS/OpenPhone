@@ -1,0 +1,5798 @@
+app: Contacts
+package: com.google.android.contacts
+screen_w: 1440
+screen_h: 3120
+screens:
+- id: screen_0
+  description: Main contacts list screen featuring a search bar, alphabetical contact
+    directory, bottom navigation tabs, and a create contact button.
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - search
+    - find contacts
+    - 搜索联系人
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - menu
+    - hamburger menu
+    - 导航菜单
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.7778
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - options
+    - menu
+    - 更多选项
+    semantic_type: button
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - account
+    - signed in
+    - 账户设置
+    semantic_type: label
+  - text: Phone contacts
+    center:
+    - 0.2253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - phone
+    - device contacts
+    - 手机联系人
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6094
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - email
+    - gmail contacts
+    - 邮箱联系人
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9035
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - organization
+    - 公司
+    - 企业
+    semantic_type: menu_item
+  - text: A
+    center:
+    - 0.0681
+    - 0.2679
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - letter A
+    - A section
+    semantic_type: label
+  - text: L
+    center:
+    - 0.0681
+    - 0.3936
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - letter L
+    - L section
+    semantic_type: label
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - add contact
+    - new contact
+    - 新建联系人
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - contacts tab
+    - 联系人
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - highlights tab
+    - 精选
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - manage
+    - fix and manage
+    - 整理和管理
+    semantic_type: tab
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Back
+    center:
+    - 0.0583
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 返回
+    - go back
+    - back button
+    semantic_type: button
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 搜索联系人
+    - find contacts
+    - search bar
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 语音搜索
+    - voice input
+    - microphone
+    semantic_type: button
+  - text: Open navigation drawer
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 打开导航抽屉
+    - menu
+    - hamburger menu
+    - 侧边栏
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.7778
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 更多选项
+    - overflow menu
+    - three dots
+    - 更多
+    semantic_type: button
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 登录身份
+    - account info
+    - 账户设置
+    semantic_type: menu_item
+  - text: Phone contacts
+    center:
+    - 0.2253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 手机联系人
+    - device contacts
+    - local contacts
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6094
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 电子邮件联系人
+    - gmail contacts
+    - 邮箱联系人
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9035
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 公司
+    - organization
+    - 企业
+    semantic_type: label
+  - text: A
+    center:
+    - 0.0681
+    - 0.2679
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 字母A
+    - index A
+    - A section
+    semantic_type: label
+  - text: L
+    center:
+    - 0.0681
+    - 0.3936
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 字母L
+    - index L
+    - L section
+    semantic_type: label
+  description: Main contacts list screen allowing users to search, select accounts,
+    and browse contacts alphabetically.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 搜索联系人
+    - search
+    - find contacts
+    - search bar
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - menu
+    - hamburger menu
+    - 导航菜单
+    - 侧边栏
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.7778
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 更多选项
+    - overflow menu
+    - three dots
+    - menu
+    semantic_type: button
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 账户信息
+    - account info
+    - signed in
+    - account settings
+    semantic_type: label
+  - text: Phone contacts
+    center:
+    - 0.2253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 手机联系人
+    - phone
+    - device contacts
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6094
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 电子邮件联系人
+    - email
+    - gmail contacts
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9035
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 公司
+    - organization
+    - employer
+    semantic_type: label
+  - text: A
+    center:
+    - 0.0681
+    - 0.2679
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - letter A
+    - A section
+    - 字母A
+    semantic_type: label
+  - text: L
+    center:
+    - 0.0681
+    - 0.3936
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - letter L
+    - L section
+    - 字母L
+    semantic_type: label
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 新建联系人
+    - add contact
+    - new contact
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 联系人
+    - contacts tab
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 精选
+    - highlights tab
+    - featured
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 整理和管理
+    - fix and manage
+    - manage
+    semantic_type: tab
+  - text: All accounts
+    center:
+    - 0.4222
+    - 0.1538
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 所有账户
+    - all accounts
+    - accounts
+    semantic_type: menu_item
+  - text: Labels
+    center:
+    - 0.4222
+    - 0.2718
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 标签
+    - labels
+    - categories
+    semantic_type: menu_item
+  - text: Create label
+    center:
+    - 0.4222
+    - 0.3256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 创建标签
+    - new label
+    - add label
+    semantic_type: button
+  description: Main contacts screen featuring a search bar, account filters, an alphabetical
+    contact list, and bottom navigation tabs.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Select
+    center:
+    - 0.5882
+    - 0.0912
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - Choose
+    - Pick
+    - 选择
+    semantic_type: button
+  - text: Select all
+    center:
+    - 0.5882
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - 全选
+    - Choose all
+    - Select All Contacts
+    semantic_type: button
+  description: Contact selection menu with options to select individual contacts or
+    select all.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_4
+  elements:
+  - text: Close
+    center:
+    - 0.1069
+    - 0.1538
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 关闭
+    - dismiss
+    - cancel
+    - X
+    semantic_type: button
+  - text: Device
+    center:
+    - 0.2601
+    - 0.2191
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 设备
+    - 本地
+    - phone
+    - local
+    semantic_type: menu_item
+  - text: Add another account
+    center:
+    - 0.5632
+    - 0.3668
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - 添加其他帐号
+    - 添加帐号
+    - add account
+    semantic_type: menu_item
+  - text: Manage accounts on this device
+    center:
+    - 0.5632
+    - 0.4207
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 管理此设备上的帐号
+    - 管理帐号
+    - account settings
+    semantic_type: menu_item
+  - text: Contacts app settings
+    center:
+    - 0.5632
+    - 0.4758
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 通讯录应用设置
+    - 应用设置
+    - contacts settings
+    semantic_type: setting
+  - text: Help &amp; feedback
+    center:
+    - 0.5632
+    - 0.5296
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 帮助与反馈
+    - 帮助
+    - 反馈
+    - help
+    semantic_type: menu_item
+  - text: Privacy Policy
+    center:
+    - 0.3424
+    - 0.5846
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 隐私权政策
+    - 隐私政策
+    - privacy
+    semantic_type: link
+  - text: Terms of Service
+    center:
+    - 0.6375
+    - 0.5846
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 服务条款
+    - 用户协议
+    - terms
+    semantic_type: link
+  description: Contacts app settings screen with options to manage accounts, access
+    app settings, and view help or legal policies.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - search
+    - find contacts
+    - 搜索联系人
+    - search bar
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - menu
+    - hamburger menu
+    - 导航菜单
+    - navigation menu
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.7778
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - options
+    - 更多选项
+    - more
+    - overflow menu
+    semantic_type: button
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - account info
+    - signed in
+    - 已登录
+    - account settings
+    semantic_type: label
+  - text: Phone contacts
+    center:
+    - 0.2472
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - phone
+    - 手机联系人
+    - device contacts
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6531
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - email
+    - 邮箱联系人
+    - gmail contacts
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - organization
+    - 公司
+    - employer
+    - workplace
+    semantic_type: label
+  - text: A
+    center:
+    - 0.0681
+    - 0.2679
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - letter A
+    - section A
+    - 字母A
+    semantic_type: label
+  - text: ABC
+    center:
+    - 0.6153
+    - 0.2678
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - alphabet
+    - 字母表
+    - quick scroll
+    semantic_type: label
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - add contact
+    - new contact
+    - 创建联系人
+    - 新建联系人
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - 联系人
+    - contacts list
+    - address book
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 精选
+    - featured
+    - suggestions
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - manage
+    - 修复和管理
+    - fix and manage
+    semantic_type: tab
+  description: Main contacts screen displaying an alphabetical list of contacts, account
+    information, and a bottom navigation bar with Contacts, Highlights, and Fix &
+    manage tabs.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Search
+    - Find
+    - 搜索
+    - 查找联系人
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Menu
+    - Hamburger
+    - 导航菜单
+    - 打开菜单
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.7778
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - More
+    - Options
+    - 更多
+    - 菜单
+    semantic_type: button
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Account
+    - Settings
+    - 账号
+    - 设置
+    semantic_type: menu_item
+  - text: Phone contacts
+    center:
+    - 0.2253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Device contacts
+    - Local contacts
+    - 手机联系人
+    - 本地联系人
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6312
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Google contacts
+    - Gmail contacts
+    - 邮箱联系人
+    - 云端联系人
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Organization
+    - Work
+    - 公司
+    - 单位
+    semantic_type: label
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Add contact
+    - New contact
+    - 新建联系人
+    - 添加联系人
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Address book
+    - People
+    - 联系人
+    - 通讯录
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Favorites
+    - Starred
+    - 收藏
+    - 常用联系人
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Manage
+    - Tools
+    - 管理
+    - 修复和管理
+    semantic_type: tab
+  description: Main contacts screen displaying a searchable list of contacts with
+    filtering options, a create contact button, and a bottom navigation bar for Contacts,
+    Highlights, and Fix & manage.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Company
+    center:
+    - 0.5
+    - 0.8663
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Organization
+    - Employer
+    - Corp
+    - 公司
+    - 企业
+    semantic_type: label
+  description: Screen displaying a list of companies or organizations associated with
+    contacts in the address book.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Back
+    - 返回
+    - Up arrow
+    - Go back
+    semantic_type: button
+  - text: Edit contact
+    center:
+    - 0.7083
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Edit
+    - 编辑
+    - 修改联系人
+    - Modify
+    semantic_type: button
+  - text: Add to favorites
+    center:
+    - 0.825
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Favorite
+    - 收藏
+    - 星标
+    - Star
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - More
+    - 更多
+    - Menu
+    - Overflow
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.2083
+    - 0.4484
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Phone
+    - 拨打
+    - 呼叫
+    - Dial
+    semantic_type: button
+  - text: Text
+    center:
+    - 0.5
+    - 0.4484
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Message
+    - 短信
+    - 发送信息
+    - SMS
+    semantic_type: button
+  - text: Video
+    center:
+    - 0.7917
+    - 0.4484
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Video call
+    - 视频
+    - 视频通话
+    - Video chat
+    semantic_type: button
+  - text: Contact info
+    center:
+    - 0.1913
+    - 0.5529
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Info
+    - 联系人信息
+    - Details
+    - Information
+    semantic_type: label
+  - text: Add phone number
+    center:
+    - 0.3451
+    - 0.612
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Add number
+    - 添加电话
+    - 新增号码
+    - Add phone
+    semantic_type: button
+  - text: Add email
+    center:
+    - 0.2628
+    - 0.6687
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Add email address
+    - 添加邮箱
+    - 新增邮件
+    - Add mail
+    semantic_type: button
+  description: Contact details screen showing communication actions like call, text,
+    and video, along with contact information fields and options to edit or favorite
+    the contact.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - Back
+    - Up
+    - Return
+    semantic_type: button
+  - text: Edit contact
+    center:
+    - 0.7083
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Edit
+    - Modify
+    - Update
+    semantic_type: button
+  - text: Add to favorites
+    center:
+    - 0.825
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Favorite
+    - Star
+    - Add to starred
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Menu
+    - Overflow
+    - More
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.151
+    - 0.417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Phone
+    - Dial
+    - Voice call
+    semantic_type: button
+  - text: Text
+    center:
+    - 0.3837
+    - 0.417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - SMS
+    - Message
+    - Send message
+    semantic_type: button
+  - text: Video
+    center:
+    - 0.6163
+    - 0.417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Video call
+    - Video chat
+    semantic_type: button
+  - text: Email
+    center:
+    - 0.849
+    - 0.417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Mail
+    - Send email
+    - Compose
+    semantic_type: button
+  - text: Contact info
+    center:
+    - 0.1913
+    - 0.5215
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - Details
+    - Info
+    - View details
+    semantic_type: button
+  description: Contact details page displaying communication action buttons and personal
+    information with options to edit or add to favorites.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Cancel
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 取消
+    - dismiss
+    - abort
+    semantic_type: button
+  - text: Create contact
+    center:
+    - 0.3264
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 新建联系人
+    - add contact
+    - new contact
+    - 添加联系人
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.7764
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 保存
+    - confirm
+    - done
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 更多选项
+    - overflow menu
+    - three dots
+    - 更多
+    semantic_type: button
+  - text: Save to Device
+    center:
+    - 0.5
+    - 0.1494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 保存到设备
+    - save locally
+    - 本地存储
+    semantic_type: menu_item
+  - text: Save to
+    center:
+    - 0.0986
+    - 0.1494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 保存到
+    - account
+    - 存储位置
+    semantic_type: label
+  - text: Device
+    center:
+    - 0.3174
+    - 0.1494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 设备
+    - 本地
+    - phone
+    - local storage
+    semantic_type: menu_item
+  - text: Switch to another account
+    center:
+    - 0.4156
+    - 0.1494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 切换账户
+    - change account
+    - switch account
+    - 切换账号
+    semantic_type: menu_item
+  - text: Add contact photo
+    center:
+    - 0.5
+    - 0.2705
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 添加联系人照片
+    - add avatar
+    - set picture
+    - 添加头像
+    semantic_type: button
+  - text: Add picture
+    center:
+    - 0.4997
+    - 0.3647
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 添加图片
+    - add photo
+    - choose image
+    - 添加照片
+    semantic_type: button
+  - text: First name
+    center:
+    - 0.4951
+    - 0.4522
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 名
+    - given name
+    - 名字
+    - first_name
+    semantic_type: input
+  - text: Last name
+    center:
+    - 0.4951
+    - 0.5311
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 姓
+    - surname
+    - family name
+    - 姓氏
+    semantic_type: input
+  - text: Show more name fields
+    center:
+    - 0.9319
+    - 0.4455
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 显示更多名称字段
+    - more name fields
+    - 展开更多
+    - 更多姓名
+    semantic_type: button
+  - text: Company
+    center:
+    - 0.4951
+    - 0.6189
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 公司
+    - organization
+    - employer
+    - 单位
+    semantic_type: input
+  - text: Phone
+    center:
+    - 0.4951
+    - 0.7067
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 电话
+    - phone number
+    - 号码
+    - 联系方式
+    semantic_type: input
+  - text: Mobile
+    center:
+    - 0.334
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 手机
+    - cell
+    - mobile phone
+    - 手机号
+    semantic_type: label
+  - text: Show dropdown menu
+    center:
+    - 0.4833
+    - 0.7856
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 显示下拉菜单
+    - dropdown
+    - expand
+    - 展开菜单
+    semantic_type: button
+  - text: Email
+    center:
+    - 0.4951
+    - 0.8756
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 电子邮件
+    - email address
+    - 邮箱
+    - 邮件
+    semantic_type: input
+  - text: Home
+    center:
+    - 0.3208
+    - 0.9479
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 家庭
+    - home phone
+    - 住宅
+    - 家
+    semantic_type: label
+  description: Screen for creating a new contact, allowing users to input personal
+    details like name, phone, and email, add a photo, and choose the save location.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 搜索联系人
+    - search
+    - find contacts
+    - 查找
+    semantic_type: input
+  - text: Search
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 搜索
+    - find
+    - 查找
+    - search contacts
+    semantic_type: input
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 登录为
+    - 账户和设置
+    - account settings
+    - signed in
+    semantic_type: menu_item
+  - text: Favorites
+    center:
+    - 0.3931
+    - 0.1471
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 收藏
+    - 星标联系人
+    - starred
+    - favorite contacts
+    semantic_type: tab
+  - text: Add
+    center:
+    - 0.8931
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 添加
+    - 新建
+    - create
+    - new contact
+    semantic_type: button
+  - text: Quick access to your favorite people
+    center:
+    - 0.5875
+    - 0.2204
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 快速访问收藏的联系人
+    - favorite people
+    - quick access
+    semantic_type: label
+  - text: Add people to Favorites so you can more easily find and contact them
+    center:
+    - 0.5875
+    - 0.2732
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 添加联系人到收藏
+    - empty state message
+    - add to favorites prompt
+    semantic_type: label
+  - text: Add favorites
+    center:
+    - 0.5
+    - 0.3404
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 添加收藏
+    - add to favorites
+    - star contacts
+    semantic_type: button
+  - text: Recents
+    center:
+    - 0.4222
+    - 0.4324
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 最近
+    - 最近通话
+    - recent calls
+    - history
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9222
+    - 0.4324
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - overflow menu
+    - menu
+    - 更多
+    semantic_type: button
+  - text: Viewed recently
+    center:
+    - 0.3208
+    - 0.5064
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 最近查看
+    - recently viewed
+    - recent contacts
+    semantic_type: label
+  - text: Added recently
+    center:
+    - 0.6847
+    - 0.5064
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 最近添加
+    - recently added
+    - new contacts
+    semantic_type: label
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 联系人
+    - 通讯录
+    - all contacts
+    - contact list
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 精彩时刻
+    - 亮点
+    - updates
+    - contact updates
+    semantic_type: label
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - 整理与修复
+    - manage contacts
+    - fix contacts
+    - merge and clean
+    semantic_type: tab
+  description: Main Contacts dashboard with a search bar, account settings, Favorites
+    and Recents sections, and bottom navigation tabs.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.9319
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: Import from SIM
+    center:
+    - 0.2597
+    - 0.2324
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+  - text: Import from file
+    center:
+    - 0.7403
+    - 0.2324
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+  - text: Export to file
+    center:
+    - 0.2597
+    - 0.3176
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+  - text: Settings
+    center:
+    - 0.7403
+    - 0.3176
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+  - text: Other tools
+    center:
+    - 0.5
+    - 0.3878
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+  - text: Blocked numbers
+    center:
+    - 0.5
+    - 0.4378
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+  description: Contacts app settings and management menu featuring account details,
+    import and export options, and tools like blocked numbers and fix & manage.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - search
+    - find contacts
+    - search bar
+    - 搜索联系人
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - menu
+    - hamburger menu
+    - navigation menu
+    - 打开导航菜单
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.7778
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - more
+    - options
+    - three dots
+    - 更多选项
+    semantic_type: button
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: Phone contacts
+    center:
+    - 0.2253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - phone
+    - device contacts
+    - 手机联系人
+    - 本地联系人
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6094
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - email
+    - gmail contacts
+    - 电子邮件联系人
+    - 邮箱联系人
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9035
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - organization
+    - workplace
+    - 公司
+    - 单位
+    semantic_type: label
+  - text: A
+    center:
+    - 0.0681
+    - 0.2679
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - letter A
+    - section A
+    - 字母A
+    semantic_type: label
+  - text: L
+    center:
+    - 0.0681
+    - 0.3936
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - letter L
+    - section L
+    - 字母L
+    semantic_type: label
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - add contact
+    - new contact
+    - 创建联系人
+    - 新建联系人
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - contacts tab
+    - 联系人
+    - 通讯录
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - highlights tab
+    - 精选
+    - 亮点
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+  description: Main contacts list screen featuring a search bar, alphabetical contact
+    index, filter options, and a bottom navigation bar.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Search
+    - Find contacts
+    - 搜索联系人
+    - Search bar
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Menu
+    - Hamburger menu
+    - 打开导航抽屉
+    - Menu button
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.7778
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - More
+    - Overflow menu
+    - 更多选项
+    - Three dots
+    semantic_type: button
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+  - text: Phone contacts
+    center:
+    - 0.2253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - Device contacts
+    - 本地联系人
+    - SIM contacts
+    - Phone
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6094
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Google contacts
+    - 邮箱联系人
+    - Cloud contacts
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9035
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Organization
+    - 公司
+    - Employer
+    - Work
+    semantic_type: label
+  - text: A
+    center:
+    - 0.0681
+    - 0.2679
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Letter A
+    - A section
+    - 字母A
+    - Index A
+    semantic_type: label
+  - text: L
+    center:
+    - 0.0681
+    - 0.3936
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Letter L
+    - L section
+    - 字母L
+    - Index L
+    semantic_type: label
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Add contact
+    - 新建联系人
+    - New contact
+    - Add
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Address book
+    - 联系人
+    - People
+    - Directory
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Recent
+    - Updates
+    - 亮点
+    - Recent updates
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+  - text: All accounts
+    center:
+    - 0.4222
+    - 0.1538
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - All contacts
+    - 所有帐户
+    - All
+    - All accounts filter
+    semantic_type: menu_item
+  - text: Device
+    center:
+    - 0.4128
+    - 0.2077
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Phone
+    - 设备
+    - Local
+    - Device account
+    semantic_type: menu_item
+  - text: Labels
+    center:
+    - 0.4222
+    - 0.2718
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Groups
+    - 标签
+    - Categories
+    - Tags
+    semantic_type: menu_item
+  - text: Create label
+    center:
+    - 0.4222
+    - 0.3256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - New label
+    - Create group
+    - 创建标签
+    - Add label
+    semantic_type: button
+  description: Main contacts list screen with search, filter tabs, alphabetical contact
+    index, and an open navigation drawer for account and label settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Create label
+    center:
+    - 0.3007
+    - 0.2375
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - New label
+    - Add label
+    - 新建标签
+    - 创建标签
+    semantic_type: button
+  - text: Label name
+    center:
+    - 0.5
+    - 0.324
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - Name
+    - 标签名称
+    - 标签名
+    - Enter label name
+    semantic_type: input
+  - text: Cancel
+    center:
+    - 0.5979
+    - 0.4263
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 取消
+    - Dismiss
+    - Abort
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.7799
+    - 0.4263
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 确定
+    - 确认
+    - Done
+    - Accept
+    semantic_type: button
+  description: Dialog for creating a new contact label with a text input field and
+    cancel and ok buttons.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_16
+  elements:
+  - text: close
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 关闭
+    - dismiss
+    - cancel
+    - X
+    semantic_type: button
+  - text: Select contacts
+    center:
+    - 0.3316
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 选择联系人
+    - choose contacts
+    - pick contacts
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - 更多选项
+    - more
+    - overflow menu
+    semantic_type: button
+  - text: Phone contacts
+    center:
+    - 0.2253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 手机联系人
+    - device contacts
+    - local contacts
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6094
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 邮箱联系人
+    - email address book
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9035
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 公司
+    - organization
+    - employer
+    semantic_type: label
+  description: Contact selection screen with filtering options for phone, email, and
+    company contacts.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: close
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - dismiss
+    - cancel
+    - X
+    - 关闭
+    semantic_type: button
+  - text: Share
+    center:
+    - 0.825
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 分享
+    - send
+    - forward
+    semantic_type: button
+  - text: Delete
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - 删除
+    - remove
+    - trash
+    semantic_type: button
+  - text: Phone contacts
+    center:
+    - 0.2253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 本地联系人
+    - device contacts
+    - local contacts
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6094
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 邮件联系人
+    - email list
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9035
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 公司
+    - organization
+    - employer
+    - 工作单位
+    semantic_type: label
+  - text: A
+    center:
+    - 0.0681
+    - 0.2679
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - letter A
+    - A index
+    - 字母A
+    semantic_type: button
+  - text: L
+    center:
+    - 0.0681
+    - 0.3936
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - letter L
+    - L index
+    - 字母L
+    semantic_type: button
+  description: Contact list screen featuring filter options for phone, email, and
+    company contacts, alphabetical list sections, and share or delete actions.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Sign in - Google Accounts
+    center:
+    - 0.5
+    - 0.5101
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google login
+    - 登录 Google 账号
+    - Google 账户
+    semantic_type: label
+  - text: Sign in
+    center:
+    - 0.5017
+    - 0.1853
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Login
+    - 登录
+    - Log in
+    semantic_type: button
+  - text: Learn more about using your account
+    center:
+    - 0.4108
+    - 0.3204
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Learn more
+    - 了解更多
+    - Account help
+    semantic_type: link
+  - text: Forgot email?
+    center:
+    - 0.1712
+    - 0.4623
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Forgot username
+    - 忘记邮箱
+    - Recover email
+    semantic_type: link
+  - text: Next
+    center:
+    - 0.8479
+    - 0.9272
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Continue
+    - 下一步
+    - Proceed
+    semantic_type: button
+  - text: Create account
+    center:
+    - 0.1823
+    - 0.9272
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Sign up
+    - 注册
+    - Create new account
+    semantic_type: button
+  description: Google sign-in screen for adding an account, featuring options to log
+    in, recover a forgotten email, or create a new account.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_19
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Passwords
+    center:
+    - 0.5097
+    - 0.3321
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 密码
+    - Saved passwords
+    - Password manager
+    semantic_type: menu_item
+  - text: Google
+    center:
+    - 0.2517
+    - 0.3845
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - 谷歌
+    - Google account
+    semantic_type: menu_item
+  - text: Autofill service
+    center:
+    - 0.5097
+    - 0.476
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 自动填充服务
+    - Autofill
+    - 自动填充
+    semantic_type: setting
+  - text: Settings
+    center:
+    - 0.8736
+    - 0.5284
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - 设置
+    - Preferences
+    - Options
+    semantic_type: menu_item
+  - text: Accounts for Owner
+    center:
+    - 0.5097
+    - 0.5987
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 机主账号
+    - Accounts
+    - 账号
+    semantic_type: setting
+  - text: Reddit for Android
+    center:
+    - 0.3708
+    - 0.738
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - Reddit
+    - 红迪
+    semantic_type: menu_item
+  - text: Reddit
+    center:
+    - 0.5681
+    - 0.7635
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - Reddit for Android
+    - 红迪
+    semantic_type: menu_item
+  - text: Uptodown App Store
+    center:
+    - 0.5681
+    - 0.8503
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - Uptodown
+    - 应用商店
+    semantic_type: menu_item
+  - text: Add account
+    center:
+    - 0.3118
+    - 0.9117
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 添加账号
+    - Add new account
+    - 新增账户
+    semantic_type: button
+  - text: Automatically sync app data
+    center:
+    - 0.3632
+    - 0.9678
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - 自动同步应用数据
+    - Auto-sync
+    - 自动同步
+    semantic_type: toggle
+  - text: Let apps refresh data automatically
+    center:
+    - 0.3264
+    - 0.9827
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - 允许应用自动刷新数据
+    - Auto-refresh
+    - 自动刷新
+    semantic_type: label
+  description: Settings screen for managing device accounts and sync preferences,
+    allowing users to view linked apps, add new accounts, and toggle automatic data
+    synchronization.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.2427
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 设置
+    - Preferences
+    - Options
+    - Gear
+    semantic_type: menu_item
+  - text: Google Contacts sync settings
+    center:
+    - 0.4437
+    - 0.1486
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - Sync settings
+    - 同步设置
+    - Google sync
+    - Account sync
+    semantic_type: menu_item
+  - text: Control how contacts back up &amp; sync
+    center:
+    - 0.4642
+    - 0.1724
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - Backup and sync
+    - 备份与同步
+    - Sync control
+    - Manage sync
+    semantic_type: label
+  - text: Your info
+    center:
+    - 0.2524
+    - 0.2322
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - My info
+    - 个人信息
+    - My profile
+    - Profile
+    semantic_type: menu_item
+  - text: Accounts
+    center:
+    - 0.2587
+    - 0.2934
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - 账户
+    - Account settings
+    - Manage accounts
+    - 用户和账户
+    semantic_type: menu_item
+  - text: Display
+    center:
+    - 0.5681
+    - 0.3606
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - 显示
+    - View
+    - Display settings
+    - 视图
+    semantic_type: menu_item
+  - text: Sort by
+    center:
+    - 0.2392
+    - 0.4098
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 排序方式
+    - Sort order
+    - 排序
+    - Order by
+    semantic_type: menu_item
+  - text: First name
+    center:
+    - 0.2566
+    - 0.4337
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 名
+    - Given name
+    - 名字
+    - First
+    semantic_type: menu_item
+  - text: Name format
+    center:
+    - 0.2903
+    - 0.4934
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 名称格式
+    - Name order
+    - 姓名格式
+    - Display name format
+    semantic_type: menu_item
+  - text: First name first
+    center:
+    - 0.2917
+    - 0.5173
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 名在前
+    - Given name first
+    - 名字优先
+    - First name
+    semantic_type: menu_item
+  - text: Theme
+    center:
+    - 0.2351
+    - 0.5771
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 主题
+    - Appearance
+    - 外观
+    - Dark mode
+    semantic_type: menu_item
+  - text: System default
+    center:
+    - 0.2906
+    - 0.601
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 系统默认
+    - Default
+    - 跟随系统
+    - Auto
+    semantic_type: menu_item
+  - text: Edit contacts
+    center:
+    - 0.5681
+    - 0.6667
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 编辑联系人
+    - Manage contacts
+    - 修改联系人
+    - Edit
+    semantic_type: menu_item
+  - text: Default account for new contacts
+    center:
+    - 0.4691
+    - 0.7159
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 新联系人默认账户
+    - Default account
+    - 默认保存位置
+    - Default save location
+    semantic_type: menu_item
+  - text: No default set
+    center:
+    - 0.2847
+    - 0.7397
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 未设置默认值
+    - None
+    - 无默认
+    - Not set
+    semantic_type: label
+  - text: Phonetic name
+    center:
+    - 0.3069
+    - 0.7995
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 拼音姓名
+    - Phonetic
+    - 注音
+    - Phonetic field
+    semantic_type: menu_item
+  - text: Hide if empty
+    center:
+    - 0.2781
+    - 0.8234
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 为空时隐藏
+    - Hide when empty
+    - 隐藏空字段
+    - Auto hide
+    semantic_type: menu_item
+  - text: Undo changes
+    center:
+    - 0.3028
+    - 0.8832
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 撤销更改
+    - Undo
+    - 恢复
+    - Revert changes
+    semantic_type: menu_item
+  description: Contacts app settings page with options to manage sync, display preferences,
+    themes, and default accounts.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Back
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.1868
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 帮助
+    - Help & feedback
+    - 帮助与反馈
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9368
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Menu
+    - 更多选项
+    - 三点菜单
+    - overflow
+    semantic_type: button
+  - text: Popular help resources
+    center:
+    - 0.2181
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 热门帮助资源
+    - Help topics
+    - 帮助主题
+    semantic_type: label
+  - text: Edit or delete contacts
+    center:
+    - 0.3417
+    - 0.2032
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 编辑或删除联系人
+    - Manage contacts
+    - 管理联系人
+    semantic_type: link
+  - text: Export, back up, or restore contacts
+    center:
+    - 0.4455
+    - 0.266
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 导出、备份或恢复联系人
+    - Backup contacts
+    - 备份联系人
+    semantic_type: link
+  - text: Sync Google Contacts with your mobile device or computer
+    center:
+    - 0.5632
+    - 0.3288
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 同步 Google 通讯录
+    - Sync contacts
+    - 同步联系人
+    semantic_type: link
+  - text: Add or move contacts
+    center:
+    - 0.3361
+    - 0.3917
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 添加或移动联系人
+    - Add contacts
+    - 添加联系人
+    semantic_type: link
+  - text: Import your contacts into Google Contacts
+    center:
+    - 0.4972
+    - 0.4545
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 将联系人导入 Google 通讯录
+    - Import contacts
+    - 导入联系人
+    semantic_type: link
+  - text: Search help
+    center:
+    - 0.5
+    - 0.5231
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 搜索帮助
+    - Search
+    - 搜索框
+    semantic_type: input
+  - text: Send feedback
+    center:
+    - 0.5632
+    - 0.5952
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - 发送反馈
+    - Feedback
+    - 反馈
+    semantic_type: menu_item
+  description: Help and feedback page listing popular help resources, contact management
+    topics, and options to search or send feedback
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Select
+    center:
+    - 0.5882
+    - 0.0912
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Choose
+    - Pick
+    - 选择
+    semantic_type: button
+  - text: Select all
+    center:
+    - 0.5882
+    - 0.145
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - 全选
+    - Choose all contacts
+    - Select everything
+    semantic_type: button
+  - text: Customize view
+    center:
+    - 0.5882
+    - 0.1989
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - View settings
+    - Display options
+    - 自定义视图
+    - 视图设置
+    semantic_type: menu_item
+  description: Contact selection menu offering options to select all contacts and
+    customize the list view.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_23
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - Search
+    - Find contacts
+    - 搜索联系人
+    - Search bar
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Menu
+    - Hamburger menu
+    - 打开导航抽屉
+    - Menu button
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.7778
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - More
+    - Overflow menu
+    - 更多选项
+    - Three dots
+    semantic_type: button
+  - text: Phone contacts
+    center:
+    - 0.2472
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Phone
+    - Device contacts
+    - 手机联系人
+    - Local contacts
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.675
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Email
+    - Gmail contacts
+    - 电子邮件联系人
+    - Cloud contacts
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9472
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Organization
+    - Employer
+    - 公司
+    - Work
+    semantic_type: label
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Add contact
+    - New contact
+    - 创建联系人
+    - Add
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Address book
+    - People
+    - 联系人
+    - Directory
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Recent
+    - Updates
+    - 亮点
+    - Recent updates
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - Fix and manage
+    - Manage
+    - 修复和管理
+    - Settings
+    semantic_type: tab
+  description: Main contacts list screen featuring a search bar, filter options for
+    contact types, a create contact button, and a bottom navigation bar.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: Company
+    center:
+    - 0.5
+    - 0.8125
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - 公司
+    - Organization
+    - Employer
+    - Corp
+    semantic_type: label
+  description: Contact details screen displaying the company information field.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_25
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up arrow
+    semantic_type: button
+  - text: Edit contact
+    center:
+    - 0.7083
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - edit
+    - 修改联系人
+    - 编辑
+    - modify contact
+    semantic_type: button
+  - text: Add to favorites
+    center:
+    - 0.825
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - favorite
+    - 收藏
+    - add favorite
+    - 星标
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - more
+    - menu
+    - 更多选项
+    - overflow menu
+    semantic_type: button
+  - text: Call
+    center:
+    - 0.2083
+    - 0.417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - phone
+    - dial
+    - 拨打电话
+    - 呼叫
+    semantic_type: button
+  - text: Text
+    center:
+    - 0.5
+    - 0.417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - message
+    - SMS
+    - 发短信
+    - 短信
+    semantic_type: button
+  - text: Set up
+    center:
+    - 0.7917
+    - 0.417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - setup
+    - configure
+    - 设置
+    - 初始化
+    semantic_type: button
+  - text: Contact info
+    center:
+    - 0.1913
+    - 0.5215
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - contact details
+    - 联系人信息
+    - details
+    - info
+    semantic_type: label
+  - text: Mobile
+    center:
+    - 0.2264
+    - 0.6045
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - cell
+    - 手机
+    - mobile phone
+    - cellular
+    semantic_type: label
+  - text: Birthday
+    center:
+    - 0.2403
+    - 0.7654
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - birth date
+    - 生日
+    - DOB
+    - date of birth
+    semantic_type: label
+  description: Contact details screen displaying quick actions for calling and texting,
+    along with personal information such as mobile number and birthday.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - search
+    - find contacts
+    - 搜索联系人
+    - search bar
+    semantic_type: input
+  - text: Open navigation drawer
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - menu
+    - hamburger menu
+    - 导航菜单
+    - navigation menu
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.7778
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - options
+    - 更多选项
+    - more
+    - overflow menu
+    semantic_type: button
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - account info
+    - signed in
+    - 已登录
+    - account settings
+    semantic_type: label
+  - text: Phone contacts
+    center:
+    - 0.2472
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - phone
+    - 手机联系人
+    - device contacts
+    semantic_type: menu_item
+  - text: Email contacts
+    center:
+    - 0.6531
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - email
+    - 电子邮件联系人
+    - gmail contacts
+    semantic_type: menu_item
+  - text: Company
+    center:
+    - 0.9253
+    - 0.15
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - organization
+    - 公司
+    - employer
+    - workplace
+    semantic_type: label
+  - text: A
+    center:
+    - 0.0681
+    - 0.2679
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - letter A
+    - 字母A
+    - section A
+    semantic_type: label
+  - text: ABC
+    center:
+    - 0.6153
+    - 0.2678
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - alphabet
+    - 字母表
+    - quick scroll
+    semantic_type: label
+  - text: Create contact
+    center:
+    - 0.8736
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - add contact
+    - new contact
+    - 创建联系人
+    - add new
+    semantic_type: button
+  - text: Contacts
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 联系人
+    - contacts list
+    - address book
+    semantic_type: tab
+  - text: Highlights
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 精选
+    - featured
+    - suggestions
+    semantic_type: tab
+  - text: Fix &amp; manage
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - manage
+    - 修复和管理
+    - tools
+    - settings
+    semantic_type: tab
+  description: Main contacts list screen featuring a search bar, account filters,
+    an alphabetical index, and a bottom navigation bar.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_27
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Blocked numbers
+    center:
+    - 0.3441
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Block list
+    - 黑名单
+    - 拦截记录
+    - blocked contacts
+    semantic_type: menu_item
+  - text: Unknown
+    center:
+    - 0.1191
+    - 0.1391
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Unknown callers
+    - 未知
+    - 未知号码
+    - unidentified
+    semantic_type: label
+  - text: Block calls from unidentified callers
+    center:
+    - 0.309
+    - 0.1619
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Block unknown callers
+    - 拦截陌生来电
+    - 屏蔽未知号码
+    - block unidentified
+    semantic_type: toggle
+  - text: You won't receive calls or texts from blocked numbers.
+    center:
+    - 0.5
+    - 0.2535
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 说明
+    - 提示
+    - blocked numbers info
+    - description
+    semantic_type: label
+  - text: Add a number
+    center:
+    - 0.1604
+    - 0.3279
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Add number
+    - 添加号码
+    - 手动添加
+    - add to block list
+    semantic_type: button
+  description: Blocked numbers settings page allowing users to block unidentified
+    callers and add specific numbers to their block list.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Select contacts
+    center:
+    - 0.3316
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Choose contacts
+    - Pick contacts
+    - 选择联系人
+    - Select
+    semantic_type: button
+  - text: Search contacts
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Search
+    - Find contacts
+    - 搜索联系人
+    - Search box
+    semantic_type: input
+  - text: A
+    center:
+    - 0.0681
+    - 0.1574
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Letter A
+    - A section
+    - A index
+    - 字母A
+    semantic_type: label
+  - text: Star contact
+    center:
+    - 0.8639
+    - 0.1574
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Favorite
+    - Add to favorites
+    - 收藏联系人
+    - Star
+    semantic_type: button
+  - text: L
+    center:
+    - 0.0681
+    - 0.283
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Letter L
+    - L section
+    - L index
+    - 字母L
+    semantic_type: label
+  description: Contacts list screen with search and selection options, displaying
+    an alphabetically indexed list of contacts with favorite indicators.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Back
+    - 返回
+    - Up arrow
+    semantic_type: button
+  - text: Select contacts
+    center:
+    - 0.3316
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Choose contacts
+    - 选择联系人
+    - Pick contacts
+    semantic_type: button
+  - text: Save to Device
+    center:
+    - 0.5
+    - 0.1494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Save locally
+    - 保存到设备
+    - 本地存储
+    semantic_type: menu_item
+  - text: Save to
+    center:
+    - 0.0986
+    - 0.1494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Destination
+    - 保存至
+    - 存储位置
+    semantic_type: label
+  - text: Device
+    center:
+    - 0.3174
+    - 0.1494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Phone
+    - 设备
+    - 本机
+    - Local
+    semantic_type: menu_item
+  - text: Switch to another account
+    center:
+    - 0.4156
+    - 0.1494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Change account
+    - 切换账号
+    - 更换账户
+    semantic_type: menu_item
+  - text: No contacts on your SIM card
+    center:
+    - 0.5
+    - 0.5904
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - SIM empty
+    - SIM卡无联系人
+    - No SIM contacts
+    semantic_type: label
+  description: Contact import screen displaying SIM card status and options to select
+    a destination device or account for saving contacts.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: 'Save imported contacts to:'
+    center:
+    - 0.4076
+    - 0.3917
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Save contacts to
+    - Import destination
+    - 保存导入的联系人到
+    - 存储位置
+    semantic_type: label
+  - text: Device
+    center:
+    - 0.333
+    - 0.5279
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Phone
+    - Local storage
+    - 本机
+    - 设备
+    semantic_type: menu_item
+  - text: Cancel
+    center:
+    - 0.7729
+    - 0.6176
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - Abort
+    - Dismiss
+    - 取消
+    semantic_type: button
+  description: Dialog prompting the user to select a storage destination for imported
+    contacts, with options to save to the device or cancel.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_31
+  elements:
+  - text: Downloads
+    center:
+    - 0.1326
+    - 0.1282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 下载
+    - Download folder
+    - 下载目录
+    semantic_type: label
+  - text: Files in Downloads
+    center:
+    - 0.4417
+    - 0.1888
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 下载文件
+    - Files
+    - 下载中的文件
+    semantic_type: label
+  - text: List view
+    center:
+    - 0.8833
+    - 0.1888
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 列表视图
+    - 列表模式
+    - List mode
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 显示根目录
+    - 显示根
+    - Show root directories
+    semantic_type: menu_item
+  - text: New folder
+    center:
+    - 0.825
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 新建文件夹
+    - 创建文件夹
+    - Create folder
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 更多选项
+    - 更多
+    - Overflow menu
+    semantic_type: button
+  - text: SAVE
+    center:
+    - 0.859
+    - 0.9462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 保存
+    - Save file
+    - 确认保存
+    semantic_type: button
+  description: File picker screen for the Downloads directory with options to toggle
+    list view, show roots, create a new folder, and save a file.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Back
+    center:
+    - 0.0583
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - go back
+    - navigate back
+    semantic_type: button
+  - text: Search contacts
+    center:
+    - 0.5
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索联系人
+    - find contacts
+    - search bar
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 语音搜索
+    - voice input
+    - microphone
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.1069
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - query
+    semantic_type: button
+  - text: Signed in as Device&#10;Account and settings.
+    center:
+    - 0.8986
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 登录为设备
+    - account info
+    - signed in
+    semantic_type: label
+  - text: Favorites
+    center:
+    - 0.3931
+    - 0.1471
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 收藏
+    - starred
+    - favorite contacts
+    semantic_type: tab
+  - text: Add
+    center:
+    - 0.8931
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加
+    - create
+    - new contact
+    semantic_type: button
+  - text: Quick access to your favorite people
+    center:
+    - 0.5875
+    - 0.2204
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 快速访问收藏联系人
+    - favorite people access
+    semantic_type: label
+  - text: Add people to Favorites so you can more easily find and contact them
+    center:
+    - 0.5875
+    - 0.2732
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加联系人到收藏
+    - favorites description
+    semantic_type: label
+  - text: Add favorites
+    center:
+    - 0.5
+    - 0.3404
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加收藏
+    - add to favorites
+    semantic_type: button
+  - text: Recents
+    center:
+    - 0.4222
+    - 0.4324
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 最近
+    - call history
+    - recent calls
+    semantic_type: tab
+  - text: More options
+    center:
+    - 0.9222
+    - 0.4324
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - menu
+    - overflow
+    semantic_type: button
+  - text: Viewed recently
+    center:
+    - 0.3208
+    - 0.5064
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 最近查看
+    - recently viewed
+    semantic_type: label
+  - text: Added recently
+    center:
+    - 0.6847
+    - 0.5064
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 最近添加
+    - recently added
+    semantic_type: label
+  - text: ABC
+    center:
+    - 0.5632
+    - 0.5729
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 字母索引
+    - alphabetical index
+    - scroll index
+    semantic_type: button
+  description: Main contacts screen with a search bar, account settings, and sections
+    for favorite and recently viewed contacts, along with an alphabetical index.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_33
+  elements:
+  - text: Google logo
+    center:
+    - 0.5
+    - 0.3667
+    fixed: false
+    found_at_scroll: 0
+  - text: Tap to stop listening
+    center:
+    - 0.5
+    - 0.4676
+    fixed: false
+    found_at_scroll: 0
+  - text: English (United States)
+    center:
+    - 0.5
+    - 0.6596
+    fixed: false
+    found_at_scroll: 0
+  description: Voice search listening screen displaying the Google logo, language
+    selection, and a prompt to stop listening.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_34
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up arrow
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Password Manager
+    center:
+    - 0.5
+    - 0.2694
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Passwords
+    - Google Passwords
+    - 密码管理器
+    semantic_type: menu_item
+  - text: Settings
+    center:
+    - 0.9368
+    - 0.1471
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Options
+    - 设置
+    semantic_type: menu_item
+  - text: Start saving passwords
+    center:
+    - 0.5
+    - 0.3481
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Save passwords
+    - Enable saving
+    - 开始保存密码
+    semantic_type: button
+  - text: When you save a password to Google Password Manager, you’ll find it here
+    center:
+    - 0.5
+    - 0.3979
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Description
+    - Info text
+    - 说明文本
+    semantic_type: label
+  description: Google Password Manager empty state screen featuring a settings menu
+    and a prompt to start saving passwords.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_35
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Use Autofill with Google
+    center:
+    - 0.4125
+    - 0.3063
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Autofill
+    - Google Autofill
+    - 自动填充
+    - Auto-fill
+    semantic_type: setting
+  - text: Google Account
+    center:
+    - 0.3549
+    - 0.3976
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google
+    - Account
+    - 谷歌账号
+    - Gmail account
+    semantic_type: menu_item
+  - text: Choose an account
+    center:
+    - 0.3212
+    - 0.4224
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Select account
+    - Pick account
+    - 选择账号
+    - Select an account
+    semantic_type: label
+  description: Account selection screen prompting the user to choose a Google Account
+    for Autofill.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_36
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up button
+    semantic_type: button
+  - text: Reddit for Android
+    center:
+    - 0.5
+    - 0.3518
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Reddit
+    - reddit account
+    semantic_type: label
+  - text: Account sync
+    center:
+    - 0.3219
+    - 0.4175
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sync
+    - 同步
+    - account synchronization
+    - sync settings
+    semantic_type: setting
+  - text: Remove account
+    center:
+    - 0.4997
+    - 0.5208
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - delete account
+    - 删除账户
+    - remove
+    - delete
+    semantic_type: menu_item
+  description: Account settings screen for Reddit for Android with options to manage
+    account sync and remove the account.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_37
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Return
+    - 返回
+    semantic_type: button
+  - text: Account sync
+    center:
+    - 0.3219
+    - 0.4175
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sync account
+    - Account synchronization
+    - 同步账户
+    semantic_type: setting
+  - text: Sync off for all items
+    center:
+    - 0.3312
+    - 0.4429
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Sync disabled
+    - All sync off
+    - 同步已关闭
+    semantic_type: label
+  - text: Remove account
+    center:
+    - 0.4997
+    - 0.5208
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Delete account
+    - Remove
+    - 删除账户
+    semantic_type: button
+  description: Account settings screen allowing users to manage sync preferences and
+    remove the account.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_38
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Exchange
+    center:
+    - 0.2806
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Microsoft Exchange
+    - Exchange account
+    - Exchange邮箱
+    semantic_type: menu_item
+  - text: Google
+    center:
+    - 0.2517
+    - 0.3457
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google account
+    - Gmail
+    - 谷歌账号
+    semantic_type: menu_item
+  - text: Personal (IMAP)
+    center:
+    - 0.3524
+    - 0.4114
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - IMAP
+    - IMAP account
+    - 个人IMAP
+    semantic_type: menu_item
+  - text: Personal (POP3)
+    center:
+    - 0.3538
+    - 0.4771
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - POP3
+    - POP3 account
+    - 个人POP3
+    semantic_type: menu_item
+  - text: Reddit
+    center:
+    - 0.2437
+    - 0.5428
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Reddit account
+    - Reddit应用
+    semantic_type: menu_item
+  - text: TikTok
+    center:
+    - 0.2472
+    - 0.6085
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - TikTok account
+    - 抖音
+    - TikTok应用
+    semantic_type: menu_item
+  - text: Uptodown App Store
+    center:
+    - 0.3972
+    - 0.6742
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Uptodown
+    - Uptodown商店
+    semantic_type: menu_item
+  - text: Zoom
+    center:
+    - 0.2385
+    - 0.7399
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Zoom account
+    - Zoom应用
+    - Zoom会议
+    semantic_type: menu_item
+  description: Account selection screen listing available account types and services
+    such as Google, Exchange, and third-party apps.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_39
+  elements:
+  - text: Turn auto-sync data on?
+    center:
+    - 0.5
+    - 0.3941
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Enable auto-sync?
+    - 开启自动同步数据？
+    - Auto-sync confirmation
+    - Sync data prompt
+    semantic_type: label
+  - text: Cancel
+    center:
+    - 0.6694
+    - 0.6252
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 取消
+    - Dismiss
+    - Abort
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8285
+    - 0.6252
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 确定
+    - Confirm
+    - Accept
+    semantic_type: button
+  description: A dialog box prompting the user to confirm enabling auto-sync data
+    with Cancel and OK options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_40
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - up
+    - go back
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Help &amp; feedback
+    center:
+    - 0.791
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help & feedback
+    - support
+    - 帮助与反馈
+    - feedback
+    semantic_type: menu_item
+  - text: Keep your contacts synced with Google Contacts (contacts.google.com) so
+      you never lose them
+    center:
+    - 0.5
+    - 0.2569
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sync info
+    - google contacts sync
+    - 同步提示
+    - contacts sync description
+    semantic_type: label
+  - text: Status
+    center:
+    - 0.5
+    - 0.3369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sync status
+    - account status
+    - 状态
+    - sync state
+    semantic_type: menu_item
+  - text: Also sync device contacts
+    center:
+    - 0.5
+    - 0.4535
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sync device contacts
+    - sync local contacts
+    - 同步设备联系人
+    - device contact sync
+    semantic_type: toggle
+  description: Contacts account sync settings page allowing users to manage Google
+    Contacts synchronization and device contact syncing options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_41
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up button
+    semantic_type: button
+  - text: Help &amp; feedback
+    center:
+    - 0.791
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+  - text: Automatically sync your Google contacts with this device
+    center:
+    - 0.4813
+    - 0.2369
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - auto sync contacts
+    - 自动同步Google联系人
+    - sync Google contacts
+    semantic_type: label
+  - text: Start sync
+    center:
+    - 0.9028
+    - 0.2885
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - sync now
+    - 开始同步
+    - sync
+    - begin sync
+    semantic_type: button
+  - text: Automatically sync
+    center:
+    - 0.4028
+    - 0.379
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - auto sync
+    - 自动同步
+    - sync automatically
+    semantic_type: toggle
+  - text: Notifications
+    center:
+    - 0.0681
+    - 0.4981
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 通知
+    - notification settings
+    - alerts
+    semantic_type: setting
+  description: Contacts sync settings page with options to start sync, enable automatic
+    syncing, and manage notifications.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_42
+  elements:
+  - text: Auto-sync account &amp; app data?
+    center:
+    - 0.5
+    - 0.4377
+    fixed: false
+    found_at_scroll: 0
+  - text: Cancel
+    center:
+    - 0.6222
+    - 0.584
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - 取消
+    - Close
+    semantic_type: button
+  - text: Turn on
+    center:
+    - 0.8163
+    - 0.584
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Enable
+    - 开启
+    - Activate
+    semantic_type: button
+  description: Dialog box prompting the user to enable auto-sync for account and app
+    data, featuring Cancel and Turn on buttons.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_43
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.1847
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - Support
+    - Help & feedback
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9368
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Overflow
+    - Menu
+    - 更多
+    - 三点菜单
+    semantic_type: button
+  - text: Popular help resources
+    center:
+    - 0.2181
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 热门帮助资源
+    - Common topics
+    - FAQ
+    semantic_type: label
+  - text: Search help
+    center:
+    - 0.5
+    - 0.5231
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索帮助
+    - Search
+    - Find help
+    semantic_type: input
+  - text: Send feedback
+    center:
+    - 0.5632
+    - 0.5952
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 发送反馈
+    - Feedback
+    - Report issue
+    semantic_type: menu_item
+  description: Help and feedback page displaying popular help resources, a search
+    function, and an option to send feedback.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_44
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.1847
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - Support
+    - Assistance
+    semantic_type: button
+  - text: Return to Google Play services
+    center:
+    - 0.8153
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back to Play services
+    - 返回Google Play服务
+    - Go back to Play services
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9368
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - Menu
+    - Overflow menu
+    - 三点菜单
+    semantic_type: button
+  - text: How to recover your Google Account or Gmail
+    center:
+    - 0.5
+    - 0.546
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Account recovery help
+    - 如何恢复Google帐号或Gmail
+    - Recover account
+    semantic_type: link
+  - text: 'Tips:'
+    center:
+    - 0.5017
+    - 0.3563
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 提示：
+    - 'Hints:'
+    - 'Suggestions:'
+    semantic_type: label
+  - text: administrator
+    center:
+    - 0.4979
+    - 0.5627
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 管理员
+    - admin
+    - IT admin
+    semantic_type: label
+  - text: for help.
+    center:
+    - 0.6986
+    - 0.5627
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 寻求帮助。
+    - get help.
+    - 联系帮助。
+    semantic_type: label
+  - text: or the applicable age in your country
+    center:
+    - 0.4885
+    - 0.6075
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 或您所在国家/地区的适用年龄
+    - or legal age
+    semantic_type: label
+  - text: ) you can
+    center:
+    - 0.7774
+    - 0.621
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - ）您可以
+    - ) 您可以
+    semantic_type: label
+  - text: reset your child's password
+    center:
+    - 0.3257
+    - 0.6479
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 重置您孩子的密码
+    - change child password
+    - reset child password
+    semantic_type: link
+  - text: Forgot your password
+    center:
+    - 0.5017
+    - 0.7147
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 忘记密码
+    - Forgot password
+    - Reset password
+    semantic_type: link
+  - text: Follow the steps to
+    center:
+    - 0.2635
+    - 0.7551
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 按照以下步骤
+    - Follow steps to
+    semantic_type: label
+  - text: recover your Google Account or GmailOpens in new window
+    center:
+    - 0.4035
+    - 0.772
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 恢复您的Google帐号或Gmail
+    - recover account
+    - 在新窗口中打开
+    semantic_type: link
+  - text: recover your Google Account or Gmail
+    center:
+    - 0.4472
+    - 0.7686
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 恢复您的Google帐号或Gmail
+    - recover account
+    - account recovery
+    semantic_type: link
+  - text: Opens in new window
+    center:
+    - 0.4226
+    - 0.7832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 在新窗口中打开
+    - external link
+    - 新窗口打开
+    semantic_type: label
+  - text: If you have trouble, try the
+    center:
+    - 0.3705
+    - 0.8992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 如果您遇到问题，请尝试
+    - If you have issues, try the
+    semantic_type: label
+  - text: tips to complete account recovery steps
+    center:
+    - 0.5163
+    - 0.9127
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 完成帐号恢复步骤的提示
+    - account recovery tips
+    - recovery tips
+    semantic_type: link
+  - text: Learn how to create a strong password
+    center:
+    - 0.0
+    - 0.0
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 了解如何创建强密码
+    - create strong password
+    - password tips
+    semantic_type: link
+  description: Google Account and Gmail recovery help screen providing links and instructions
+    to reset passwords, recover accounts, and manage child accounts.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_45
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.1847
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help & feedback
+    - 帮助
+    - Support
+    - Assistance
+    semantic_type: menu_item
+  - text: Return to Google Play services
+    center:
+    - 0.8153
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back to Play services
+    - 返回Google Play服务
+    - Go back
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9368
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Overflow menu
+    - Menu
+    - 更多选项
+    - ⋮
+    semantic_type: button
+  - text: Close user survey dialog
+    center:
+    - 0.876
+    - 0.7601
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Close
+    - Dismiss
+    - 关闭
+    - X
+    semantic_type: button
+  description: Dialog overlay displaying a user survey or help prompt regarding Google
+    Play services with options to close or return.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_46
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - 向上导航
+    - back arrow
+    semantic_type: button
+  - text: Help
+    center:
+    - 0.1847
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - Support
+    - FAQ
+    - 帮助与支持
+    semantic_type: menu_item
+  - text: Return to Google Play services
+    center:
+    - 0.8153
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回Google Play服务
+    - Back to Play services
+    - 返回
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9368
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Overflow menu
+    - 更多选项
+    - 菜单
+    - 三点菜单
+    semantic_type: button
+  description: Top app bar for a Google Play services settings or help screen featuring
+    back navigation, help, and more options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_47
+  elements:
+  - text: Close
+    center:
+    - 0.1326
+    - 0.3939
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dismiss
+    - Cancel
+    - X
+    - 关闭
+    semantic_type: button
+  - text: Add another account
+    center:
+    - 0.5451
+    - 0.52
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add account
+    - 添加其他帐户
+    - 添加账户
+    semantic_type: button
+  - text: Manage accounts on this device
+    center:
+    - 0.5451
+    - 0.5739
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Manage accounts
+    - Account settings
+    - 管理此设备上的帐户
+    - 账户管理
+    semantic_type: menu_item
+  - text: Privacy Policy  •  Terms of Service
+    center:
+    - 0.5
+    - 0.6293
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Legal
+    - Terms
+    - 隐私政策 • 服务条款
+    - 隐私权政策
+    semantic_type: link
+  description: Account settings screen with options to add or manage device accounts
+    and links to privacy and terms.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 256
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 154
+    y: 256
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1120
+    y: 256
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 878
+    y: 468
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1301
+    y: 468
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 836
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 1228
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1258
+    y: 2602
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2896
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1200
+    y: 2896
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 154
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 608
+    y: 480
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 154
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 608
+    y: 848
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 154
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 608
+    y: 1016
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1120
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 847
+    y: 284
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1120
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 847
+    y: 453
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1144
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1312
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1484
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1652
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 1120
+    y: 256
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 940
+    y: 468
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 1332
+    y: 468
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 98
+    y: 836
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 240
+    y: 2896
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 98
+    y: 836
+    wait: 1.5
+  - action: tap
+    x: 300
+    y: 1399
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 720
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 1286
+    y: 452
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1200
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 374
+    y: 725
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1200
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 1066
+    y: 725
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1200
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 374
+    y: 991
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 154
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 608
+    y: 480
+    wait: 1.5
+  - action: tap
+    x: 1200
+    y: 2896
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 154
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 608
+    y: 848
+    wait: 1.5
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1312
+    wait: 1.5
+  - action: tap
+    x: 362
+    y: 1200
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1312
+    wait: 1.5
+  - action: tap
+    x: 1258
+    y: 1648
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1312
+    wait: 1.5
+  - action: tap
+    x: 534
+    y: 2302
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1312
+    wait: 1.5
+  - action: tap
+    x: 818
+    y: 2653
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1312
+    wait: 1.5
+  - action: tap
+    x: 449
+    y: 2844
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1312
+    wait: 1.5
+  - action: tap
+    x: 523
+    y: 3020
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1484
+    wait: 1.5
+  - action: tap
+    x: 639
+    y: 464
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1484
+    wait: 1.5
+  - action: tap
+    x: 818
+    y: 1125
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 1294
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 811
+    y: 1484
+    wait: 1.5
+  - action: tap
+    x: 344
+    y: 1278
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 1120
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 847
+    y: 284
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 1120
+    y: 256
+    wait: 1.5
+  - action: tap
+    x: 847
+    y: 620
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 940
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 256
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 98
+    y: 836
+    wait: 1.5
+  - action: tap
+    x: 1020
+    y: 256
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: com.google.android.contacts
+    wait: 0.5
+  - action: launch
+    package: com.google.android.contacts
+    wait: 3.0
+  - action: tap
+    x: 324
+    y: 468
+    wait: 1.5
+  - action: tap
+    x: 98
+    y: 836
+    wait: 1.5
+  - action: tap
+    x: 1356
+    y: 256
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Search for a specific contact
+- Create a new contact
+- Call, text, or video chat a contact
+- Edit or update contact details
+- Add or remove a contact from favorites
+- Import or export contacts from a SIM card or account
+- Block specific phone numbers
+- Manage linked accounts and sync settings
+known_limitations:
+- Navigation is split between a bottom tab bar and a side drawer for different settings
+  and labels
+- Filtering contacts requires opening a dedicated filter menu rather than using quick
+  toggles on the main list
+- Selecting multiple contacts requires entering a specific contact selection mode
+- Import and export tools are buried within the 'Fix & manage' or settings menus

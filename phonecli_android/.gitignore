@@ -1,0 +1,7 @@
+# Runtime artifacts produced when running this harness from its own directory.
+# These paths are cwd-relative (see README), so they land here.
+__pycache__/
+*.py[cod]
+logs/
+.env
+*.log

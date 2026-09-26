@@ -1,0 +1,5325 @@
+app: Settings
+package: com.android.settings
+screen_w: 1440
+screen_h: 3120
+screens:
+- id: screen_0
+  description: Main Settings screen with a profile header, search bar, and a comprehensive
+    list of system configuration categories such as Network, Display, and Security.
+  elements:
+  - text: Profile picture, double tap to open Google Account
+    center:
+    - 0.8833
+    - 0.1359
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 头像
+    - account picture
+    - Google account
+    - 用户头像
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.2184
+    - 0.1899
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 设置
+    - preferences
+    - system settings
+    - 配置
+    semantic_type: label
+  - text: Search settings
+    center:
+    - 0.3479
+    - 0.2729
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 搜索设置
+    - search bar
+    - find settings
+    - 搜索
+    semantic_type: input
+  - text: Network &amp; internet
+    center:
+    - 0.376
+    - 0.3588
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+  - text: Mobile, Wi‑Fi, hotspot
+    center:
+    - 0.3378
+    - 0.3843
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 移动网络、WLAN 和热点
+    - mobile network
+    - wifi
+    - 热点
+    semantic_type: label
+  - text: Connected devices
+    center:
+    - 0.3802
+    - 0.4575
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 已连接的设备
+    - devices
+    - connections
+    - 连接的设备
+    semantic_type: setting
+  - text: Bluetooth, pairing
+    center:
+    - 0.3083
+    - 0.483
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 蓝牙、配对
+    - bluetooth
+    - pairing
+    - 蓝牙连接
+    semantic_type: label
+  - text: Apps
+    center:
+    - 0.2306
+    - 0.5563
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 应用
+    - applications
+    - app management
+    - 应用程序
+    semantic_type: setting
+  - text: Assistant, recent apps, default apps
+    center:
+    - 0.4458
+    - 0.5817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 助理、近期应用、默认应用
+    - assistant
+    - default apps
+    - 应用管理
+    semantic_type: label
+  - text: Notifications
+    center:
+    - 0.3135
+    - 0.655
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 通知
+    - alerts
+    - 消息通知
+    - notices
+    semantic_type: setting
+  - text: Notification history, conversations
+    center:
+    - 0.4326
+    - 0.6804
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 通知历史记录、对话
+    - notification history
+    - conversations
+    - 通知管理
+    semantic_type: label
+  - text: Battery
+    center:
+    - 0.2524
+    - 0.7537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 电池
+    - power
+    - 电量
+    - battery usage
+    semantic_type: setting
+  - text: Storage
+    center:
+    - 0.2587
+    - 0.8524
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 存储空间
+    - memory
+    - 存储
+    - disk space
+    semantic_type: setting
+  - text: Sound &amp; vibration
+    center:
+    - 0.3649
+    - 0.9511
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+  - text: Volume, haptics, Do Not Disturb
+    center:
+    - 0.4149
+    - 0.9696
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - 音量、触觉反馈、勿扰模式
+    - volume
+    - haptics
+    - DND
+    semantic_type: label
+  - text: Display
+    center:
+    - 0.2535
+    - 0.6806
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - 显示
+    - screen
+    - 屏幕
+    - display settings
+    semantic_type: setting
+  - text: Dark theme, font size, brightness
+    center:
+    - 0.4226
+    - 0.7061
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_7
+    aliases:
+    - 深色主题、字体大小、亮度
+    - dark mode
+    - font size
+    - brightness
+    semantic_type: label
+  - text: Wallpaper &amp; style
+    center:
+    - 0.3604
+    - 0.7793
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_8
+  - text: Colors, themed icons, app grid
+    center:
+    - 0.4049
+    - 0.8048
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_8
+    aliases:
+    - 颜色、主题图标、应用网格
+    - colors
+    - themed icons
+    - app grid
+    semantic_type: label
+  - text: Accessibility
+    center:
+    - 0.3111
+    - 0.878
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - 无障碍
+    - accessibility features
+    - 辅助功能
+    - a11y
+    semantic_type: setting
+  - text: Display, interaction, audio
+    center:
+    - 0.3681
+    - 0.9035
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_9
+    aliases:
+    - 显示、交互、音频
+    - display
+    - interaction
+    - audio
+    semantic_type: label
+  - text: Security
+    center:
+    - 0.2625
+    - 0.9675
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_10
+    aliases:
+    - 安全
+    - security settings
+    - 安全与隐私
+    - security & privacy
+    semantic_type: setting
+  - text: Screen lock, Find My Device, app security
+    center:
+    - 0.4858
+    - 0.9824
+    fixed: false
+    found_at_scroll: 1
+    leads_to: screen_2
+    aliases:
+    - 屏幕锁定、查找我的设备、应用安全
+    - screen lock
+    - Find My Device
+    - app security
+    semantic_type: label
+  - text: Privacy
+    center:
+    - 0.2538
+    - 0.8187
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_9
+    aliases:
+    - 隐私
+    - privacy settings
+    - 隐私权
+    - data privacy
+    semantic_type: setting
+  - text: Permissions, account activity, personal data
+    center:
+    - 0.5076
+    - 0.8442
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_12
+    aliases:
+    - 权限、账号活动、个人数据
+    - permissions
+    - account activity
+    - personal data
+    semantic_type: label
+  - text: Location
+    center:
+    - 0.2694
+    - 0.9175
+    fixed: false
+    found_at_scroll: 2
+    leads_to: screen_10
+    aliases:
+    - 位置信息
+    - location services
+    - GPS
+    - 定位
+    semantic_type: setting
+  - text: Safety &amp; emergency
+    center:
+    - 0.3896
+    - 0.6607
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_7
+  - text: Emergency SOS, medical info, alerts
+    center:
+    - 0.4479
+    - 0.6862
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_7
+    aliases:
+    - 紧急求救、医疗信息、警报
+    - Emergency SOS
+    - medical info
+    - alerts
+    semantic_type: label
+  - text: Passwords &amp; accounts
+    center:
+    - 0.4222
+    - 0.7595
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_8
+  - text: Saved passwords, autofill, synced accounts
+    center:
+    - 0.5038
+    - 0.7849
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_8
+    aliases:
+    - 已保存的密码、自动填充、同步的账号
+    - saved passwords
+    - autofill
+    - synced accounts
+    semantic_type: label
+  - text: Digital Wellbeing &amp; parental controls
+    center:
+    - 0.5583
+    - 0.8655
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_9
+  - text: Screen time, app timers, bedtime schedules
+    center:
+    - 0.5052
+    - 0.9042
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_9
+    aliases:
+    - 屏幕使用时间、应用定时器、就寝时间表
+    - screen time
+    - app timers
+    - bedtime
+    semantic_type: label
+  - text: Google
+    center:
+    - 0.2517
+    - 0.9647
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_10
+    aliases:
+    - 谷歌
+    - Google settings
+    - Google services
+    - 谷歌服务
+    semantic_type: setting
+  - text: Services &amp; preferences
+    center:
+    - 0.3486
+    - 0.9796
+    fixed: false
+    found_at_scroll: 3
+    leads_to: screen_2
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_1
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Manage your Google Account
+    center:
+    - 0.3344
+    - 0.3369
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Account settings
+    - 管理您的 Google 帐号
+    - Google Account
+    semantic_type: link
+  - text: Device
+    center:
+    - 0.2497
+    - 0.3928
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Device settings
+    - 设备
+    - About device
+    semantic_type: menu_item
+  - text: Emergency info
+    center:
+    - 0.3465
+    - 0.4736
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Emergency information
+    - 紧急信息
+    - Emergency
+    semantic_type: menu_item
+  - text: Medical info, emergency contacts
+    center:
+    - 0.4378
+    - 0.499
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - Medical information
+    - 医疗信息和紧急联系人
+    - Emergency contacts
+    semantic_type: label
+  - text: Payments
+    center:
+    - 0.2819
+    - 0.5543
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Payment settings
+    - 付款
+    - Payment methods
+    semantic_type: menu_item
+  - text: Manage Google Pay
+    center:
+    - 0.3302
+    - 0.5798
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - Google Pay settings
+    - 管理 Google Pay
+    - Wallet
+    semantic_type: link
+  - text: Google Account
+    center:
+    - 0.3549
+    - 0.6351
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Account
+    - Google 帐号
+    - Accounts
+    semantic_type: menu_item
+  - text: Info, security &amp; personalization
+    center:
+    - 0.4153
+    - 0.6606
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Account info
+    - 信息、安全和个性化
+    - Security
+    semantic_type: label
+  description: Google settings page with options to manage device preferences, emergency
+    info, Google Pay, and account details
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Profile picture, double tap to open Google Account
+    center:
+    - 0.8833
+    - 0.1359
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 头像
+    - account picture
+    - Google account
+    - 用户头像
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.2184
+    - 0.1899
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 设置
+    - preferences
+    - system settings
+    - 配置
+    semantic_type: label
+  - text: Search settings
+    center:
+    - 0.3479
+    - 0.2729
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 搜索设置
+    - search bar
+    - find settings
+    - 搜索
+    semantic_type: input
+  - text: Network &amp; internet
+    center:
+    - 0.376
+    - 0.3588
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 网络和互联网
+    - network
+    - internet
+    - 网络设置
+    semantic_type: setting
+  - text: Mobile, Wi‑Fi, hotspot
+    center:
+    - 0.3378
+    - 0.3843
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 移动网络、WLAN 和热点
+    - cellular
+    - data
+    - 移动数据
+    semantic_type: label
+  - text: Connected devices
+    center:
+    - 0.3802
+    - 0.4575
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 已连接的设备
+    - connections
+    - paired devices
+    - 连接设备
+    semantic_type: setting
+  - text: Bluetooth, pairing
+    center:
+    - 0.3083
+    - 0.483
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 蓝牙、配对
+    - BT
+    - 蓝牙连接
+    - pairing
+    semantic_type: label
+  - text: Apps
+    center:
+    - 0.2306
+    - 0.5563
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 应用
+    - applications
+    - app management
+    - 应用程序
+    semantic_type: setting
+  - text: Assistant, recent apps, default apps
+    center:
+    - 0.4458
+    - 0.5817
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 助理、近期应用和默认应用
+    - Google Assistant
+    - 应用设置
+    - 默认应用
+    semantic_type: label
+  - text: Notifications
+    center:
+    - 0.3135
+    - 0.655
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 通知
+    - alerts
+    - 消息通知
+    - notif
+    semantic_type: setting
+  - text: Notification history, conversations
+    center:
+    - 0.4326
+    - 0.6804
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 通知历史记录、对话
+    - notification log
+    - 历史通知
+    - 对话
+    semantic_type: label
+  - text: Battery
+    center:
+    - 0.2524
+    - 0.7537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 电池
+    - power
+    - 电量
+    - battery usage
+    semantic_type: setting
+  - text: Storage
+    center:
+    - 0.2587
+    - 0.8524
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 存储空间
+    - memory
+    - 磁盘
+    - 内部存储
+    semantic_type: setting
+  - text: Sound &amp; vibration
+    center:
+    - 0.3649
+    - 0.9511
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 声音和振动
+    - audio
+    - ringer
+    - 声音
+    semantic_type: setting
+  - text: Volume, haptics, Do Not Disturb
+    center:
+    - 0.4149
+    - 0.9696
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 音量、振动和勿扰模式
+    - sound volume
+    - 震动
+    - DND
+    semantic_type: label
+  description: Main Settings page with user profile, search bar, and a list of system
+    categories including Network & internet, Apps, and Battery.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_3
+  elements:
+  - text: Back
+    center:
+    - 0.0583
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Return
+    - Go back
+    - 返回
+    - Navigate back
+    semantic_type: button
+  - text: Search settings
+    center:
+    - 0.5583
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Search
+    - Find
+    - 搜索设置
+    - Search bar
+    semantic_type: input
+  description: Settings search interface with a back button and a search bar to find
+    specific settings options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Back
+    - 返回
+    - Up arrow
+    - Go back
+    semantic_type: button
+  - text: Internet
+    center:
+    - 0.2587
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Network & internet
+    - 网络
+    - Network settings
+    - Connections
+    semantic_type: setting
+  - text: Calls &amp; SMS
+    center:
+    - 0.3059
+    - 0.3668
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - Phone & messaging
+    - 通话与短信
+    - Calls and SMS
+    - SIM & calls
+    semantic_type: setting
+  - text: SIMs
+    center:
+    - 0.2299
+    - 0.4537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - SIM cards
+    - SIM管理
+    - SIM card settings
+    - Dual SIM
+    semantic_type: setting
+  - text: Airplane mode
+    center:
+    - 0.3316
+    - 0.5405
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Flight mode
+    - 飞行模式
+    - Airplane
+    - Offline mode
+    semantic_type: toggle
+  - text: Hotspot &amp; tethering
+    center:
+    - 0.3858
+    - 0.6062
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - Personal hotspot
+    - 热点与网络共享
+    - Tethering
+    - Portable hotspot
+    semantic_type: setting
+  - text: Data Saver
+    center:
+    - 0.292
+    - 0.6931
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - Data saver
+    - 流量节省程序
+    - Low data mode
+    - Data usage saver
+    semantic_type: setting
+  - text: VPN
+    center:
+    - 0.2233
+    - 0.78
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - Virtual Private Network
+    - 虚拟专用网络
+    - VPN settings
+    semantic_type: setting
+  - text: Mobile plan
+    center:
+    - 0.1837
+    - 0.8668
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - Cellular plan
+    - 移动网络套餐
+    - Mobile network
+    - Carrier plan
+    semantic_type: setting
+  - text: Private DNS
+    center:
+    - 0.1875
+    - 0.9325
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - DNS over TLS
+    - 私人DNS
+    - Secure DNS
+    - DNS settings
+    semantic_type: setting
+  description: Network and Internet settings page allowing users to manage mobile
+    data, SIMs, hotspots, and other connection options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - back
+    - 返回
+    - go back
+    - 返回上级
+    semantic_type: button
+  - text: Pair new device
+    center:
+    - 0.3441
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - add device
+    - 配对新设备
+    - 添加设备
+    - connect device
+    semantic_type: button
+  - text: Saved devices
+    center:
+    - 0.5097
+    - 0.3503
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - paired devices
+    - 已保存的设备
+    - 已配对设备
+    - previously paired
+    semantic_type: menu_item
+  - text: See all
+    center:
+    - 0.2462
+    - 0.4027
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - view all
+    - 查看全部
+    - 更多
+    - show all
+    semantic_type: link
+  - text: Connection preferences
+    center:
+    - 0.3163
+    - 0.4684
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 连接偏好设置
+    - connections
+    - 连接设置
+    - connection settings
+    semantic_type: setting
+  - text: Bluetooth, Android Auto
+    center:
+    - 0.2385
+    - 0.4939
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 蓝牙, Android Auto
+    - Bluetooth and Android Auto
+    - 蓝牙与Android Auto
+    semantic_type: menu_item
+  description: Connected devices settings page where users can pair new devices, view
+    saved devices, and manage connection preferences such as Bluetooth and Android
+    Auto.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_6
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Back
+    - 返回
+    - Up
+    - Go back
+    semantic_type: button
+  - text: All apps
+    center:
+    - 0.1448
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 所有应用
+    - 全部应用
+    - App list
+    semantic_type: menu_item
+  - text: Default apps
+    center:
+    - 0.1948
+    - 0.3668
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - 默认应用
+    - 默认程序
+    - Default applications
+    semantic_type: menu_item
+  - text: Screen time
+    center:
+    - 0.1872
+    - 0.4537
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - 屏幕时间
+    - Screen usage
+    - Digital wellbeing
+    semantic_type: menu_item
+  - text: Unused apps
+    center:
+    - 0.1986
+    - 0.5405
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_31
+    aliases:
+    - 未使用的应用
+    - 闲置应用
+    - Unused applications
+    semantic_type: menu_item
+  - text: App battery usage
+    center:
+    - 0.2545
+    - 0.6274
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_32
+    aliases:
+    - 应用耗电量
+    - Battery usage by app
+    - App power usage
+    semantic_type: menu_item
+  - text: Set battery usage for apps
+    center:
+    - 0.2583
+    - 0.6529
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_33
+    aliases:
+    - 设置应用耗电量
+    - Configure app battery
+    - Battery optimization
+    semantic_type: menu_item
+  - text: Special app access
+    center:
+    - 0.266
+    - 0.7143
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_34
+    aliases:
+    - 特殊应用权限
+    - Special access
+    - Advanced app permissions
+    semantic_type: menu_item
+  description: Apps settings page providing options to manage default apps, screen
+    time, battery usage, and special app access.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Back
+    - 返回
+    - Up
+    - Go back
+    semantic_type: button
+  - text: Manage
+    center:
+    - 0.5097
+    - 0.2846
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 管理
+    - Manage notifications
+    - Settings
+    semantic_type: button
+  - text: App settings
+    center:
+    - 0.1941
+    - 0.337
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_35
+    aliases:
+    - 应用设置
+    - Application settings
+    - App config
+    semantic_type: menu_item
+  - text: Control notifications from individual apps
+    center:
+    - 0.3712
+    - 0.3625
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_36
+    aliases:
+    - 控制各应用的通知
+    - App notification settings
+    - Manage app notifications
+    semantic_type: label
+  - text: Notification history
+    center:
+    - 0.2639
+    - 0.4239
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - 通知历史记录
+    - History
+    - 通知历史
+    semantic_type: menu_item
+  - text: Show recent and snoozed notifications
+    center:
+    - 0.3517
+    - 0.4494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_37
+    aliases:
+    - 显示最近和已暂停的通知
+    - View recent notifications
+    - Notification log
+    semantic_type: label
+  - text: Conversation
+    center:
+    - 0.5097
+    - 0.5154
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 对话
+    - Conversations
+    - Messaging
+    semantic_type: setting
+  - text: Conversations
+    center:
+    - 0.2142
+    - 0.5678
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 对话
+    - Messages
+    - 聊天
+    semantic_type: setting
+  - text: No priority conversations
+    center:
+    - 0.2486
+    - 0.5933
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_38
+    aliases:
+    - 无优先对话
+    - No priority
+    - Empty state
+    semantic_type: label
+  - text: Bubbles
+    center:
+    - 0.1455
+    - 0.6546
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - 气泡
+    - Bubble notifications
+    - Floating icons
+    semantic_type: menu_item
+  - text: On / Conversations can appear as floating icons
+    center:
+    - 0.4222
+    - 0.6801
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_39
+    aliases:
+    - 开启/对话可以显示为浮动图标
+    - Bubbles on
+    - Enabled
+    semantic_type: label
+  - text: Privacy
+    center:
+    - 0.5097
+    - 0.7462
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - 隐私
+    - Privacy settings
+    - Security & privacy
+    semantic_type: menu_item
+  - text: Device &amp; app notifications
+    center:
+    - 0.3385
+    - 0.7986
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - 设备和应用通知
+    - Notification access
+    - Device notifications
+    semantic_type: menu_item
+  - text: Control which apps and devices can read notifications
+    center:
+    - 0.4674
+    - 0.824
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_41
+    aliases:
+    - 控制哪些应用和设备可以读取通知
+    - Notification access summary
+    - Manage access
+    semantic_type: label
+  - text: Notifications on lock screen
+    center:
+    - 0.3597
+    - 0.8854
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 锁屏通知
+    - Lock screen notifications
+    - Lockscreen
+    semantic_type: menu_item
+  - text: Hide silent conversations and notifications
+    center:
+    - 0.3806
+    - 0.9109
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_42
+    aliases:
+    - 隐藏无声对话和通知
+    - Hide silent
+    - Lock screen behavior
+    semantic_type: label
+  - text: General
+    center:
+    - 0.5097
+    - 0.9697
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_40
+    aliases:
+    - 常规
+    - General settings
+    - 通用
+    semantic_type: setting
+  description: Notifications settings page with options to manage app notifications,
+    notification history, conversations, bubbles, and privacy settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_8
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up arrow
+    semantic_type: button
+  - text: Battery usage
+    center:
+    - 0.2073
+    - 0.4437
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - battery
+    - 电池用量
+    - battery stats
+    - power usage
+    semantic_type: menu_item
+  - text: View usage since last full charge
+    center:
+    - 0.3063
+    - 0.4692
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_43
+    aliases:
+    - usage since last charge
+    - 查看自上次充满电以来的用量
+    - battery history
+    semantic_type: label
+  - text: Battery Saver
+    center:
+    - 0.2021
+    - 0.5306
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_44
+    aliases:
+    - battery saver mode
+    - 省电模式
+    - low power mode
+    - power saving
+    semantic_type: toggle
+  - text: Adaptive preferences
+    center:
+    - 0.2872
+    - 0.6175
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_45
+    aliases:
+    - adaptive battery
+    - 自适应偏好设置
+    - adaptive settings
+    semantic_type: setting
+  - text: Battery percentage
+    center:
+    - 0.2628
+    - 0.6832
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - battery percent
+    - 电池百分比
+    - show battery %
+    semantic_type: setting
+  - text: Show battery percentage in status bar
+    center:
+    - 0.3458
+    - 0.7087
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - show battery %
+    - 在状态栏显示电池百分比
+    - display battery percentage
+    semantic_type: toggle
+  - text: Battery usage data is approximate and can change based on usage.
+    center:
+    - 0.5097
+    - 0.8197
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - approximate data
+    - 电池用量数据为近似值
+    - usage disclaimer
+    semantic_type: label
+  description: Battery settings page showing usage details, battery saver, adaptive
+    preferences, and battery percentage options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - Back
+    - Return
+    - 返回
+    - Up
+    semantic_type: button
+  - text: Free up space
+    center:
+    - 0.3649
+    - 0.4204
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - Clean up
+    - Clear storage
+    - 释放空间
+    - 清理
+    semantic_type: button
+  - text: Go to Files app to manage and free up space
+    center:
+    - 0.5521
+    - 0.4458
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_46
+    aliases:
+    - Manage files
+    - Files app
+    - 管理文件
+    - 前往文件
+    semantic_type: label
+  - text: System
+    center:
+    - 0.4969
+    - 0.5139
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_47
+    aliases:
+    - System data
+    - 系统
+    - 系统数据
+    semantic_type: setting
+  - text: Apps
+    center:
+    - 0.4969
+    - 0.5976
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - Applications
+    - 应用
+    - 应用程序
+    semantic_type: setting
+  - text: Audio
+    center:
+    - 0.4851
+    - 0.6813
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_48
+    aliases:
+    - Music
+    - 音频
+    - 音乐
+    semantic_type: setting
+  - text: Images
+    center:
+    - 0.4851
+    - 0.7649
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_49
+    aliases:
+    - Photos
+    - 图片
+    - 照片
+    semantic_type: setting
+  - text: Documents &amp; other
+    center:
+    - 0.4924
+    - 0.8486
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Docs & other
+    - 文档和其他
+    - 文件
+    semantic_type: setting
+  - text: Trash
+    center:
+    - 0.5333
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recycle bin
+    - 废纸篓
+    - 回收站
+    semantic_type: setting
+  description: Storage settings page displaying a breakdown of space used by system,
+    apps, media, and trash, with an option to open the Files app to free up space.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_10
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Go back
+    - Return
+    - 向上导航
+    semantic_type: button
+  - text: Media volume
+    center:
+    - 0.5681
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Music volume
+    - Audio volume
+    - 媒体音量
+    semantic_type: setting
+  - text: Call volume
+    center:
+    - 0.5681
+    - 0.3816
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Phone volume
+    - Voice volume
+    - 通话音量
+    semantic_type: setting
+  - text: Ring &amp; notification volume
+    center:
+    - 0.5681
+    - 0.4832
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Ringer volume
+    - Notification volume
+    - 铃声和通知音量
+    semantic_type: setting
+  - text: Alarm volume
+    center:
+    - 0.5681
+    - 0.5848
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Alarm sound
+    - 闹钟音量
+    semantic_type: setting
+  - text: Do Not Disturb
+    center:
+    - 0.217
+    - 0.6864
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - DND
+    - Silent mode
+    - 勿扰模式
+    semantic_type: menu_item
+  - text: Phone ringtone
+    center:
+    - 0.2229
+    - 0.7732
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Ringtone
+    - Default ringtone
+    - 手机铃声
+    semantic_type: menu_item
+  - text: Live Caption
+    center:
+    - 0.192
+    - 0.8601
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto caption
+    - 实时字幕
+    semantic_type: menu_item
+  - text: Automatically caption speech
+    center:
+    - 0.283
+    - 0.8856
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto caption speech
+    - 自动为语音添加字幕
+    semantic_type: toggle
+  - text: Now Playing
+    center:
+    - 0.1927
+    - 0.947
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Song identification
+    - 正在播放
+    semantic_type: menu_item
+  - text: Identify songs playing nearby
+    center:
+    - 0.2792
+    - 0.9675
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto identify songs
+    - 识别附近播放的歌曲
+    semantic_type: toggle
+  description: Sound settings page allowing users to adjust volume levels, choose
+    ringtones, and manage audio features like Do Not Disturb and Live Caption.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - up arrow
+    - navigate back
+    semantic_type: button
+  - text: Media volume
+    center:
+    - 0.5681
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - media
+    - volume
+    - media sound
+    - 媒体音量
+    semantic_type: setting
+  - text: Call volume
+    center:
+    - 0.5681
+    - 0.3816
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - call
+    - phone volume
+    - call sound
+    - 通话音量
+    semantic_type: setting
+  - text: Ring &amp; notification volume
+    center:
+    - 0.5681
+    - 0.4832
+    fixed: false
+    found_at_scroll: 0
+  - text: Alarm volume
+    center:
+    - 0.5681
+    - 0.5848
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - alarm
+    - alarm sound
+    - 闹钟音量
+    semantic_type: setting
+  - text: Do Not Disturb
+    center:
+    - 0.217
+    - 0.6864
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - DND
+    - do not disturb mode
+    - 勿扰模式
+    semantic_type: setting
+  - text: 'Off'
+    center:
+    - 0.0819
+    - 0.7119
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - disabled
+    - turned off
+    - 关闭
+    semantic_type: label
+  - text: Phone ringtone
+    center:
+    - 0.2229
+    - 0.7732
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - ringtone
+    - phone ringtone
+    - 电话铃声
+    semantic_type: setting
+  - text: Flutey Phone
+    center:
+    - 0.1562
+    - 0.7987
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - flutey
+    - ringtone name
+    semantic_type: label
+  - text: Live Caption
+    center:
+    - 0.192
+    - 0.8601
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - live captions
+    - auto caption
+    - 实时字幕
+    semantic_type: setting
+  - text: Automatically caption speech
+    center:
+    - 0.283
+    - 0.8856
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - auto caption
+    - caption speech
+    - 自动字幕
+    semantic_type: label
+  - text: Now Playing
+    center:
+    - 0.1927
+    - 0.947
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - now playing
+    - song identification
+    - 正在播放
+    semantic_type: setting
+  - text: Identify songs playing nearby
+    center:
+    - 0.2792
+    - 0.9675
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - identify songs
+    - song ID
+    - 识别歌曲
+    semantic_type: label
+  description: Sound settings page with volume controls, ringtone selection, and audio
+    feature toggles like Do Not Disturb and Live Caption.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up arrow
+    - Go back
+    semantic_type: button
+  - text: 16 GB total
+    center:
+    - 0.6646
+    - 0.317
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Total storage
+    - 16GB
+    - 总容量
+    - Storage capacity
+    semantic_type: label
+  - text: Free up space
+    center:
+    - 0.3649
+    - 0.4204
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Clear space
+    - 清理空间
+    - Manage storage
+    - Free space
+    semantic_type: button
+  - text: Go to Files app to manage and free up space
+    center:
+    - 0.5521
+    - 0.4458
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Files app
+    - 打开文件
+    - Manage files
+    - Go to Files
+    semantic_type: link
+  - text: System
+    center:
+    - 0.4969
+    - 0.5139
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - System settings
+    - 系统
+    - OS
+    - Device
+    semantic_type: setting
+  - text: Apps
+    center:
+    - 0.4969
+    - 0.5976
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Applications
+    - 应用
+    - App management
+    - Programs
+    semantic_type: setting
+  - text: Audio
+    center:
+    - 0.4851
+    - 0.6813
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Audio files
+    - 音频
+    - Music
+    - Sounds
+    semantic_type: menu_item
+  - text: Images
+    center:
+    - 0.4851
+    - 0.7649
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Photos
+    - 图片
+    - Pictures
+    - Gallery
+    semantic_type: menu_item
+  - text: Documents &amp; other
+    center:
+    - 0.4924
+    - 0.8486
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Docs & other
+    - 文档和其他
+    - Documents
+    - Files
+    semantic_type: menu_item
+  - text: Trash
+    center:
+    - 0.5333
+    - 0.9322
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bin
+    - 回收站
+    - Deleted files
+    - Recycle bin
+    semantic_type: menu_item
+  description: Device storage settings page displaying total capacity, options to
+    free up space, and a breakdown of storage usage by categories such as System,
+    Apps, and Media.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Done
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 完成
+    - 确认
+    - finish
+    - confirm
+    semantic_type: button
+  - text: Account
+    center:
+    - 0.4
+    - 0.0816
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 账户
+    - 账号
+    - account settings
+    - my account
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.825
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 帮助
+    - help & feedback
+    - 帮助与反馈
+    - support
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.9417
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - search settings
+    - 查找
+    - search bar
+    semantic_type: input
+  - text: Home
+    center:
+    - 0.1146
+    - 0.3234
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主页
+    - home settings
+    - 首页
+    - home address
+    semantic_type: menu_item
+  - text: Personal info
+    center:
+    - 0.3427
+    - 0.3234
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 个人信息
+    - personal information
+    - 个人资料
+    semantic_type: menu_item
+  - text: Data &amp; privacy
+    center:
+    - 0.6431
+    - 0.3234
+    fixed: false
+    found_at_scroll: 0
+  - text: Security
+    center:
+    - 0.9003
+    - 0.3234
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 安全
+    - security settings
+    - 安全设置
+    semantic_type: menu_item
+  - text: Dismiss
+    center:
+    - 0.766
+    - 0.3942
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭
+    - 取消
+    - close
+    - cancel
+    semantic_type: button
+  - text: Set home address
+    center:
+    - 0.5733
+    - 0.5494
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置家庭地址
+    - set home
+    - 家庭地址
+    - home address
+    semantic_type: menu_item
+  - text: Privacy &amp; personalization
+    center:
+    - 0.3639
+    - 0.7538
+    fixed: false
+    found_at_scroll: 0
+  - text: Manage your data &amp; privacy
+    center:
+    - 0.4806
+    - 0.884
+    fixed: false
+    found_at_scroll: 0
+  description: Account settings page with options for personal info, data and privacy,
+    security, and home address management.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_14
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up arrow
+    semantic_type: button
+  - text: Emergency information
+    center:
+    - 0.4271
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Emergency info
+    - 紧急信息
+    semantic_type: menu_item
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - More
+    - 更多
+    - Overflow menu
+    semantic_type: button
+  - text: Medical information
+    center:
+    - 0.5681
+    - 0.1465
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Medical info
+    - 医疗信息
+    semantic_type: menu_item
+  - text: Name
+    center:
+    - 0.2267
+    - 0.1962
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 姓名
+    - Full name
+    semantic_type: input
+  - text: Owner
+    center:
+    - 0.224
+    - 0.2189
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 所有者
+    - Device owner
+    semantic_type: input
+  - text: Add information
+    center:
+    - 0.3153
+    - 0.2776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加信息
+    - Add info
+    semantic_type: button
+  - text: Emergency contacts
+    center:
+    - 0.5681
+    - 0.3452
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 紧急联系人
+    - ICE contacts
+    semantic_type: menu_item
+  - text: Add contact
+    center:
+    - 0.2799
+    - 0.3949
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加联系人
+    - Add new contact
+    semantic_type: button
+  description: Emergency information settings screen where users can add or edit their
+    medical details and emergency contacts.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Web View
+    center:
+    - 0.5
+    - 0.5096
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - WebView
+    - 网页视图
+    - 系统网页视图
+    - Android System WebView
+    semantic_type: other
+  - text: Close tab
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭标签页
+    - 关闭选项卡
+    - Close
+    - X
+    semantic_type: button
+  - text: Share
+    center:
+    - 0.8396
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分享
+    - 共享
+    - 发送
+    - Share with
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.949
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - 更多
+    - 菜单
+    - Overflow menu
+    semantic_type: button
+  description: In-app web view displaying a webpage with controls to close the tab,
+    share the page, and access more options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up arrow
+    semantic_type: button
+  - text: Recently opened apps
+    center:
+    - 0.5097
+    - 0.2846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - recent apps
+    - 最近使用的应用
+    - recently used apps
+    semantic_type: menu_item
+  - text: General
+    center:
+    - 0.5097
+    - 0.4942
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - general settings
+    - 常规
+    - 通用
+    semantic_type: setting
+  - text: Default apps
+    center:
+    - 0.1948
+    - 0.5466
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - default applications
+    - 默认应用
+    - default app settings
+    semantic_type: setting
+  - text: Screen time
+    center:
+    - 0.1872
+    - 0.6335
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - screen time settings
+    - 屏幕时间
+    - screen usage
+    semantic_type: setting
+  - text: Unused apps
+    center:
+    - 0.1986
+    - 0.7204
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - unused app settings
+    - 未使用的应用
+    - unused applications
+    semantic_type: setting
+  - text: App battery usage
+    center:
+    - 0.2545
+    - 0.8072
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - battery usage by app
+    - 应用电池用量
+    - app battery
+    semantic_type: setting
+  - text: Set battery usage for apps
+    center:
+    - 0.2583
+    - 0.8327
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - configure app battery
+    - 设置应用电池用量
+    - app battery settings
+    semantic_type: setting
+  - text: Special app access
+    center:
+    - 0.266
+    - 0.8941
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - special access
+    - 特殊应用权限
+    - special permissions
+    semantic_type: setting
+  description: App management settings page with options for default apps, screen
+    time, battery usage, and special access.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.8736
+    - 0.2941
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - System settings
+    semantic_type: label
+  - text: Wi-Fi
+    center:
+    - 0.1118
+    - 0.3704
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - WiFi
+    - WLAN
+    - 无线网络
+    - 无线网
+    semantic_type: setting
+  - text: Add network
+    center:
+    - 0.3111
+    - 0.5829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 添加网络
+    - Add Wi-Fi
+    - Add WLAN
+    semantic_type: menu_item
+  - text: Scan QR code
+    center:
+    - 0.8736
+    - 0.583
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 扫描二维码
+    - Scan QR
+    - QR scanner
+    semantic_type: menu_item
+  - text: Network preferences
+    center:
+    - 0.2833
+    - 0.6518
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 网络偏好设置
+    - Network settings
+    - Advanced settings
+    semantic_type: menu_item
+  - text: Wi‑Fi turns back on automatically
+    center:
+    - 0.3101
+    - 0.6772
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Wi-Fi自动开启
+    - Auto-turn on Wi-Fi
+    - Turn on Wi-Fi automatically
+    semantic_type: toggle
+  - text: Saved networks
+    center:
+    - 0.2299
+    - 0.7386
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 已保存的网络
+    - Saved Wi-Fi
+    - Saved WLAN
+    semantic_type: menu_item
+  - text: Non-carrier data usage
+    center:
+    - 0.3049
+    - 0.8255
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 非运营商数据使用量
+    - Data usage
+    - Mobile data usage
+    semantic_type: menu_item
+  description: Wi-Fi settings page with options to add networks, scan QR codes, manage
+    network preferences, and view saved networks
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+  - text: Calls
+    center:
+    - 0.2285
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+  - text: T-Mobile
+    center:
+    - 0.2399
+    - 0.3054
+    fixed: false
+    found_at_scroll: 0
+  - text: SMS
+    center:
+    - 0.2253
+    - 0.3668
+    fixed: false
+    found_at_scroll: 0
+  description: SIM settings page displaying T-Mobile carrier details and configuration
+    options for calls and SMS.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_19
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up arrow
+    semantic_type: button
+  - text: SIM name &amp; color
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+  - text: Use SIM
+    center:
+    - 0.4125
+    - 0.3069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - SIM usage
+    - use this SIM
+    - 使用SIM卡
+    - SIM settings
+    semantic_type: menu_item
+  - text: Calls preference
+    center:
+    - 0.2333
+    - 0.6271
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - call settings
+    - calling preference
+    - 通话偏好
+    - default calling SIM
+    semantic_type: menu_item
+  - text: SMS preference
+    center:
+    - 0.2302
+    - 0.7139
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - message settings
+    - SMS settings
+    - 短信偏好
+    - default SMS app
+    semantic_type: menu_item
+  - text: Mobile data
+    center:
+    - 0.1854
+    - 0.8008
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - cellular data
+    - 移动数据
+    - data connection
+    - cellular
+    semantic_type: toggle
+  - text: Access data using mobile network
+    center:
+    - 0.3187
+    - 0.8263
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - use mobile data
+    - data access
+    - 使用移动网络访问数据
+    - mobile network data
+    semantic_type: label
+  - text: Roaming
+    center:
+    - 0.1545
+    - 0.8877
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - data roaming
+    - 漫游
+    - roaming data
+    - cellular roaming
+    semantic_type: toggle
+  - text: Connect to data services when roaming
+    center:
+    - 0.3583
+    - 0.9131
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - roaming data access
+    - data while roaming
+    - 漫游时连接数据服务
+    - roaming description
+    semantic_type: label
+  - text: App data usage
+    center:
+    - 0.2267
+    - 0.9663
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - data usage
+    - app data
+    - 应用数据使用量
+    - data consumption
+    semantic_type: menu_item
+  description: SIM card settings page where users can configure call, SMS, mobile
+    data, and roaming preferences for a selected SIM
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_20
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up arrow
+    semantic_type: button
+  - text: Wi‑Fi hotspot
+    center:
+    - 0.201
+    - 0.3646
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - hotspot
+    - WiFi hotspot
+    - 无线热点
+    - 移动热点
+    - personal hotspot
+    semantic_type: setting
+  - text: Not sharing internet or content with other devices
+    center:
+    - 0.4323
+    - 0.3901
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - not sharing
+    - no sharing
+    - 未共享
+    - inactive
+    semantic_type: label
+  - text: USB tethering
+    center:
+    - 0.2062
+    - 0.4514
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - USB
+    - USB共享
+    - USB网络共享
+    - tethering via USB
+    semantic_type: setting
+  - text: Share phone’s internet connection via USB
+    center:
+    - 0.3767
+    - 0.4769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - USB sharing
+    - USB internet
+    - 通过USB共享网络
+    - USB连接共享
+    semantic_type: label
+  - text: Bluetooth tethering
+    center:
+    - 0.2656
+    - 0.5383
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - BT tethering
+    - 蓝牙共享
+    - 蓝牙网络共享
+    - Bluetooth PAN
+    semantic_type: setting
+  - text: Share phone’s internet connection via Bluetooth
+    center:
+    - 0.4181
+    - 0.5638
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bluetooth sharing
+    - BT sharing
+    - 通过蓝牙共享网络
+    - Bluetooth internet sharing
+    semantic_type: label
+  description: Hotspot and tethering settings page allowing users to share their internet
+    connection via Wi-Fi hotspot, USB, or Bluetooth.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_21
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Return
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Use Data Saver
+    center:
+    - 0.4125
+    - 0.3069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Data Saver
+    - Enable Data Saver
+    - 数据节省程序
+    - Turn on Data Saver
+    semantic_type: toggle
+  - text: Unrestricted data
+    center:
+    - 0.2444
+    - 0.3995
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Unrestricted Data Access
+    - Allow unrestricted data
+    - 不受限的数据
+    - Unrestricted
+    semantic_type: menu_item
+  - text: 1 app allowed to use unrestricted data when Data Saver is on
+    center:
+    - 0.5097
+    - 0.4341
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 1 app allowed
+    - Apps allowed
+    - 允许不受限数据的应用
+    - 1 app
+    semantic_type: label
+  description: Data Saver settings page where users can toggle Data Saver on or off
+    and configure unrestricted data access for apps.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_22
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up
+    - Back button
+    semantic_type: button
+  - text: Add VPN profile
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add VPN
+    - 添加VPN
+    - Create VPN
+    - New VPN
+    semantic_type: button
+  - text: No VPNs added
+    center:
+    - 0.5
+    - 0.2787
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - No VPNs
+    - 没有添加VPN
+    - Empty
+    - No profiles
+    semantic_type: label
+  description: VPN settings screen showing an empty state with an option to add a
+    new VPN profile.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_23
+  elements:
+  - text: Please connect to the internet
+    center:
+    - 0.5
+    - 0.4801
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - No internet
+    - 请连接网络
+    - Connect to network
+    - 网络连接提示
+    semantic_type: label
+  - text: OK
+    center:
+    - 0.8285
+    - 0.5364
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 确定
+    - 确认
+    - Got it
+    - 好
+    semantic_type: button
+  description: An error prompt asking the user to connect to the internet, featuring
+    an OK button to acknowledge.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_24
+  elements:
+  - text: Select Private DNS Mode
+    center:
+    - 0.5
+    - 0.3367
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Private DNS Mode
+    - DNS Mode
+    - 选择私人DNS模式
+    semantic_type: label
+  - text: 'Off'
+    center:
+    - 0.166
+    - 0.3875
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Disabled
+    - 关闭
+    - Turn off
+    semantic_type: toggle
+  - text: Automatic
+    center:
+    - 0.2212
+    - 0.4413
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto
+    - 自动
+    - Automatic DNS
+    semantic_type: toggle
+  - text: Private DNS provider hostname
+    center:
+    - 0.3795
+    - 0.4952
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - DNS Hostname
+    - Provider Hostname
+    - 私人DNS提供商主机名
+    semantic_type: label
+  - text: Enter hostname of DNS provider
+    center:
+    - 0.5038
+    - 0.549
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Hostname input
+    - DNS provider input
+    - 输入DNS提供商主机名
+    semantic_type: input
+  - text: Learn more about Private DNS features
+    center:
+    - 0.5
+    - 0.6119
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Learn more
+    - Help
+    - 了解更多
+    semantic_type: link
+  - text: Cancel
+    center:
+    - 0.6694
+    - 0.6825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 取消
+    - Discard
+    - Abort
+    semantic_type: button
+  - text: Save
+    center:
+    - 0.8285
+    - 0.6825
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 保存
+    - Apply
+    - Confirm
+    semantic_type: button
+  description: Private DNS settings screen allowing users to choose a DNS mode and
+    enter a custom provider hostname.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_25
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up
+    - Go back
+    semantic_type: button
+  - text: Device name
+    center:
+    - 0.1972
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设备名称
+    - Phone name
+    - Device ID
+    - Name
+    semantic_type: setting
+  - text: Available devices
+    center:
+    - 0.4514
+    - 0.3625
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 可用设备
+    - Other devices
+    - Nearby devices
+    - Discovered devices
+    semantic_type: label
+  description: Bluetooth settings page displaying the current device name and a list
+    of available devices to connect to.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_26
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Go back
+    - 返回
+    - 向上导航
+    semantic_type: button
+  description: Top app bar with a navigate up button to return to the previous settings
+    menu.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_27
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up arrow
+    - Go back
+    semantic_type: button
+  - text: Bluetooth
+    center:
+    - 0.2799
+    - 0.3274
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - BT
+    - 蓝牙
+    - bluetooth settings
+    semantic_type: setting
+  - text: Cast
+    center:
+    - 0.2247
+    - 0.3931
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 投屏
+    - Screen cast
+    - Chromecast
+    semantic_type: setting
+  - text: Printing
+    center:
+    - 0.259
+    - 0.48
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 打印
+    - Print settings
+    - Printer
+    semantic_type: setting
+  - text: Chromebook
+    center:
+    - 0.3142
+    - 0.5668
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Chrome OS
+    - ChromeOS
+    semantic_type: setting
+  - text: Nearby Share
+    center:
+    - 0.3198
+    - 0.6537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 附近分享
+    - Quick Share
+    - Nearby
+    semantic_type: setting
+  - text: Share files with nearby devices
+    center:
+    - 0.4076
+    - 0.6792
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 附近设备共享文件
+    - Nearby device sharing
+    - Share with nearby
+    semantic_type: label
+  description: Connected devices settings page with options to manage Bluetooth, casting,
+    printing, and nearby sharing.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Bluetooth
+    center:
+    - 0.2799
+    - 0.3274
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - BT
+    - 蓝牙
+    - bluetooth settings
+    semantic_type: setting
+  - text: Cast
+    center:
+    - 0.2247
+    - 0.3931
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 投屏
+    - Screen cast
+    - Chromecast
+    semantic_type: setting
+  - text: Printing
+    center:
+    - 0.259
+    - 0.48
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Print
+    - 打印
+    - print settings
+    semantic_type: setting
+  - text: Chromebook
+    center:
+    - 0.3142
+    - 0.5668
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Chrome OS
+    - Chromebook settings
+    semantic_type: setting
+  - text: Nearby Share
+    center:
+    - 0.3198
+    - 0.6537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Quick Share
+    - 附近分享
+    - nearby sharing
+    semantic_type: setting
+  - text: Share files with nearby devices
+    center:
+    - 0.4076
+    - 0.6792
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 共享文件
+    - share with nearby
+    - Nearby Share summary
+    semantic_type: label
+  - text: Android Auto
+    center:
+    - 0.3167
+    - 0.7405
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 车载
+    - android auto settings
+    semantic_type: setting
+  - text: Use apps on your car screen
+    center:
+    - 0.3896
+    - 0.766
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 在车载屏幕上使用应用
+    - Android Auto summary
+    semantic_type: label
+  description: Connected devices settings page listing options for Bluetooth, Cast,
+    Printing, Nearby Share, and Android Auto.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up button
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - options
+    - 更多选项
+    - three dots
+    semantic_type: button
+  - text: Chrome
+    center:
+    - 0.4997
+    - 0.3518
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Chrome
+    - 浏览器
+    - chrome browser
+    semantic_type: label
+  - text: Open
+    center:
+    - 0.1917
+    - 0.4423
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 打开
+    - launch
+    - open app
+    semantic_type: button
+  - text: Disable
+    center:
+    - 0.5
+    - 0.4423
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 禁用
+    - turn off
+    - deactivate
+    semantic_type: button
+  - text: Force stop
+    center:
+    - 0.8083
+    - 0.4423
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 强制停止
+    - kill app
+    - stop app
+    semantic_type: button
+  - text: Notifications
+    center:
+    - 0.1969
+    - 0.5329
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 通知
+    - app notifications
+    - notification settings
+    semantic_type: menu_item
+  - text: Permissions
+    center:
+    - 0.1927
+    - 0.6197
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 权限
+    - app permissions
+    - permission settings
+    semantic_type: menu_item
+  - text: Location
+    center:
+    - 0.1243
+    - 0.6452
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 位置
+    - location access
+    - location permission
+    semantic_type: menu_item
+  - text: Storage &amp; cache
+    center:
+    - 0.2344
+    - 0.7066
+    fixed: false
+    found_at_scroll: 0
+  - text: Mobile data &amp; Wi‑Fi
+    center:
+    - 0.266
+    - 0.7934
+    fixed: false
+    found_at_scroll: 0
+  - text: Screen time
+    center:
+    - 0.1872
+    - 0.8803
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 屏幕时间
+    - screen time usage
+    - app usage time
+    semantic_type: menu_item
+  - text: App battery usage
+    center:
+    - 0.2545
+    - 0.9627
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 应用电池用量
+    - battery usage
+    - app battery
+    semantic_type: menu_item
+  description: App info page for the Chrome browser where users can manage permissions,
+    storage, notifications, and other app-specific settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_30
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8444
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - 搜索
+    - 查找
+    - magnifying glass
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow
+    - 更多选项
+    - 三点菜单
+    semantic_type: button
+  description: Top app bar of a settings sub-page allowing users to navigate back,
+    search, and access more options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_31
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up arrow
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Browser app
+    center:
+    - 0.3108
+    - 0.28
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Default browser
+    - Web browser
+    - 默认浏览器
+    semantic_type: setting
+  - text: Chrome
+    center:
+    - 0.2351
+    - 0.3054
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Chrome
+    - Chrome browser
+    - 谷歌浏览器
+    semantic_type: menu_item
+  - text: Caller ID &amp; spam app
+    center:
+    - 0.3993
+    - 0.3668
+    fixed: false
+    found_at_scroll: 0
+  - text: None
+    center:
+    - 0.2153
+    - 0.3923
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 无
+    - Not set
+    - 无应用
+    semantic_type: menu_item
+  - text: Digital assistant app
+    center:
+    - 0.3948
+    - 0.4537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Assistant app
+    - Voice assistant
+    - 数字助理应用
+    semantic_type: setting
+  - text: Google
+    center:
+    - 0.2288
+    - 0.4792
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google app
+    - 谷歌
+    semantic_type: menu_item
+  - text: Home app
+    center:
+    - 0.2865
+    - 0.5405
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Default home
+    - Home screen
+    - 主屏幕应用
+    semantic_type: setting
+  - text: Pixel Launcher
+    center:
+    - 0.2861
+    - 0.566
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pixel home
+    - Launcher
+    - Pixel启动器
+    semantic_type: menu_item
+  - text: Settings
+    center:
+    - 0.8736
+    - 0.5511
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - System settings
+    - 设置
+    semantic_type: menu_item
+  - text: Phone app
+    center:
+    - 0.2903
+    - 0.6274
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Default phone
+    - Dialer
+    - 电话应用
+    semantic_type: setting
+  - text: Phone
+    center:
+    - 0.2233
+    - 0.6529
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Dialer
+    - 电话
+    semantic_type: menu_item
+  - text: SMS app
+    center:
+    - 0.2715
+    - 0.7143
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Default SMS
+    - Text messaging
+    - 短信应用
+    semantic_type: setting
+  - text: Messages
+    center:
+    - 0.2531
+    - 0.7397
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Messages
+    - SMS
+    - 信息
+    semantic_type: menu_item
+  - text: Opening links
+    center:
+    - 0.3205
+    - 0.8011
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Default links
+    - Link handling
+    - 打开链接
+    semantic_type: setting
+  description: Default apps settings screen where users can configure default applications
+    for browser, caller ID, digital assistant, home, phone, SMS, and opening links.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_32
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up arrow
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - 更多
+    - Overflow menu
+    semantic_type: button
+  - text: Screen time
+    center:
+    - 0.4997
+    - 0.292
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 屏幕使用时间
+    - Screen Time
+    - Digital wellbeing
+    semantic_type: setting
+  - text: Today
+    center:
+    - 0.4997
+    - 0.4045
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 今天
+    - Daily
+    - Current day
+    semantic_type: tab
+  - text: Go to the previous day
+    center:
+    - 0.1986
+    - 0.6292
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Previous day
+    - 前一天
+    - Left arrow
+    semantic_type: button
+  - text: Set timers for your apps
+    center:
+    - 0.4528
+    - 0.6921
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App limits
+    - 应用限额
+    - App timers
+    semantic_type: menu_item
+  - text: Dismiss card
+    center:
+    - 0.8639
+    - 0.7221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Close
+    - 关闭
+    - Hide
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.5035
+    - 0.8325
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - Config
+    semantic_type: setting
+  - text: Can't set timer
+    center:
+    - 0.9125
+    - 0.8433
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Error
+    - 无法设置计时器
+    - Timer failed
+    semantic_type: label
+  description: Screen time settings page displaying daily usage, date navigation,
+    and an error card indicating that app timers cannot be set.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_33
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - 更多
+    - Overflow menu
+    semantic_type: button
+  - text: Screen time
+    center:
+    - 0.4997
+    - 0.292
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 屏幕使用时间
+    - Screen Time
+    - 数字健康
+    semantic_type: setting
+  - text: Today
+    center:
+    - 0.4997
+    - 0.4045
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 今天
+    - 今日
+    - Current day
+    semantic_type: tab
+  - text: Go to the previous day
+    center:
+    - 0.1986
+    - 0.6292
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Previous day
+    - 前一天
+    - 上一天
+    semantic_type: button
+  - text: Set timers for your apps
+    center:
+    - 0.4528
+    - 0.6921
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App Limits
+    - 应用限额
+    - App timers
+    semantic_type: menu_item
+  - text: Dismiss card
+    center:
+    - 0.8639
+    - 0.7221
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Close
+    - 关闭
+    - Remove card
+    semantic_type: button
+  - text: Settings
+    center:
+    - 0.5035
+    - 0.8325
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 设置
+    - Preferences
+    - System settings
+    semantic_type: setting
+  description: Screen time dashboard displaying today's usage statistics with options
+    to navigate previous days, set app timers, and access settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_34
+  elements:
+  - text: Back
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 返回
+    - Go back
+    - Return
+    semantic_type: button
+  description: A minimal settings screen or sub-menu header featuring a back navigation
+    button.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_35
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up arrow
+    - Go back
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8444
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Find
+    - 搜索
+    - Search settings
+    - Magnifying glass
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - 更多
+    - Overflow
+    - Three dots
+    semantic_type: button
+  - text: Most recent
+    center:
+    - 0.2253
+    - 0.2853
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recent
+    - 最近
+    - Recently used
+    - Sort by recent
+    semantic_type: label
+  - text: Google
+    center:
+    - 0.2517
+    - 0.3473
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 谷歌
+    - Google account
+    - Google settings
+    - Google services
+    semantic_type: menu_item
+  description: Settings search page displaying recent search history and suggestions
+    to help users quickly find specific options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_36
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - 返回
+    - go back
+    - up arrow
+    semantic_type: button
+  - text: Search
+    center:
+    - 0.8444
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - find
+    - search settings
+    - magnifying glass
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - overflow menu
+    - three dots
+    - menu
+    semantic_type: button
+  - text: Most recent
+    center:
+    - 0.2253
+    - 0.2853
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 最近
+    - latest
+    - recent
+    - 最近使用
+    semantic_type: tab
+  description: Settings sub-screen displaying a list of most recent items or activities,
+    featuring search and more options in the top app bar.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_37
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Up arrow
+    - Go back
+    semantic_type: button
+  - text: Use notification history
+    center:
+    - 0.4125
+    - 0.3069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Notification history
+    - 通知历史
+    - Enable history
+    semantic_type: toggle
+  - text: Notification history turned off
+    center:
+    - 0.5
+    - 0.6934
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - History disabled
+    - 通知历史已关闭
+    - 'Off'
+    semantic_type: label
+  - text: Turn on notification history to see recent notifications and snoozed notifications
+    center:
+    - 0.5
+    - 0.7447
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Enable notification history
+    - 开启通知历史
+    - Description text
+    semantic_type: label
+  description: Notification history settings page with an option to enable the feature
+    and view recent notifications.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_38
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Priority and modified conversations will appear here
+    center:
+    - 0.5
+    - 0.5756
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Empty state text
+    - 优先和修改的对话将显示在此处
+    - No priority conversations
+    semantic_type: label
+  description: Empty state screen for priority conversations displaying a navigate
+    up button and a message indicating that priority and modified conversations will
+    appear here.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_39
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    - back button
+    semantic_type: button
+  - text: Some conversations will appear as floating icons on top of other apps
+    center:
+    - 0.5097
+    - 0.2758
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bubbles description
+    - 气泡说明
+    - Floating conversations
+    - 气泡提示
+    semantic_type: label
+  - text: Allow apps to show bubbles
+    center:
+    - 0.4125
+    - 0.6829
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bubbles
+    - 气泡
+    - Show bubbles
+    - 允许应用显示气泡
+    - Bubble settings
+    semantic_type: setting
+  description: Bubbles settings page with an option to allow apps to show floating
+    conversation icons over other apps.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_40
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up arrow
+    - Go back
+    - Return
+    semantic_type: button
+  - text: Manage
+    center:
+    - 0.5097
+    - 0.2846
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Manage notifications
+    - Edit
+    - Configure
+    semantic_type: button
+  - text: App settings
+    center:
+    - 0.1941
+    - 0.337
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App notifications
+    - Application settings
+    - Apps
+    semantic_type: menu_item
+  - text: Control notifications from individual apps
+    center:
+    - 0.3712
+    - 0.3625
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App notification control
+    - Individual app notifications
+    semantic_type: label
+  - text: Notification history
+    center:
+    - 0.2639
+    - 0.4239
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - History
+    - Recent notifications
+    - Notification log
+    semantic_type: menu_item
+  - text: Show recent and snoozed notifications
+    center:
+    - 0.3517
+    - 0.4494
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Recent and snoozed notifications
+    - Notification history description
+    semantic_type: label
+  - text: Conversation
+    center:
+    - 0.5097
+    - 0.5154
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Conversations
+    - Conversation settings
+    semantic_type: label
+  - text: Conversations
+    center:
+    - 0.2142
+    - 0.5678
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Conversation
+    - Chat
+    - Chats
+    semantic_type: label
+  - text: No priority conversations
+    center:
+    - 0.2486
+    - 0.5933
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - No priority chats
+    - Empty priority conversations
+    semantic_type: label
+  - text: Bubbles
+    center:
+    - 0.1455
+    - 0.6546
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bubble notifications
+    - Floating icons
+    - Chat bubbles
+    semantic_type: menu_item
+  - text: On / Conversations can appear as floating icons
+    center:
+    - 0.4222
+    - 0.6801
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bubbles on
+    - Floating conversations
+    - Bubble status
+    semantic_type: label
+  - text: Privacy
+    center:
+    - 0.5097
+    - 0.7462
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Privacy settings
+    - Security and privacy
+    - Private
+    semantic_type: label
+  - text: Control which apps and devices can read notifications
+    center:
+    - 0.4674
+    - 0.824
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Notification privacy
+    - Read notifications control
+    semantic_type: label
+  - text: Notifications on lock screen
+    center:
+    - 0.3597
+    - 0.8854
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Lock screen notifications
+    - Lockscreen
+    - Notifications on lockscreen
+    semantic_type: menu_item
+  - text: Hide silent conversations and notifications
+    center:
+    - 0.3806
+    - 0.9109
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Hide silent notifications
+    - Silent conversation privacy
+    semantic_type: label
+  - text: General
+    center:
+    - 0.5097
+    - 0.9697
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - General settings
+    - General notifications
+    - Basic
+    semantic_type: label
+  description: Notifications settings page allowing users to manage app notifications,
+    history, conversations, bubbles, and privacy options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_41
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    semantic_type: button
+  - text: Allowed
+    center:
+    - 0.5097
+    - 0.3321
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Permitted
+    - 允许
+    - Granted
+    semantic_type: label
+  - text: Android System Intelligence
+    center:
+    - 0.4764
+    - 0.3845
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - ASI
+    - 安卓系统智能
+    - System Intelligence
+    semantic_type: menu_item
+  - text: Pixel Launcher
+    center:
+    - 0.334
+    - 0.4502
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Launcher
+    - Pixel启动器
+    - Home app
+    semantic_type: menu_item
+  - text: Not allowed
+    center:
+    - 0.5097
+    - 0.5205
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Denied
+    - 不允许
+    - Blocked
+    semantic_type: label
+  - text: Android Auto
+    center:
+    - 0.3167
+    - 0.5729
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto
+    - 安卓汽车
+    - Car system
+    semantic_type: menu_item
+  - text: Bluecoins
+    center:
+    - 0.2812
+    - 0.6386
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Bluecoins Finance
+    - 记账
+    - Budget app
+    semantic_type: menu_item
+  - text: Google Play services
+    center:
+    - 0.3993
+    - 0.7043
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - GMS
+    - Google Play 服务
+    - Play services
+    semantic_type: menu_item
+  - text: Google
+    center:
+    - 0.2517
+    - 0.77
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google app
+    - 谷歌
+    - Google settings
+    semantic_type: menu_item
+  description: Permission settings page displaying a list of apps categorized under
+    'Allowed' and 'Not allowed' sections.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_42
+  elements:
+  - text: Notifications on lock screen
+    center:
+    - 0.5
+    - 0.4298
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Lock screen notifications
+    - 锁屏通知
+    - Lockscreen alerts
+    semantic_type: setting
+  - text: Show conversations, default, and silent
+    center:
+    - 0.4951
+    - 0.4779
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Show all notifications
+    - 显示所有
+    - Show all
+    semantic_type: menu_item
+  - text: Hide silent conversations and notifications
+    center:
+    - 0.4951
+    - 0.5317
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Hide silent
+    - 仅显示提醒
+    - Show alerts only
+    semantic_type: menu_item
+  - text: Don’t show any notifications
+    center:
+    - 0.4951
+    - 0.5856
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Don't show
+    - 不显示通知
+    - Hide all
+    semantic_type: menu_item
+  description: Lock screen notification settings page with options to show, hide,
+    or disable notifications.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_43
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - Go back
+    - Back button
+    semantic_type: button
+  - text: Hourly battery usage chart
+    center:
+    - 0.5097
+    - 0.3425
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Battery graph
+    - Battery usage graph
+    - 电池用量图表
+    - Hourly usage
+    semantic_type: other
+  description: Battery usage details screen displaying an hourly battery consumption
+    chart.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_44
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - 返回
+    - Go back
+    - Up arrow
+    semantic_type: button
+  - text: Use Battery Saver
+    center:
+    - 0.4125
+    - 0.3069
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Battery Saver
+    - 省电模式
+    - Low power mode
+    - Enable Battery Saver
+    semantic_type: toggle
+  - text: Set a schedule
+    center:
+    - 0.2163
+    - 0.3995
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Schedule
+    - 定时
+    - Set schedule
+    - Battery saver schedule
+    semantic_type: menu_item
+  - text: No schedule
+    center:
+    - 0.1528
+    - 0.425
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - None
+    - 无
+    - No schedule set
+    - Not scheduled
+    semantic_type: label
+  - text: Turn off when charged
+    center:
+    - 0.3017
+    - 0.4864
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto turn off
+    - 充满电时关闭
+    - Turn off on charge
+    - Disable when charged
+    semantic_type: toggle
+  - text: Battery Saver turns off when your phone charges above 90%
+    center:
+    - 0.4222
+    - 0.521
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Auto off at 90%
+    - 90% charge limit
+    - 省电模式在电量超过90%时关闭
+    - Auto disable
+    semantic_type: label
+  - text: Learn more about Battery saver
+    center:
+    - 0.2965
+    - 0.7077
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Learn more
+    - 了解更多
+    - Help
+    - Battery saver help
+    semantic_type: link
+  description: Battery Saver settings page with options to enable the feature, set
+    a schedule, and configure automatic turn-off conditions.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_45
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up button
+    semantic_type: button
+  - text: Adaptive Battery
+    center:
+    - 0.2365
+    - 0.5896
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 自适应电池
+    - adaptive battery settings
+    - battery optimization
+    semantic_type: setting
+  - text: Extend battery life based on your phone usage
+    center:
+    - 0.4076
+    - 0.6151
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 延长电池续航时间
+    - battery life extension
+    - battery usage description
+    semantic_type: label
+  description: Adaptive Battery settings screen explaining how it extends battery
+    life based on phone usage.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_46
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+  - text: Remove items
+    center:
+    - 0.3288
+    - 0.0774
+    fixed: false
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+  - text: Downloads
+    center:
+    - 0.1792
+    - 0.1492
+    fixed: false
+    found_at_scroll: 0
+  - text: Cancel
+    center:
+    - 0.584
+    - 0.937
+    fixed: false
+    found_at_scroll: 0
+  description: Downloads management screen in selection mode allowing users to remove
+    items or cancel.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_47
+  elements:
+  - text: System includes files used to run Android version 13
+    center:
+    - 0.5
+    - 0.4849
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - System storage description
+    - Android system files
+    - 系统文件说明
+    semantic_type: label
+  - text: OK
+    center:
+    - 0.8285
+    - 0.5425
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 确定
+    - 确认
+    - Got it
+    semantic_type: button
+  description: Dialog box displaying system information for Android version 13 with
+    an OK button to dismiss.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_48
+  elements:
+  - text: Audio
+    center:
+    - 0.0927
+    - 0.1282
+    fixed: false
+    found_at_scroll: 0
+  - text: Large files
+    center:
+    - 0.2003
+    - 0.1821
+    fixed: false
+    found_at_scroll: 0
+  - text: This week
+    center:
+    - 0.5014
+    - 0.1821
+    fixed: false
+    found_at_scroll: 0
+  - text: List view
+    center:
+    - 0.8833
+    - 0.2426
+    fixed: false
+    found_at_scroll: 0
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+  - text: Search
+    center:
+    - 0.825
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+  description: File picker screen displaying categories like Audio and Large files,
+    along with search and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_49
+  elements:
+  - text: Images
+    center:
+    - 0.1049
+    - 0.1282
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 图片
+    - Photos
+    - Pictures
+    semantic_type: menu_item
+  - text: Large files
+    center:
+    - 0.2003
+    - 0.1821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 大文件
+    - Big files
+    semantic_type: menu_item
+  - text: This week
+    center:
+    - 0.5014
+    - 0.1821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 本周
+    - Past 7 days
+    semantic_type: menu_item
+  - text: List view
+    center:
+    - 0.8833
+    - 0.2426
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 列表视图
+    - 列表模式
+    - List mode
+    semantic_type: button
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 显示根目录
+    - Show root directories
+    semantic_type: menu_item
+  - text: Search
+    center:
+    - 0.825
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 搜索
+    - Find
+    - 查找
+    semantic_type: input
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - 更多
+    - More
+    semantic_type: button
+  - text: Unknown
+    center:
+    - 0.2434
+    - 0.3077
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 未知
+    - Unknown files
+    - 其他
+    semantic_type: menu_item
+  description: File management or storage screen displaying categories like Images
+    and Large files, with toolbar options for search, list view, and showing roots.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 1272
+    y: 424
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 314
+    y: 592
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 501
+    y: 851
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 542
+    y: 1120
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 548
+    y: 1428
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 332
+    y: 1736
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 452
+    y: 2044
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 364
+    y: 2352
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 373
+    y: 2660
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 526
+    y: 2968
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 598
+    y: 3025
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 731
+    y: 2634
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 1272
+    y: 424
+    wait: 1.5
+  - action: tap
+    x: 481
+    y: 1051
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 1272
+    y: 424
+    wait: 1.5
+  - action: tap
+    x: 499
+    y: 1478
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 1272
+    y: 424
+    wait: 1.5
+  - action: tap
+    x: 406
+    y: 1730
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 314
+    y: 592
+    wait: 1.5
+  - action: tap
+    x: 332
+    y: 1736
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 542
+    y: 1120
+    wait: 1.5
+  - action: tap
+    x: 373
+    y: 874
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 542
+    y: 1120
+    wait: 1.5
+  - action: tap
+    x: 441
+    y: 1144
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 542
+    y: 1120
+    wait: 1.5
+  - action: tap
+    x: 331
+    y: 1416
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 542
+    y: 1120
+    wait: 1.5
+  - action: tap
+    x: 556
+    y: 1891
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 542
+    y: 1120
+    wait: 1.5
+  - action: tap
+    x: 420
+    y: 2162
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 542
+    y: 1120
+    wait: 1.5
+  - action: tap
+    x: 322
+    y: 2434
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 542
+    y: 1120
+    wait: 1.5
+  - action: tap
+    x: 264
+    y: 2704
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 542
+    y: 1120
+    wait: 1.5
+  - action: tap
+    x: 270
+    y: 2910
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 548
+    y: 1428
+    wait: 1.5
+  - action: tap
+    x: 496
+    y: 874
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 548
+    y: 1428
+    wait: 1.5
+  - action: tap
+    x: 354
+    y: 1256
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 548
+    y: 1428
+    wait: 1.5
+  - action: tap
+    x: 456
+    y: 1462
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 548
+    y: 1428
+    wait: 1.5
+  - action: tap
+    x: 344
+    y: 1541
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 332
+    y: 1736
+    wait: 1.5
+  - action: tap
+    x: 280
+    y: 1144
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 332
+    y: 1736
+    wait: 1.5
+  - action: tap
+    x: 270
+    y: 1416
+    wait: 1.5
+  screen_31:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 332
+    y: 1736
+    wait: 1.5
+  - action: tap
+    x: 286
+    y: 1686
+    wait: 1.5
+  screen_32:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 332
+    y: 1736
+    wait: 1.5
+  - action: tap
+    x: 366
+    y: 1958
+    wait: 1.5
+  screen_33:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 332
+    y: 1736
+    wait: 1.5
+  - action: tap
+    x: 372
+    y: 2037
+    wait: 1.5
+  screen_34:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 332
+    y: 1736
+    wait: 1.5
+  - action: tap
+    x: 383
+    y: 2228
+    wait: 1.5
+  screen_35:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 452
+    y: 2044
+    wait: 1.5
+  - action: tap
+    x: 280
+    y: 1052
+    wait: 1.5
+  screen_36:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 452
+    y: 2044
+    wait: 1.5
+  - action: tap
+    x: 534
+    y: 1131
+    wait: 1.5
+  screen_37:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 452
+    y: 2044
+    wait: 1.5
+  - action: tap
+    x: 380
+    y: 1322
+    wait: 1.5
+  screen_38:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 452
+    y: 2044
+    wait: 1.5
+  - action: tap
+    x: 308
+    y: 1772
+    wait: 1.5
+  screen_39:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 452
+    y: 2044
+    wait: 1.5
+  - action: tap
+    x: 210
+    y: 2042
+    wait: 1.5
+  screen_40:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 452
+    y: 2044
+    wait: 1.5
+  - action: tap
+    x: 734
+    y: 2328
+    wait: 1.5
+  screen_41:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 452
+    y: 2044
+    wait: 1.5
+  - action: tap
+    x: 488
+    y: 2492
+    wait: 1.5
+  screen_42:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 452
+    y: 2044
+    wait: 1.5
+  - action: tap
+    x: 518
+    y: 2762
+    wait: 1.5
+  screen_43:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 364
+    y: 2352
+    wait: 1.5
+  - action: tap
+    x: 441
+    y: 1464
+    wait: 1.5
+  screen_44:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 364
+    y: 2352
+    wait: 1.5
+  - action: tap
+    x: 291
+    y: 1656
+    wait: 1.5
+  screen_45:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 364
+    y: 2352
+    wait: 1.5
+  - action: tap
+    x: 413
+    y: 1926
+    wait: 1.5
+  screen_46:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 373
+    y: 2660
+    wait: 1.5
+  - action: tap
+    x: 526
+    y: 1312
+    wait: 1.5
+  screen_47:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 373
+    y: 2660
+    wait: 1.5
+  - action: tap
+    x: 716
+    y: 1603
+    wait: 1.5
+  screen_48:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 373
+    y: 2660
+    wait: 1.5
+  - action: tap
+    x: 698
+    y: 2126
+    wait: 1.5
+  screen_49:
+  - action: force_stop
+    package: com.android.settings
+    wait: 0.5
+  - action: launch
+    package: com.android.settings
+    wait: 3.0
+  - action: tap
+    x: 373
+    y: 2660
+    wait: 1.5
+  - action: tap
+    x: 698
+    y: 2386
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- Connect to Wi-Fi and manage network preferences
+- Pair and manage Bluetooth devices
+- Check battery usage and enable Battery Saver
+- Manage app permissions and notifications
+- Free up device storage space
+- Adjust volume levels and choose ringtones
+- Set up a Wi-Fi hotspot or tethering
+- Search for specific settings options
+known_limitations:
+- Some settings require an active internet connection and will show an error prompt
+  if offline
+- Deeply nested menus require multiple taps on the navigate up button to return to
+  the main screen
+- Freeing up storage space redirects the user to a separate Files app
+- Some pages open in an in-app web view that requires closing a tab to navigate back

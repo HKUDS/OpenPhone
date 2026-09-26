@@ -1,0 +1,650 @@
+app: Calendar
+package: com.skuld.calendario
+screen_w: 1440
+screen_h: 3120
+screens:
+- id: screen_0
+  description: Navigation screen featuring Tasks, Calendar, and Events tabs, along
+    with a Report Ad banner.
+  elements:
+  - text: Report Ad
+    center:
+    - 0.5458
+    - 0.3939
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - Report advertisement
+    - 举报广告
+    - Report this ad
+    semantic_type: link
+  - text: Tasks
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - To-dos
+    - 任务
+    - To Do
+    semantic_type: tab
+  - text: Calendar
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 日历
+    - Schedule
+    - Agenda
+    semantic_type: tab
+  - text: Events
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 日程
+    - Appointments
+    - Meetings
+    semantic_type: tab
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Tasks
+    center:
+    - 0.1097
+    - 0.0729
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - To-Do
+    - 待办
+    - 任务
+    - Reminders
+    semantic_type: tab
+  - text: New task
+    center:
+    - 0.5
+    - 0.6013
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - Add task
+    - Create task
+    - 新建任务
+    - 添加任务
+    semantic_type: button
+  - text: Calendar
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 日历
+    - 日程
+    - Cal
+    semantic_type: label
+  - text: Events
+    center:
+    - 0.8333
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 日程
+    - 活动
+    - Appointments
+    - 日程安排
+    semantic_type: tab
+  description: Main dashboard screen with navigation tabs for Tasks and Calendar,
+    featuring options to add a new task and view upcoming events.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Events
+    center:
+    - 0.1191
+    - 0.0729
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 日程
+    - 活动
+    - events list
+    - event list
+    semantic_type: tab
+  - text: New event
+    center:
+    - 0.5
+    - 0.6013
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 新建日程
+    - 添加事件
+    - create event
+    - add event
+    semantic_type: button
+  - text: Tasks
+    center:
+    - 0.1667
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 任务
+    - 待办
+    - to-do
+    - task list
+    semantic_type: tab
+  - text: Calendar
+    center:
+    - 0.5
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 日历
+    - 月历
+    - calendar view
+    semantic_type: tab
+  description: Navigation menu with options for Events, Tasks, and Calendar, and a
+    button to create a new event.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_3
+  elements:
+  - text: Set notification
+    center:
+    - 0.409
+    - 0.5849
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 设置通知
+    - 设置提醒
+    - Add alert
+    - Alert
+    semantic_type: button
+  description: Notification settings screen allowing users to configure reminders
+    and alerts for calendar events.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Event…
+    center:
+    - 0.5437
+    - 0.1479
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Event title
+    - Title
+    - 事件
+    - Add event
+    semantic_type: input
+  - text: Today
+    center:
+    - 0.1993
+    - 0.2385
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - Current day
+    - 今日
+    - 今天
+    - Jump to today
+    semantic_type: tab
+  - text: At time of event
+    center:
+    - 0.4806
+    - 0.3071
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - At event time
+    - 事件发生时
+    - 准时提醒
+    - Default alert
+    semantic_type: menu_item
+  - text: Set recurrence
+    center:
+    - 0.5486
+    - 0.3744
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - Repeat
+    - Recurrence
+    - 重复
+    - 设置重复
+    semantic_type: menu_item
+  - text: Note…
+    center:
+    - 0.5486
+    - 0.4417
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - Notes
+    - Description
+    - 备注
+    - 添加备注
+    semantic_type: input
+  description: Event creation screen where users can define the event title, date,
+    reminder, recurrence, and notes.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: Notification
+    center:
+    - 0.2927
+    - 0.3984
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Notifications
+    - Alerts
+    - 通知
+    - Reminders
+    semantic_type: setting
+  - text: Pick a date &amp; time
+    center:
+    - 0.5
+    - 0.6228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Select date and time
+    - Choose date & time
+    - 选择日期和时间
+    - Date & Time Picker
+    semantic_type: input
+  description: Date and time selection screen prompting the user to pick a specific
+    date and time for an event or reminder.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Select Date
+    center:
+    - 0.4562
+    - 0.2112
+    fixed: false
+    found_at_scroll: 0
+  - text: Switch to text input mode
+    center:
+    - 0.85
+    - 0.292
+    fixed: false
+    found_at_scroll: 0
+  - text: Change to previous month
+    center:
+    - 0.7333
+    - 0.3593
+    fixed: false
+    found_at_scroll: 0
+  - text: Change to next month
+    center:
+    - 0.85
+    - 0.3593
+    fixed: false
+    found_at_scroll: 0
+  - text: S
+    center:
+    - 0.15
+    - 0.4176
+    fixed: false
+    found_at_scroll: 0
+  - text: M
+    center:
+    - 0.2667
+    - 0.4176
+    fixed: false
+    found_at_scroll: 0
+  - text: T
+    center:
+    - 0.3833
+    - 0.4176
+    fixed: false
+    found_at_scroll: 0
+  - text: W
+    center:
+    - 0.5
+    - 0.4176
+    fixed: false
+    found_at_scroll: 0
+  - text: F
+    center:
+    - 0.7333
+    - 0.4176
+    fixed: false
+    found_at_scroll: 0
+  - text: Cancel
+    center:
+    - 0.6611
+    - 0.7968
+    fixed: false
+    found_at_scroll: 0
+  - text: OK
+    center:
+    - 0.8403
+    - 0.7968
+    fixed: false
+    found_at_scroll: 0
+  description: Date picker dialog allowing users to select a date from a monthly calendar
+    grid or text input, featuring month navigation and confirm/cancel actions.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_7
+  elements:
+  - text: Notification
+    center:
+    - 0.2927
+    - 0.3715
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Alerts
+    - Reminders
+    - 通知
+    - 提醒
+    semantic_type: setting
+  - text: At time of event
+    center:
+    - 0.5
+    - 0.4343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 0 minutes before
+    - Event time
+    - 事件发生时
+    - 准时
+    semantic_type: menu_item
+  - text: 10 minutes before
+    center:
+    - 0.5
+    - 0.4881
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 10 mins before
+    - 10m before
+    - 提前10分钟
+    semantic_type: menu_item
+  - text: 30 minutes before
+    center:
+    - 0.5
+    - 0.542
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 30 mins before
+    - 30m before
+    - 提前30分钟
+    semantic_type: menu_item
+  - text: 1 hour before
+    center:
+    - 0.5
+    - 0.5958
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 60 minutes before
+    - 1 hr before
+    - 提前1小时
+    semantic_type: menu_item
+  - text: 1 day before
+    center:
+    - 0.5
+    - 0.6497
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 24 hours before
+    - 1 day prior
+    - 提前1天
+    semantic_type: menu_item
+  description: Event notification settings screen allowing users to select reminder
+    times before a calendar event.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Recurrence
+    center:
+    - 0.2892
+    - 0.3984
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Repeat
+    - Repeats
+    - 重复
+    - 循环
+    semantic_type: menu_item
+  - text: Daily
+    center:
+    - 0.5
+    - 0.4612
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Every day
+    - 每天
+    - 每日
+    semantic_type: menu_item
+  - text: Weekly
+    center:
+    - 0.5
+    - 0.5151
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Every week
+    - 每周
+    semantic_type: menu_item
+  - text: Monthly
+    center:
+    - 0.5
+    - 0.5689
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Every month
+    - 每月
+    semantic_type: menu_item
+  - text: Yearly
+    center:
+    - 0.5
+    - 0.6228
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Every year
+    - Annually
+    - 每年
+    semantic_type: menu_item
+  description: Event recurrence selection screen with options to set an event to repeat
+    daily, weekly, monthly, or yearly.
+  scrollable: false
+  scroll_direction: ''
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.skuld.calendario
+    wait: 0.5
+  - action: launch
+    package: com.skuld.calendario
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.skuld.calendario
+    wait: 0.5
+  - action: launch
+    package: com.skuld.calendario
+    wait: 3.0
+  - action: tap
+    x: 240
+    y: 2896
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.skuld.calendario
+    wait: 0.5
+  - action: launch
+    package: com.skuld.calendario
+    wait: 3.0
+  - action: tap
+    x: 1200
+    y: 2896
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.skuld.calendario
+    wait: 0.5
+  - action: launch
+    package: com.skuld.calendario
+    wait: 3.0
+  - action: tap
+    x: 240
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1876
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.skuld.calendario
+    wait: 0.5
+  - action: launch
+    package: com.skuld.calendario
+    wait: 3.0
+  - action: tap
+    x: 1200
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1876
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.skuld.calendario
+    wait: 0.5
+  - action: launch
+    package: com.skuld.calendario
+    wait: 3.0
+  - action: tap
+    x: 240
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1876
+    wait: 1.5
+  - action: tap
+    x: 589
+    y: 1825
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.skuld.calendario
+    wait: 0.5
+  - action: launch
+    package: com.skuld.calendario
+    wait: 3.0
+  - action: tap
+    x: 1200
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1876
+    wait: 1.5
+  - action: tap
+    x: 287
+    y: 744
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.skuld.calendario
+    wait: 0.5
+  - action: launch
+    package: com.skuld.calendario
+    wait: 3.0
+  - action: tap
+    x: 1200
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1876
+    wait: 1.5
+  - action: tap
+    x: 692
+    y: 958
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.skuld.calendario
+    wait: 0.5
+  - action: launch
+    package: com.skuld.calendario
+    wait: 3.0
+  - action: tap
+    x: 1200
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 1876
+    wait: 1.5
+  - action: tap
+    x: 790
+    y: 1168
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- View upcoming events
+- Create a new calendar event
+- Add a new task
+- Set event date and time
+- Configure event reminders and alerts
+- Set event recurrence
+- Navigate between Tasks, Calendar, and Events tabs
+- Report an advertisement
+known_limitations:
+- App displays a Report Ad banner, indicating it is ad-supported
+- Navigation tabs for Tasks, Calendar, and Events are redundantly presented across
+  multiple screens
+- Date selection requires navigating a monthly grid or using manual text input

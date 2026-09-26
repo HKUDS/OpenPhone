@@ -1,0 +1,35 @@
+# PhoneCLI-style hybrid macro agent configuration for Android evaluation.
+# Uses pre-built app maps for deterministic macro routing with VLM fallback.
+# Round 1: LLM task→operation mapping → ADB macro replay → VLM verify
+# Round 2+: VLM with screen identification + macro() navigation support
+
+agent:
+  name: OpenAIAgent
+  args:
+    api_key: "${OPENROUTER_API_KEY}"
+    api_base: "https://openrouter.ai/api/v1"
+    model_name: "qwen/qwen3.7-plus"
+    max_new_tokens: 512
+
+task:
+  class: MacroAgentTask_AutoTest
+  args:
+    save_dir: "./logs/evaluation"
+    max_rounds: 25
+    request_interval: 3
+    mode: "in_app"
+    # Path to the pre-built Android app map YAML
+    app_map: "./app_maps/settings_android.yaml"
+    # LLM config for task→operation mapping and VLM verify (Round 1)
+    # Uses same model as agent (qwen/qwen3.7-plus supports text + vision)
+    llm_config:
+      api_key: "${OPENROUTER_API_KEY}"
+      api_base: "https://openrouter.ai/api/v1"
+      model: "qwen/qwen3.7-plus"
+
+eval:
+  avd_base: "${HOME}/.android/avd"
+  avd_name: Pixel_7_Pro_API_33
+  avd_log_dir: ./logs/avd
+  android_sdk_path: "${HOME}/Library/Android/sdk"
+  show_avd: false

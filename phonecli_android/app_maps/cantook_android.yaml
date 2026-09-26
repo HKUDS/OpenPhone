@@ -1,0 +1,3469 @@
+app: Cantook
+package: com.aldiko.android
+screen_w: 1440
+screen_h: 3120
+screens:
+- id: screen_0
+  description: Main navigation menu with options for Home, Recently read, My books,
+    Catalogs, and Settings
+  elements:
+  - text: Home
+    center:
+    - 0.1111
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 主页
+    - 首页
+    - home screen
+    semantic_type: tab
+  - text: Recently read
+    center:
+    - 0.1597
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - 最近阅读
+    - 阅读历史
+    - recent
+    - history
+    semantic_type: tab
+  - text: My books
+    center:
+    - 0.375
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 我的书
+    - 我的书架
+    - library
+    - my library
+    semantic_type: tab
+  - text: Catalogs
+    center:
+    - 0.625
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 目录
+    - 书库
+    - catalog
+    - store
+    semantic_type: tab
+  - text: Settings
+    center:
+    - 0.875
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 设置
+    - 系统设置
+    - preferences
+    - options
+    semantic_type: tab
+  scrollable: false
+  scroll_direction: ''
+- id: screen_1
+  elements:
+  - text: Recently read
+    center:
+    - 0.2969
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_1
+    aliases:
+    - Recent
+    - 最近阅读
+    - 阅读历史
+    - History
+    semantic_type: menu_item
+  description: A home or library screen displaying a list of the user's recently read
+    publications.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_2
+  elements:
+  - text: Books
+    center:
+    - 0.1483
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 图书
+    - 书籍
+    - ebooks
+    - book list
+    semantic_type: tab
+  - text: Authors
+    center:
+    - 0.3674
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_5
+    aliases:
+    - 作者
+    - writers
+    - author list
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.599
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_6
+    aliases:
+    - 分类
+    - 类别
+    - genres
+    - topics
+    semantic_type: tab
+  - text: Collections
+    center:
+    - 0.8469
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_7
+    aliases:
+    - 合集
+    - 丛书
+    - bookshelves
+    - shelves
+    semantic_type: tab
+  - text: My books
+    center:
+    - 0.1542
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 我的图书
+    - 我的书籍
+    - my library
+    - library
+    semantic_type: tab
+  - text: Home
+    center:
+    - 0.125
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 首页
+    - 主页
+    - home screen
+    - main
+    semantic_type: tab
+  - text: Catalogs
+    center:
+    - 0.625
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 目录
+    - 书目
+    - catalog list
+    semantic_type: tab
+  - text: Settings
+    center:
+    - 0.875
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 设置
+    - preferences
+    - options
+    - config
+    semantic_type: tab
+  description: Side navigation menu providing access to primary app sections including
+    Home, My books, Catalogs, and Settings.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_3
+  elements:
+  - text: Catalogs
+    center:
+    - 0.1448
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_3
+    aliases:
+    - 目录
+    - Catalogue
+    - Book catalogs
+    semantic_type: tab
+  - text: Free books
+    center:
+    - 0.5
+    - 0.1585
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 免费图书
+    - Free ebooks
+    - 免费电子书
+    semantic_type: menu_item
+  - text: Download thousands of free ebooks in English, French, Spanish, Italian and
+      German.
+    center:
+    - 0.5
+    - 0.2008
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 下载免费电子书
+    - Free ebooks description
+    - 多语言电子书下载
+    semantic_type: label
+  - text: Browse
+    center:
+    - 0.1451
+    - 0.2654
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_8
+    aliases:
+    - 浏览
+    - Explore
+    - Discover
+    semantic_type: tab
+  - text: Profile
+    center:
+    - 0.3215
+    - 0.4093
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_9
+    aliases:
+    - 个人资料
+    - Account
+    - 我的
+    semantic_type: tab
+  - text: Add
+    center:
+    - 0.8931
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_10
+    aliases:
+    - 添加
+    - 新增
+    - Add book
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.125
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 首页
+    - 主页
+    - Main
+    semantic_type: tab
+  - text: My books
+    center:
+    - 0.375
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 我的图书
+    - My library
+    - 我的书架
+    semantic_type: tab
+  - text: Settings
+    center:
+    - 0.875
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 设置
+    - Preferences
+    - 配置
+    semantic_type: setting
+  description: Free books catalog page offering downloadable ebooks in multiple languages
+    with a browse button and standard app navigation.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_4
+  elements:
+  - text: Preferences
+    center:
+    - 0.2861
+    - 0.5006
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_11
+    aliases:
+    - Settings
+    - Options
+    - 设置
+    - 偏好设置
+    semantic_type: setting
+  - text: Import files
+    center:
+    - 0.2819
+    - 0.5635
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Add files
+    - 导入文件
+    - 添加文件
+    semantic_type: button
+  - text: Import folder
+    center:
+    - 0.2965
+    - 0.6263
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_12
+    aliases:
+    - Add folder
+    - 导入文件夹
+    - 添加文件夹
+    semantic_type: button
+  - text: Manage accounts
+    center:
+    - 0.3389
+    - 0.6891
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Accounts
+    - Account settings
+    - 管理账户
+    - 账号管理
+    semantic_type: menu_item
+  - text: Help
+    center:
+    - 0.1111
+    - 0.7891
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Support
+    - 帮助
+    - 支持
+    semantic_type: menu_item
+  - text: Terms of use
+    center:
+    - 0.1719
+    - 0.8519
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Terms
+    - Terms and conditions
+    - 使用条款
+    - 用户协议
+    semantic_type: link
+  - text: Privacy policy
+    center:
+    - 0.1781
+    - 0.9147
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - Privacy
+    - 隐私政策
+    - 隐私权政策
+    semantic_type: link
+  description: Settings screen with options to manage preferences, import files or
+    folders, manage accounts, and access help and legal policies.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_5
+  elements:
+  - text: Books
+    center:
+    - 0.1483
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 图书
+    - 书籍
+    - ebooks
+    - book list
+    semantic_type: tab
+  - text: Authors
+    center:
+    - 0.3674
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 作者
+    - writers
+    - author list
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.599
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 分类
+    - 类别
+    - genres
+    - topics
+    semantic_type: tab
+  - text: Collections
+    center:
+    - 0.8469
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 合集
+    - 丛书
+    - bookshelves
+    - shelves
+    semantic_type: tab
+  - text: My books
+    center:
+    - 0.1542
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_13
+    aliases:
+    - 我的图书
+    - 我的书籍
+    - my library
+    - library
+    semantic_type: tab
+  - text: Home
+    center:
+    - 0.125
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_14
+    aliases:
+    - 首页
+    - 主页
+    - home screen
+    - main
+    semantic_type: tab
+  - text: Catalogs
+    center:
+    - 0.625
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 目录
+    - 书目
+    - catalog list
+    semantic_type: tab
+  - text: Settings
+    center:
+    - 0.875
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 设置
+    - preferences
+    - options
+    - config
+    semantic_type: tab
+  description: Main navigation menu providing access to core app sections such as
+    Home, My books, Catalogs, Settings, and browsing categories.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_6
+  elements:
+  - text: Books
+    center:
+    - 0.1372
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 图书
+    - 书籍
+    - book
+    - ebooks
+    semantic_type: tab
+  - text: Authors
+    center:
+    - 0.3563
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 作者
+    - 作家
+    - author
+    - writers
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.5878
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 分类
+    - 类别
+    - category
+    - genres
+    semantic_type: tab
+  - text: Collections
+    center:
+    - 0.8358
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 合集
+    - 丛书
+    - collection
+    - series
+    semantic_type: tab
+  - text: Tragedies
+    center:
+    - 0.1299
+    - 0.2077
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 悲剧
+    - tragedy
+    - 悲剧类
+    semantic_type: menu_item
+  - text: My books
+    center:
+    - 0.1542
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 我的图书
+    - 我的书架
+    - my library
+    - my ebooks
+    semantic_type: tab
+  - text: Home
+    center:
+    - 0.125
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 首页
+    - 主页
+    - home screen
+    - main
+    semantic_type: tab
+  - text: Catalogs
+    center:
+    - 0.625
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 目录
+    - 书目
+    - catalog
+    - catalogue
+    semantic_type: tab
+  - text: Settings
+    center:
+    - 0.875
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 设置
+    - 配置
+    - preferences
+    - settings menu
+    semantic_type: tab
+  description: Main navigation menu providing access to personal books, catalogs,
+    settings, and various browsing categories like authors, collections, and tragedies.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_7
+  elements:
+  - text: Books
+    center:
+    - 0.1372
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 图书
+    - 电子书
+    - ebooks
+    - reading material
+    semantic_type: tab
+  - text: Authors
+    center:
+    - 0.3563
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 作者
+    - 作家
+    - writers
+    - creators
+    semantic_type: tab
+  - text: Categories
+    center:
+    - 0.5878
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 分类
+    - 类别
+    - genres
+    - topics
+    semantic_type: tab
+  - text: Collections
+    center:
+    - 0.8358
+    - 0.1449
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 集合
+    - 书单
+    - shelves
+    - bookshelves
+    semantic_type: tab
+  - text: My books
+    center:
+    - 0.1542
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 我的图书
+    - 我的书架
+    - my library
+    - my shelf
+    semantic_type: tab
+  - text: Home
+    center:
+    - 0.125
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_16
+    aliases:
+    - 首页
+    - 主页
+    - main
+    - dashboard
+    semantic_type: tab
+  - text: Catalogs
+    center:
+    - 0.625
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 目录
+    - 书目
+    - catalogues
+    - index
+    semantic_type: tab
+  - text: Settings
+    center:
+    - 0.875
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_15
+    aliases:
+    - 设置
+    - 选项
+    - preferences
+    - config
+    semantic_type: menu_item
+  description: Main navigation menu providing access to primary app sections and browsing
+    categories such as Home, My books, Catalogs, Settings, Books, Authors, and Collections.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_8
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_17
+    aliases:
+    - Back
+    - 返回
+    - Up
+    - Go back
+    semantic_type: button
+  - text: Details
+    center:
+    - 0.8792
+    - 0.9372
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_18
+    aliases:
+    - 详情
+    - View details
+    - More info
+    - Information
+    semantic_type: button
+  description: Details screen displaying information about a selected book with a
+    back navigation button.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_9
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_19
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上
+    - Go back
+    semantic_type: button
+  description: Screen header featuring a back navigation button to return to the previous
+    page.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_10
+  elements:
+  - text: Catalogs
+    center:
+    - 0.1448
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 目录
+    - catalogue
+    - book catalogs
+    semantic_type: menu_item
+  - text: Free books
+    center:
+    - 0.5
+    - 0.1585
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 免费图书
+    - 免费书籍
+    - free ebooks
+    semantic_type: menu_item
+  - text: Browse
+    center:
+    - 0.1451
+    - 0.2654
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 浏览
+    - explore
+    - discover
+    semantic_type: tab
+  - text: Profile
+    center:
+    - 0.3215
+    - 0.4093
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_20
+    aliases:
+    - 个人资料
+    - 我的
+    - account
+    semantic_type: tab
+  - text: Add a URL
+    center:
+    - 0.7181
+    - 0.7633
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_21
+    aliases:
+    - 添加网址
+    - 添加链接
+    - add link
+    semantic_type: button
+  - text: Libraries
+    center:
+    - 0.7181
+    - 0.8194
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_22
+    aliases:
+    - 图书馆
+    - library
+    - digital libraries
+    semantic_type: menu_item
+  - text: Home
+    center:
+    - 0.125
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_0
+    aliases:
+    - 首页
+    - 主页
+    - main
+    semantic_type: tab
+  - text: My books
+    center:
+    - 0.375
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_2
+    aliases:
+    - 我的图书
+    - 我的书架
+    - bookshelf
+    semantic_type: tab
+  - text: Settings
+    center:
+    - 0.875
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_4
+    aliases:
+    - 设置
+    - preferences
+    - options
+    semantic_type: setting
+  description: Navigation menu providing access to main app sections, library catalogs,
+    and settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_11
+  elements:
+  - text: Language
+    center:
+    - 0.1288
+    - 0.1494
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_23
+    aliases:
+    - 语言
+    - App Language
+    - Language Settings
+    - 语种
+    semantic_type: setting
+  - text: System preferences
+    center:
+    - 0.833
+    - 0.2122
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - 系统偏好设置
+    - System Settings
+    - 系统设置
+    - Preferences
+    semantic_type: setting
+  - text: Theme
+    center:
+    - 0.1024
+    - 0.2122
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_24
+    aliases:
+    - 主题
+    - Appearance
+    - 外观
+    - Theme Settings
+    semantic_type: setting
+  - text: Default
+    center:
+    - 0.9139
+    - 0.275
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - 默认
+    - Default Value
+    - 默认设置
+    - Standard
+    semantic_type: label
+  - text: Color selector
+    center:
+    - 0.1684
+    - 0.275
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_25
+    aliases:
+    - 颜色选择器
+    - Color Picker
+    - 选色器
+    - Choose Color
+    semantic_type: button
+  - text: Notifications
+    center:
+    - 0.1583
+    - 0.3378
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_26
+    aliases:
+    - 通知
+    - Notification Settings
+    - 消息通知
+    - Alerts
+    semantic_type: setting
+  - text: Preferences
+    center:
+    - 0.2795
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 偏好设置
+    - Settings
+    - 设置
+    - Options
+    semantic_type: setting
+  description: Settings screen where users can configure app language, theme, color
+    options, and notification preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_12
+  elements:
+  - text: Download
+    center:
+    - 0.5774
+    - 0.1282
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 下载
+    - download files
+    - save
+    semantic_type: button
+  - text: Images
+    center:
+    - 0.1778
+    - 0.1821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - 图片
+    - 照片
+    - photos
+    - pictures
+    semantic_type: tab
+  - text: Audio
+    center:
+    - 0.424
+    - 0.1821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 音频
+    - 音乐
+    - music
+    - sounds
+    semantic_type: tab
+  - text: Videos
+    center:
+    - 0.6663
+    - 0.1821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - 视频
+    - 影片
+    - movies
+    - clips
+    semantic_type: tab
+  - text: Documents
+    center:
+    - 0.9007
+    - 0.1821
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 文档
+    - 文件
+    - docs
+    - files
+    semantic_type: tab
+  - text: List view
+    center:
+    - 0.8833
+    - 0.2426
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - 列表视图
+    - 列表模式
+    - list mode
+    semantic_type: toggle
+  - text: Show roots
+    center:
+    - 0.0681
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_27
+    aliases:
+    - 显示根目录
+    - show root directories
+    - 根目录
+    semantic_type: toggle
+  - text: Search
+    center:
+    - 0.825
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 搜索
+    - 查找
+    - find
+    - search files
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0731
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_29
+    aliases:
+    - 更多选项
+    - 更多
+    - more
+    - menu
+    semantic_type: button
+  - text: Ebooks
+    center:
+    - 0.2292
+    - 0.3077
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 电子书
+    - 电子书籍
+    - e-books
+    - books
+    semantic_type: tab
+  description: File browser screen for selecting local files, featuring category shortcuts
+    like Ebooks and Documents, along with search and view options.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_13
+  elements:
+  - text: Open with
+    center:
+    - 0.5
+    - 0.6644
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_28
+    aliases:
+    - 打开方式
+    - open using
+    - open with app
+    semantic_type: label
+  - text: Pi Music Player
+    center:
+    - 0.25
+    - 0.7256
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - Pi播放器
+    - Pi音乐播放器
+    - Pi Player
+    semantic_type: menu_item
+  - text: Floating Pi Music Player
+    center:
+    - 0.299
+    - 0.7484
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - 悬浮Pi音乐播放器
+    - Floating Pi Player
+    - Pi悬浮播放器
+    semantic_type: menu_item
+  - text: YouTube Music
+    center:
+    - 0.25
+    - 0.8619
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - YT Music
+    - 油管音乐
+    - YouTube音乐
+    semantic_type: menu_item
+  - text: Just once
+    center:
+    - 0.6861
+    - 0.9338
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - 仅此一次
+    - just this once
+    - 一次
+    semantic_type: button
+  - text: Always
+    center:
+    - 0.8729
+    - 0.9338
+    fixed: false
+    found_at_scroll: 0
+    leads_to: screen_30
+    aliases:
+    - 始终
+    - 总是
+    - always use
+    semantic_type: button
+  description: Android system 'Open with' dialog allowing the user to select an app
+    like Pi Music Player or YouTube Music to open a file, with options to remember
+    the choice.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_14
+  elements:
+  - text: Web View
+    center:
+    - 0.5
+    - 0.5096
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - WebView
+    - browser view
+    - 网页视图
+    - web content
+    semantic_type: other
+  - text: Home
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主页
+    - 首页
+    - home screen
+    - home tab
+    semantic_type: tab
+  - text: Connection is secure
+    center:
+    - 0.1653
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 安全连接
+    - 连接安全
+    - secure connection
+    - https
+    semantic_type: label
+  - text: New tab
+    center:
+    - 0.7181
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 新标签页
+    - 新建标签
+    - new page
+    - add tab
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 切换或关闭标签页
+    - 管理标签页
+    - tab switcher
+    - tabs overview
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - 更多
+    - menu
+    - overflow menu
+    - 三点菜单
+    semantic_type: button
+  - text: Chinese (Simplified)
+    center:
+    - 0.299
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 简体中文
+    - 中文
+    - Simplified Chinese
+    - zh-CN
+    semantic_type: menu_item
+  - text: English
+    center:
+    - 0.5687
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 英文
+    - 英语
+    - en
+    - English language
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.9319
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭
+    - close button
+    - dismiss
+    - exit
+    semantic_type: button
+  description: In-app web browser displaying a secure webpage with tab management
+    controls and a language selection menu.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_15
+  elements:
+  - text: Google Play 徽标
+    center:
+    - 0.2431
+    - 0.1409
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Play logo
+    - Play Store icon
+    - Google Play 图标
+    semantic_type: label
+  - text: 搜索
+    center:
+    - 0.6854
+    - 0.1409
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - Search bar
+    - 搜索框
+    - 查找
+    semantic_type: input
+  - text: 帮助中心
+    center:
+    - 0.8031
+    - 0.1409
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help center
+    - Help
+    - 帮助
+    - Support
+    semantic_type: link
+  - text: 游戏
+    center:
+    - 0.1264
+    - 0.1992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Games
+    - Play Games
+    - 游戏分类
+    semantic_type: tab
+  - text: 应用
+    center:
+    - 0.3753
+    - 0.1992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Apps
+    - Applications
+    - 应用程序
+    semantic_type: tab
+  - text: 图书
+    center:
+    - 0.6271
+    - 0.1992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Books
+    - Ebooks
+    - 电子书
+    - 图书分类
+    semantic_type: tab
+  - text: 儿童
+    center:
+    - 0.8743
+    - 0.1992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Kids
+    - Children
+    - 儿童分类
+    - 家庭
+    semantic_type: tab
+  - text: 信息徽章
+    center:
+    - 0.5
+    - 0.4242
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Info badge
+    - Information badge
+    - 信息图标
+    - 徽章
+    semantic_type: label
+  - text: 详细了解此内容分级
+    center:
+    - 0.2174
+    - 0.4375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Learn more about this content rating
+    - Content rating info
+    - 了解内容分级
+    - 分级详情
+    semantic_type: link
+  - text: 安装
+    center:
+    - 0.5017
+    - 0.5117
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Install
+    - Download
+    - 下载
+    - 获取
+    semantic_type: button
+  - text: 在 Play 商店应用中查看
+    center:
+    - 0.5003
+    - 0.5655
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - View in Play Store app
+    - Open in Play Store
+    - 在Play商店中查看
+    semantic_type: link
+  - text: 分享
+    center:
+    - 0.3292
+    - 0.6216
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Share
+    - Send
+    - 共享
+    - 转发
+    semantic_type: button
+  - text: 添加到心愿单
+    center:
+    - 0.6024
+    - 0.6216
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add to wishlist
+    - Wishlist
+    - 加入心愿单
+    - 收藏
+    semantic_type: button
+  - text: 滚动到下一组
+    center:
+    - 0.9375
+    - 0.897
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Scroll to next group
+    - Next group
+    - 下一组
+    - 向右滚动
+    semantic_type: button
+  - text: 关于此应用
+    center:
+    - 0.0
+    - 0.0
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - About this app
+    - App info
+    - 应用信息
+    - 关于
+    semantic_type: label
+  - text: Home
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 主页
+    - 首页
+    - Home tab
+    semantic_type: tab
+  - text: Connection is secure
+    center:
+    - 0.1653
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Secure connection
+    - HTTPS
+    - 连接安全
+    - 安全连接
+    semantic_type: label
+  - text: New tab
+    center:
+    - 0.7181
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add tab
+    - 新建标签页
+    - 新标签
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Tab switcher
+    - Manage tabs
+    - 切换或关闭标签页
+    - 标签页管理器
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Menu
+    - Overflow menu
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  - text: Chinese (Simplified)
+    center:
+    - 0.299
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 简体中文
+    - 中文
+    - Simplified Chinese
+    - zh-CN
+    semantic_type: menu_item
+  - text: English
+    center:
+    - 0.5687
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 英文
+    - 英语
+    - en
+    - English language
+    semantic_type: menu_item
+  - text: Close
+    center:
+    - 0.9319
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Exit
+    - Dismiss
+    - 关闭
+    - 取消
+    semantic_type: button
+  description: Web browser view of a Google Play Store app listing page featuring
+    install, share, and wishlist options, content rating details, and an 'About this
+    app' section.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_16
+  elements:
+  - text: Google Play 徽标
+    center:
+    - 0.2431
+    - 0.1409
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Play logo
+    - Google Play badge
+    - Google Play 标志
+    semantic_type: label
+  - text: 搜索
+    center:
+    - 0.6854
+    - 0.1409
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Search
+    - 搜索按钮
+    - search bar
+    semantic_type: button
+  - text: 帮助中心
+    center:
+    - 0.8031
+    - 0.1409
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Help Center
+    - 帮助
+    - help
+    semantic_type: link
+  - text: 游戏
+    center:
+    - 0.1264
+    - 0.1992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Games
+    - 游戏标签
+    - games tab
+    semantic_type: tab
+  - text: 应用
+    center:
+    - 0.3753
+    - 0.1992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Apps
+    - 应用标签
+    - apps tab
+    semantic_type: tab
+  - text: 图书
+    center:
+    - 0.6271
+    - 0.1992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Books
+    - 图书标签
+    - books tab
+    semantic_type: tab
+  - text: 儿童
+    center:
+    - 0.8743
+    - 0.1992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Kids
+    - Children
+    - 儿童标签
+    semantic_type: tab
+  - text: 信息徽章
+    center:
+    - 0.5
+    - 0.4242
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Info badge
+    - 信息标志
+    - information badge
+    semantic_type: label
+  - text: 详细了解此内容分级
+    center:
+    - 0.2174
+    - 0.4375
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Learn more about content rating
+    - 内容分级详情
+    - learn more
+    semantic_type: link
+  - text: 安装
+    center:
+    - 0.5017
+    - 0.5117
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Install
+    - 安装按钮
+    - install app
+    semantic_type: button
+  - text: 在 Play 商店应用中查看
+    center:
+    - 0.5003
+    - 0.5655
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - View in Play Store app
+    - 在Play商店查看
+    - open in Play Store
+    semantic_type: link
+  - text: 分享
+    center:
+    - 0.3292
+    - 0.6216
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Share
+    - 分享按钮
+    - share app
+    semantic_type: button
+  - text: 添加到心愿单
+    center:
+    - 0.6024
+    - 0.6216
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add to wishlist
+    - 加入心愿单
+    - add to wishlist
+    semantic_type: button
+  - text: 屏幕截图图片
+    center:
+    - 0.1858
+    - 0.8769
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Screenshot image
+    - 截图
+    - screenshot
+    semantic_type: label
+  - text: 滚动到下一组
+    center:
+    - 0.9375
+    - 0.897
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Scroll to next group
+    - 下一组
+    - scroll next
+    semantic_type: button
+  - text: 关于此应用
+    center:
+    - 0.0
+    - 0.0
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - About this app
+    - 应用信息
+    - about app
+    semantic_type: link
+  - text: Home
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 首页
+    - 主页
+    - home tab
+    semantic_type: tab
+  - text: Connection is secure
+    center:
+    - 0.1653
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 连接安全
+    - 安全连接
+    - secure connection
+    semantic_type: label
+  - text: New tab
+    center:
+    - 0.7181
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 新标签页
+    - 新建标签
+    - new tab button
+    semantic_type: button
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 切换或关闭标签页
+    - 标签管理
+    - tab switcher
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 更多选项
+    - 更多
+    - more menu
+    - overflow menu
+    semantic_type: button
+  description: Mobile browser view of the Google Play Store listing page for an app,
+    where users can view screenshots, read app details, and install the app.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_17
+  elements:
+  - text: Search or type web address
+    center:
+    - 0.3809
+    - 0.3032
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - address bar
+    - omnibox
+    - search bar
+    - URL bar
+    - 搜索或输入网址
+    semantic_type: input
+  - text: Start voice search
+    center:
+    - 0.7764
+    - 0.3032
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - voice search
+    - microphone
+    - speak
+    - 语音搜索
+    semantic_type: button
+  - text: Search with your camera using Google Lens
+    center:
+    - 0.8931
+    - 0.3032
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Google Lens
+    - camera search
+    - visual search
+    - 镜头搜索
+    semantic_type: button
+  - text: Discover - off
+    center:
+    - 0.1465
+    - 0.5925
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Discover feed
+    - news feed
+    - 发现
+    - 资讯
+    semantic_type: toggle
+  - text: Options for Discover
+    center:
+    - 0.9368
+    - 0.5926
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Discover settings
+    - feed options
+    - 发现选项
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.0583
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - home page
+    - home button
+    - 主页
+    - 首页
+    semantic_type: button
+  - text: Manage account
+    center:
+    - 0.7181
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - account settings
+    - manage your Google account
+    - 管理账号
+    - 账户管理
+    semantic_type: menu_item
+  - text: Switch or close tabs
+    center:
+    - 0.825
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - tab switcher
+    - tabs
+    - switch tabs
+    - 切换标签页
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9417
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - menu
+    - three dots
+    - more
+    - 更多选项
+    semantic_type: button
+  description: Web browser homepage featuring a search bar with voice and camera options,
+    alongside navigation controls for tabs, account management, and settings.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_18
+  elements:
+  - text: Details
+    center:
+    - 0.2115
+    - 0.4337
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 详情
+    - 详细信息
+    - More Info
+    - Info
+    semantic_type: button
+  - text: SHARE
+    center:
+    - 0.6378
+    - 0.5981
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 分享
+    - 转发
+    - Send
+    - Share content
+    semantic_type: button
+  - text: CLOSE
+    center:
+    - 0.8219
+    - 0.5981
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 关闭
+    - Dismiss
+    - Cancel
+    - X
+    semantic_type: button
+  description: A details view displaying publication information with share and close
+    action buttons.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_19
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0798
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    - 向上导航
+    semantic_type: button
+  - text: More options
+    center:
+    - 0.9514
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Overflow menu
+    - Menu
+    - 更多选项
+    - 菜单
+    semantic_type: button
+  description: Top app bar featuring a navigate up button and a more options menu.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_20
+  elements:
+  - text: Catalogs
+    center:
+    - 0.1448
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Catalogue
+    - Library catalog
+    - 目录
+    semantic_type: tab
+  - text: Free books
+    center:
+    - 0.5
+    - 0.1585
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Free ebooks
+    - 免费书籍
+    semantic_type: menu_item
+  - text: Download thousands of free ebooks in English, French, Spanish, Italian and
+      German.
+    center:
+    - 0.5
+    - 0.2008
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Free ebooks description
+    - 下载免费电子书说明
+    semantic_type: label
+  - text: Browse
+    center:
+    - 0.1451
+    - 0.2654
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Explore
+    - Discover
+    - 浏览
+    semantic_type: tab
+  - text: Instituto Cervantes
+    center:
+    - 0.4708
+    - 0.3508
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cervantes Institute
+    - 塞万提斯学院
+    semantic_type: menu_item
+  - text: Add
+    center:
+    - 0.8931
+    - 0.834
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Add catalog
+    - 添加
+    semantic_type: button
+  - text: Home
+    center:
+    - 0.125
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Main
+    - 首页
+    semantic_type: tab
+  - text: My books
+    center:
+    - 0.375
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - My library
+    - Bookshelf
+    - 我的图书
+    semantic_type: tab
+  - text: Settings
+    center:
+    - 0.875
+    - 0.9282
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Preferences
+    - Options
+    - 设置
+    semantic_type: tab
+  description: Catalogs management screen displaying available ebook sources like
+    Free books and Instituto Cervantes with options to browse or add new catalogs,
+    alongside a bottom navigation bar.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_21
+  elements:
+  - text: Title
+    center:
+    - 0.5
+    - 0.4492
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 标题
+    - book title
+    - name
+    - title text
+    semantic_type: label
+  - text: URL
+    center:
+    - 0.5
+    - 0.5117
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 网址
+    - 链接
+    - web address
+    - link address
+    semantic_type: label
+  - text: CANCEL
+    center:
+    - 0.6538
+    - 0.5901
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 取消
+    - cancel button
+    - dismiss
+    semantic_type: button
+  - text: OK
+    center:
+    - 0.8347
+    - 0.5901
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 确定
+    - 确认
+    - confirm
+    - accept
+    semantic_type: button
+  description: URL input dialog allowing users to enter a web address with cancel
+    and confirm buttons.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_22
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0821
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - up arrow
+    - 返回
+    semantic_type: button
+  - text: Libraries by country
+    center:
+    - 0.3781
+    - 0.0819
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - country libraries
+    - 按国家划分的图书馆
+    - regional libraries
+    semantic_type: label
+  - text: International
+    center:
+    - 0.5
+    - 0.1537
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - global
+    - 国际
+    - worldwide
+    semantic_type: menu_item
+  - text: Argentina
+    center:
+    - 0.5
+    - 0.2255
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - AR
+    - 阿根廷
+    - Argentine
+    semantic_type: menu_item
+  - text: Belgique
+    center:
+    - 0.5
+    - 0.2973
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Belgium
+    - BE
+    - 比利时
+    semantic_type: menu_item
+  - text: Canada
+    center:
+    - 0.5
+    - 0.3691
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - CA
+    - 加拿大
+    - Canadian
+    semantic_type: menu_item
+  - text: France
+    center:
+    - 0.5
+    - 0.4409
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - FR
+    - 法国
+    - French
+    semantic_type: menu_item
+  - text: Italia
+    center:
+    - 0.5
+    - 0.5127
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Italy
+    - IT
+    - 意大利
+    semantic_type: menu_item
+  - text: Suisse
+    center:
+    - 0.5
+    - 0.5845
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Switzerland
+    - CH
+    - 瑞士
+    semantic_type: menu_item
+  description: Library selection page with a list of countries to choose a regional
+    library.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_23
+  elements:
+  - text: System preferences
+    center:
+    - 0.3778
+    - 0.2955
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - System language
+    - Default language
+    - 系统偏好设置
+    - 系统语言
+    semantic_type: menu_item
+  - text: Basque
+    center:
+    - 0.2635
+    - 0.3673
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Euskara
+    - 巴斯克语
+    - Basque language
+    semantic_type: menu_item
+  - text: Catalan
+    center:
+    - 0.2649
+    - 0.4391
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Català
+    - 加泰罗尼亚语
+    - Catalan language
+    semantic_type: menu_item
+  - text: Croatian
+    center:
+    - 0.2726
+    - 0.5109
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Hrvatski
+    - 克罗地亚语
+    - Croatian language
+    semantic_type: menu_item
+  - text: English
+    center:
+    - 0.2625
+    - 0.5827
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 英语
+    - English language
+    - EN
+    semantic_type: menu_item
+  - text: French
+    center:
+    - 0.2576
+    - 0.6545
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Français
+    - 法语
+    - French language
+    - FR
+    semantic_type: menu_item
+  - text: Galician
+    center:
+    - 0.2691
+    - 0.7263
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Galego
+    - 加利西亚语
+    - Galician language
+    semantic_type: menu_item
+  - text: German
+    center:
+    - 0.267
+    - 0.7981
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Deutsch
+    - 德语
+    - German language
+    - DE
+    semantic_type: menu_item
+  - text: Italian
+    center:
+    - 0.2521
+    - 0.8699
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Italiano
+    - 意大利语
+    - Italian language
+    - IT
+    semantic_type: menu_item
+  - text: Japanese
+    center:
+    - 0.2837
+    - 0.9417
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 日本語
+    - 日语
+    - Japanese language
+    - JA
+    semantic_type: menu_item
+  - text: Spanish
+    center:
+    - 0.0
+    - 0.0
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Español
+    - 西班牙语
+    - Spanish language
+    - ES
+    semantic_type: menu_item
+  description: Language selection page under system preferences showing a list of
+    available languages to choose from.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_24
+  elements:
+  - text: System preferences
+    center:
+    - 0.7781
+    - 0.2571
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 系统偏好设置
+    - 系统设置
+    - system settings
+    - preferences
+    semantic_type: setting
+  - text: Light
+    center:
+    - 0.6632
+    - 0.3109
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 浅色
+    - 亮色
+    - light mode
+    - light theme
+    semantic_type: menu_item
+  - text: Dark
+    center:
+    - 0.6604
+    - 0.3647
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 深色
+    - 暗色
+    - dark mode
+    - dark theme
+    semantic_type: menu_item
+  description: Theme settings screen where users can select between Light and Dark
+    system preferences.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_25
+  elements:
+  - text: Default
+    center:
+    - 0.7736
+    - 0.3199
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 默认
+    - default theme
+    - standard
+    - 默认主题
+    semantic_type: menu_item
+  - text: Blue
+    center:
+    - 0.7524
+    - 0.3737
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 蓝色
+    - blue theme
+    - blu
+    - 海蓝色
+    semantic_type: menu_item
+  - text: Green
+    center:
+    - 0.7639
+    - 0.4276
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 绿色
+    - green theme
+    - 护眼绿
+    - 豆沙绿
+    semantic_type: menu_item
+  - text: Orange
+    center:
+    - 0.774
+    - 0.4814
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 橙色
+    - orange theme
+    - 橘色
+    - 暖橙色
+    semantic_type: menu_item
+  - text: Red
+    center:
+    - 0.7486
+    - 0.5353
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 红色
+    - red theme
+    - 赤色
+    - 暗红色
+    semantic_type: menu_item
+  - text: Yellow
+    center:
+    - 0.7688
+    - 0.5891
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - 黄色
+    - yellow theme
+    - 暖黄
+    - 羊皮纸
+    semantic_type: menu_item
+  description: Color selection screen allowing users to choose from default, blue,
+    green, orange, red, and yellow options.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_26
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - Go back
+    - 返回
+    semantic_type: button
+  - text: Cantook
+    center:
+    - 0.4997
+    - 0.3518
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - App name
+    - Title
+    - Cantook app
+    - 应用名称
+    semantic_type: label
+  - text: All Cantook notifications
+    center:
+    - 0.4125
+    - 0.4444
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Notifications
+    - App notifications
+    - 通知
+    - All notifications
+    semantic_type: menu_item
+  - text: You haven't allowed notifications from this app
+    center:
+    - 0.4111
+    - 0.5776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Notifications disabled
+    - Permission denied
+    - 未允许通知
+    - Notification status
+    semantic_type: label
+  description: Notifications list screen showing an empty state message indicating
+    that the user has not allowed notifications for the Cantook app.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_27
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+  - text: Cantook
+    center:
+    - 0.4997
+    - 0.3518
+    fixed: false
+    found_at_scroll: 0
+  - text: All Cantook notifications
+    center:
+    - 0.4125
+    - 0.4444
+    fixed: false
+    found_at_scroll: 0
+  - text: Other
+    center:
+    - 0.5097
+    - 0.5417
+    fixed: false
+    found_at_scroll: 0
+  - text: Check new loan notifications
+    center:
+    - 0.4597
+    - 0.6072
+    fixed: false
+    found_at_scroll: 0
+  - text: Allow notification dot
+    center:
+    - 0.2878
+    - 0.6861
+    fixed: false
+    found_at_scroll: 0
+  description: Notification settings page where users can manage all Cantook notifications,
+    check loan notifications, and toggle notification dots.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_28
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Go back
+    - Up arrow
+    semantic_type: button
+  - text: Check new loan notifications
+    center:
+    - 0.5
+    - 0.3992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Loan alerts
+    - New loan notifications
+    - Borrowing alerts
+    semantic_type: setting
+  - text: Cantook
+    center:
+    - 0.4997
+    - 0.4269
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cantook app
+    - Cantook reader
+    semantic_type: label
+  - text: Show notifications
+    center:
+    - 0.4125
+    - 0.5152
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Allow notifications
+    - Enable notifications
+    - Notification switch
+    semantic_type: toggle
+  - text: Default
+    center:
+    - 0.5486
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - System default
+    - Standard
+    - Default option
+    semantic_type: label
+  - text: May ring or vibrate based on phone settings
+    center:
+    - 0.5097
+    - 0.6675
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Ring or vibrate
+    - System dependent
+    - Phone settings
+    semantic_type: label
+  - text: Silent
+    center:
+    - 0.5486
+    - 0.7474
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Mute
+    - No sound
+    - Quiet mode
+    semantic_type: label
+  - text: Pop on screen
+    center:
+    - 0.3295
+    - 0.8421
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Pop-up
+    - Show on screen
+    - Heads-up
+    semantic_type: setting
+  - text: When device is unlocked, show notifications as a banner across the top of
+      the screen
+    center:
+    - 0.4806
+    - 0.8859
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Banner notification
+    - Top banner
+    - Unlock banner
+    semantic_type: label
+  - text: Sound
+    center:
+    - 0.2441
+    - 0.9619
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Notification sound
+    - Audio
+    - Ringtone
+    semantic_type: setting
+  - text: Default notification sound
+    center:
+    - 0.3701
+    - 0.9768
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - System sound
+    - Default ringtone
+    - Standard notification
+    semantic_type: label
+  description: Notification settings page for loan alerts where users can configure
+    notification behavior, visibility, and sound preferences.
+  scrollable: true
+  scroll_direction: vertical
+- id: screen_29
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Back
+    - Up
+    - 返回
+    semantic_type: button
+  - text: Cantook
+    center:
+    - 0.4997
+    - 0.4269
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cantook app
+    - Cantook reader
+    semantic_type: label
+  - text: Show notifications
+    center:
+    - 0.4125
+    - 0.5152
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Notifications
+    - Enable notifications
+    - 通知
+    semantic_type: toggle
+  description: Top app bar featuring a back navigation button, the app title, and
+    a notifications icon.
+  scrollable: false
+  scroll_direction: ''
+- id: screen_30
+  elements:
+  - text: Navigate up
+    center:
+    - 0.0681
+    - 0.0776
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - back
+    - go back
+    - 返回
+    - up button
+    semantic_type: button
+  - text: Check new loan notifications
+    center:
+    - 0.5
+    - 0.3992
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - check notifications
+    - new loan alerts
+    - 查看新借阅通知
+    semantic_type: button
+  - text: Cantook
+    center:
+    - 0.4997
+    - 0.4269
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - Cantook app
+    - Cantook reader
+    - Cantook阅读器
+    semantic_type: label
+  - text: Show notifications
+    center:
+    - 0.4125
+    - 0.5152
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - enable notifications
+    - 通知显示
+    - notification settings
+    semantic_type: toggle
+  - text: Default
+    center:
+    - 0.5486
+    - 0.6343
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - default setting
+    - 默认
+    - default option
+    semantic_type: label
+  - text: Silent
+    center:
+    - 0.5486
+    - 0.7106
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - silent mode
+    - 静音
+    - no sound
+    semantic_type: label
+  - text: No sound or vibration
+    center:
+    - 0.5097
+    - 0.7438
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - silent
+    - 无声音无振动
+    - mute
+    semantic_type: label
+  - text: Minimize
+    center:
+    - 0.2736
+    - 0.8421
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - collapse
+    - 最小化
+    - minimize notifications
+    semantic_type: button
+  - text: In the pull-down shade, collapse notifications to one line
+    center:
+    - 0.4806
+    - 0.8768
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - collapse notifications
+    - 下拉通知栏折叠通知
+    - notification collapse
+    semantic_type: label
+  - text: Show notification dot
+    center:
+    - 0.4049
+    - 0.9473
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - notification badge
+    - 显示通知圆点
+    - notification indicator
+    semantic_type: toggle
+  - text: Override Do Not Disturb
+    center:
+    - 0.4299
+    - 0.9856
+    fixed: false
+    found_at_scroll: 0
+    aliases:
+    - bypass DND
+    - 覆盖勿扰模式
+    - override DND
+    semantic_type: toggle
+  description: Notification settings screen allowing users to configure alert behaviors,
+    sound options, and Do Not Disturb overrides for the Cantook app.
+  scrollable: true
+  scroll_direction: vertical
+screen_macros:
+  screen_0:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  screen_1:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 230
+    y: 452
+    wait: 1.5
+  screen_2:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2896
+    wait: 1.5
+  screen_3:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  screen_4:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  screen_5:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 452
+    wait: 1.5
+  screen_6:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 862
+    y: 452
+    wait: 1.5
+  screen_7:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 1220
+    y: 452
+    wait: 1.5
+  screen_8:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 494
+    wait: 1.5
+  screen_9:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 463
+    y: 1277
+    wait: 1.5
+  screen_10:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 1286
+    y: 2602
+    wait: 1.5
+  screen_11:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 412
+    y: 1562
+    wait: 1.5
+  screen_12:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 406
+    y: 1758
+    wait: 1.5
+  screen_13:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 488
+    y: 2150
+    wait: 1.5
+  screen_14:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 180
+    y: 2896
+    wait: 1.5
+  screen_15:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 529
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  screen_16:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 540
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 862
+    y: 452
+    wait: 1.5
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  screen_17:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 494
+    wait: 1.5
+  - action: tap
+    x: 98
+    y: 256
+    wait: 1.5
+  screen_18:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 720
+    y: 494
+    wait: 1.5
+  - action: tap
+    x: 1266
+    y: 2924
+    wait: 1.5
+  screen_19:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 463
+    y: 1277
+    wait: 1.5
+  - action: tap
+    x: 98
+    y: 256
+    wait: 1.5
+  screen_20:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 1286
+    y: 2602
+    wait: 1.5
+  - action: tap
+    x: 209
+    y: 256
+    wait: 1.5
+  screen_21:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 1286
+    y: 2602
+    wait: 1.5
+  - action: tap
+    x: 1034
+    y: 2382
+    wait: 1.5
+  screen_22:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 900
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 1286
+    y: 2602
+    wait: 1.5
+  - action: tap
+    x: 1034
+    y: 2556
+    wait: 1.5
+  screen_23:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 412
+    y: 1562
+    wait: 1.5
+  - action: tap
+    x: 185
+    y: 466
+    wait: 1.5
+  screen_24:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 412
+    y: 1562
+    wait: 1.5
+  - action: tap
+    x: 1200
+    y: 662
+    wait: 1.5
+  screen_25:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 412
+    y: 1562
+    wait: 1.5
+  - action: tap
+    x: 1316
+    y: 858
+    wait: 1.5
+  screen_26:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 412
+    y: 1562
+    wait: 1.5
+  - action: tap
+    x: 228
+    y: 1054
+    wait: 1.5
+  screen_27:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 412
+    y: 1562
+    wait: 1.5
+  - action: tap
+    x: 402
+    y: 256
+    wait: 1.5
+  screen_28:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 406
+    y: 1758
+    wait: 1.5
+  - action: tap
+    x: 832
+    y: 400
+    wait: 1.5
+  screen_29:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 406
+    y: 1758
+    wait: 1.5
+  - action: tap
+    x: 256
+    y: 568
+    wait: 1.5
+  screen_30:
+  - action: force_stop
+    package: com.aldiko.android
+    wait: 0.5
+  - action: launch
+    package: com.aldiko.android
+    wait: 3.0
+  - action: tap
+    x: 1260
+    y: 2896
+    wait: 1.5
+  - action: tap
+    x: 488
+    y: 2150
+    wait: 1.5
+  - action: tap
+    x: 360
+    y: 2264
+    wait: 1.5
+launch_behavior: always_home
+common_tasks:
+- View recently read publications
+- Browse and download free ebooks from the catalog
+- Import local files or folders into the library
+- Customize app theme, language, and accent colors
+- Add and manage external library catalogs via URL
+- Configure loan alert notifications
+- View detailed information about a selected book
+- Browse books by categories such as authors and collections
+known_limitations:
+- Adding new library catalogs requires manually entering a URL in a dialog box
+- Notification screens show an empty state if system-level permissions are not granted
+- Opening certain files may trigger the Android system 'Open with' dialog, interrupting
+  the in-app experience
+- App store links open in an in-app web browser rather than launching the native store
+  app directly
