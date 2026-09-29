@@ -73,6 +73,10 @@
       &nbsp;&nbsp;
       <a href="#-phonecli-从-app-界面到移动智能体的可调用命令" style="background: rgba(255,255,255,0.15); color: white; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; border: 1px solid rgba(255,255,255,0.35);">详细阅读 ↓</a>
     </p>
+    <p style="margin: 16px 0 0 0; color: rgba(255,255,255,0.95); font-size: 14px;">
+      📄 <strong style="color: white;">PhoneCLI 论文</strong> —— 在 arXiv 上阅读全文：
+      <a href="https://arxiv.org/abs/2609.35671"><img src="https://img.shields.io/badge/📄arXiv-2609.35671-ff6b6b?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=1a1a2e" alt="arXiv 2609.35671" /></a>
+    </p>
   </div>
 </div>
 
