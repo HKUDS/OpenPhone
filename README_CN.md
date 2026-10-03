@@ -16,8 +16,6 @@
 
 <div align="center">
   <img src="./demo/lightagent_demo.gif" width="800" height="400" alt="harness 在 AndroidLab 基准上驱动 Android 模拟器">
-  <br/>
-  <em>harness 正在 AndroidLab 上运行任务。</em>
 </div>
 
 <div align="center">

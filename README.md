@@ -16,8 +16,6 @@
 
 <div align="center">
   <img src="./demo/lightagent_demo.gif" width="800" height="400" alt="The harness driving an Android emulator on the AndroidLab benchmark">
-  <br/>
-  <em>The harness running tasks on AndroidLab.</em>
 </div>
 
 <div align="center">
