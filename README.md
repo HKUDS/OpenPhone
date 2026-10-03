@@ -15,7 +15,9 @@
 </div>
 
 <div align="center">
-  <img src="./demo/lightagent_demo.gif" width="800" height="400" alt="演示动画">
+  <img src="./demo/lightagent_demo.gif" width="800" height="400" alt="The harness driving an Android emulator on the AndroidLab benchmark">
+  <br/>
+  <em>The harness running tasks on AndroidLab.</em>
 </div>
 
 <div align="center">
@@ -54,7 +56,7 @@ So we did not build a bigger model. We built the **model and the harness togethe
 
 | | |
 |---|---|
-| **① 🖥 Harness**<br/>*GUI + CLI, two modalities* | Offline, a BFS crawler compiles an app's navigation into a YAML **app map**, and every screen becomes one deterministic command. Online, those commands replay over ADB in **sub-second time at zero VLM cost**, while GUI mode handles screens the map has never seen. A failed CLI path falls back to GUI — so **compilation can only help**. |
+| **① 🖥 Harness**<br/>*GUI + CLI, two modalities* | Offline, a BFS crawler compiles an app's navigation into a YAML **app map**, and every screen becomes one deterministic command. Online, those commands replay deterministically on the device — WebDriverAgent on iOS, ADB on Android — in **sub-second time at zero VLM cost**, while GUI mode handles screens the map has never seen. A failed CLI path falls back to GUI — so **compilation can only help**. |
 | **② 📱 On-device first**<br/>*one request, three tiers* | A request is served by **CLI → on-device model → cloud**: the CLI tier absorbs navigation at zero model cost, and only the remaining steps ever reach a model. End to end this cuts cloud calls by **~10%**, and an efficient memory (**10–20 steps of context**) is what lets a single phone keep running. |
 | **③ 🤖 Model**<br/>*open and replaceable* | The CLI path needs **no model at all**, and the fallback path takes **any** model — a general LLM or a GUI-tuned one. The open 3B on-device model we ship is the engine, not the headline. |
 
@@ -110,7 +112,7 @@ Almost every GUI agent today runs the same loop: **screenshot → call a vision-
 
 So the conclusion was not "train a bigger model". It was: **compile navigation once, replay it deterministically, and keep the model for what is genuinely new.** That is what PhoneCLI does — and the rest of this repository is the stack built around it.
 
-
+---
 
 ## 🖥 PhoneCLI: From App Interfaces To Callable Commands For Mobile Agents
 
@@ -144,13 +146,19 @@ screen_macros:
   screen_1: [force_stop, launch, tap(195, 126)]  # exact replay sequence
 ```
 
-**2. Run a task** — The agent maps a natural language task to a specific macro
-operation, replays it deterministically, then optionally verifies with a single
-VLM screenshot check. Most routine tasks complete with **0–1 VLM calls**.
+**2. Run a task** — The agent maps a natural language task to a macro operation
+with a single **text-only** call (no screenshot), replays it deterministically,
+then optionally verifies with one screenshot check. A routine task therefore
+costs **one text-only routing call plus at most one screenshot check** — not one
+VLM call per step.
 
 **3. Handle the unexpected** — When a task doesn't match any macro (e.g. "Find
 restaurants near me that are open late"), the agent falls back to pure VLM
 reasoning. The system gracefully degrades to GUI mode only when needed.
+
+**4. Compose across apps** — A task that spans several apps is decomposed into
+single-app subtasks first, each served by its own app's map and commands
+(`run.py --app-map` is repeatable for exactly this case).
 
 ### Why This Matters
 
@@ -173,8 +181,9 @@ python phonecli/run.py --interactive
 ```
 
 The package ships with **pre-built maps for 8 apps** (微博, foodpanda,
-Calendar, 京东, Dianping, 小红书, Music, Settings), each covering 20–50 screens
-and hundreds of elements.
+Calendar, 京东, Dianping, 小红书, Music, Settings). Each covers up to 50 screens
+— 50 is the crawler's default cap — with 400–1,300 elements per app:
+**400 screens and 6,366 elements** in total.
 
 ➜ **[Full iOS real-device documentation](./phonecli/README.md)** — setup, WebDriverAgent,
 app map building, CLI reference, troubleshooting.
@@ -185,14 +194,14 @@ pure-VLM baseline, and judging.
 
 ---
 
-
+---
 
 ## 📱 On-Device First: CLI → Device → Cloud
 
-A request is served cheapest-tier-first:
+Each request is routed to the **cheapest tier that can serve it**, escalating only when that tier cannot:
 
 1. **🖥 CLI** — if a compiled command covers the navigation part of the task, it runs on the device with **zero model calls**: deterministic, sub-second replay.
-2. **📱 On-device model** — whatever is left is handled by a local vision-language model, so no screen content has to leave the phone.
+2. **📱 On-device model** — whatever the CLI path does not cover is handled by a local vision-language model, so no screen content has to leave the phone.
 3. **☁️ Cloud** — only what the local model genuinely cannot do is escalated.
 
 The route is chosen dynamically: task complexity is assessed at runtime, and execution re-routes between local and cloud as the run progresses and failures appear.
@@ -208,9 +217,11 @@ Running long tasks on a phone is a memory problem before it is a model problem:
 ### 📈 Measured effect
 
 <div align="center">
-  <img src="./figures/device_cloud_per.png" width="49%" />
-  <img src="./figures/device_cloud_reduce.png" width="47%" />
+  <img src="./figures/device_cloud_per.png" width="49%" alt="Share of execution steps handled by the cloud versus the on-device model" />
+  <img src="./figures/device_cloud_reduce.png" width="47%" alt="Reduction in cloud API calls once on-device execution is added" />
 </div>
+
+*Left: how execution steps split between cloud and on-device models. Right: the resulting reduction in cloud API calls.*
 
 - **Cloud still handles ~65% of the steps.** Small on-device models cannot carry all of the reasoning — which is exactly why the CLI tier matters: it removes the navigation share of the work at zero model cost, before any model is consulted.
 - **~10% fewer cloud API calls.** Adding on-device execution to a cloud-only baseline cuts cloud invocations by roughly a tenth.
@@ -220,7 +231,7 @@ The CLI tier's own contribution is measured separately, on the AndroidLab suite 
 
 ---
 
-
+---
 
 ## 🤖 The Model: Open, Replaceable Engine
 
@@ -271,11 +282,11 @@ Average inference time per step with vLLM. Note that GLM-4.1V-9B-Thinking could 
 - **3.5× faster** than GLM-4.1V-9B-Thinking when OpenPhone runs on one 3090 while GLM needs two; **4× faster** when both use two.
 - The 9B model's inability to run on a single 3090 is precisely the deployment constraint that matters at the edge.
 
-<img src="./figures/model_large.png" style="zoom:100%;" />
+<img src="./figures/model_large.png" style="zoom:100%;" alt="OpenPhone overview: an efficient reasoning GUI agent, on-device tuning with group relative policy optimization, and the device-cloud collaborative agent system" />
 
 ---
 
-
+---
 
 ## 🚀 Quick Start
 
@@ -297,10 +308,11 @@ python phonecli/run.py --task "Turn on airplane mode"
 
 **Deploy the model (optional)** — the CLI path does not need a model at all. Inference scripts live in [`vllm_script/`](./vllm_script/): download the weights, serve them with vLLM, and point the agent config at the endpoint.
 
-**Cloud credentials** — needed by the GUI fallback path and the LLM judge. Configure them in [`evaluation/evaluation.py`](./evaluation/evaluation.py) (lines 63, 75, 81); a friendlier configuration interface is in development.
+**Credentials** — the shipped example config runs against a local vLLM server ([`configs/example_xml_cloud_hyper.yaml`](./configs/example_xml_cloud_hyper.yaml), `api_base: http://localhost:8002/v1`), so it needs no key. Cloud configs read `${OPENROUTER_API_KEY}` from the environment instead (`export OPENROUTER_API_KEY=...`, resolved by [`config_env.py`](./config_env.py)). The legacy `ScreenshotTask` path still has three hardcoded placeholders in [`evaluation/evaluation.py`](./evaluation/evaluation.py) (lines 63, 75, 81), and the LLM judge takes its key from [`evaluation/tasks/llm_evaluator.py`](./evaluation/tasks/llm_evaluator.py) (lines 10 and 12) or from `generate_result.py --api_key`.
 
 Looking for the benchmark? Environment setup, batch scripts, judging and results all live in [Evaluation](#-evaluation).
 
+---
 
 ## 🧪 Evaluation
 
@@ -315,13 +327,14 @@ Installation: follow the official [AndroidLab](https://github.com/THUDM/Android-
 ### Running tasks
 
 ```bash
-python eval.py -n test_name -c your path to config.yaml --task_id task_id
-```
-
-A single task, for example:
-
-```bash
+# one task
 python eval.py -n all_cloud_v1_hyper -c ./configs/example_xml_cloud_hyper.yaml --task_id zoom_1
+
+# several tasks
+python eval.py -n all_cloud_v1_hyper -c ./configs/example_xml_cloud_hyper.yaml --task_id zoom_1 clock_1
+
+# every task in the config (omit --task_id)
+python eval.py -n all_cloud_v1_hyper -c ./configs/example_xml_cloud_hyper.yaml
 ```
 
 Batch scripts live in [`test_script/`](./test_script):
@@ -329,7 +342,7 @@ Batch scripts live in [`test_script/`](./test_script):
 - `all_test_cloud_v1_hyper.sh` — all 138 AndroidLab benchmark tasks.
 - `all_test_cloud_v1_hyper_add.sh` — tasks for four additional mobile apps.
 
-Beyond the 138 AndroidLab tasks, the repository ships **25+ additional tasks** across popular mobile apps for real-world validation — see [Additional Apps Documentation](./docs/new_apps.md).
+Beyond the 138 AndroidLab tasks, the repository ships **25 additional tasks** across four more mobile apps (Chrome, Gmail, TikTok, Reddit) — see [Additional Apps Documentation](./docs/new_apps.md).
 
 The Android side of the harness ships compiled app maps and its own runner in [`phonecli_android/`](./phonecli_android/README.md): 9 apps / 138 tasks, one map per app, plus the pure-VLM baseline used for the comparison below.
 
@@ -375,7 +388,7 @@ Ablation over the nine AndroidLab apps: the full harness, the harness **without 
 
 ---
 
-
+---
 
 ## 🌟 Citation
 
@@ -398,7 +411,7 @@ If you find this work helpful to your research, please kindly consider citing ou
 }
 ```
 
-
+---
 
 ## 🔗 Related Projects
 
@@ -408,7 +421,7 @@ OpenPhone builds upon excellent open-source projects. We sincerely thank their a
 - [R1-V](https://github.com/StarsfieldAI/R1-V) - Implementation details for the GRPO training methodology.
 - [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory) - The unified training framework enabling efficient model fine-tuning.
 
-
+---
 
 ## 📜 License
 
@@ -426,5 +439,3 @@ This project is released under the [MIT License](./LICENSE).
   <em> ❤️ Thanks for visiting ✨ OpenPhone!</em><br><br>
   <img src="https://visitor-badge.laobi.icu/badge?page_id=HKUDS.OpenPhone&style=for-the-badge&color=00d4ff" alt="Views">
 </p>
-
-

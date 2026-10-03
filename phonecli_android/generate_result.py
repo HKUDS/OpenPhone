@@ -218,7 +218,7 @@ def parse_args():
     group.add_argument("--total_num", type=int, default=138)
     group.add_argument("--judge_model", type=str, default="glm4")
     group.add_argument("--api_base", type=str, default="")
-    group.add_argument("--api_key", type=str, default="439150ab4245c97b3a99bf11671503ac.frQoavSHwVINb8Fn")
+    group.add_argument("--api_key", type=str, default="", help="API key for the judge model; unused placeholder, prefer evaluation/tasks/llm_evaluator.py")
     args = parser.parse_args()
     return args
 
