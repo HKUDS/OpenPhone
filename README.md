@@ -454,6 +454,13 @@ The trade-off is clear: while larger models like GLM-4.1V-9B-Thinking achieve hi
 If you find this work helpful to your research, please kindly consider citing our paper.
 
 ```
+@article{jiang2026phonecli,
+  title={PhoneCLI: From App Interfaces to Callable Commands for Mobile Agents},
+  author={Jiang, Yangqin and Xu, Lingrui and Huang, Chao},
+  journal={arXiv preprint arXiv:2609.35671},
+  year={2026}
+}
+
 @inproceedings{jiang2026openphone,
   title={OpenPhone: Mobile Agentic Foundation Models},
   author={Jiang, Yangqin and Huang, Chao},
