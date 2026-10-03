@@ -1,8 +1,8 @@
 <div align="center">
   <picture>
-      <img src="./figures/phoneagent_logo.png" width="20%" style="border: none; box-shadow: none;">
+      <img src="./figures/phonecli_log.png" width="22%" style="border: none; box-shadow: none;" alt="PhoneCLI">
   </picture>
-</div >
+</div>
 
 <div align="center">
 
@@ -45,16 +45,18 @@
 </div>
 
 <div align="center">
-  <img src="./figures/phonecli_framework.png" width="92%" alt="PhoneCLI: offline compilation → online invocation → runtime interpretation" />
+  <img src="./figures/phone_cli.png" width="78%" alt="PhoneCLI: build phase (offline) and runtime phase (online)" />
 </div>
 
 **The bottleneck of phone agents was never model size.** Nearly every GUI agent today runs the same loop — screenshot, call a vision-language model (VLM), emit an action. It is slow (2–5 s per step), expensive (every screenshot is an API call), brittle (VLMs hallucinate coordinates), and it has to be online: your screen leaves the device. That is at odds with what a phone is — on-device, real-time, private. And most of what that loop does is **navigation**, which is static, ordered, and repeated ten thousand times.
 
 So we did not build a bigger model. We built the **model and the harness together**:
 
-- **① 🖥 Harness — GUI + CLI, two modalities.** Offline, a BFS crawler compiles an app's navigation into a YAML **app map**, and every screen becomes one deterministic command. Online, those commands replay over ADB in **sub-second time at zero VLM cost**, while GUI mode handles screens the map has never seen. A failed CLI path falls back to GUI — so **compilation can only help**.
-- **② 📱 On-device first — one request, three tiers.** A request is served by **CLI → on-device model → cloud**: the CLI tier absorbs navigation at zero model cost, and only the remaining steps ever reach a model. End to end this cuts cloud calls by **~10%**, and an efficient memory (**10–20 steps of context**) is what lets a single phone keep running.
-- **③ 🤖 Model — open and replaceable.** The CLI path needs **no model at all**, and the fallback path takes **any** model — a general LLM or a GUI-tuned one. The open 3B on-device model we ship is the engine, not the headline.
+| | |
+|---|---|
+| **① 🖥 Harness**<br/>*GUI + CLI, two modalities* | Offline, a BFS crawler compiles an app's navigation into a YAML **app map**, and every screen becomes one deterministic command. Online, those commands replay over ADB in **sub-second time at zero VLM cost**, while GUI mode handles screens the map has never seen. A failed CLI path falls back to GUI — so **compilation can only help**. |
+| **② 📱 On-device first**<br/>*one request, three tiers* | A request is served by **CLI → on-device model → cloud**: the CLI tier absorbs navigation at zero model cost, and only the remaining steps ever reach a model. End to end this cuts cloud calls by **~10%**, and an efficient memory (**10–20 steps of context**) is what lets a single phone keep running. |
+| **③ 🤖 Model**<br/>*open and replaceable* | The CLI path needs **no model at all**, and the fallback path takes **any** model — a general LLM or a GUI-tuned one. The open 3B on-device model we ship is the engine, not the headline. |
 
 ➜ **[Full iOS real-device documentation](./phonecli/README.md)** — setup, WebDriverAgent, app map building, CLI reference, troubleshooting.
 
@@ -116,11 +118,11 @@ So the conclusion was not "train a bigger model". It was: **compile navigation o
 
 Instead of treating every task as a novel GUI exploration, **PhoneCLI compiles an app's navigation into callable commands**. Offline, it explores the app from the outside and records what it finds into an **app map** — screens, interactive elements, and the edges between them. Online, a task is routed to one of those commands and replayed deterministically; a model is consulted only for what is genuinely new, or to verify the result.
 
-<div align="center">
-  <img src="./figures/phone_cli.png" width="72%" alt="PhoneCLI: build phase (offline) and runtime phase (online)" />
-</div>
-
 ### How It Works
+
+<div align="center">
+  <img src="./figures/phonecli_framework.png" width="92%" alt="PhoneCLI pipeline: Stage 1 offline compilation, Stage 2 online invocation, Stage 3 runtime interpretation" />
+</div>
 
 **1. Build an app map** — A BFS crawler systematically explores every screen of
 an app via WebDriverAgent, recording all tappable elements, their coordinates,
