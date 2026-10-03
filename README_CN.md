@@ -1,6 +1,6 @@
 <div align="center">
   <picture>
-      <img src="./figures/phonecli_log.png" width="22%" style="border: none; box-shadow: none;" alt="PhoneCLI">
+      <img src="./figures/phonecli_log.png" width="18%" style="border: none; box-shadow: none;" alt="PhoneCLI">
   </picture>
 </div>
 
