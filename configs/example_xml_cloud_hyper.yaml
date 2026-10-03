@@ -14,8 +14,8 @@ task:
         request_interval: 3
 
 eval:
-    avd_base: /Users/jiangyangqin/.android/avd
+    avd_base: "${ANDROID_AVD_BASE:-~/.android/avd}"
     avd_name: Pixel_7_Pro_API_33
     avd_log_dir: ./logs/avd
-    android_sdk_path: /Users/jiangyangqin/Library/Android/sdk
+    android_sdk_path: "${ANDROID_SDK_PATH:-~/Library/Android/sdk}"
     show_avd: true

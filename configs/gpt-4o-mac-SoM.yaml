@@ -15,10 +15,10 @@ task:
     mode: "in_app"
 
 eval:
-  avd_base: /Users/[Your user name]/.android/avd
+  avd_base: "${ANDROID_AVD_BASE:-~/.android/avd}"
   avd_name: Pixel_7_Pro_API_33
   avd_log_dir: ./logs/evaluation
-  android_sdk_path: /Users/[Your user name]/Library/Android/sdk
+  android_sdk_path: "${ANDROID_SDK_PATH:-~/Library/Android/sdk}"
   show_avd: false
 
 

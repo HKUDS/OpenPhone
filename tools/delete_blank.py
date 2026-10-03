@@ -1,7 +1,8 @@
 import os
 import shutil
+import sys
 
-folder = "/Users/xuyifan/Desktop/agent/pipeline-mobile/logs/evaluation"
+folder = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("EVAL_LOG_DIR", "./logs/evaluation")
 files = os.listdir(folder)
 
 for file in files:
