@@ -6,12 +6,12 @@
 
 <div align="center">
 
-# ✨OpenPhone✨: Mobile Agentic Foundation Models for AI Phone
+# ✨PhoneCLI✨: Making ALL Mobile Apps Agent-Native
 
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=24&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Welcome+to+OpenPhone;Mobile+Agentic+Foundation+Models;AI+Phone" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=24&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Compile+once,+Replay+forever.;Making+ALL+Mobile+Apps+Agent-Native;Model+%2B+Harness" alt="Compile once, replay forever." />
 </div>
 
 <div align="center">
@@ -32,6 +32,7 @@
       <a href="./Communication.md"><img src="https://img.shields.io/badge/WeChat-Group-07c160?style=for-the-badge&logo=wechat&logoColor=white&labelColor=1a1a2e"></a>
       <a href=""><img src="https://img.shields.io/badge/Platform-Android%20%7C%20iOS-d3d3d3?style=for-the-badge&logo=android&logoColor=white&labelColor=1a1a2e"/></a>
       <a href="./README_CN.md"><img src="https://img.shields.io/badge/📖中文文档-e74c3c?style=for-the-badge&logo=readthedocs&logoColor=white&labelColor=1a1a2e"/></a>
+      <a href='https://arxiv.org/abs/2609.35671'><img src='https://img.shields.io/badge/📄arXiv-2609.35671-ff6b6b?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=1a1a2e'></a>
       <a href='https://arxiv.org/abs/2510.22009'><img src='https://img.shields.io/badge/📄arXiv-2510.22009-ff6b6b?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=1a1a2e'></a>
     </p>
   </div>
@@ -43,43 +44,25 @@
   <div style="width: 100%; height: 2px; margin: 20px 0; background: linear-gradient(90deg, transparent, #00d9ff, transparent);"></div>
 </div>
 
-<div>
-  <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 16px; padding: 28px; margin: 24px 0; box-shadow: 0 8px 32px rgba(245,87,108,0.2);">
-    <h2 style="color: white; margin: 0 0 8px 0; font-size: 24px; font-weight: bold;">
-      <span style="background: white; color: #f5576c; padding: 3px 14px; border-radius: 20px; font-size: 24px; font-weight: bold;">🔥 Major Update:</span>
-      &nbsp;PhoneCLI — From App Interfaces To Callable Commands For Mobile Agents
-    </h2>
-    <p style="color: rgba(255,255,255,0.7); margin: 0 0 6px 0; font-size: 14px;">🆕 September 2026</p>
-    <div align="center">
-      <img src="./figures/phone_cli.png" width="80%" alt="PhoneCLI Core Flow" />
-    </div>
-    <div align="center">
-      <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=500&lines=CLI+that+knows,+GUI+that+sees." alt="CLI that knows, GUI that sees." style="margin: 0 0 8px 0;" />
-    </div>
-    <p style="color: rgba(255,255,255,0.95); margin: 0 0 16px 0; font-size: 15px; line-height: 1.7;">
-      Mobile GUI agents operate through a perception–action loop: at each step they screenshot the device, invoke a vision–language model (VLM), and emit an action. It is slow, costly, and brittle — yet most of what an agent does is navigation, and everyday navigation is static, ordered, and endlessly repeated. <strong style="color: white;">PhoneCLI compiles an app's GUI navigation into callable commands</strong>, with no app-internal API, no runtime instrumentation, and no model training. Offline, PhoneCLI explores a target app from the outside and distills its screens, interactive elements, and navigation edges into a <strong style="color: white;">semantically annotated map</strong>; every screen yields one deterministic command — the replay sequence that reaches it. Online, the agent selects a command, verifies it before execution, and then executes it deterministically in <strong style="color: white;">sub-second time at zero VLM cost</strong>; open-ended interaction, and every failure of the compiled path, falls back to the embedded VLM interpreter — exactly the pure VLM agent — so <strong style="color: white;">compilation can only help</strong>.
-    </p>
-    <ul style="color: rgba(255,255,255,0.95); margin: 0 0 20px 0; font-size: 14px; line-height: 1.8; padding-left: 20px;">
-      <li>🗺️ <strong>App Maps</strong> — BFS crawls each app, recording every screen, element, and navigation path into a structured YAML graph</li>
-      <li>⚡ <strong>Macro Replay</strong> — High-frequency operations execute deterministically in sub-second time, with zero VLM cost</li>
-      <li>🧠 <strong>Smart Fallback</strong> — When a task doesn't match any macro, the agent gracefully degrades to VLM reasoning</li>
-      <li>📦 <strong>8 Pre-Built Maps</strong> — 微博, foodpanda, Calendar, 京东, Dianping, 小红书, Music, Settings — ready to use</li>
-      <li>🔗 <strong>Cross-App Planner</strong> — Multi-app tasks automatically decomposed into single-app subtasks</li>
-      <li>🧪 <strong>AndroidLab Evaluation</strong> — the same idea benchmarked on the official AndroidLab suite (9 apps / 138 tasks), with a compiled app map for every app and a pure-VLM baseline for a like-for-like comparison</li>
-    </ul>
-    <p style="margin: 0;">
-      <a href="./phonecli/README.md" style="background: white; color: #f5576c; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px;">📖 Full iOS Real-Device Documentation →</a>
-      &nbsp;&nbsp;
-      <a href="./phonecli_android/README.md" style="background: white; color: #f5576c; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px;">🧪 AndroidLab Evaluation Docs →</a>
-      &nbsp;&nbsp;
-      <a href="#-phonecli-from-app-interfaces-to-callable-commands-for-mobile-agents" style="background: rgba(255,255,255,0.15); color: white; padding: 10px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 14px; border: 1px solid rgba(255,255,255,0.35);">Read More ↓</a>
-    </p>
-    <p style="margin: 16px 0 0 0; color: rgba(255,255,255,0.95); font-size: 14px;">
-      📄 <strong style="color: white;">PhoneCLI paper</strong> — read the full write-up on arXiv:
-      <a href="https://arxiv.org/abs/2609.35671"><img src="https://img.shields.io/badge/📄arXiv-2609.35671-ff6b6b?style=for-the-badge&logo=arxiv&logoColor=white&labelColor=1a1a2e" alt="arXiv 2609.35671" /></a>
-    </p>
-  </div>
+<div align="center">
+  <img src="./figures/phonecli_framework.png" width="92%" alt="PhoneCLI: offline compilation → online invocation → runtime interpretation" />
 </div>
+
+**The bottleneck of phone agents was never model size.** Nearly every GUI agent today runs the same loop — screenshot, call a vision-language model (VLM), emit an action. It is slow (2–5 s per step), expensive (every screenshot is an API call), brittle (VLMs hallucinate coordinates), and it has to be online: your screen leaves the device. That is at odds with what a phone is — on-device, real-time, private. And most of what that loop does is **navigation**, which is static, ordered, and repeated ten thousand times.
+
+So we did not build a bigger model. We built the **model and the harness together**:
+
+- **① 🖥 Harness — GUI + CLI, two modalities.** Offline, a BFS crawler compiles an app's navigation into a YAML **app map**, and every screen becomes one deterministic command. Online, those commands replay over ADB in **sub-second time at zero VLM cost**, while GUI mode handles screens the map has never seen. A failed CLI path falls back to GUI — so **compilation can only help**.
+- **② 📱 On-device first — one request, three tiers.** A request is served by **CLI → on-device model → cloud**: the CLI tier absorbs navigation at zero model cost, and only the remaining steps ever reach a model. End to end this cuts cloud calls by **~10%**, and an efficient memory (**10–20 steps of context**) is what lets a single phone keep running.
+- **③ 🤖 Model — open and replaceable.** The CLI path needs **no model at all**, and the fallback path takes **any** model — a general LLM or a GUI-tuned one. The open 3B on-device model we ship is the engine, not the headline.
+
+➜ **[Full iOS real-device documentation](./phonecli/README.md)** — setup, WebDriverAgent, app map building, CLI reference, troubleshooting.
+
+➜ **[AndroidLab evaluation documentation](./phonecli_android/README.md)** — the official AndroidLab suite (9 apps / 138 tasks), one compiled app map per app, the macro agent and its pure-VLM baseline, and judging.
+
+➜ **[PhoneCLI paper](https://arxiv.org/abs/2609.35671)** — arXiv:2609.35671 &nbsp;·&nbsp; **[OpenPhone paper](https://arxiv.org/abs/2510.22009)** — arXiv:2510.22009
+
+➜ **[Read the method ↓](#-phonecli-from-app-interfaces-to-callable-commands-for-mobile-agents)** — app maps, the three stages, and why compilation can only help.
 
 ## 📖 Table of Contents
 - [🎯 What is OpenPhone?](#-what-is-openphone)
