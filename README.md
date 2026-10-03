@@ -65,7 +65,7 @@ So we did not build a bigger model. We built the **model and the harness togethe
 ➜ **[Read the method ↓](#-phonecli-from-app-interfaces-to-callable-commands-for-mobile-agents)** — app maps, the three stages, and why compilation can only help.
 
 ## 📖 Table of Contents
-- [🎯 What is OpenPhone?](#-what-is-openphone)
+- [🎯 The Bottleneck Is Not Model Size](#-the-bottleneck-is-not-model-size)
   - [🤔 Why 3B Parameters?](#-why-3b-parameters)
   - [💡 Research Highlights](#-research-highlights)
     - [🔍 OpenPhone‑3B: Lightweight Agentic Model](#-openphone3b-lightweight-agentic-model)
@@ -115,11 +115,24 @@ So we did not build a bigger model. We built the **model and the harness togethe
   - [🔗 Related Projects](#-related-projects)
   - [📜 License](#-license)
 
-## 🎯 What is OpenPhone?
+## 🎯 The Bottleneck Is Not Model Size
 
-**The Problem**: Most AI agents rely on expensive cloud APIs and large models that are impractical for real-world on-device deployment. Users face **Privacy Concerns**, **Latency Issues**, and **High Costs** when their phone needs to call external services for every interaction.
+Almost every GUI agent today runs the same loop: **screenshot → call a vision-language model (VLM) → emit an action**. It works, but it is a poor fit for a phone:
 
-**Our Solution**: OpenPhone introduces the first **Open-Source, 3B-parameter Agentic Foundation Model** designed specifically for on-device smartphone interaction. This compact vision-language model runs entirely locally — meaning **No Privacy Concerns**, **No Cloud Dependence**, and **Zero API Costs**.
+| | |
+|---|---|
+| 🐌 **Slow** | 2–5 s per step — every step waits for a model |
+| 💸 **Expensive** | every screenshot is an API call |
+| 🎲 **Brittle** | VLMs hallucinate coordinates; one wrong tap derails the task |
+| 🌐 **Online-bound** | the screen has to leave the device, which rules out private, real-time use |
+
+**And most of what that loop does is navigation.** Turning on Wi-Fi, opening today's calendar, finding a contact — these are fixed sequences, executed in the same order, thousands of times. Re-discovering them through a VLM on every run is the expensive part, and it is also the part that never changes. Where a deterministic path exists, the VLM loop is simply the wrong tool:
+
+<div align="center">
+  <img src="./figures/phonecli_case.png" width="92%" alt="PhoneCLI finishes the task in 12 steps; the VLM-only agent gets stuck in an error loop" />
+</div>
+
+So the conclusion was not "train a bigger model". It was: **compile navigation once, replay it deterministically, and keep the model for what is genuinely new.** That is what PhoneCLI does — and the rest of this repository is the stack built around it.
 
 ## 🤔 Why 3B Parameters?
 We believe the future of mobile AI lies not only in making models larger, but in making them smarter and more efficient for real-world constraints. Our 3B model is:
@@ -199,17 +212,11 @@ Installation: Follow the official AndroidLab documentation [AndroidLab](https://
 
 ### The Core Idea
 
-Think about how you use your phone. Turning on Wi-Fi, checking today's calendar,
-searching for a contact — these are **repetitive fixed sequences** you execute
-dozens of times. Doing them through VLM-driven GUI interaction is slow (2–5s per
-step), expensive (every screenshot costs an API call), and fragile (VLMs
-hallucinate coordinates).
+Instead of treating every task as a novel GUI exploration, **PhoneCLI compiles an app's navigation into callable commands**. Offline, it explores the app from the outside and records what it finds into an **app map** — screens, interactive elements, and the edges between them. Online, a task is routed to one of those commands and replayed deterministically; a model is consulted only for what is genuinely new, or to verify the result.
 
-**PhoneCLI** takes a different approach. Instead of treating every task as a
-novel GUI exploration, it **pre-builds a navigation graph (app map) for each
-app**, then replays routine operations as deterministic macros. The VLM only
-gets called when genuinely needed — for novel tasks, verification, or
-cross-app reasoning.
+<div align="center">
+  <img src="./figures/phone_cli.png" width="72%" alt="PhoneCLI: build phase (offline) and runtime phase (online)" />
+</div>
 
 ### How It Works
 
