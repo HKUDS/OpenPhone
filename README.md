@@ -80,22 +80,11 @@ So we did not build a bigger model. We built the **model and the harness togethe
   - [🧠 Training: SFT + RL](#-training-sft--rl)
   - [⚡ Inference speed](#-inference-speed)
 - [🚀 Quick Start](#-quick-start)
-  - [📱 AndroidLab Benchmark Setup](#-androidlab-benchmark-setup)
-  - [🚀 Model Deployment & Inference](#-model-deployment--inference)
-  - [⚙️ Pre-Testing Configuration](#️-pre-testing-configuration)
-- [🧪 Testing & Evaluation](#-testing--evaluation)
-  - [Single Task Testing](#single-task-testing)
-  - [Batch Evaluation Scripts](#batch-evaluation-scripts)
-  - [Additional App Documentation](#additional-app-documentation)
-- [📊 Result Generation](#-result-generation)
-  - [LLM Evaluator Setup](#llm-evaluator-setup)
-  - [Generate Evaluation Results](#generate-evaluation-results)
-  - [Batch Testing File Management](#batch-testing-file-management)
-- [🎯 📊 Key Evaluation Findings for OpenPhone](#--key-evaluation-findings-for-openphone)
-  - [🏆 Small Model, Big Performance](#-small-model-big-performance)
-  - [🥊 Competitive Performance](#-competitive-performance)
-  - [🔄 Device-Cloud Framework Works](#-device-cloud-framework-works)
-  - [🧠 Longer Prompts Don't Always Help](#-longer-prompts-dont-always-help)
+- [🧪 Evaluation](#-evaluation)
+  - [📱 AndroidLab benchmark setup](#-androidlab-benchmark-setup)
+  - [Running tasks](#running-tasks)
+  - [Judging](#judging)
+  - [📊 Results](#-results)
 - [🌟 Citation](#-citation)
 - [🔗 Related Projects](#-related-projects)
 - [📜 License](#-license)
@@ -118,6 +107,7 @@ Almost every GUI agent today runs the same loop: **screenshot → call a vision-
 </div>
 
 So the conclusion was not "train a bigger model". It was: **compile navigation once, replay it deterministically, and keep the model for what is genuinely new.** That is what PhoneCLI does — and the rest of this repository is the stack built around it.
+
 
 
 ## 🖥 PhoneCLI: From App Interfaces To Callable Commands For Mobile Agents
@@ -194,6 +184,7 @@ pure-VLM baseline, and judging.
 ---
 
 
+
 ## 📱 On-Device First: CLI → Device → Cloud
 
 A request is served cheapest-tier-first:
@@ -226,6 +217,7 @@ Running long tasks on a phone is a memory problem before it is a model problem:
 The CLI tier's own contribution is measured separately, on the AndroidLab suite — see the evaluation section below.
 
 ---
+
 
 
 ## 🤖 The Model: Open, Replaceable Engine
@@ -282,114 +274,105 @@ Average inference time per step with vLLM. Note that GLM-4.1V-9B-Thinking could 
 ---
 
 
+
 ## 🚀 Quick Start
-This project comprises core components designed for comprehensive mobile agent development and evaluation:
 
-- 🖥️ For the **phone agent CLI**, check out [phonecli](./phonecli/README.md) — build app maps and run autonomous tasks on iOS devices.
-- ⚡ For **model training**, please refer to the training guide [README](./model_training/README.md) for comprehensive setup and execution instructions.
-- 🔧 For the **data generation pipeline**, please refer to the data preparation guide [README](./prepare_data/README.md) for detailed implementation steps.
+The repository is the stack described above:
 
-Below, we focus on evaluation using the AndroidLab benchmark framework.
+| | |
+|---|---|
+| 🖥 **Harness (iOS)** | [`phonecli/`](./phonecli/README.md) — build app maps, run tasks, interactive daemon |
+| 🧪 **Harness (Android)** | [`phonecli_android/`](./phonecli_android/README.md) — the AndroidLab benchmark, 9 apps / 138 tasks |
+| 🤖 **Model** | [OpenPhone-3B](https://huggingface.co/hkuds/OpenPhone_model) plus the training recipe in [`model_training/`](./model_training/README.md) |
+| 🔧 **Data** | the synthetic data pipeline in [`prepare_data/`](./prepare_data/README.md) |
 
-### 📱 AndroidLab Benchmark Setup
-Installation: Follow the official AndroidLab documentation [AndroidLab](https://github.com/THUDM/Android-Lab) for complete setup instructions.<br>
+**Build a map and run a task (iOS)** — the full walkthrough is in [Get Started](#get-started):
 
-**Environment Configuration**:
-- Recommended Mode: AVD on Mac (arm64) - validated in our experiments.<br>
-- App Setup: Manual installation and task-specific configuration required.<br>
-- Compatibility Note: Original Docker images are not compatible with AVD environments.<br>
+```bash
+python phonecli/cli.py macro auto-build -b com.apple.Preferences -a Settings   # one-time, ~10 min
+python phonecli/run.py --task "Turn on airplane mode"
+```
 
-### 🚀 Model Deployment & Inference
-**vLLM Integration**:
-- Inference scripts available in ./vllm_script/ directory<br>
-- Optimized for efficient small model serving<br>
+**Deploy the model (optional)** — the CLI path does not need a model at all. Inference scripts live in [`vllm_script/`](./vllm_script/): download the weights, serve them with vLLM, and point the agent config at the endpoint.
 
-**Model Access**:
-- OpenPhone Weights: 3B parameter model hosted on [HuggingFace](https://huggingface.co/hkuds/OpenPhone_model)<br>
-- Deployment Process: Download weights → Deploy via vLLM → Configure inference service<br>
-- Service Ready: Seamless integration with evaluation pipeline<br>
+**Cloud credentials** — needed by the GUI fallback path and the LLM judge. Configure them in [`evaluation/evaluation.py`](./evaluation/evaluation.py) (lines 63, 75, 81); a friendlier configuration interface is in development.
 
-### ⚙️ Pre-Testing Configuration
-- API Setup Required: Configure cloud model credentials in ./evaluation/evaluation.py: Line 63, Line 75, Line 81<br>
-- Coming Soon: Streamlined configuration interface in development<br>
-
----
+Looking for the benchmark? Environment setup, batch scripts, judging and results all live in [Evaluation](#-evaluation).
 
 
-## 🧪 Testing & Evaluation
+## 🧪 Evaluation
 
-### Single Task Testing
-Test individual tasks using the following command structure:
+### 📱 AndroidLab benchmark setup
+
+Installation: follow the official [AndroidLab](https://github.com/THUDM/Android-Lab) documentation for complete setup instructions.
+
+- **Recommended mode**: AVD on Mac (arm64) — the configuration validated in our experiments.
+- **App setup**: manual installation and task-specific configuration are required.
+- **Compatibility note**: the original AndroidLab Docker images are not compatible with AVD environments.
+
+### Running tasks
 
 ```bash
 python eval.py -n test_name -c your path to config.yaml --task_id task_id
 ```
 
-Example Usage:
+A single task, for example:
 
 ```bash
 python eval.py -n all_cloud_v1_hyper -c ./configs/example_xml_cloud_hyper.yaml --task_id zoom_1
 ```
 
-### Batch Evaluation Scripts
-Convenient batch testing scripts are available in `./test_script`:
+Batch scripts live in [`test_script/`](./test_script):
 
-• `all_test_cloud_v1_hyper.sh`: Evaluates all 138 AndroidLab benchmark tasks<br>
-• `all_test_cloud_v1_hyper_add.sh`: Evaluates tasks for four additional mobile apps<br>
+- `all_test_cloud_v1_hyper.sh` — all 138 AndroidLab benchmark tasks.
+- `all_test_cloud_v1_hyper_add.sh` — tasks for four additional mobile apps.
 
-### Additional App Documentation
-Beyond the 138 AndroidLab tasks, the repository ships **25+ additional tasks** across popular mobile apps for real-world validation.
-For comprehensive details about the four additional app tasks, refer to the documentation: [Additional Apps Documentation](./docs/new_apps.md)
+Beyond the 138 AndroidLab tasks, the repository ships **25+ additional tasks** across popular mobile apps for real-world validation — see [Additional Apps Documentation](./docs/new_apps.md).
 
----
+The Android side of the harness ships compiled app maps and its own runner in [`phonecli_android/`](./phonecli_android/README.md): 9 apps / 138 tasks, one map per app, plus the pure-VLM baseline used for the comparison below.
 
+### Judging
 
-## 📊 Result Generation
+Our implementation replaces AndroidLab's rule-based evaluation with **LLM-powered assessment**, which is more nuanced about partial success.
 
-### LLM Evaluator Setup
-Required Configuration: Set up LLM service credentials in ./evaluation/tasks/llm_evaluator.py:
-
-• Line 10: API configuration<br>
-• Line 12: Service URL<br>
-
-💡 Enhancement: Our implementation replaces AndroidLab's rule-based evaluation with LLM-powered assessment, providing more nuanced and accurate task completion evaluation.
-
-### Generate Evaluation Results
-Execute result generation with the following command:
+Configure credentials in [`evaluation/tasks/llm_evaluator.py`](./evaluation/tasks/llm_evaluator.py) (line 10: API configuration; line 12: service URL), then generate results:
 
 ```bash
 python generate_result.py --input_folder ./logs/evaluation/ --output_folder ./logs/evaluation/ --output_excel ./logs/evaluation/test_name.xlsx
 ```
-### Batch Testing File Management
-⚠️ Important: When using batch scripts from ./test_script/:<br>
-• Manual Transfer Required: Move generated evaluation files from script directory to ./logs/<br>
-• Then Execute: Run the result generation command above<br>
-• Error Prevention: This step prevents file path conflicts and ensures proper result compilation<br>
 
----
+⚠️ When using the batch scripts, move the generated evaluation files from the script directory into `./logs/` first, then run the command above — this avoids file-path conflicts.
 
+### 📊 Results
 
-## 🎯 📊 Key Evaluation Findings for OpenPhone
+<div align="center">
+  <img src="./figures/phonecli_attribution.png" width="78%" alt="Success rate per AndroidLab app for PhoneCLI, PhoneCLI without replay, and PhoneCLI without app maps, plus steps and tokens per successful task" />
+</div>
 
-### 🏆 Small Model, Big Performance
-- **Size vs Performance**: OpenPhone-3B achieves performance comparable to 9B models while maintaining the deployment advantages of a compact architecture.
-- **Efficiency Champion**: Establishes itself as a genuine "small powerhouse" that challenges the bigger-is-better assumption in mobile AI.
+Ablation over the nine AndroidLab apps: the full harness, the harness **without replay** (app maps but no deterministic execution), and **without app maps** (pure VLM). Compilation is what moves the needle — with both the map and replay the agent solves more tasks while spending fewer steps and fewer tokens per success (**6.72 vs 7.52 steps**, **34.4k vs 40.1k tokens**).
 
-### 🥊 Competitive Performance
-- **Against Proprietary Models**: OpenPhone-3B shows respectable performance compared to lightweight versions of proprietary models when evaluated on standard benchmarks.
-- **Potential of Small Models**: Demonstrates promising results that validate the viability of compact open-source approaches in mobile agent development.
+#### 🏆 Small model, big performance
+- **Size vs performance**: OpenPhone-3B reaches the range of 9B models while keeping the deployment advantages of a compact architecture.
+- **Efficiency champion**: a genuine "small powerhouse" that challenges the bigger-is-better assumption in mobile AI.
 
-### 🔄 Device-Cloud Framework Works
-- **Performance with Efficiency**: OpenPhone's hybrid architecture delivers near-optimal performance while dramatically reducing cloud model usage.
-- **Intelligent Routing**: Proves that smart task routing creates practical efficiency gains without sacrificing capability.
+#### 🥊 Competitive performance
+- **Against proprietary models**: respectable results compared with lightweight versions of proprietary models on standard benchmarks.
+- **Potential of small models**: validates compact, open-source approaches for mobile agents.
 
-### 🧠 Longer Prompts Don't Always Help
-- **Context Matters**: Extended prompting strategies only improve performance when paired with sufficiently capable cloud models.
-- **Smart Matching**: Highlights the importance of matching reasoning complexity to model capability rather than assuming longer prompts always help.
+#### 🔄 The execution tiers work
+- **Performance with efficiency**: the hybrid architecture keeps near-optimal performance while cutting cloud usage.
+- **Intelligent routing**: smart task routing produces practical savings without sacrificing capability.
+
+#### 🧠 Longer prompts don't always help
+- **Context matters**: extended prompting only pays off when paired with a sufficiently capable cloud model.
+- **Smart matching**: match reasoning complexity to model capability rather than assuming longer prompts always help.
 
 <p align="center">
   <img src="./figures/three_subplots_corrected.png" width="90%"/>
 </p>
+
+---
+
 
 
 ## 🌟 Citation
@@ -414,6 +397,7 @@ If you find this work helpful to your research, please kindly consider citing ou
 ```
 
 
+
 ## 🔗 Related Projects
 
 OpenPhone builds upon excellent open-source projects. We sincerely thank their authors and contributors:
@@ -421,6 +405,7 @@ OpenPhone builds upon excellent open-source projects. We sincerely thank their a
 - [AndroidLab](https://github.com/THUDM/Android-Lab) - The benchmark framework.
 - [R1-V](https://github.com/StarsfieldAI/R1-V) - Implementation details for the GRPO training methodology.
 - [LLaMA Factory](https://github.com/hiyouga/LLaMA-Factory) - The unified training framework enabling efficient model fine-tuning.
+
 
 
 ## 📜 License
