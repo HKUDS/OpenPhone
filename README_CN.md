@@ -467,6 +467,13 @@ python generate_result.py --input_folder ./logs/evaluation/ --output_folder ./lo
 如果本工作对你的研究有帮助，请考虑引用我们的论文。
 
 ```
+@article{jiang2026phonecli,
+  title={PhoneCLI: From App Interfaces to Callable Commands for Mobile Agents},
+  author={Jiang, Yangqin and Xu, Lingrui and Huang, Chao},
+  journal={arXiv preprint arXiv:2609.35671},
+  year={2026}
+}
+
 @inproceedings{jiang2026openphone,
   title={OpenPhone: Mobile Agentic Foundation Models},
   author={Jiang, Yangqin and Huang, Chao},
