@@ -194,8 +194,6 @@ pure-VLM baseline, and judging.
 
 ---
 
----
-
 ## 📱 On-Device First: CLI → Device → Cloud
 
 Each request is routed to the **cheapest tier that can serve it**, escalating only when that tier cannot:
@@ -228,8 +226,6 @@ Running long tasks on a phone is a memory problem before it is a model problem:
 - **Stronger cloud models need less help.** Models such as GLM-4.5V show a smaller reduction in cloud dependency, because they finish more tasks unaided.
 
 The CLI tier's own contribution is measured separately, on the AndroidLab suite — see the evaluation section below.
-
----
 
 ---
 
@@ -283,8 +279,6 @@ Average inference time per step with vLLM. Note that GLM-4.1V-9B-Thinking could 
 - The 9B model's inability to run on a single 3090 is precisely the deployment constraint that matters at the edge.
 
 <img src="./figures/model_large.png" style="zoom:100%;" alt="OpenPhone overview: an efficient reasoning GUI agent, on-device tuning with group relative policy optimization, and the device-cloud collaborative agent system" />
-
----
 
 ---
 
@@ -385,8 +379,6 @@ Ablation over the nine AndroidLab apps: the full harness, the harness **without 
 <p align="center">
   <img src="./figures/three_subplots_corrected.png" width="90%"/>
 </p>
-
----
 
 ---
 
